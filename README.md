@@ -1,4 +1,4 @@
-# Pathview Plus: a beginner's guide
+# Pathview Plus: a walkthrough guide
 
 This guide teaches you how to place biological measurements on a KEGG pathway
 with Pathview Plus.
