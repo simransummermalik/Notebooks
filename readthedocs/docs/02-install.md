@@ -1,6 +1,6 @@
 # Install Pathview Plus
 
-*Page 2 of 14*
+*Page 2 of 24*
 
 On this page, you will create a small project folder and install the software
 used by every example.
@@ -143,4 +143,4 @@ cd my-pathview-project
 .\.venv\Scripts\Activate.ps1
 ```
 
-[<- Previous: Before you begin](01-before-you-begin.md) | [Home](../README.md) | [Next: Make your first pathway ->](03-first-pathway.md)
+[<- Previous: Before you begin](01-before-you-begin.md) | [Home](index.md) | [Next: Make your first pathway ->](03-first-pathway.md)

@@ -1,6 +1,6 @@
 # Run several pathways
 
-*Page 11 of 14*
+*Page 11 of 24*
 
 Use a Python loop when you want to place the same gene table on several
 pathways.
@@ -175,4 +175,52 @@ pathways = {
 Keep every pathway number inside quotes. Give every pathway a different short
 name so each image receives a different filename.
 
-[<- Previous: Choose colors and read the image](10-colors-and-images.md) | [Home](../README.md) | [Next: Use Pathview Plus in a notebook ->](12-use-a-notebook.md)
+## Use pathway IDs from an enrichment table
+
+An enrichment program may produce a table containing pathway IDs and adjusted
+p-values. You can filter that table first and then give each selected pathway
+to the same loop.
+
+Suppose `enriched_pathways.tsv` contains:
+
+| pathway_id | pathway_name | adjusted_p_value |
+| --- | --- | ---: |
+| 04110 | Cell cycle | 0.004 |
+| 04010 | MAPK signaling pathway | 0.018 |
+| 04151 | PI3K-Akt signaling pathway | 0.031 |
+
+Read the pathway IDs as strings so leading zeroes are preserved:
+
+```python
+enrichment = pl.read_csv(
+    "enriched_pathways.tsv",
+    separator="\t",
+    schema_overrides={"pathway_id": pl.String},
+)
+
+selected_pathways = (
+    enrichment
+    .filter(pl.col("adjusted_p_value") < 0.05)
+    .get_column("pathway_id")
+    .drop_nulls()
+    .unique()
+    .to_list()
+)
+
+for pathway_id in selected_pathways:
+    pathview(
+        pathway_id=pathway_id,
+        species="hsa",
+        gene_data=gene_data,
+        gene_idtype="ENTREZ",
+        map_symbol=False,
+        kegg_dir=output_folder,
+        out_suffix=f"enrichment_{pathway_id}",
+    )
+```
+
+The enrichment table chooses the pathways. The gene table still supplies the
+values that become colors. Record the enrichment cutoff and the source of the
+gene values with the finished figures.
+
+[<- Previous: Choose colors and read the image](10-colors-and-images.md) | [Home](index.md) | [Next: Use Pathview Plus in a notebook ->](12-use-a-notebook.md)

@@ -1,6 +1,6 @@
 # Choose a pathway and species
 
-*Page 5 of 14*
+*Page 5 of 24*
 
 Pathview Plus needs a KEGG pathway number and a species code. Choose them from
 the biological question behind your data.
@@ -125,4 +125,4 @@ This becomes `ko00910`.
 
 You now have everything needed for a full pathway run with your own file.
 
-[<- Previous: Prepare your own data](04-prepare-your-data.md) | [Home](../README.md) | [Next: Map one gene measurement ->](06-one-gene-condition.md)
+[<- Previous: Prepare your own data](04-prepare-your-data.md) | [Home](index.md) | [Next: Map one gene measurement ->](06-one-gene-condition.md)

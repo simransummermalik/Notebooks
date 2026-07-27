@@ -1,6 +1,6 @@
 # Choose colors and read the image
 
-*Page 10 of 14*
+*Page 10 of 24*
 
 This page shows how to choose a low color, a middle color, a high color, and a
 numeric limit.
@@ -131,7 +131,80 @@ plot_col_key=True
 This draws the numeric gene color scale below the pathway. Readers can use it
 to connect the colors to the log2 fold-change values.
 
-## 7. Run the script
+## 7. Choose the number of color steps
+
+The `bins` setting controls how many color levels are available:
+
+```python
+bins={"gene": 20, "cpd": 10}
+```
+
+- fewer bins make broad color groups; and
+- more bins make finer color changes.
+
+Ten bins for each data type is the standard setting. Keep the same number of
+bins when two figures will be compared.
+
+## 8. Choose a two-direction or one-direction scale
+
+Use a two-direction scale for values that move below and above a center such as
+zero:
+
+```python
+both_dirs={"gene": True, "cpd": True}
+```
+
+This is a natural choice for log2 fold change.
+
+Use a one-direction scale for measurements that begin at zero and increase,
+such as a non-negative abundance or score:
+
+```python
+both_dirs={"gene": False, "cpd": False}
+```
+
+The setting is separate for genes and compounds, so a multi-omics figure can
+use a two-direction gene scale and a one-direction compound scale:
+
+```python
+both_dirs={"gene": True, "cpd": False}
+```
+
+## 9. Give genes and compounds separate scales
+
+Each color dictionary contains one gene setting and one compound setting. This
+lets the two data types keep their own units:
+
+```python
+limit={"gene": 2.0, "cpd": 5.0}
+low={"gene": "#2166AC", "cpd": "#FFFFCC"}
+mid={"gene": "#F7F7F7", "cpd": "#FD8D3C"}
+high={"gene": "#B2182B", "cpd": "#800026"}
+```
+
+In this example, gene values reach the end colors at `2.0`, while compound
+values reach them at `5.0`.
+
+## 10. Choose how other values are displayed
+
+These settings cover three additional data situations:
+
+```python
+discrete={"gene": False, "cpd": False}
+na_col="#D9D9D9"
+trans_fun={"gene": None, "cpd": None}
+```
+
+| Setting | What it means |
+| --- | --- |
+| `discrete` | `False` uses a continuous numeric scale; `True` treats values as discrete groups |
+| `na_col` | chooses the color for a missing value; the standard value is `"transparent"` |
+| `trans_fun` | optionally supplies a numeric transformation function separately for genes and compounds |
+
+Most first analyses can keep the values shown above. If a transformation is
+part of the analysis, record its name in the script and figure caption.
+
+## 11. Run the script
 
 In Terminal, move into `my-pathview-project`, activate `.venv`, and run:
 
@@ -163,4 +236,9 @@ Save these details with every final figure:
 - numeric limits; and
 - input table and script filename.
 
-[<- Previous: Map compounds and multi-omics data](09-compounds-and-multiomics.md) | [Home](../README.md) | [Next: Run several pathways ->](11-many-pathways.md)
+The [output-format guide](15-output-formats.md) explains when to save the
+finished figure as PNG, SVG, or PDF. The
+[complete API reference](23-api-reference.md#color-arguments) lists every
+color argument and its standard value.
+
+[<- Previous: Map compounds and multi-omics data](09-compounds-and-multiomics.md) | [Home](index.md) | [Next: Run several pathways ->](11-many-pathways.md)

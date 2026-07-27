@@ -1,6 +1,6 @@
 # Use Pathview Plus in a notebook
 
-*Page 12 of 14*
+*Page 12 of 24*
 
 A Jupyter notebook lets you run Python in small sections called cells. This
 page divides one complete Pathview Plus workflow into five cells.
@@ -143,4 +143,4 @@ genes contain your colors.
 Save the notebook when you finish. It keeps the code, input table, and order of
 the pathway workflow together.
 
-[<- Previous: Run several pathways](11-many-pathways.md) | [Home](../README.md) | [Next: Recipe book ->](13-recipe-book.md)
+[<- Previous: Run several pathways](11-many-pathways.md) | [Home](index.md) | [Next: Recipe book ->](13-recipe-book.md)

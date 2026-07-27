@@ -1,6 +1,6 @@
 # Map compounds and multi-omics data
 
-*Page 9 of 14*
+*Page 9 of 24*
 
 This page starts with compounds by themselves. It then adds genes and compounds
 to the same pathway image.
@@ -226,4 +226,4 @@ pathview_output/hsa00010.genes_and_compounds.png
 The mapped gene boxes use the gene scale, and the mapped compound shapes use
 the compound scale. You now have both data types on one pathway.
 
-[<- Previous: Map KEGG Orthology data](08-kegg-orthology.md) | [Home](../README.md) | [Next: Choose colors and read the image ->](10-colors-and-images.md)
+[<- Previous: Map KEGG Orthology data](08-kegg-orthology.md) | [Home](index.md) | [Next: Choose colors and read the image ->](10-colors-and-images.md)

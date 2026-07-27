@@ -1,6 +1,6 @@
 # Map KEGG Orthology data
 
-*Page 8 of 14*
+*Page 8 of 24*
 
 Use this workflow when the first column of your results contains KEGG
 Orthology identifiers, also called KO IDs.
@@ -40,7 +40,86 @@ that the first column contains KEGG identifiers.
 The first column contains KO IDs. The second column contains one numeric result
 for each KO.
 
-## 2. Create the script
+## From MetaCerberus results to this table
+
+MetaCerberus can assign KO functions to genes in genomes or metagenomes. A
+Pathview Plus table is made after those annotations have been summarized into
+one numeric value per KO.
+
+For example, a comparison of Rhizobium and non-Rhizobium genomes can follow
+this route:
+
+```text
+MetaCerberus annotations
+        |
+        v
+keep the KO ID, genome group, and numeric score
+        |
+        v
+calculate the mean score for each KO in each group
+        |
+        v
+Rhizobium mean - non-Rhizobium mean
+        |
+        v
+ko_id | difference
+```
+
+Suppose `metacerberus_ko_scores.tsv` has these three columns:
+
+| ko_id | genome_group | score |
+| --- | --- | ---: |
+| K02586 | Rhizobium | 0.90 |
+| K02586 | non_Rhizobium | 0.18 |
+| K02588 | Rhizobium | 0.30 |
+| K02588 | non_Rhizobium | 0.64 |
+
+This code creates the two-column table used by Pathview Plus:
+
+```python
+import polars as pl
+
+annotations = pl.read_csv(
+    "metacerberus_ko_scores.tsv",
+    separator="\t",
+).with_columns(
+    pl.col("ko_id").cast(pl.String)
+)
+
+group_means = (
+    annotations
+    .group_by(["ko_id", "genome_group"])
+    .agg(pl.col("score").mean().alias("mean_score"))
+    .pivot(
+        on="genome_group",
+        index="ko_id",
+        values="mean_score",
+    )
+)
+
+ko_data = (
+    group_means
+    .with_columns(
+        (
+            pl.col("Rhizobium")
+            - pl.col("non_Rhizobium")
+        ).alias("difference")
+    )
+    .select(["ko_id", "difference"])
+)
+
+print(ko_data)
+```
+
+The exact starting column names can differ among projects. Rename the three
+columns in the example to match your exported annotation table. The important
+final shape is one KO ID column followed by one or more numeric columns.
+
+A positive `difference` means that the mean score was higher in the
+Rhizobium group. A negative value means that it was higher in the
+non-Rhizobium group.
+
+## 2. Create the pathway script
 
 Create `ko_nitrogen.py` inside `my-pathview-project`. Keep
 `pathview_setup.py` in the same folder.
@@ -139,4 +218,12 @@ ko_data = pl.read_csv(
 Then replace the pathway ID, filename, value-column name, and output suffix with
 the choices for your analysis.
 
-[<- Previous: Compare several gene conditions](07-multiple-gene-conditions.md) | [Home](../README.md) | [Next: Map compounds and multi-omics data ->](09-compounds-and-multiomics.md)
+## Describe this use case in a figure caption
+
+You can adapt this sentence:
+
+> KO functions were summarized by genome group, and the difference between
+> the Rhizobium and non-Rhizobium group means was mapped to KEGG nitrogen
+> metabolism pathway `ko00910` with Pathview Plus 2.0.2.
+
+[<- Previous: Compare several gene conditions](07-multiple-gene-conditions.md) | [Home](index.md) | [Next: Map compounds and multi-omics data ->](09-compounds-and-multiomics.md)

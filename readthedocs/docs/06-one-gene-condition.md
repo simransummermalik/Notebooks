@@ -1,6 +1,6 @@
 # Map one gene measurement
 
-*Page 6 of 14*
+*Page 6 of 24*
 
 Use this workflow when every gene has one number to display. You will read a
 TSV file and color six genes on the human cell-cycle pathway.
@@ -168,4 +168,4 @@ This recipe uses Entrez Gene IDs. For KO IDs that begin with `K`, continue to
 with `C`, continue to
 [Map compounds and multi-omics data](09-compounds-and-multiomics.md).
 
-[<- Previous: Choose a pathway and species](05-choose-a-pathway.md) | [Home](../README.md) | [Next: Compare several gene conditions ->](07-multiple-gene-conditions.md)
+[<- Previous: Choose a pathway and species](05-choose-a-pathway.md) | [Home](index.md) | [Next: Compare several gene conditions ->](07-multiple-gene-conditions.md)

@@ -1,6 +1,6 @@
 # Prepare your own data
 
-*Page 4 of 14*
+*Page 4 of 24*
 
 Pathview Plus reads a simple table. The first column contains identifiers. Each
 later column contains numbers that you want to display as colors.
@@ -63,12 +63,20 @@ Use one identifier system in the first column.
 | Your data | First-column example | Setting used later |
 | --- | --- | --- |
 | genes with Entrez IDs | `1956` | `gene_idtype="ENTREZ"` |
+| genes with symbols | `EGFR` | `gene_idtype="SYMBOL"` |
+| genes with Ensembl IDs | `ENSG00000146648` | `gene_idtype="ENSEMBL"` |
+| proteins with UniProt IDs | `P00533` | `gene_idtype="UNIPROT"` |
 | KEGG Orthology data | `K02586` | `gene_idtype="KEGG"` |
 | KEGG compounds | `C00031` | `cpd_idtype="KEGG"` |
+| PubChem compounds | a PubChem compound ID | `cpd_idtype="PUBCHEM"` |
+| ChEBI compounds | a ChEBI compound ID | `cpd_idtype="CHEBI"` |
 
 Entrez IDs are the main gene identifiers used in this beginner guide. Many
 analysis tools and annotation resources can add an Entrez ID column to a gene
-result table.
+result table. Pathview Plus can also convert the supported gene and compound
+systems before it matches the pathway. Follow
+[Convert gene and compound identifiers](16-identifier-conversion.md) for
+complete examples.
 
 ## Save a TSV file
 
@@ -168,4 +176,4 @@ Before continuing, confirm that:
 - the species matches the identifiers; and
 - you know what positive, zero, and negative values mean in your analysis.
 
-[<- Previous: Make your first pathway](03-first-pathway.md) | [Home](../README.md) | [Next: Choose a pathway and species ->](05-choose-a-pathway.md)
+[<- Previous: Make your first pathway](03-first-pathway.md) | [Home](index.md) | [Next: Choose a pathway and species ->](05-choose-a-pathway.md)

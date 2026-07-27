@@ -1,6 +1,6 @@
 # Compare several gene conditions
 
-*Page 7 of 14*
+*Page 7 of 24*
 
 Use this workflow when the same genes have values from several conditions,
 treatments, samples, or time points.
@@ -151,4 +151,4 @@ gene_data = pl.read_csv(
 
 Add or remove numeric columns to match the conditions you want to display.
 
-[<- Previous: Map one gene measurement](06-one-gene-condition.md) | [Home](../README.md) | [Next: Map KEGG Orthology data ->](08-kegg-orthology.md)
+[<- Previous: Map one gene measurement](06-one-gene-condition.md) | [Home](index.md) | [Next: Map KEGG Orthology data ->](08-kegg-orthology.md)

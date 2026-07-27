@@ -1,6 +1,6 @@
 # Make your first pathway
 
-*Page 3 of 14*
+*Page 3 of 24*
 
 On this page, you will color five genes on the human PI3K-Akt signaling
 pathway. You will create two small Python files and then run one command.
@@ -43,10 +43,10 @@ def prepare_pathview():
     pathview_module.kegg_species_code = species_code_info
 ```
 
-This is the standard setup helper used throughout the guide. It prepares KEGG
-drawing information and passes your chosen species code into Pathview Plus.
-Copy it once and leave it unchanged. Each pathway script will use it with two
-simple lines:
+This is the Pathview Plus 2.0.2 setup helper used throughout this guide. It
+keeps KEGG drawing information separate from your measurements and passes your
+chosen species code into Pathview Plus. Copy it once and leave it unchanged.
+Each pathway script will use it with two simple lines:
 
 ```python
 from pathview_setup import prepare_pathview
@@ -163,7 +163,7 @@ lets you run the script again using the same folder.
 | `species="hsa"` | choose human |
 | `gene_data=gene_data` | use the table created above |
 | `gene_idtype="ENTREZ"` | read the first column as Entrez IDs |
-| `map_symbol=False` | use the direct ID mapping in this guide |
+| `map_symbol=False` | keep the direct Entrez-based labels used in this guide |
 | `kegg_dir=output_folder` | save files in `pathview_output` |
 | `kegg_native=True` | place colors on the KEGG pathway picture |
 | `output_format="png"` | create a PNG image |
@@ -211,4 +211,18 @@ pathview_output/
 Open the file with `first_pathway` in its name. You have made your first
 Pathview Plus image.
 
-[<- Previous: Install Pathview Plus](02-install.md) | [Home](../README.md) | [Next: Prepare your own data ->](04-prepare-your-data.md)
+## What happens to the downloaded files?
+
+The first run places the pathway's KGML file, background picture, and finished
+figure in the folder selected by `kegg_dir`.
+
+- `hsa04151.xml` describes the pathway nodes, positions, and connections.
+- `hsa04151.png` is the KEGG background picture.
+- `hsa04151.first_pathway.png` is the colored result from this run.
+
+When the same pathway files are already in that folder, Pathview Plus reuses
+them. Keeping one project output folder therefore also creates a local pathway
+cache. The [KEGG tools page](19-kegg-tools.md) explains how to download and
+inspect these files directly.
+
+[<- Previous: Install Pathview Plus](02-install.md) | [Home](index.md) | [Next: Prepare your own data ->](04-prepare-your-data.md)

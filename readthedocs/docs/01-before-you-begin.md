@@ -1,6 +1,6 @@
 # Before you begin
 
-*Page 1 of 14*
+*Page 1 of 24*
 
 This page introduces the five ideas used throughout the guide before the first
 code example.
@@ -116,4 +116,4 @@ You are ready to continue if these statements make sense:
 - an identifier selects a gene, function, or compound; and
 - a number becomes a color on the pathway.
 
-[Home](../README.md) | [Next: Install Pathview Plus ->](02-install.md)
+[Home](index.md) | [Next: Install Pathview Plus ->](02-install.md)

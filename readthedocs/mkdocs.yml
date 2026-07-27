@@ -1,0 +1,78 @@
+site_name: Pathview Plus Documentation
+site_description: Beginner-to-advanced pathway visualization workflows for Pathview Plus
+site_author: RAW KLab
+site_url: !ENV [READTHEDOCS_CANONICAL_URL, ""]
+copyright: Pathview Plus documentation by RAW KLab
+
+repo_name: raw-lab/pathview-plus
+repo_url: https://github.com/raw-lab/pathview-plus
+edit_uri: ""
+
+docs_dir: docs
+site_dir: site
+strict: true
+use_directory_urls: true
+
+theme:
+  name: material
+  language: en
+  features:
+    - content.code.copy
+    - navigation.footer
+    - navigation.sections
+    - navigation.top
+    - search.highlight
+    - search.suggest
+  palette:
+    primary: teal
+    accent: teal
+
+plugins:
+  - search
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - pymdownx.details
+  - pymdownx.superfences
+  - toc:
+      permalink: true
+
+validation:
+  omitted_files: warn
+  absolute_links: warn
+  unrecognized_links: warn
+  anchors: warn
+
+nav:
+  - Home: index.md
+  - Getting started:
+      - Before you begin: 01-before-you-begin.md
+      - Install Pathview Plus: 02-install.md
+      - Make your first pathway: 03-first-pathway.md
+      - Prepare your own data: 04-prepare-your-data.md
+      - Choose a pathway and species: 05-choose-a-pathway.md
+  - Core workflows:
+      - Map one gene measurement: 06-one-gene-condition.md
+      - Compare several gene conditions: 07-multiple-gene-conditions.md
+      - Map KEGG Orthology data: 08-kegg-orthology.md
+      - Map compounds and multi-omics data: 09-compounds-and-multiomics.md
+      - Choose colors and read the image: 10-colors-and-images.md
+      - Run several pathways: 11-many-pathways.md
+      - Use Pathview Plus in a notebook: 12-use-a-notebook.md
+  - Quick reference:
+      - Recipe book: 13-recipe-book.md
+      - Glossary: 14-glossary.md
+  - More Pathview Plus features:
+      - Choose PNG, SVG, or PDF output: 15-output-formats.md
+      - Convert gene and compound identifiers: 16-identifier-conversion.md
+      - Simulate and combine data: 17-simulate-and-summarize.md
+      - Use the command line: 18-command-line.md
+      - Download and inspect KEGG pathways: 19-kegg-tools.md
+      - Work with SBGN and pathway databases: 20-sbgn-and-databases.md
+      - Highlight pathway elements: 21-highlighting.md
+      - Build curves and SVG elements: 22-curves-and-svg.md
+  - Complete reference:
+      - Complete API reference: 23-api-reference.md
+      - Cite, report, and get support: 24-citation-and-support.md
