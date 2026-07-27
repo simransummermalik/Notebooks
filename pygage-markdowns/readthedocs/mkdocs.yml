@@ -1,0 +1,88 @@
+site_name: PyGAGE Documentation
+site_description: Beginner-to-advanced gene-set enrichment workflows for PyGAGE
+site_author: RAW Lab
+site_url: !ENV [READTHEDOCS_CANONICAL_URL, ""]
+copyright: PyGAGE documentation by RAW Lab
+
+repo_name: raw-lab/pygage
+repo_url: https://github.com/raw-lab/pygage
+edit_uri: ""
+
+docs_dir: docs
+site_dir: site
+strict: true
+use_directory_urls: true
+
+theme:
+  name: material
+  language: en
+  features:
+    - content.code.copy
+    - navigation.footer
+    - navigation.sections
+    - navigation.top
+    - search.highlight
+    - search.suggest
+  palette:
+    primary: indigo
+    accent: indigo
+
+plugins:
+  - search
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - pymdownx.details
+  - pymdownx.superfences
+  - toc:
+      permalink: true
+
+validation:
+  omitted_files: warn
+  absolute_links: warn
+  unrecognized_links: warn
+  anchors: warn
+
+nav:
+  - Home: index.md
+  - Start here:
+      - Before you begin: 01-before-you-begin.md
+      - Install PyGAGE: 02-install.md
+      - Run your first enrichment: 03-first-enrichment.md
+      - Understand the first result: 04-understand-enrichment.md
+      - Choose your input route: 05-choose-input.md
+  - Expression-matrix workflow:
+      - Understand an expression matrix: 06-expression-matrix.md
+      - Choose reference and sample columns: 07-reference-and-sample.md
+      - Read and prepare the matrix: 08-prepare-expression.md
+      - Understand gene sets: 09-gene-sets.md
+      - Run the one-call workflow: 10-one-call-gage.md
+      - Run the staged workflow: 11-staged-analysis.md
+  - Other input types:
+      - Use a differential-expression table: 12-de-tables.md
+      - Use pre-ranked data: 13-preranked.md
+      - Use pandas or AnnData: 14-pandas-anndata.md
+  - Find gene sets:
+      - Download KEGG gene sets: 15-kegg.md
+      - Use KEGG Orthology data: 16-kegg-orthology.md
+      - Build Gene Ontology sets: 17-gene-ontology.md
+      - Use Reactome, MSigDB, GMT, and the cache: 18-other-gene-sets.md
+  - Interpret and extend:
+      - Understand every result column: 19-results.md
+      - Choose statistical settings: 20-statistical-settings.md
+      - Use advanced analysis options: 21-advanced-options.md
+      - Filter, group, compare, and export: 22-group-overlap.md
+      - Make enrichment plots: 23-visualization.md
+  - More ways to work:
+      - Use the command line: 24-command-line.md
+      - Use a Jupyter notebook: 25-notebooks.md
+      - Follow a real-data workflow: 26-real-dataset.md
+      - Configure performance and threads: 27-performance.md
+  - Quick reference:
+      - Recipe book: 28-recipe-book.md
+      - Glossary: 29-glossary.md
+  - Complete reference:
+      - Complete Python API: 30-api-reference.md
+      - Cite, reproduce, and get support: 31-citation-and-support.md
