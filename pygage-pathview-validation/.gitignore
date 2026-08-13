@@ -1,0 +1,9 @@
+.venv/
+.r-library/
+.pytest_cache/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.jupyter/
+.mplconfig/
+cache/

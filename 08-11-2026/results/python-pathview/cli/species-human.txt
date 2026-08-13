@@ -1,0 +1,6 @@
+KEGG code        hsa
+Scientific name  Homo sapiens
+Common name      human
+NCBI taxonomy    9606
+KEGG T-number    T01001
+Gene id type     ENTREZ

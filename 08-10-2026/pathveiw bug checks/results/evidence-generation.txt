@@ -1,0 +1,7 @@
+Info: Saved modified pathway → /Users/summermalik/Desktop/PATHVIEW-MARKDOWN/pathveiw bug checks/results/evidence/03-highlight-hex-working.png
+Info: Written → /Users/summermalik/Desktop/PATHVIEW-MARKDOWN/pathveiw bug checks/results/evidence/official-hsa04110/hsa04110.one-state.png
+Info: Written → /Users/summermalik/Desktop/PATHVIEW-MARKDOWN/pathveiw bug checks/results/evidence/official-hsa04110/hsa04110.half-and-half.png
+Info: Written → /Users/summermalik/Desktop/PATHVIEW-MARKDOWN/pathveiw bug checks/results/evidence/official-hsa04110/hsa04110.three-state.png
+Info: Written → /Users/summermalik/Desktop/PATHVIEW-MARKDOWN/pathveiw bug checks/results/evidence/official-hsa04110/hsa04110.half-and-half.svg
+Info: Written → /Users/summermalik/Desktop/PATHVIEW-MARKDOWN/pathveiw bug checks/results/evidence/official-hsa04110/hsa04110.graph-half-and-half.pdf
+Generated 13 evidence files in /Users/summermalik/Desktop/PATHVIEW-MARKDOWN/pathveiw bug checks/results/evidence

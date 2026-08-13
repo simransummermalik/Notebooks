@@ -1,0 +1,13 @@
+{
+  "total_test_cases": 239,
+  "status_counts": {
+    "FEATURE_GAP": 7,
+    "KNOWN_BUG": 89,
+    "PASS": 143
+  },
+  "unique_reproduced_findings": 86,
+  "unique_confirmed_bug_ids": 79,
+  "unique_feature_gap_ids": 7,
+  "unexpected_failures": 0,
+  "total_seconds": 11.846
+}

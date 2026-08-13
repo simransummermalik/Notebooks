@@ -1,0 +1,8 @@
+.venv/
+.r-library/
+cache/
+sources/
+__pycache__/
+.ipynb_checkpoints/
+*.pyc
+

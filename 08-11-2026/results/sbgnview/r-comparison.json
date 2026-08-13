@@ -1,0 +1,220 @@
+{
+  "title": "Official R SBGNview frozen comparison evidence",
+  "generated_at": "2026-08-11T15:25:38-0400",
+  "offline": true,
+  "environment": {
+    "r": "R version 4.6.1 (2026-06-24)",
+    "bioconductor": "3.23",
+    "SBGNview": "1.26.0",
+    "SBGNview_data": "1.26.0",
+    "rsvg": "2.7.0",
+    "system_librsvg": "rsvg-convert version 2.62.3",
+    "library": "/Users/summermalik/Desktop/PATHVIEW-MARKDOWN/pygage-pathview-validation/.r-library"
+  },
+  "official_bundled_data": {
+    "pathways_info_rows": 5200,
+    "pathwayCommons_SYMBOL_rows": 406940,
+    "human_pathwayCommons_SYMBOL_rows": 49952,
+    "official_P00001_fixture": "/Users/summermalik/Desktop/PATHVIEW-MARKDOWN/pygage-pathview-validation/.r-library/SBGNview/extdata/P00001.new.layout.sbgn",
+    "official_P00001_sha256": "b96b3f8536725639f5f9901d22b3dc3a8683295aad7c5cfa6235d08b622fa142",
+    "frozen_P00001_sha256": "b96b3f8536725639f5f9901d22b3dc3a8683295aad7c5cfa6235d08b622fa142",
+    "frozen_fixture_is_byte_identical": true
+  },
+  "shared_input": {
+    "file": "08-11-2026/data/P00001-shared-control-treatment.csv",
+    "sha256": "e0d67e4023abf6a4c918e53ff08a112a718f32450ffb3c6f4b5181f674e8a6ee",
+    "ids": ["COMT", "DDC", "TH", "DBH", "PNMT", "SLC18A2", "SLC6A3"],
+    "conditions": ["Control", "Treatment"]
+  },
+  "namespace_parity": {
+    "passed": true,
+    "r_glyph_objects_each": 78,
+    "r_render_arc_segments_each": 83,
+    "identical_glyph_signatures": true,
+    "identical_arc_signatures": true
+  },
+  "mapping": {
+    "mapped_macromolecule_glyphs": 12,
+    "eligible_macromolecule_glyphs": 19,
+    "input_ids_used": 7,
+    "input_ids_total": 7,
+    "used_symbols": ["COMT", "DBH", "DDC", "PNMT", "SLC18A2", "SLC6A3", "TH"],
+    "value_columns": ["Control", "Treatment"],
+    "every_mapped_glyph_kept_both_named_values": true,
+    "mapped_rows": [
+      {
+        "entry_id": "Protein_608bc3adf283a9858c923f468826fcb4",
+        "glyph_label": "COMT",
+        "glyph_class": "macromolecule",
+        "input_symbols": "COMT",
+        "Control": -1.5,
+        "Treatment": 1.5,
+        "_row": "Protein_608bc3adf283a9858c923f468826fcb4"
+      },
+      {
+        "entry_id": "Protein_a71e0202399297eb56653c5a0d76d30d",
+        "glyph_label": "VAT1",
+        "glyph_class": "macromolecule",
+        "input_symbols": "SLC18A2",
+        "Control": 1,
+        "Treatment": -1,
+        "_row": "Protein_a71e0202399297eb56653c5a0d76d30d"
+      },
+      {
+        "entry_id": "Protein_867b0dee991e64eb90508c5abeaa8605_Complex_4e65cdd554d14679587b7822e6426705",
+        "glyph_label": "VAT1",
+        "glyph_class": "macromolecule",
+        "input_symbols": "SLC18A2",
+        "Control": 1,
+        "Treatment": -1,
+        "_row": "Protein_867b0dee991e64eb90508c5abeaa8605_Complex_4e65cdd554d14679587b7822e6426705"
+      },
+      {
+        "entry_id": "Protein_93b7b794c67db60739980abed5887b3d_Complex_c0c21acd06cad8915dc6d562a17cb92b",
+        "glyph_label": "SLC18A2",
+        "glyph_class": "macromolecule",
+        "input_symbols": "SLC18A2",
+        "Control": 1,
+        "Treatment": -1,
+        "_row": "Protein_93b7b794c67db60739980abed5887b3d_Complex_c0c21acd06cad8915dc6d562a17cb92b"
+      },
+      {
+        "entry_id": "Protein_51ab5a199dfaade855ed64a9f22c969d_Complex_44d4dcd34a2e5efec04d9de60ae65344",
+        "glyph_label": "VAT1",
+        "glyph_class": "macromolecule",
+        "input_symbols": "SLC18A2",
+        "Control": 1,
+        "Treatment": -1,
+        "_row": "Protein_51ab5a199dfaade855ed64a9f22c969d_Complex_44d4dcd34a2e5efec04d9de60ae65344"
+      },
+      {
+        "entry_id": "Protein_29affa8c14b24efa919422a19945a414",
+        "glyph_label": "DDC",
+        "glyph_class": "macromolecule",
+        "input_symbols": "DDC",
+        "Control": -1,
+        "Treatment": 1,
+        "_row": "Protein_29affa8c14b24efa919422a19945a414"
+      },
+      {
+        "entry_id": "Protein_b8e33f6ebba469f6187e8e8b6641868e",
+        "glyph_label": "SLC18A2",
+        "glyph_class": "macromolecule",
+        "input_symbols": "SLC18A2",
+        "Control": 1,
+        "Treatment": -1,
+        "_row": "Protein_b8e33f6ebba469f6187e8e8b6641868e"
+      },
+      {
+        "entry_id": "Protein_df07a65aa8c4d5b103e43486b6fd967d",
+        "glyph_label": "TH",
+        "glyph_class": "macromolecule",
+        "input_symbols": "TH",
+        "Control": -0.5,
+        "Treatment": 0.5,
+        "_row": "Protein_df07a65aa8c4d5b103e43486b6fd967d"
+      },
+      {
+        "entry_id": "Protein_76137db58b37ef9d06406f5542675a9b",
+        "glyph_label": "DBH",
+        "glyph_class": "macromolecule",
+        "input_symbols": "DBH",
+        "Control": 0,
+        "Treatment": 0,
+        "_row": "Protein_76137db58b37ef9d06406f5542675a9b"
+      },
+      {
+        "entry_id": "Protein_b734927c10297d1db3f9bc290d7a06b5",
+        "glyph_label": "SLC6A3",
+        "glyph_class": "macromolecule",
+        "input_symbols": "SLC6A3",
+        "Control": 1.5,
+        "Treatment": -1.5,
+        "_row": "Protein_b734927c10297d1db3f9bc290d7a06b5"
+      },
+      {
+        "entry_id": "Protein_78ba18c5ad71491fadbf87a2024002c5",
+        "glyph_label": "PNMT",
+        "glyph_class": "macromolecule",
+        "input_symbols": "PNMT",
+        "Control": 0.5,
+        "Treatment": -0.5,
+        "_row": "Protein_78ba18c5ad71491fadbf87a2024002c5"
+      },
+      {
+        "entry_id": "Protein_822718f4659f95fbc0a536c3473d449f_Complex_11851c2240a559a2fcd9de61d553684c",
+        "glyph_label": "SLC6A3",
+        "glyph_class": "macromolecule",
+        "input_symbols": "SLC6A3",
+        "Control": 1.5,
+        "Treatment": -1.5,
+        "_row": "Protein_822718f4659f95fbc0a536c3473d449f_Complex_11851c2240a559a2fcd9de61d553684c"
+      }
+    ]
+  },
+  "structural_fixture": {
+    "xml_glyph_elements": 6,
+    "xml_logical_arcs": 3,
+    "r_glyph_like_objects": 8,
+    "r_render_arc_segments": 4,
+    "port_objects": 2,
+    "state_variable_objects": 1,
+    "clone_markers": 1
+  },
+  "outputs": [
+    {
+      "implementation": "R SBGNview",
+      "scenario": "bare namespace control",
+      "format": "SVG",
+      "output_file": "08-11-2026/results/sbgnview/r-namespace-bare_P00001.new.layout.sbgn.svg",
+      "bytes": 123377,
+      "sha256": "f55ab486f52a85a21ffd67e09b1c71bece1c4442470e800ec245ccb1868f3cc9",
+      "_row": "P00001.new.layout.sbgn"
+    },
+    {
+      "implementation": "R SBGNview",
+      "scenario": "default namespace control",
+      "format": "SVG",
+      "output_file": "08-11-2026/results/sbgnview/r-namespace-namespaced_P00001.namespaced.sbgn.svg",
+      "bytes": 123377,
+      "sha256": "f55ab486f52a85a21ffd67e09b1c71bece1c4442470e800ec245ccb1868f3cc9",
+      "_row": "P00001.namespaced.sbgn"
+    },
+    {
+      "implementation": "R SBGNview",
+      "scenario": "ports/state/clone fixture",
+      "format": "SVG",
+      "output_file": "08-11-2026/results/sbgnview/r-structural_ports_pd.sbgn.svg",
+      "bytes": 4728,
+      "sha256": "56fbb96686c0ef549c7cfd4e8ed4fdb12d3cc9fcf914ac75b4752678439dc35f",
+      "_row": "ports_pd.sbgn"
+    },
+    {
+      "implementation": "R SBGNview",
+      "scenario": "shared two-state mapping",
+      "format": "SVG",
+      "output_file": "08-11-2026/results/sbgnview/r-two-state_P00001.new.layout.sbgn.svg",
+      "bytes": 144071,
+      "sha256": "926ef584181ba999f2a1b1075f4d4f57de01709346cb5f8abb3dfc9078ebafc6",
+      "_row": "P00001.new.layout.sbgn1"
+    },
+    {
+      "implementation": "R SBGNview",
+      "scenario": "shared two-state mapping",
+      "format": "PNG",
+      "output_file": "08-11-2026/results/sbgnview/r-two-state_P00001.new.layout.sbgn.png",
+      "bytes": 339399,
+      "sha256": "ca9cd8298a80ad8b8e94170f6cd24a37b11c32f12ab611e858080a5d0a5c402a",
+      "_row": "P00001.new.layout.sbgn2"
+    }
+  ],
+  "assertions": {
+    "P00001_bare_and_namespaced_identical": true,
+    "P00001_matches_official_bundled_fixture_byte_for_byte": true,
+    "ports_state_and_clone_preserved": true,
+    "shared_mapping_12_of_19_macromolecule_glyphs": true,
+    "shared_mapping_7_of_7_input_ids": true,
+    "two_condition_values_preserved": true,
+    "all_outputs_nonempty": true
+  }
+}

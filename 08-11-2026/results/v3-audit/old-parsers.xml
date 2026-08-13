@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="10" skipped="5" tests="16" time="0.103" timestamp="2026-08-11T15:07:21.306707-04:00" hostname="Summers-MacBook-Air.local"><testcase classname="tests.test_parsers" name="test_kgml_nodes_edges_reactions_and_groups" time="0.004"><failure message="AssertionError: assert 'path:hsa00010' == '00010'&#10;  &#10;  - 00010&#10;  + path:hsa00010">tmp_path = PosixPath('/private/var/folders/tv/_11343vn6153sfykk5r11dq40000gn/T/pytest-of-summermalik/pytest-51/test_kgml_nodes_edges_reaction0')
+
+    @pytest.mark.parser
+    def test_kgml_nodes_edges_reactions_and_groups(tmp_path: Path) -&gt; None:
+        source = tmp_path / "pathway.xml"
+        source.write_text(VALID_KGML, encoding="utf-8")
+        pathway = parse_kgml(source)
+        frame = node_info(pathway)
+&gt;       assert pathway.pathway_id == "00010"
+E       AssertionError: assert 'path:hsa00010' == '00010'
+E         
+E         - 00010
+E         + path:hsa00010
+
+../08-10-2026/pathveiw bug checks/tests/test_parsers.py:66: AssertionError</failure></testcase><testcase classname="tests.test_parsers" name="test_kgml_entry_without_graphics_retains_null_geometry" time="0.001"><failure message="assert 46.0 is None">tmp_path = PosixPath('/private/var/folders/tv/_11343vn6153sfykk5r11dq40000gn/T/pytest-of-summermalik/pytest-51/test_kgml_entry_without_graphi0')
+
+    @pytest.mark.parser
+    def test_kgml_entry_without_graphics_retains_null_geometry(tmp_path: Path) -&gt; None:
+        source = tmp_path / "missing-graphics.xml"
+        source.write_text(
+            '&lt;pathway number="1"&gt;&lt;entry id="1" name="hsa:1" type="gene"/&gt;&lt;/pathway&gt;',
+            encoding="utf-8",
+        )
+        frame = node_info(parse_kgml(source))
+        assert frame.height == 1
+        assert frame["x"][0] is None
+&gt;       assert frame["width"][0] is None
+E       assert 46.0 is None
+
+../08-10-2026/pathveiw bug checks/tests/test_parsers.py:91: AssertionError</failure></testcase><testcase classname="tests.test_parsers" name="test_malformed_xml_raises_xml_parse_error" time="0.001"><failure message="pathview.errors.ParseError: broken.xml is not well-formed XML: mismatched tag: line 1, column 18. KEGG returns a plain-text error page for unknown pathway ids; file begins: '&lt;pathway&gt;&lt;entry&gt;&lt;/pathway&gt;'">filepath = PosixPath('/private/var/folders/tv/_11343vn6153sfykk5r11dq40000gn/T/pytest-of-summermalik/pytest-51/test_malformed_xml_raises_xml_0/broken.xml')
+
+    def parse_kgml(filepath: str | Path) -&gt; KGMLPathway:
+        """
+        Parse a KGML file into a :class:`KGMLPathway`.
+    
+        Raises
+        ------
+        PathwayNotFoundError : the file does not exist
+        ParseError           : the file is not well-formed KGML
+        """
+        from .errors import PathwayNotFoundError
+    
+        path = Path(filepath)
+        if not path.exists():
+            raise PathwayNotFoundError(f"KGML file not found: {path}")
+    
+        try:
+&gt;           root = ET.parse(path).getroot()
+                   ^^^^^^^^^^^^^^
+
+sources/pathview-plus/lib/kgml_parser.py:266: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/xml/etree/ElementTree.py:1214: in parse
+    tree.parse(source, parser)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = &lt;xml.etree.ElementTree.ElementTree object at 0x10847e210&gt;
+source = &lt;_io.BufferedReader name='/private/var/folders/tv/_11343vn6153sfykk5r11dq40000gn/T/pytest-of-summermalik/pytest-51/test_malformed_xml_raises_xml_0/broken.xml'&gt;
+parser = &lt;xml.etree.ElementTree.XMLParser object at 0x10851f240&gt;
+
+    def parse(self, source, parser=None):
+        """Load external XML document into element tree.
+    
+        *source* is a file name or file object, *parser* is an optional parser
+        instance that defaults to XMLParser.
+    
+        ParseError is raised if the parser fails to parse the document.
+    
+        Returns the root element of the given source document.
+    
+        """
+        close_source = False
+        if not hasattr(source, "read"):
+            source = open(source, "rb")
+            close_source = True
+        try:
+            if parser is None:
+                # If no parser was specified, create a default XMLParser
+                parser = XMLParser()
+                if hasattr(parser, '_parse_whole'):
+                    # The default XMLParser, when it comes from an accelerator,
+                    # can define an internal _parse_whole API for efficiency.
+                    # It can be used to parse the whole source without feeding
+                    # it with chunks.
+&gt;                   self._root = parser._parse_whole(source)
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E                   xml.etree.ElementTree.ParseError: mismatched tag: line 1, column 18
+
+/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/xml/etree/ElementTree.py:577: ParseError
+
+The above exception was the direct cause of the following exception:
+
+tmp_path = PosixPath('/private/var/folders/tv/_11343vn6153sfykk5r11dq40000gn/T/pytest-of-summermalik/pytest-51/test_malformed_xml_raises_xml_0')
+
+    @pytest.mark.parser
+    def test_malformed_xml_raises_xml_parse_error(tmp_path: Path) -&gt; None:
+        source = tmp_path / "broken.xml"
+        source.write_text("&lt;pathway&gt;&lt;entry&gt;&lt;/pathway&gt;", encoding="utf-8")
+        with pytest.raises(ET.ParseError):
+&gt;           parse_kgml(source)
+
+../08-10-2026/pathveiw bug checks/tests/test_parsers.py:100: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+filepath = PosixPath('/private/var/folders/tv/_11343vn6153sfykk5r11dq40000gn/T/pytest-of-summermalik/pytest-51/test_malformed_xml_raises_xml_0/broken.xml')
+
+    def parse_kgml(filepath: str | Path) -&gt; KGMLPathway:
+        """
+        Parse a KGML file into a :class:`KGMLPathway`.
+    
+        Raises
+        ------
+        PathwayNotFoundError : the file does not exist
+        ParseError           : the file is not well-formed KGML
+        """
+        from .errors import PathwayNotFoundError
+    
+        path = Path(filepath)
+        if not path.exists():
+            raise PathwayNotFoundError(f"KGML file not found: {path}")
+    
+        try:
+            root = ET.parse(path).getroot()
+        except ET.ParseError as exc:
+            head = path.read_text(errors="replace")[:200].strip()
+&gt;           raise ParseError(
+                f"{path.name} is not well-formed XML: {exc}. "
+                f"KEGG returns a plain-text error page for unknown pathway ids; "
+                f"file begins: {head!r}"
+            ) from exc
+E           pathview.errors.ParseError: broken.xml is not well-formed XML: mismatched tag: line 1, column 18. KEGG returns a plain-text error page for unknown pathway ids; file begins: '&lt;pathway&gt;&lt;entry&gt;&lt;/pathway&gt;'
+
+sources/pathview-plus/lib/kgml_parser.py:269: ParseError</failure></testcase><testcase classname="tests.test_parsers" name="test_missing_kgml_file_has_normal_file_error" time="0.001" /><testcase classname="tests.test_parsers" name="test_namespace_qualified_kgml_is_parsed" time="0.001"><failure message="[XPASS(strict)] PV-BUG-019: namespace-qualified KGML child tags are not dispatched">[XPASS(strict)] PV-BUG-019: namespace-qualified KGML child tags are not dispatched</failure></testcase><testcase classname="tests.test_parsers" name="test_duplicate_kgml_entry_ids_are_rejected" time="0.001"><skipped type="pytest.xfail" message="PV-BUG-020: duplicate KGML entry IDs silently overwrite earlier entries" /></testcase><testcase classname="tests.test_parsers" name="test_kgml_line_graphics_coordinates_are_preserved" time="0.001"><skipped type="pytest.xfail" message="PV-BUG-021: line graphics coords are ignored and replaced with zero/default geometry" /></testcase><testcase classname="tests.test_parsers" name="test_empty_kgml_node_table_has_standard_schema" time="0.002"><skipped type="pytest.xfail" message="PV-BUG-022: node_info(empty pathway) has no stable columns/schema" /></testcase><testcase classname="tests.test_parsers" name="test_unnamespaced_sbgn_nodes_arcs_compartment_and_dataframe" time="0.002"><failure message="AssertionError: assert 'toy' == 'process description'&#10;  &#10;  - process description&#10;  + toy">tmp_path = PosixPath('/private/var/folders/tv/_11343vn6153sfykk5r11dq40000gn/T/pytest-of-summermalik/pytest-51/test_unnamespaced_sbgn_nodes_a0')
+
+    @pytest.mark.parser
+    def test_unnamespaced_sbgn_nodes_arcs_compartment_and_dataframe(tmp_path: Path) -&gt; None:
+        source = tmp_path / "toy.sbgn"
+        source.write_text(VALID_SBGN_NO_NAMESPACE, encoding="utf-8")
+        pathway = parse_sbgn(source)
+        frame = sbgn_to_df(pathway)
+        assert pathway.pathway_id == "toy"
+&gt;       assert pathway.pathway_name == "process description"
+E       AssertionError: assert 'toy' == 'process description'
+E         
+E         - process description
+E         + toy
+
+../08-10-2026/pathveiw bug checks/tests/test_parsers.py:191: AssertionError</failure></testcase><testcase classname="tests.test_parsers" name="test_standard_namespaced_sbgn_is_parsed" time="0.001"><failure message="[XPASS(strict)] PV-BUG-023: parser locates a namespaced map but searches its glyphs/arcs without namespace">[XPASS(strict)] PV-BUG-023: parser locates a namespaced map but searches its glyphs/arcs without namespace</failure></testcase><testcase classname="tests.test_parsers" name="test_sbgn_namespace_version_is_discovered_from_document" time="0.001"><failure message="[XPASS(strict)] PV-BUG-024: SBGN namespace is hard-coded to 0.2 and does not accept other valid versions">[XPASS(strict)] PV-BUG-024: SBGN namespace is hard-coded to 0.2 and does not accept other valid versions</failure></testcase><testcase classname="tests.test_parsers" name="test_state_variable_is_metadata_not_a_top_level_node" time="0.001"><failure message="[XPASS(strict)] PV-BUG-025: nested state-variable glyph is also promoted to a top-level biological node">[XPASS(strict)] PV-BUG-025: nested state-variable glyph is also promoted to a top-level biological node</failure></testcase><testcase classname="tests.test_parsers" name="test_standard_sbgn_clone_marker_is_detected" time="0.001"><failure message="[XPASS(strict)] PV-BUG-026: standard &lt;clone/&gt; element is not detected; code checks an attribute instead">[XPASS(strict)] PV-BUG-026: standard &lt;clone/&gt; element is not detected; code checks an attribute instead</failure></testcase><testcase classname="tests.test_parsers" name="test_sbgn_unit_of_information_is_parsed" time="0.001"><skipped type="pytest.xfail" message="PV-FEATURE-002: SBGNGlyph exposes unit_of_information but parser never populates it" /></testcase><testcase classname="tests.test_parsers" name="test_sbgn_arc_control_points_are_preserved" time="0.001"><skipped type="pytest.xfail" message="PV-BUG-027: Bezier control &lt;point&gt; children inside SBGN &lt;next&gt; are discarded" /></testcase><testcase classname="tests.test_parsers" name="test_empty_sbgn_dataframe_has_unified_schema" time="0.001"><failure message="[XPASS(strict)] PV-BUG-028: empty SBGN conversion returns a schema-less DataFrame">[XPASS(strict)] PV-BUG-028: empty SBGN conversion returns a schema-less DataFrame</failure></testcase></testsuite></testsuites>

@@ -1,0 +1,75 @@
+category,feature,pathview_plus,pathview_R,SBGNview_R,api,note
+Species,KEGG organism code lookup,full,full,full,get_species_code,"10,718 organisms bundled"
+Species,Lookup works offline,full,partial,none,get_species_code,R pathview bundles korg but falls back to a network fetch for misses
+Species,Common/scientific name and taxid input,full,full,partial,get_species_code,
+Species,Fuzzy match with suggestions,full,none,none,search_organisms,
+Species,Refresh organism table from KEGG,full,full,n/a,refresh_organism_table,
+Input,KEGG KGML parsing,full,full,partial,parse_kgml,
+Input,SBGN-ML parsing,full,none,full,parse_sbgn,
+Input,SBGN namespaced documents,full,n/a,full,parse_sbgn,Reactome exports declare a default namespace
+Input,SBGN arc port resolution,full,n/a,full,arc_resolution_report,
+Input,SBGN state variables / clone markers,full,n/a,full,SBGNGlyph,
+Input,KGML reaction -> edge synthesis,full,full,n/a,pathway_edges,
+Input,Group/complex node splitting,full,full,n/a,split_groups,R's split.group; expansion is recorded so a figure's provenance can be audited
+Input,Multi-identifier node expansion,full,full,n/a,expand_nodes,R's expand.node; sub-nodes tile the original box exactly and edges are remapped onto them
+ID mapping,Entrez / KEGG gene ids,full,full,full,node_map,
+ID mapping,"Symbol, Ensembl, UniProt, RefSeq",full,full,full,id2eg,via MyGene.info instead of Bioconductor OrgDb
+ID mapping,Symbol/Ensembl/UniProt conversion without R,full,n/a,n/a,id2eg,"MyGene.info covers what OrgDb provides, with no R dependency"
+ID mapping,Bioconductor OrgDb packages themselves,n/a,full,full,,An R library cannot be imported from Python; the conversions it provides are covered by id2eg/eg2id and the bundled crosswalks
+ID mapping,SBGN glyph-id crosswalks,full,n/a,full,map_ids_to_sbgn,"770k pairs bundled: ChEBI, KEGG, Entrez, KO, symbol, compound name, Pathway Commons"
+ID mapping,Multi-hop identifier routing,full,none,none,id_route,Breadth-first search over the crosswalk graph
+ID mapping,"Compound cross-references (CAS, ChEBI, HMDB, ...)",full,full,full,cpd_id_map,"14k pairs bundled, offline"
+ID mapping,Compound name -> KEGG accession,full,full,full,cpd_name_to_kegg,includes conjugate-base derivation
+ID mapping,Batched / cached lookups,full,partial,partial,cpd_id_map,
+ID mapping,Multi-probe aggregation,full,full,full,mol_sum,8 methods incl. max_abs and seeded random
+Colour,Diverging scale with midpoint,full,full,full,ColorScale,
+Colour,R colorpanel2-identical binning,full,full,n/a,colorpanel2,
+Colour,Discrete levels,full,full,partial,ColorScale,
+Colour,Independent gene and compound scales,full,full,full,gene_scale,
+Colour,Two colour keys on one figure,full,partial,partial,draw_dual_key,R pathview draws a single key; SBGNview draws separate legends per file
+Colour,Named colour-blind-safe palettes,full,none,none,list_palettes,
+Colour,Value transform before binning,full,full,full,ColorScale,
+Colour,Multi-condition node slicing,full,full,full,node_color,one column per condition
+Render,Overlay on KEGG PNG,full,full,n/a,keggview_native,
+Render,Vector map drawn from coordinates,full,partial,full,keggview_vector,R pathview's graph mode uses Rgraphviz; this draws KEGG's own layout
+Render,Standalone SVG output,full,none,full,keggview_svg,
+Render,PDF output,full,full,full,pathview,
+Render,PNG output,full,full,full,pathview,
+Render,Graph/network view with edges,full,full,n/a,keggview_graph,
+Render,KEGG edge subtype styling,full,full,n/a,EDGE_STYLE,17 subtypes from KEGG's own table
+Render,Spline / Bezier edge routing,full,none,full,route_edge_spline,
+Render,Compartment shading,full,none,full,draw_compartments,Nested compartments shaded largest-first with decreasing opacity and labelled
+Render,Renders with no network access,full,none,none,keggview_vector,
+Render,Themes,full,none,partial,THEMES,
+Render,Element legend,full,full,partial,kegg_legend,
+Post,Composable modification (result + layer),full,none,full,PathwayResult,
+Post,Highlight nodes,full,none,full,highlight_nodes,
+Post,Highlight edges/arcs,full,none,full,highlight_edges,
+Post,Highlight a path,full,none,full,highlight_path,
+Post,Change node labels,full,none,full,change_labels,
+Post,Free-text annotation,full,none,partial,annotate,
+Sources,KEGG download,full,full,full,download_kegg,
+Sources,Reactome SBGN download,full,none,full,download_reactome,
+Sources,Pre-generated SBGN collection,full,n/a,full,list_sbgn_pathways,"5,206 pathways indexed in the wheel; files fetched on demand and cached, so nothing unused is downloaded"
+Sources,Collection browsable offline,full,n/a,partial,sbgn_collection_info,The index ships in the wheel; SBGNview.data must be installed in full (69 MB) to list its contents
+Sources,PANTHER download,full,n/a,full,download_panther,152 pathways via the pre-generated collection
+Sources,MetaCyc download,full,n/a,full,download_metacyc,"2,518 pathways; BioCyc's own API needs a subscription"
+Sources,SMPDB download,full,n/a,full,download_smpdb,725 pathways; SMPDB publishes only bulk archives
+Sources,MetaCrop download,full,n/a,full,download_metacrop,62 crop-plant metabolic pathways
+Sources,Local SBGN files from any source,full,n/a,full,parse_sbgn,A hand-exported file parses identically to a downloaded one; there is no second code path
+Sources,Pathway search by name,full,none,full,find_reactome_pathways,
+SBGN,Top-level SBGN render entry point,full,n/a,full,sbgnview,sbgnview() is to SBGN what pathview() is to KEGG
+SBGN,Omics overlay on SBGN glyphs,full,none,full,sbgn_node_map,Tries every identifier system the glyphs might use and keeps whichever lands on the map
+SBGN,SBGN batch rendering,full,n/a,full,sbgnview_batch,
+SBGN,Arc-class styling,full,n/a,full,EDGE_STYLE,
+SBGN,Process / operator glyph rendering,full,n/a,full,sbgn_to_df,
+SBGN,Compartment-aware layout extent,full,n/a,full,sbgn_compartments,The canvas is widened so shading is never clipped
+Engineering,Typed errors,full,none,none,PathviewError,
+Engineering,Mapping diagnostics returned,full,partial,partial,PathwayResult,
+Engineering,Disk cache with TTL,full,partial,partial,cache_dir,R caches KGML files only
+Engineering,Retry with backoff,full,none,none,clear_cache,
+Engineering,Enforced offline mode,full,none,none,set_offline,
+Engineering,Command-line interface,full,none,none,cli,
+Engineering,Graph metrics,full,none,none,pathway_metrics,
+Engineering,Multi-pathway batch in one call,full,full,full,PathwayResultSet,"A failed pathway is recorded rather than aborting the batch, and modifiers broadcast across the set"
+Engineering,Reads R .RData without R,full,n/a,n/a,read_rdata,"XDR reader covering the vectors and lists reference data is published as; factors, closures and S4 raise rather than guess"

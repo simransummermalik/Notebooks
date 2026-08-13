@@ -1,0 +1,17 @@
+{
+  "source_notebook": "notebooks/01-old-vs-new-pathview-bug-comparison.ipynb",
+  "executed_notebook": "notebooks/executed/01-old-vs-new-pathview-bug-comparison.executed.ipynb",
+  "code_cells": 12,
+  "executed_code_cells": 12,
+  "unexecuted_code_cells": 0,
+  "error_outputs": 0,
+  "status": "pass",
+  "python": "3.14.3",
+  "old_commit": "07aee813375347bcc933ad21b4aed561dd7cd3bf",
+  "new_commit": "d4d45decec56e1ebec15cf04ae62ff944851780e",
+  "finding_counts": {
+    "fixed": 60,
+    "still_reproducible": 19,
+    "changed": 7
+  }
+}

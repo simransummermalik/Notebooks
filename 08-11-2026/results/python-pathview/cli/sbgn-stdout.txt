@@ -1,0 +1,1 @@
+P00001.new.layout | genes: 9/28 nodes carry data; 7/7 input IDs used | -> P00001.new.layout.sbgnview.png

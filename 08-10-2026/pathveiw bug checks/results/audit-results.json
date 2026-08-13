@@ -1,0 +1,1708 @@
+{
+  "summary": {
+    "total_test_cases": 239,
+    "status_counts": {
+      "FEATURE_GAP": 7,
+      "KNOWN_BUG": 89,
+      "PASS": 143
+    },
+    "unique_reproduced_findings": 86,
+    "unique_confirmed_bug_ids": 79,
+    "unique_feature_gap_ids": 7,
+    "unexpected_failures": 0,
+    "total_seconds": 11.846
+  },
+  "environment": {
+    "audit_date": "2026-08-10T23:07:37.799303-04:00",
+    "platform": "macOS-26.5.2-arm64-arm-64bit-Mach-O",
+    "python": "3.14.3 (main, Feb  3 2026, 15:32:20) [Clang 17.0.0 (clang-1700.6.3.2)]",
+    "executable": "/Users/summermalik/Desktop/PATHVIEW-MARKDOWN/pygage-pathview-validation/.venv/bin/python",
+    "pathview_distribution_version": "2.0.2",
+    "pathview_runtime_version": "2.0.0",
+    "pathview_package_file": "/private/tmp/pathview-plus-main-20260810/lib/__init__.py",
+    "pathview_source_root": "/private/tmp/pathview-plus-main-20260810",
+    "pathview_commit": "07aee813375347bcc933ad21b4aed561dd7cd3bf",
+    "pathview_commit_summary": "07aee81 2026-05-25 Update README.md",
+    "pytest": "9.1.1",
+    "polars": "1.43.2",
+    "numpy": "2.5.2",
+    "matplotlib": "3.11.1",
+    "pillow": "12.3.0",
+    "network_mode": "offline; integrations use controlled mock responses"
+  },
+  "tests": [
+    {
+      "test": "tests.test_cli_and_integrations::test_cli_help_is_available",
+      "status": "PASS",
+      "finding_id": null,
+      "message": "",
+      "seconds": 8.673
+    },
+    {
+      "test": "tests.test_cli_and_integrations::test_cli_rejects_invalid_output_choice",
+      "status": "PASS",
+      "finding_id": null,
+      "message": "",
+      "seconds": 0.002
+    },
+    {
+      "test": "tests.test_cli_and_integrations::test_cli_requires_pathway_unless_legend",
+      "status": "PASS",
+      "finding_id": null,
+      "message": "",
+      "seconds": 0.001
+    },
+    {
+      "test": "tests.test_cli_and_integrations::test_cli_gene_and_compound_tables_reach_core",
+      "status": "PASS",
+      "finding_id": null,
+      "message": "",
+      "seconds": 0.033
+    },
+    {
+      "test": "tests.test_cli_and_integrations::test_cli_compound_only_workflow",
+      "status": "KNOWN_BUG",
+      "finding_id": "PV-BUG-052",
+      "message": "PV-BUG-052: CLI unconditionally calls gene_data.cast even for compound-only input",
+      "seconds": 0.001
+    },
+    {
+      "test": "tests.test_cli_and_integrations::test_cli_simulation_can_be_combined_with_compound_data",
+      "status": "KNOWN_BUG",
+      "finding_id": "PV-BUG-077",
+      "message": "PV-BUG-077: --simulate branch silently ignores a supplied --cpd-data file",
+      "seconds": 0.002
+    },
+    {
+      "test": "tests.test_cli_and_integrations::test_cli_reports_non_null_mapped_count",
+      "status": "KNOWN_BUG",
+      "finding_id": "PV-BUG-053",
+      "message": "PV-BUG-053: CLI reports pathway row count as 'nodes mapped', including null rows",
+      "seconds": 0.001
+    },
+    {
+      "test": "tests.test_cli_and_integrations::test_upstream_feature_script_runs_as_documented",
+      "status": "KNOWN_BUG",
+      "finding_id": "PV-BUG-054",
+      "message": "PV-BUG-054: upstream feature script fails when run directly because of relative imports",
+      "seconds": 0.088
+    },
+    {
+      "test": "tests.test_cli_and_integrations::test_ko_species_resolution_is_offline",
+      "status": "PASS",
+      "finding_id": null,
+      "message": "",
+      "seconds": 0.001
+    },
+    {
+      "test": "tests.test_cli_and_integrations::test_species_code_exact_match_is_case_insensitive",
+      "status": "PASS",
+      "finding_id": null,
+      "message": "",
+      "seconds": 0.0
+    },
+    {
+      "test": "tests.test_cli_and_integrations::test_species_resolution_accepts_common_name",
+      "status": "KNOWN_BUG",
+      "finding_id": "PV-BUG-055",
+      "message": "PV-BUG-055: promised common-name lookup requires exact equality with full KEGG description",
+      "seconds": 0.0
+    },
+    {
+      "test": "tests.test_cli_and_integrations::test_kegg_download_builds_official_urls_and_writes_files",
+      "status": "PASS",
+      "finding_id": null,
+      "message": "",
+      "seconds": 0.001
+    },
+    {
+      "test": "tests.test_cli_and_integrations::test_kegg_download_rejects_invalid_file_type",
+      "status": "KNOWN_BUG",
+      "finding_id": "PV-BUG-056",
+      "message": "PV-BUG-056: invalid KEGG file types fail with internal KeyError instead of validation error",
+      "seconds": 0.0
+    },
+    {
+      "test": "tests.test_cli_and_integrations::test_kegg_download_rejects_html_error_page_with_status_200[xml]",
+      "status": "KNOWN_BUG",
+      "finding_id": "PV-BUG-057",
+      "message": "PV-BUG-057: KEGG downloader trusts any HTTP 200 body without format/content validation",
+      "seconds": 0.001
+    },
+    {
+      "test": "tests.test_cli_and_integrations::test_kegg_download_rejects_html_error_page_with_status_200[png]",
+      "status": "KNOWN_BUG",
+      "finding_id": "PV-BUG-057",
+      "message": "PV-BUG-057: KEGG downloader trusts any HTTP 200 body without format/content validation",
+      "seconds": 0.001
+    },
+    {
+      "test": "tests.test_cli_and_integrations::test_mygene_uses_documented_batch_query_endpoint",
+      "status": "KNOWN_BUG",
+      "finding_id": "PV-BUG-058",
+      "message": "PV-BUG-058: MyGene batch endpoint is /v3/query, not coded /v3/querymany",
+      "seconds": 0.001
+    },
+    {
+      "test": "tests.test_cli_and_integrations::test_mygene_notfound_result_becomes_null",
+      "status": "PASS",
+      "finding_id": null,
+      "message": "",
+      "seconds": 0.001
+    },
+    {
+      "test": "tests.test_cli_and_integrations::test_mygene_nested_uniprot_result_extracts_accession",
+      "status": "KNOWN_BUG",
+      "finding_id": "PV-BUG-059",
+      "message": "PV-BUG-059: nested MyGene fields are stringified as Python dicts instead of extracting IDs",
+      "seconds": 0.001
+    },
+    {
+      "test": "tests.test_cli_and_integrations::test_mygene_returnall_response_shape_is_supported",
+      "status": "KNOWN_BUG",
+      "finding_id": "PV-BUG-078",
+      "message": "PV-BUG-078: MyGene returnall dictionary response is iterated as if it were a list of hits",
+      "seconds": 0.0
+    },
+    {
+      "test": "tests.test_cli_and_integrations::test_symbol_mapping_translates_kegg_species_to_mygene_species",
+      "status": "KNOWN_BUG",
+      "finding_id": "PV-BUG-060",
+      "message": "PV-BUG-060: core forwards KEGG code 'hsa' where MyGene documents common names/taxonomy IDs",
+      "seconds": 0.0
+    },
+    {
+      "test": "tests.test_cli_and_integrations::test_compound_mapping_uses_documented_kegg_database_name",
+      "status": "KNOWN_BUG",
+      "finding_id": "PV-BUG-061",
+      "message": "PV-BUG-061: KEGG chemical conversion uses alias 'cpd' where API specifies 'compound'",
+      "seconds": 0.0
+    },
+    {
+      "test": "tests.test_cli_and_integrations::test_compound_mapping_parses_controlled_kegg_response",
+      "status": "PASS",
+      "finding_id": null,
+      "message": "",
+      "seconds": 0.001
+    },
+    {
+      "test": "tests.test_cli_and_integrations::test_compound_mapping_normalizes_prefixed_input",
+      "status": "KNOWN_BUG",
+      "finding_id": "PV-BUG-062",
+      "message": "PV-BUG-062: already-prefixed compound IDs receive a duplicate source prefix",
+      "seconds": 0.0
+    },
+    {
+      "test": "tests.test_cli_and_integrations::test_database_detection[R-HSA-109582-reactome]",
+      "status": "PASS",
+      "finding_id": null,
+      "message": "",
+      "seconds": 0.0
+    },
+    {
+      "test": "tests.test_cli_and_integrations::test_database_detection[PWY-7210-metacyc]",
+      "status": "PASS",
+      "finding_id": null,
+      "message": "",
+      "seconds": 0.0
+    },
+    {
+      "test": "tests.test_cli_and_integrations::test_database_detection[P00001-panther]",
+      "status": "PASS",
+      "finding_id": null,
+      "message": "",
+      "seconds": 0.0
+    },
+    {
+      "test": "tests.test_cli_and_integrations::test_database_detection[SMP0000001-smpdb]",
+      "status": "PASS",
+      "finding_id": null,
+      "message": "",
+      "seconds": 0.0
+    },
+    {
+      "test": "tests.test_cli_and_integrations::test_database_detection[hsa04110-None]",
+      "status": "PASS",
+      "finding_id": null,
+      "message": "",
+      "seconds": 0.0
+    },
+    {
+      "test": "tests.test_cli_and_integrations::test_database_detection[unknown-None]",
+      "status": "PASS",
+      "finding_id": null,
+      "message": "",
+      "seconds": 0.0
+    },
+    {
+      "test": "tests.test_cli_and_integrations::test_database_detection_validates_smpdb_identifier",
+      "status": "KNOWN_BUG",
+      "finding_id": "PV-BUG-063",
+      "message": "PV-BUG-063: SMP prefix detection accepts malformed arbitrary IDs",
+      "seconds": 0.0
+    },
+    {
+      "test": "tests.test_cli_and_integrations::test_database_detection_is_case_insensitive",
+      "status": "KNOWN_BUG",
+      "finding_id": "PV-BUG-064",
+      "message": "PV-BUG-064: database detection is unexpectedly case-sensitive",
+      "seconds": 0.0
+    },
+    {
+      "test": "tests.test_cli_and_integrations::test_reactome_downloader_writes_controlled_sbgn",
+      "status": "PASS",
+      "finding_id": null,
+      "message": "",
+      "seconds": 0.001
+    },
+    {
+      "test": "tests.test_cli_and_integrations::test_reactome_downloader_uses_file_exporter_route",
+      "status": "KNOWN_BUG",
+      "finding_id": "PV-BUG-074",
+      "message": "PV-BUG-074: Reactome SBGN file exporter route is coded as /exporter/sbgn/{id}.sbgn instead of /exporter/event/{id}.sbgn",
+      "seconds": 0.0
+    },
+    {
+      "test": "tests.test_cli_and_integrations::test_sbgn_downloaders_reject_html[download_reactome-R-HSA-109582]",
+      "status": "KNOWN_BUG",
+      "finding_id": "PV-BUG-065",
+      "message": "PV-BUG-065: SBGN downloaders accept HTTP 200 HTML pages as successful pathway files",
+      "seconds": 0.001
+    },
+    {
+      "test": "tests.test_cli_and_integrations::test_sbgn_downloaders_reject_html[download_metacyc-PWY-7210]",
+      "status": "KNOWN_BUG",
+      "finding_id": "PV-BUG-065",
+      "message": "PV-BUG-065: SBGN downloaders accept HTTP 200 HTML pages as successful pathway files",
+      "seconds": 0.001
+    },
+    {
+      "test": "tests.test_cli_and_integrations::test_reactome_listing_uses_requested_species",
+      "status": "KNOWN_BUG",
+      "finding_id": "PV-BUG-066",
+      "message": "PV-BUG-066: list_reactome_pathways hardcodes Homo sapiens in URL",
+      "seconds": 0.0
+    },
+    {
+      "test": "tests.test_cli_and_integrations::test_panther_downloader_returns_path",
+      "status": "FEATURE_GAP",
+      "finding_id": "PV-FEATURE-005",
+      "message": "PV-FEATURE-005: PANTHER downloader is an explicit unimplemented stub",
+      "seconds": 0.0
+    },
+    {
+      "test": "tests.test_cli_and_integrations::test_smpdb_downloader_returns_path",
+      "status": "FEATURE_GAP",
+      "finding_id": "PV-FEATURE-006",
+      "message": "PV-FEATURE-006: SMPDB downloader is an explicit unimplemented stub",
+      "seconds": 0.0
+    },
+    {
+      "test": "tests.test_cli_and_integrations::test_core_routes_reactome_ids_to_reactome_pipeline",
+      "status": "FEATURE_GAP",
+      "finding_id": "PV-FEATURE-007",
+      "message": "PV-FEATURE-007: non-KEGG database detection/download/parsing is not wired through pathview()",
+      "seconds": 0.001
+    },
+    {
+      "test": "tests.test_highlighting_and_splines::test_hex_node_highlight_returns_copy_and_preserves_original",
+      "status": "PASS",
+      "finding_id": null,
+      "message": "",
+      "seconds": 0.01
+    },
+    {
+      "test": "tests.test_highlighting_and_splines::test_missing_highlight_identifier_is_a_no_op",
+      "status": "PASS",
+      "finding_id": null,
+      "message": "",
+      "seconds": 0.001
+    },
+    {
+      "test": "tests.test_highlighting_and_splines::test_hex_edge_and_path_highlights_modify_image",
+      "status": "PASS",
+      "finding_id": null,
+      "message": "",
+      "seconds": 0.001
+    },
+    {
+      "test": "tests.test_highlighting_and_splines::test_modified_result_saves_png_and_pdf",
+      "status": "PASS",
+      "finding_id": null,
+      "message": "",
+      "seconds": 0.047
+    },
+    {
+      "test": "tests.test_highlighting_and_splines::test_save_without_image_has_clear_error",
+      "status": "PASS",
+      "finding_id": null,
+      "message": "",
+      "seconds": 0.0
+    },
+    {
+      "test": "tests.test_highlighting_and_splines::test_default_named_node_highlight_color_works",
+      "status": "KNOWN_BUG",
+      "finding_id": "PV-BUG-032",
+      "message": "PV-BUG-032: documented/default named highlight colors are parsed as six-digit hex",
+      "seconds": 0.001
+    },
+    {
+      "test": "tests.test_highlighting_and_splines::test_highlight_border_uses_same_coordinates_as_native_gene_node",
+      "status": "KNOWN_BUG",
+      "finding_id": "PV-BUG-039",
+      "message": "PV-BUG-039: highlights flip y but native gene painting does not, so borders miss noncentral nodes",
+      "seconds": 0.001
+    },
+    {
+      "test": "tests.test_highlighting_and_splines::test_border_opacity_blends_with_existing_pixels",
+      "status": "KNOWN_BUG",
+      "finding_id": "PV-BUG-040",
+      "message": "PV-BUG-040: highlight opacity argument is ignored",
+      "seconds": 0.0
+    },
+    {
+      "test": "tests.test_highlighting_and_splines::test_change_labels_visibly_changes_rendered_result",
+      "status": "KNOWN_BUG",
+      "finding_id": "PV-BUG-041",
+      "message": "PV-BUG-041: change_labels records metadata but does not alter the saved image",
+      "seconds": 0.002
+    },
+    {
+      "test": "tests.test_highlighting_and_splines::test_edge_highlighting_supports_compounds",
+      "status": "KNOWN_BUG",
+      "finding_id": "PV-BUG-042",
+      "message": "PV-BUG-042: edge highlighting builds positions from genes only",
+      "seconds": 0.001
+    },
+    {
+      "test": "tests.test_highlighting_and_splines::test_line_thickness_one_is_exactly_one_pixel",
+      "status": "KNOWN_BUG",
+      "finding_id": "PV-BUG-043",
+      "message": "PV-BUG-043: requested one-pixel line is drawn two pixels thick",
+      "seconds": 0.001
+    },
+    {
+      "test": "tests.test_highlighting_and_splines::test_save_infers_format_from_file_extension",
+      "status": "KNOWN_BUG",
+      "finding_id": "PV-BUG-044",
+      "message": "PV-BUG-044: save() does not infer PDF from path and writes PNG bytes to a .pdf name",
+      "seconds": 0.001
+    },
+    {
+      "test": "tests.test_highlighting_and_splines::test_highlighting_supports_rgba_pathway_images",
+      "status": "KNOWN_BUG",
+      "finding_id": "PV-BUG-072",
+      "message": "PV-BUG-072: highlight drawing cannot assign RGB tuples into RGBA arrays",
+      "seconds": 0.001
+    },
+    {
+      "test": "tests.test_highlighting_and_splines::test_label_changes_survive_later_highlight_layers",
+      "status": "KNOWN_BUG",
+      "finding_id": "PV-BUG-073",
+      "message": "PV-BUG-073: dynamic label-change metadata is lost when another layer is chained",
+      "seconds": 0.001
+    },
+    {
+      "test": "tests.test_highlighting_and_splines::test_cubic_bezier_shape_and_endpoints[2]",
+      "status": "PASS",
+      "finding_id": null,
+      "message": "",
+      "seconds": 0.001
+    },
+    {
+      "test": "tests.test_highlighting_and_splines::test_cubic_bezier_shape_and_endpoints[10]",
+      "status": "PASS",
+      "finding_id": null,
+      "message": "",
+      "seconds": 0.0
+    },
+    {
+      "test": "tests.test_highlighting_and_splines::test_cubic_bezier_shape_and_endpoints[51]",
+      "status": "PASS",
+      "finding_id": null,
+      "message": "",
+      "seconds": 0.0
+    },
+    {
+      "test": "tests.test_highlighting_and_splines::test_quadratic_bezier_shape_and_endpoints[2]",
+      "status": "PASS",
+      "finding_id": null,
+      "message": "",
+      "seconds": 0.0
+    },
+    {
+      "test": "tests.test_highlighting_and_splines::test_quadratic_bezier_shape_and_endpoints[10]",
+      "status": "PASS",
+      "finding_id": null,
+      "message": "",
+      "seconds": 0.0
+    },
+    {
+      "test": "tests.test_highlighting_and_splines::test_quadratic_bezier_shape_and_endpoints[51]",
+      "status": "PASS",
+      "finding_id": null,
+      "message": "",
+      "seconds": 0.0
+    },
+    {
+      "test": "tests.test_highlighting_and_splines::test_empty_bezier_svg_path_is_empty",
+      "status": "PASS",
+      "finding_id": null,
+      "message": "",
+      "seconds": 0.0
+    },
+    {
+      "test": "tests.test_highlighting_and_splines::test_bezier_svg_path_contains_all_samples_and_optional_close",
+      "status": "PASS",
+      "finding_id": null,
+      "message": "",
+      "seconds": 0.0
+    },
+    {
+      "test": "tests.test_highlighting_and_splines::test_catmull_rom_documented_inputs_are_finite[points0]",
+      "status": "KNOWN_BUG",
+      "finding_id": "PV-BUG-045",
+      "message": "PV-BUG-045: duplicated phantom/repeated Catmull-Rom points cause zero denominators and NaNs",
+      "seconds": 0.001
+    },
+    {
+      "test": "tests.test_highlighting_and_splines::test_catmull_rom_documented_inputs_are_finite[points1]",
+      "status": "KNOWN_BUG",
+      "finding_id": "PV-BUG-045",
+      "message": "PV-BUG-045: duplicated phantom/repeated Catmull-Rom points cause zero denominators and NaNs",
+      "seconds": 0.001
+    },
+    {
+      "test": "tests.test_highlighting_and_splines::test_catmull_rom_documented_inputs_are_finite[points2]",
+      "status": "KNOWN_BUG",
+      "finding_id": "PV-BUG-045",
+      "message": "PV-BUG-045: duplicated phantom/repeated Catmull-Rom points cause zero denominators and NaNs",
+      "seconds": 0.001
+    },
+    {
+      "test": "tests.test_highlighting_and_splines::test_one_catmull_point_is_returned_unchanged",
+      "status": "PASS",
+      "finding_id": null,
+      "message": "",
+      "seconds": 0.0
+    },
+    {
+      "test": "tests.test_highlighting_and_splines::test_straight_and_explicit_curved_routes",
+      "status": "PASS",
+      "finding_id": null,
+      "message": "",
+      "seconds": 0.001
+    },
+    {
+      "test": "tests.test_highlighting_and_splines::test_curved_routing_works_without_obstacle_list",
+      "status": "KNOWN_BUG",
+      "finding_id": "PV-BUG-046",
+      "message": "PV-BUG-046: obstacles=None forces every routing mode to a straight two-point line",
+      "seconds": 0.001
+    },
+    {
+      "test": "tests.test_highlighting_and_splines::test_edge_route_avoids_supplied_obstacle",
+      "status": "KNOWN_BUG",
+      "finding_id": "PV-BUG-047",
+      "message": "PV-BUG-047: obstacles argument is not consulted by routing implementation",
+      "seconds": 0.0
+    },
+    {
+      "test": "tests.test_highlighting_and_splines::test_orthogonal_route_is_finite",
+      "status": "KNOWN_BUG",
+      "finding_id": "PV-BUG-048",
+      "message": "PV-BUG-048: orthogonal routing delegates to broken Catmull-Rom implementation",
+      "seconds": 0.001
+    },
+    {
+      "test": "tests.test_highlighting_and_splines::test_unknown_routing_mode_is_rejected",
+      "status": "KNOWN_BUG",
+      "finding_id": "PV-BUG-049",
+      "message": "PV-BUG-049: unknown routing mode silently falls back to straight",
+      "seconds": 0.0
+    },
+    {
+      "test": "tests.test_highlighting_and_splines::test_smooth_svg_tension_changes_curve",
+      "status": "KNOWN_BUG",
+      "finding_id": "PV-BUG-050",
+      "message": "PV-BUG-050: smooth_path_svg tension parameter is unused",
+      "seconds": 0.001
+    },
+    {
+      "test": "tests.test_highlighting_and_splines::test_nonfinite_curve_is_rejected_before_svg_serialization",
+      "status": "KNOWN_BUG",
+      "finding_id": "PV-BUG-051",
+      "message": "PV-BUG-051: nonfinite curve values are serialized directly into SVG",
+      "seconds": 0.0
+    },
+    {
+      "test": "tests.test_mapping_and_colors::test_supported_molecule_aggregations[sum-2.0]",
+      "status": "PASS",
+      "finding_id": null,
+      "message": "",
+      "seconds": 0.01
+    },
+    {
+      "test": "tests.test_mapping_and_colors::test_supported_molecule_aggregations[mean-1.0]",
+      "status": "PASS",
+      "finding_id": null,
+      "message": "",
+      "seconds": 0.001
+    },
+    {
+      "test": "tests.test_mapping_and_colors::test_supported_molecule_aggregations[median-1.0]",
+      "status": "PASS",
+      "finding_id": null,
+      "message": "",
+      "seconds": 0.001
+    },
+    {
+      "test": "tests.test_mapping_and_colors::test_supported_molecule_aggregations[max-3.0]",
+      "status": "PASS",
+      "finding_id": null,
+      "message": "",
+      "seconds": 0.001
+    },
+    {
+      "test": "tests.test_mapping_and_colors::test_unknown_aggregation_is_rejected",
+      "status": "PASS",
+      "finding_id": null,
+      "message": "",
+      "seconds": 0.001
+    },
+    {
+      "test": "tests.test_mapping_and_colors::test_all_advertised_aggregations_work[max_abs]",
+      "status": "KNOWN_BUG",
+      "finding_id": "PV-BUG-012",
+      "message": "PV-BUG-012: group aggregation UDF receives scalar elements under current Polars",
+      "seconds": 0.003
+    },
+    {
+      "test": "tests.test_mapping_and_colors::test_all_advertised_aggregations_work[random]",
+      "status": "KNOWN_BUG",
+      "finding_id": "PV-BUG-012",
+      "message": "PV-BUG-012: group aggregation UDF receives scalar elements under current Polars",
+      "seconds": 0.001
+    },
+    {
+      "test": "tests.test_mapping_and_colors::test_no_matching_ids_has_clear_error",
+      "status": "PASS",
+      "finding_id": null,
+      "message": "",
+      "seconds": 0.001
+    },
+    {
+      "test": "tests.test_mapping_and_colors::test_mol_sum_normalizes_both_id_column_types",
+      "status": "KNOWN_BUG",
+      "finding_id": "PV-BUG-013",
+      "message": "PV-BUG-013: mol_sum casts data IDs to strings but not mapping IDs",
+      "seconds": 0.001
+    },
+    {
+      "test": "tests.test_mapping_and_colors::test_null_mapping_targets_are_removed",
+      "status": "KNOWN_BUG",
+      "finding_id": "PV-BUG-014",
+      "message": "PV-BUG-014: null mapping targets are aggregated into a null output ID",
+      "seconds": 0.001
+    },
+    {
+      "test": "tests.test_mapping_and_colors::test_duplicate_mapping_pairs_do_not_double_count",
+      "status": "KNOWN_BUG",
+      "finding_id": "PV-BUG-015",
+      "message": "PV-BUG-015: duplicated mapping pairs duplicate the input value before aggregation",
+      "seconds": 0.001
+    },
+    {
+      "test": "tests.test_mapping_and_colors::test_one_source_can_map_to_two_targets",
+      "status": "PASS",
+      "finding_id": null,
+      "message": "",
+      "seconds": 0.002
+    },
+    {
+      "test": "tests.test_mapping_and_colors::test_multi_id_pathway_node_aggregates_all_matching_genes",
+      "status": "PASS",
+      "finding_id": null,
+      "message": "",
+      "seconds": 0.006
+    },
+    {
+      "test": "tests.test_mapping_and_colors::test_layout_only_node_map_has_identifier_and_nan",
+      "status": "PASS",
+      "finding_id": null,
+      "message": "",
+      "seconds": 0.001
+    },
+    {
+      "test": "tests.test_mapping_and_colors::test_missing_requested_node_type_returns_none",
+      "status": "PASS",
+      "finding_id": null,
+      "message": "",
+      "seconds": 0.001
+    },
+    {
+      "test": "tests.test_mapping_and_colors::test_mapped_node_table_retains_kegg_names",
+      "status": "KNOWN_BUG",
+      "finding_id": "PV-BUG-009",
+      "message": "PV-BUG-009: mapped node table drops the exploded kegg_names identifier",
+      "seconds": 0.002
+    },
+    {
+      "test": "tests.test_mapping_and_colors::test_kegg_gene_ids_can_be_mapped_without_stripping_prefix",
+      "status": "KNOWN_BUG",
+      "finding_id": "PV-BUG-016",
+      "message": "PV-BUG-016: entrez_gnodes is unused and species prefixes are always stripped",
+      "seconds": 0.001
+    },
+    {
+      "test": "tests.test_mapping_and_colors::test_simulated_compounds_are_seeded_and_unique",
+      "status": "PASS",
+      "finding_id": null,
+      "message": "",
+      "seconds": 0.004
+    },
+    {
+      "test": "tests.test_mapping_and_colors::test_simulated_discrete_compounds_have_only_ids",
+      "status": "PASS",
+      "finding_id": null,
+      "message": "",
+      "seconds": 0.001
+    },
+    {
+      "test": "tests.test_mapping_and_colors::test_simulation_rejects_negative_experiment_count",
+      "status": "KNOWN_BUG",
+      "finding_id": "PV-BUG-017",
+      "message": "PV-BUG-017: negative experiment count is silently accepted",
+      "seconds": 0.001
+    },
+    {
+      "test": "tests.test_mapping_and_colors::test_low_level_custom_aggregators_handle_nan",
+      "status": "PASS",
+      "finding_id": null,
+      "message": "",
+      "seconds": 0.001
+    },
+    {
+      "test": "tests.test_mapping_and_colors::test_continuous_color_mapping_clips_and_handles_missing_values",
+      "status": "PASS",
+      "finding_id": null,
+      "message": "",
+      "seconds": 0.002
+    },
+    {
+      "test": "tests.test_mapping_and_colors::test_asymmetric_tuple_limits_and_one_direction",
+      "status": "PASS",
+      "finding_id": null,
+      "message": "",
+      "seconds": 0.001
+    },
+    {
+      "test": "tests.test_mapping_and_colors::test_color_transform_is_applied_before_mapping",
+      "status": "PASS",
+      "finding_id": null,
+      "message": "",
+      "seconds": 0.001
+    },
+    {
+      "test": "tests.test_mapping_and_colors::test_infinities_are_clipped_to_endpoints",
+      "status": "PASS",
+      "finding_id": null,
+      "message": "",
+      "seconds": 0.001
+    },
+    {
+      "test": "tests.test_mapping_and_colors::test_each_value_column_gets_one_color_column",
+      "status": "PASS",
+      "finding_id": null,
+      "message": "",
+      "seconds": 0.001
+    },
+    {
+      "test": "tests.test_mapping_and_colors::test_decimal_string_values_mean_the_same_as_decimal_numbers",
+      "status": "KNOWN_BUG",
+      "finding_id": "PV-BUG-018",
+      "message": "PV-BUG-018: decimal strings are parsed as hexadecimal numbers",
+      "seconds": 0.001
+    },
+    {
+      "test": "tests.test_mapping_and_colors::test_discrete_setting_changes_color_mapping_mode",
+      "status": "FEATURE_GAP",
+      "finding_id": "PV-FEATURE-001",
+      "message": "PV-FEATURE-001: discrete is accepted by public APIs but ignored by node_color",
+      "seconds": 0.001
+    },
+    {
+      "test": "tests.test_mapping_and_colors::test_nonpositive_color_bin_counts_are_rejected[0]",
+      "status": "PASS",
+      "finding_id": null,
+      "message": "",
+      "seconds": 0.001
+    },
+    {
+      "test": "tests.test_mapping_and_colors::test_nonpositive_color_bin_counts_are_rejected[-1]",
+      "status": "PASS",
+      "finding_id": null,
+      "message": "",
+      "seconds": 0.001
+    },
+    {
+      "test": "tests.test_mapping_and_colors::test_colormap_accepts_named_and_hex_colors",
+      "status": "PASS",
+      "finding_id": null,
+      "message": "",
+      "seconds": 0.0
+    },
+    {
+      "test": "tests.test_mapping_and_colors::test_hard_wordwrap_rejects_zero_width_instead_of_hanging",
+      "status": "KNOWN_BUG",
+      "finding_id": "PV-BUG-079",
+      "message": "PV-BUG-079: wordwrap width=0 with break_word=True makes no progress and loops forever",
+      "seconds": 2.007
+    },
+    {
+      "test": "tests.test_parsers::test_kgml_nodes_edges_reactions_and_groups",
+      "status": "PASS",
+      "finding_id": null,
+      "message": "",
+      "seconds": 0.002
+    },
+    {
+      "test": "tests.test_parsers::test_kgml_entry_without_graphics_retains_null_geometry",
+      "status": "PASS",
+      "finding_id": null,
+      "message": "",
+      "seconds": 0.001
+    },
+    {
+      "test": "tests.test_parsers::test_malformed_xml_raises_xml_parse_error",
+      "status": "PASS",
+      "finding_id": null,
+      "message": "",
+      "seconds": 0.001
+    },
+    {
+      "test": "tests.test_parsers::test_missing_kgml_file_has_normal_file_error",
+      "status": "PASS",
+      "finding_id": null,
+      "message": "",
+      "seconds": 0.001
+    },
+    {
+      "test": "tests.test_parsers::test_namespace_qualified_kgml_is_parsed",
+      "status": "KNOWN_BUG",
+      "finding_id": "PV-BUG-019",
+      "message": "PV-BUG-019: namespace-qualified KGML child tags are not dispatched",
+      "seconds": 0.001
+    },
+    {
+      "test": "tests.test_parsers::test_duplicate_kgml_entry_ids_are_rejected",
+      "status": "KNOWN_BUG",
+      "finding_id": "PV-BUG-020",
+      "message": "PV-BUG-020: duplicate KGML entry IDs silently overwrite earlier entries",
+      "seconds": 0.001
+    },
+    {
+      "test": "tests.test_parsers::test_kgml_line_graphics_coordinates_are_preserved",
+      "status": "KNOWN_BUG",
+      "finding_id": "PV-BUG-021",
+      "message": "PV-BUG-021: line graphics coords are ignored and replaced with zero/default geometry",
+      "seconds": 0.001
+    },
+    {
+      "test": "tests.test_parsers::test_empty_kgml_node_table_has_standard_schema",
+      "status": "KNOWN_BUG",
+      "finding_id": "PV-BUG-022",
+      "message": "PV-BUG-022: node_info(empty pathway) has no stable columns/schema",
+      "seconds": 0.001
+    },
+    {
+      "test": "tests.test_parsers::test_unnamespaced_sbgn_nodes_arcs_compartment_and_dataframe",
+      "status": "PASS",
+      "finding_id": null,
+      "message": "",
+      "seconds": 0.001
+    },
+    {
+      "test": "tests.test_parsers::test_standard_namespaced_sbgn_is_parsed",
+      "status": "KNOWN_BUG",
+      "finding_id": "PV-BUG-023",
+      "message": "PV-BUG-023: parser locates a namespaced map but searches its glyphs/arcs without namespace",
+      "seconds": 0.001
+    },
+    {
+      "test": "tests.test_parsers::test_sbgn_namespace_version_is_discovered_from_document",
+      "status": "KNOWN_BUG",
+      "finding_id": "PV-BUG-024",
+      "message": "PV-BUG-024: SBGN namespace is hard-coded to 0.2 and does not accept other valid versions",
+      "seconds": 0.001
+    },
+    {
+      "test": "tests.test_parsers::test_state_variable_is_metadata_not_a_top_level_node",
+      "status": "KNOWN_BUG",
+      "finding_id": "PV-BUG-025",
+      "message": "PV-BUG-025: nested state-variable glyph is also promoted to a top-level biological node",
+      "seconds": 0.001
+    },
+    {
+      "test": "tests.test_parsers::test_standard_sbgn_clone_marker_is_detected",
+      "status": "KNOWN_BUG",
+      "finding_id": "PV-BUG-026",
+      "message": "PV-BUG-026: standard <clone/> element is not detected; code checks an attribute instead",
+      "seconds": 0.001
+    },
+    {
+      "test": "tests.test_parsers::test_sbgn_unit_of_information_is_parsed",
+      "status": "FEATURE_GAP",
+      "finding_id": "PV-FEATURE-002",
+      "message": "PV-FEATURE-002: SBGNGlyph exposes unit_of_information but parser never populates it",
+      "seconds": 0.001
+    },
+    {
+      "test": "tests.test_parsers::test_sbgn_arc_control_points_are_preserved",
+      "status": "KNOWN_BUG",
+      "finding_id": "PV-BUG-027",
+      "message": "PV-BUG-027: Bezier control <point> children inside SBGN <next> are discarded",
+      "seconds": 0.001
+    },
+    {
+      "test": "tests.test_parsers::test_empty_sbgn_dataframe_has_unified_schema",
+      "status": "KNOWN_BUG",
+      "finding_id": "PV-BUG-028",
+      "message": "PV-BUG-028: empty SBGN conversion returns a schema-less DataFrame",
+      "seconds": 0.001
+    },
+    {
+      "test": "tests.test_public_core::test_every_declared_public_export_exists[pathview]",
+      "status": "PASS",
+      "finding_id": null,
+      "message": "",
+      "seconds": 0.0
+    },
+    {
+      "test": "tests.test_public_core::test_every_declared_public_export_exists[sim_mol_data]",
+      "status": "PASS",
+      "finding_id": null,
+      "message": "",
+      "seconds": 0.0
+    },
+    {
+      "test": "tests.test_public_core::test_every_declared_public_export_exists[mol_sum]",
+      "status": "PASS",
+      "finding_id": null,
+      "message": "",
+      "seconds": 0.0
+    },
+    {
+      "test": "tests.test_public_core::test_every_declared_public_export_exists[id2eg]",
+      "status": "PASS",
+      "finding_id": null,
+      "message": "",
+      "seconds": 0.0
+    },
+    {
+      "test": "tests.test_public_core::test_every_declared_public_export_exists[eg2id]",
+      "status": "PASS",
+      "finding_id": null,
+      "message": "",
+      "seconds": 0.0
+    },
+    {
+      "test": "tests.test_public_core::test_every_declared_public_export_exists[cpd_id_map]",
+      "status": "PASS",
+      "finding_id": null,
+      "message": "",
+      "seconds": 0.0
+    },
+    {
+      "test": "tests.test_public_core::test_every_declared_public_export_exists[kegg_species_code]",
+      "status": "PASS",
+      "finding_id": null,
+      "message": "",
+      "seconds": 0.0
+    },
+    {
+      "test": "tests.test_public_core::test_every_declared_public_export_exists[download_kegg]",
+      "status": "PASS",
+      "finding_id": null,
+      "message": "",
+      "seconds": 0.0
+    },
+    {
+      "test": "tests.test_public_core::test_every_declared_public_export_exists[SpeciesInfo]",
+      "status": "PASS",
+      "finding_id": null,
+      "message": "",
+      "seconds": 0.0
+    },
+    {
+      "test": "tests.test_public_core::test_every_declared_public_export_exists[download_reactome]",
+      "status": "PASS",
+      "finding_id": null,
+      "message": "",
+      "seconds": 0.001
+    },
+    {
+      "test": "tests.test_public_core::test_every_declared_public_export_exists[download_metacyc]",
+      "status": "PASS",
+      "finding_id": null,
+      "message": "",
+      "seconds": 0.001
+    },
+    {
+      "test": "tests.test_public_core::test_every_declared_public_export_exists[download_panther]",
+      "status": "PASS",
+      "finding_id": null,
+      "message": "",
+      "seconds": 0.0
+    },
+    {
+      "test": "tests.test_public_core::test_every_declared_public_export_exists[download_smpdb]",
+      "status": "PASS",
+      "finding_id": null,
+      "message": "",
+      "seconds": 0.0
+    },
+    {
+      "test": "tests.test_public_core::test_every_declared_public_export_exists[list_reactome_pathways]",
+      "status": "PASS",
+      "finding_id": null,
+      "message": "",
+      "seconds": 0.0
+    },
+    {
+      "test": "tests.test_public_core::test_every_declared_public_export_exists[detect_database]",
+      "status": "PASS",
+      "finding_id": null,
+      "message": "",
+      "seconds": 0.0
+    },
+    {
+      "test": "tests.test_public_core::test_every_declared_public_export_exists[DATABASE_INFO]",
+      "status": "PASS",
+      "finding_id": null,
+      "message": "",
+      "seconds": 0.0
+    },
+    {
+      "test": "tests.test_public_core::test_every_declared_public_export_exists[parse_kgml]",
+      "status": "PASS",
+      "finding_id": null,
+      "message": "",
+      "seconds": 0.0
+    },
+    {
+      "test": "tests.test_public_core::test_every_declared_public_export_exists[node_info]",
+      "status": "PASS",
+      "finding_id": null,
+      "message": "",
+      "seconds": 0.0
+    },
+    {
+      "test": "tests.test_public_core::test_every_declared_public_export_exists[KGMLPathway]",
+      "status": "PASS",
+      "finding_id": null,
+      "message": "",
+      "seconds": 0.0
+    },
+    {
+      "test": "tests.test_public_core::test_every_declared_public_export_exists[KGMLNode]",
+      "status": "PASS",
+      "finding_id": null,
+      "message": "",
+      "seconds": 0.0
+    },
+    {
+      "test": "tests.test_public_core::test_every_declared_public_export_exists[KGMLEdge]",
+      "status": "PASS",
+      "finding_id": null,
+      "message": "",
+      "seconds": 0.0
+    },
+    {
+      "test": "tests.test_public_core::test_every_declared_public_export_exists[KGMLReaction]",
+      "status": "PASS",
+      "finding_id": null,
+      "message": "",
+      "seconds": 0.0
+    },
+    {
+      "test": "tests.test_public_core::test_every_declared_public_export_exists[parse_sbgn]",
+      "status": "PASS",
+      "finding_id": null,
+      "message": "",
+      "seconds": 0.0
+    },
+    {
+      "test": "tests.test_public_core::test_every_declared_public_export_exists[sbgn_to_df]",
+      "status": "PASS",
+      "finding_id": null,
+      "message": "",
+      "seconds": 0.0
+    },
+    {
+      "test": "tests.test_public_core::test_every_declared_public_export_exists[SBGNPathway]",
+      "status": "PASS",
+      "finding_id": null,
+      "message": "",
+      "seconds": 0.0
+    },
+    {
+      "test": "tests.test_public_core::test_every_declared_public_export_exists[SBGNGlyph]",
+      "status": "PASS",
+      "finding_id": null,
+      "message": "",
+      "seconds": 0.0
+    },
+    {
+      "test": "tests.test_public_core::test_every_declared_public_export_exists[SBGNArc]",
+      "status": "PASS",
+      "finding_id": null,
+      "message": "",
+      "seconds": 0.0
+    },
+    {
+      "test": "tests.test_public_core::test_every_declared_public_export_exists[SBGN_GLYPH_CLASSES]",
+      "status": "PASS",
+      "finding_id": null,
+      "message": "",
+      "seconds": 0.0
+    },
+    {
+      "test": "tests.test_public_core::test_every_declared_public_export_exists[SBGN_ARC_CLASSES]",
+      "status": "PASS",
+      "finding_id": null,
+      "message": "",
+      "seconds": 0.0
+    },
+    {
+      "test": "tests.test_public_core::test_every_declared_public_export_exists[node_map]",
+      "status": "PASS",
+      "finding_id": null,
+      "message": "",
+      "seconds": 0.0
+    },
+    {
+      "test": "tests.test_public_core::test_every_declared_public_export_exists[node_color]",
+      "status": "PASS",
+      "finding_id": null,
+      "message": "",
+      "seconds": 0.0
+    },
+    {
+      "test": "tests.test_public_core::test_every_declared_public_export_exists[make_colormap]",
+      "status": "PASS",
+      "finding_id": null,
+      "message": "",
+      "seconds": 0.0
+    },
+    {
+      "test": "tests.test_public_core::test_every_declared_public_export_exists[draw_color_key]",
+      "status": "PASS",
+      "finding_id": null,
+      "message": "",
+      "seconds": 0.0
+    },
+    {
+      "test": "tests.test_public_core::test_every_declared_public_export_exists[keggview_native]",
+      "status": "PASS",
+      "finding_id": null,
+      "message": "",
+      "seconds": 0.0
+    },
+    {
+      "test": "tests.test_public_core::test_every_declared_public_export_exists[keggview_graph]",
+      "status": "PASS",
+      "finding_id": null,
+      "message": "",
+      "seconds": 0.0
+    },
+    {
+      "test": "tests.test_public_core::test_every_declared_public_export_exists[keggview_svg]",
+      "status": "PASS",
+      "finding_id": null,
+      "message": "",
+      "seconds": 0.0
+    },
+    {
+      "test": "tests.test_public_core::test_every_declared_public_export_exists[kegg_legend]",
+      "status": "PASS",
+      "finding_id": null,
+      "message": "",
+      "seconds": 0.0
+    },
+    {
+      "test": "tests.test_public_core::test_every_declared_public_export_exists[render_node_svg]",
+      "status": "PASS",
+      "finding_id": null,
+      "message": "",
+      "seconds": 0.001
+    },
+    {
+      "test": "tests.test_public_core::test_every_declared_public_export_exists[render_edge_svg]",
+      "status": "PASS",
+      "finding_id": null,
+      "message": "",
+      "seconds": 0.001
+    },
+    {
+      "test": "tests.test_public_core::test_every_declared_public_export_exists[PathwayResult]",
+      "status": "PASS",
+      "finding_id": null,
+      "message": "",
+      "seconds": 0.0
+    },
+    {
+      "test": "tests.test_public_core::test_every_declared_public_export_exists[highlight_nodes]",
+      "status": "PASS",
+      "finding_id": null,
+      "message": "",
+      "seconds": 0.0
+    },
+    {
+      "test": "tests.test_public_core::test_every_declared_public_export_exists[highlight_edges]",
+      "status": "PASS",
+      "finding_id": null,
+      "message": "",
+      "seconds": 0.0
+    },
+    {
+      "test": "tests.test_public_core::test_every_declared_public_export_exists[highlight_path]",
+      "status": "PASS",
+      "finding_id": null,
+      "message": "",
+      "seconds": 0.0
+    },
+    {
+      "test": "tests.test_public_core::test_every_declared_public_export_exists[change_labels]",
+      "status": "PASS",
+      "finding_id": null,
+      "message": "",
+      "seconds": 0.0
+    },
+    {
+      "test": "tests.test_public_core::test_every_declared_public_export_exists[cubic_bezier]",
+      "status": "PASS",
+      "finding_id": null,
+      "message": "",
+      "seconds": 0.0
+    },
+    {
+      "test": "tests.test_public_core::test_every_declared_public_export_exists[quadratic_bezier]",
+      "status": "PASS",
+      "finding_id": null,
+      "message": "",
+      "seconds": 0.0
+    },
+    {
+      "test": "tests.test_public_core::test_every_declared_public_export_exists[catmull_rom_spline]",
+      "status": "PASS",
+      "finding_id": null,
+      "message": "",
+      "seconds": 0.0
+    },
+    {
+      "test": "tests.test_public_core::test_every_declared_public_export_exists[route_edge_spline]",
+      "status": "PASS",
+      "finding_id": null,
+      "message": "",
+      "seconds": 0.0
+    },
+    {
+      "test": "tests.test_public_core::test_every_declared_public_export_exists[bezier_to_svg_path]",
+      "status": "PASS",
+      "finding_id": null,
+      "message": "",
+      "seconds": 0.0
+    },
+    {
+      "test": "tests.test_public_core::test_every_declared_public_export_exists[smooth_path_svg]",
+      "status": "PASS",
+      "finding_id": null,
+      "message": "",
+      "seconds": 0.0
+    },
+    {
+      "test": "tests.test_public_core::test_every_declared_public_export_exists[wordwrap]",
+      "status": "PASS",
+      "finding_id": null,
+      "message": "",
+      "seconds": 0.0
+    },
+    {
+      "test": "tests.test_public_core::test_every_declared_public_export_exists[max_abs]",
+      "status": "PASS",
+      "finding_id": null,
+      "message": "",
+      "seconds": 0.0
+    },
+    {
+      "test": "tests.test_public_core::test_every_declared_public_export_exists[random_pick]",
+      "status": "PASS",
+      "finding_id": null,
+      "message": "",
+      "seconds": 0.0
+    },
+    {
+      "test": "tests.test_public_core::test_all_source_modules_compile",
+      "status": "PASS",
+      "finding_id": null,
+      "message": "",
+      "seconds": 0.018
+    },
+    {
+      "test": "tests.test_public_core::test_distribution_is_importable",
+      "status": "PASS",
+      "finding_id": null,
+      "message": "",
+      "seconds": 0.001
+    },
+    {
+      "test": "tests.test_public_core::test_distribution_and_runtime_versions_match",
+      "status": "KNOWN_BUG",
+      "finding_id": "PV-BUG-001",
+      "message": "PV-BUG-001: setup.py/distribution is 2.0.2 but pathview.__version__ is 2.0.0",
+      "seconds": 0.001
+    },
+    {
+      "test": "tests.test_public_core::test_core_requires_at_least_one_data_table",
+      "status": "PASS",
+      "finding_id": null,
+      "message": "",
+      "seconds": 0.001
+    },
+    {
+      "test": "tests.test_public_core::test_cached_core_png_runs_without_download",
+      "status": "PASS",
+      "finding_id": null,
+      "message": "",
+      "seconds": 0.021
+    },
+    {
+      "test": "tests.test_public_core::test_documented_output_dispatch[True-png-native]",
+      "status": "PASS",
+      "finding_id": null,
+      "message": "",
+      "seconds": 0.004
+    },
+    {
+      "test": "tests.test_public_core::test_documented_output_dispatch[True-pdf-graph]",
+      "status": "PASS",
+      "finding_id": null,
+      "message": "",
+      "seconds": 0.003
+    },
+    {
+      "test": "tests.test_public_core::test_documented_output_dispatch[True-svg-svg]",
+      "status": "PASS",
+      "finding_id": null,
+      "message": "",
+      "seconds": 0.003
+    },
+    {
+      "test": "tests.test_public_core::test_documented_output_dispatch[False-pdf-graph]",
+      "status": "PASS",
+      "finding_id": null,
+      "message": "",
+      "seconds": 0.004
+    },
+    {
+      "test": "tests.test_public_core::test_documented_output_dispatch[False-svg-svg]",
+      "status": "PASS",
+      "finding_id": null,
+      "message": "",
+      "seconds": 0.003
+    },
+    {
+      "test": "tests.test_public_core::test_non_native_png_request_produces_png",
+      "status": "KNOWN_BUG",
+      "finding_id": "PV-BUG-002",
+      "message": "PV-BUG-002: --no-kegg-native with output_format='png' silently writes graph PDF",
+      "seconds": 0.114
+    },
+    {
+      "test": "tests.test_public_core::test_python_api_rejects_unknown_output_format[jpg]",
+      "status": "KNOWN_BUG",
+      "finding_id": "PV-BUG-003",
+      "message": "PV-BUG-003: Python API does not validate output_format; unknown values become PDF",
+      "seconds": 0.004
+    },
+    {
+      "test": "tests.test_public_core::test_python_api_rejects_unknown_output_format[PNG]",
+      "status": "KNOWN_BUG",
+      "finding_id": "PV-BUG-003",
+      "message": "PV-BUG-003: Python API does not validate output_format; unknown values become PDF",
+      "seconds": 0.004
+    },
+    {
+      "test": "tests.test_public_core::test_python_api_rejects_unknown_output_format[]",
+      "status": "KNOWN_BUG",
+      "finding_id": "PV-BUG-003",
+      "message": "PV-BUG-003: Python API does not validate output_format; unknown values become PDF",
+      "seconds": 0.003
+    },
+    {
+      "test": "tests.test_public_core::test_python_api_rejects_unknown_output_format[banana]",
+      "status": "KNOWN_BUG",
+      "finding_id": "PV-BUG-003",
+      "message": "PV-BUG-003: Python API does not validate output_format; unknown values become PDF",
+      "seconds": 0.003
+    },
+    {
+      "test": "tests.test_public_core::test_fully_cached_human_pathway_does_not_require_network",
+      "status": "KNOWN_BUG",
+      "finding_id": "PV-BUG-004",
+      "message": "PV-BUG-004: cached files cannot bypass live species lookup",
+      "seconds": 0.001
+    },
+    {
+      "test": "tests.test_public_core::test_partial_color_dictionary_keeps_unspecified_defaults",
+      "status": "KNOWN_BUG",
+      "finding_id": "PV-BUG-005",
+      "message": "PV-BUG-005: a partial color config replaces defaults instead of merging per molecule type",
+      "seconds": 0.003
+    },
+    {
+      "test": "tests.test_public_core::test_map_null_false_removes_unmapped_pathway_nodes",
+      "status": "KNOWN_BUG",
+      "finding_id": "PV-BUG-006",
+      "message": "PV-BUG-006: map_null=False does not remove unmapped rows when a data table exists",
+      "seconds": 0.008
+    },
+    {
+      "test": "tests.test_public_core::test_min_nnodes_is_based_on_input_matches",
+      "status": "KNOWN_BUG",
+      "finding_id": "PV-BUG-007",
+      "message": "PV-BUG-007: min_nnodes counts pathway layout nodes, not nodes matched by input data",
+      "seconds": 0.007
+    },
+    {
+      "test": "tests.test_public_core::test_core_result_supports_documented_highlighting_interface",
+      "status": "KNOWN_BUG",
+      "finding_id": "PV-BUG-008",
+      "message": "PV-BUG-008: core returns dict while documented highlighting requires PathwayResult",
+      "seconds": 0.008
+    },
+    {
+      "test": "tests.test_public_core::test_core_gene_table_contains_highlighting_identifier_column",
+      "status": "KNOWN_BUG",
+      "finding_id": "PV-BUG-009",
+      "message": "PV-BUG-009: mapped core gene table omits kegg_names required by highlighting",
+      "seconds": 0.008
+    },
+    {
+      "test": "tests.test_public_core::test_map_symbol_updates_the_label_used_by_renderers",
+      "status": "KNOWN_BUG",
+      "finding_id": "PV-BUG-075",
+      "message": "PV-BUG-075: _add_symbol_labels joins a SYMBOL column but never replaces the rendered label",
+      "seconds": 0.001
+    },
+    {
+      "test": "tests.test_public_core::test_invalid_node_sum_is_rejected_by_python_api",
+      "status": "KNOWN_BUG",
+      "finding_id": "PV-BUG-076",
+      "message": "PV-BUG-076: invalid node_sum ValueError is swallowed by node_map and core still returns output",
+      "seconds": 0.003
+    },
+    {
+      "test": "tests.test_public_core::test_conflicting_pathway_prefix_is_rejected",
+      "status": "KNOWN_BUG",
+      "finding_id": "PV-BUG-010",
+      "message": "PV-BUG-010: pathway prefixes that conflict with species are concatenated, not rejected",
+      "seconds": 0.001
+    },
+    {
+      "test": "tests.test_public_core::test_empty_cached_pathway_is_skipped_cleanly",
+      "status": "KNOWN_BUG",
+      "finding_id": "PV-BUG-011",
+      "message": "PV-BUG-011: empty KGML produces a schema-less frame and core crashes before graceful skip",
+      "seconds": 0.001
+    },
+    {
+      "test": "tests.test_public_core::test_frozen_official_pathway_png_for_one_two_three_states[1]",
+      "status": "PASS",
+      "finding_id": null,
+      "message": "",
+      "seconds": 0.091
+    },
+    {
+      "test": "tests.test_public_core::test_frozen_official_pathway_png_for_one_two_three_states[2]",
+      "status": "PASS",
+      "finding_id": null,
+      "message": "",
+      "seconds": 0.083
+    },
+    {
+      "test": "tests.test_public_core::test_frozen_official_pathway_png_for_one_two_three_states[3]",
+      "status": "PASS",
+      "finding_id": null,
+      "message": "",
+      "seconds": 0.083
+    },
+    {
+      "test": "tests.test_public_core::test_frozen_official_pathway_vector_outputs[svg-svg-<?xml]",
+      "status": "PASS",
+      "finding_id": null,
+      "message": "",
+      "seconds": 0.034
+    },
+    {
+      "test": "tests.test_public_core::test_frozen_official_pathway_vector_outputs[pdf-pdf-%PDF]",
+      "status": "PASS",
+      "finding_id": null,
+      "message": "",
+      "seconds": 0.238
+    },
+    {
+      "test": "tests.test_public_core::test_svg_core_needs_only_cached_xml",
+      "status": "KNOWN_BUG",
+      "finding_id": "PV-BUG-067",
+      "message": "PV-BUG-067: SVG output unnecessarily requires/downloads a KEGG PNG when kegg_native=True",
+      "seconds": 0.001
+    },
+    {
+      "test": "tests.test_rendering::test_gene_node_one_two_three_state_slices[colors0-sample_x0-expected0]",
+      "status": "PASS",
+      "finding_id": null,
+      "message": "",
+      "seconds": 0.001
+    },
+    {
+      "test": "tests.test_rendering::test_gene_node_one_two_three_state_slices[colors1-sample_x1-expected1]",
+      "status": "PASS",
+      "finding_id": null,
+      "message": "",
+      "seconds": 0.001
+    },
+    {
+      "test": "tests.test_rendering::test_gene_node_one_two_three_state_slices[colors2-sample_x2-expected2]",
+      "status": "PASS",
+      "finding_id": null,
+      "message": "",
+      "seconds": 0.001
+    },
+    {
+      "test": "tests.test_rendering::test_gene_paint_preserves_existing_black_text_and_border_pixels",
+      "status": "PASS",
+      "finding_id": null,
+      "message": "",
+      "seconds": 0.001
+    },
+    {
+      "test": "tests.test_rendering::test_transparent_gene_slice_leaves_background_unchanged",
+      "status": "PASS",
+      "finding_id": null,
+      "message": "",
+      "seconds": 0.001
+    },
+    {
+      "test": "tests.test_rendering::test_compound_two_state_left_right_split_at_center",
+      "status": "PASS",
+      "finding_id": null,
+      "message": "",
+      "seconds": 0.001
+    },
+    {
+      "test": "tests.test_rendering::test_gene_and_compound_use_same_coordinate_system",
+      "status": "KNOWN_BUG",
+      "finding_id": "PV-BUG-029",
+      "message": "PV-BUG-029: compound y coordinates are flipped while gene y coordinates are effectively not",
+      "seconds": 0.001
+    },
+    {
+      "test": "tests.test_rendering::test_compound_width_is_the_full_display_diameter",
+      "status": "KNOWN_BUG",
+      "finding_id": "PV-BUG-030",
+      "message": "PV-BUG-030: compound KGML width is treated as radius instead of diameter",
+      "seconds": 0.001
+    },
+    {
+      "test": "tests.test_rendering::test_compound_renderer_respects_elliptical_height",
+      "status": "KNOWN_BUG",
+      "finding_id": "PV-BUG-031",
+      "message": "PV-BUG-031: compound height is ignored and all compounds are forced to width-based circles",
+      "seconds": 0.001
+    },
+    {
+      "test": "tests.test_rendering::test_native_hex_color_conversion[#FF0000-expected0]",
+      "status": "PASS",
+      "finding_id": null,
+      "message": "",
+      "seconds": 0.001
+    },
+    {
+      "test": "tests.test_rendering::test_native_hex_color_conversion[transparent-None]",
+      "status": "PASS",
+      "finding_id": null,
+      "message": "",
+      "seconds": 0.001
+    },
+    {
+      "test": "tests.test_rendering::test_native_hex_color_conversion[none-None]",
+      "status": "PASS",
+      "finding_id": null,
+      "message": "",
+      "seconds": 0.001
+    },
+    {
+      "test": "tests.test_rendering::test_native_color_converter_accepts_named_matplotlib_colors",
+      "status": "KNOWN_BUG",
+      "finding_id": "PV-BUG-032",
+      "message": "PV-BUG-032: native/highlight renderers advertise named colors but parse only six-digit hex",
+      "seconds": 0.001
+    },
+    {
+      "test": "tests.test_rendering::test_native_color_converter_accepts_short_hex",
+      "status": "KNOWN_BUG",
+      "finding_id": "PV-BUG-033",
+      "message": "PV-BUG-033: three-digit CSS hex colors are not accepted",
+      "seconds": 0.001
+    },
+    {
+      "test": "tests.test_rendering::test_native_renderer_requires_background_png",
+      "status": "PASS",
+      "finding_id": null,
+      "message": "",
+      "seconds": 0.001
+    },
+    {
+      "test": "tests.test_rendering::test_native_output_preserves_background_dimensions",
+      "status": "KNOWN_BUG",
+      "finding_id": "PV-BUG-034",
+      "message": "PV-BUG-034: bbox_inches='tight' crops/rescales native output instead of preserving KEGG pixels",
+      "seconds": 0.005
+    },
+    {
+      "test": "tests.test_rendering::test_native_render_is_repeatable_for_identical_inputs",
+      "status": "PASS",
+      "finding_id": null,
+      "message": "",
+      "seconds": 0.01
+    },
+    {
+      "test": "tests.test_rendering::test_svg_rectangle_has_equal_ordered_state_slices[1]",
+      "status": "PASS",
+      "finding_id": null,
+      "message": "",
+      "seconds": 0.001
+    },
+    {
+      "test": "tests.test_rendering::test_svg_rectangle_has_equal_ordered_state_slices[2]",
+      "status": "PASS",
+      "finding_id": null,
+      "message": "",
+      "seconds": 0.001
+    },
+    {
+      "test": "tests.test_rendering::test_svg_rectangle_has_equal_ordered_state_slices[3]",
+      "status": "PASS",
+      "finding_id": null,
+      "message": "",
+      "seconds": 0.001
+    },
+    {
+      "test": "tests.test_rendering::test_svg_ellipse_uses_clip_slices_and_valid_xml",
+      "status": "PASS",
+      "finding_id": null,
+      "message": "",
+      "seconds": 0.001
+    },
+    {
+      "test": "tests.test_rendering::test_svg_renders_kgml_circle_as_circle",
+      "status": "KNOWN_BUG",
+      "finding_id": "PV-BUG-068",
+      "message": "PV-BUG-068: KGML shape='circle' is sent to SVG but only shape='ellipse' renders an ellipse",
+      "seconds": 0.001
+    },
+    {
+      "test": "tests.test_rendering::test_svg_labels_escape_xml_characters",
+      "status": "PASS",
+      "finding_id": null,
+      "message": "",
+      "seconds": 0.001
+    },
+    {
+      "test": "tests.test_rendering::test_svg_edge_snippet_is_valid_and_has_marker",
+      "status": "PASS",
+      "finding_id": null,
+      "message": "",
+      "seconds": 0.0
+    },
+    {
+      "test": "tests.test_rendering::test_complete_svg_output_is_valid_xml",
+      "status": "PASS",
+      "finding_id": null,
+      "message": "",
+      "seconds": 0.002
+    },
+    {
+      "test": "tests.test_rendering::test_svg_preserves_transparent_unmapped_nodes",
+      "status": "KNOWN_BUG",
+      "finding_id": "PV-BUG-069",
+      "message": "PV-BUG-069: all-transparent SVG nodes are forcibly recolored gray",
+      "seconds": 0.001
+    },
+    {
+      "test": "tests.test_rendering::test_svg_pathway_title_with_special_characters_is_valid",
+      "status": "KNOWN_BUG",
+      "finding_id": "PV-BUG-035",
+      "message": "PV-BUG-035: SVG document title is not XML-escaped",
+      "seconds": 0.001
+    },
+    {
+      "test": "tests.test_rendering::test_svg_ellipse_accepts_special_node_identifiers",
+      "status": "KNOWN_BUG",
+      "finding_id": "PV-BUG-036",
+      "message": "PV-BUG-036: SVG clip IDs interpolate unescaped node identifiers",
+      "seconds": 0.001
+    },
+    {
+      "test": "tests.test_rendering::test_svg_node_with_no_fill_values_still_has_a_visible_shape",
+      "status": "KNOWN_BUG",
+      "finding_id": "PV-BUG-037",
+      "message": "PV-BUG-037: empty SVG fill list renders text but no node shape",
+      "seconds": 0.001
+    },
+    {
+      "test": "tests.test_rendering::test_main_svg_renderer_includes_pathway_edges",
+      "status": "FEATURE_GAP",
+      "finding_id": "PV-FEATURE-003",
+      "message": "PV-FEATURE-003: main SVG renderer receives no relation data and emits no pathway edges",
+      "seconds": 0.002
+    },
+    {
+      "test": "tests.test_rendering::test_graph_renderer_contains_relations",
+      "status": "FEATURE_GAP",
+      "finding_id": "PV-FEATURE-004",
+      "message": "PV-FEATURE-004: graph renderer builds nodes only; KGML relations are not passed into it",
+      "seconds": 0.017
+    },
+    {
+      "test": "tests.test_rendering::test_graph_renderer_preserves_two_state_node_colors",
+      "status": "KNOWN_BUG",
+      "finding_id": "PV-BUG-038",
+      "message": "PV-BUG-038: graph/PDF renderer uses only the first experiment color",
+      "seconds": 0.016
+    },
+    {
+      "test": "tests.test_rendering::test_graph_renderer_writes_valid_pdf",
+      "status": "PASS",
+      "finding_id": null,
+      "message": "",
+      "seconds": 0.014
+    },
+    {
+      "test": "tests.test_rendering::test_compound_only_color_key_has_no_blank_subplot",
+      "status": "KNOWN_BUG",
+      "finding_id": "PV-BUG-070",
+      "message": "PV-BUG-070: compound-only native color-key layout leaves a blank visible ticked subplot",
+      "seconds": 0.014
+    },
+    {
+      "test": "tests.test_rendering::test_compound_only_graph_uses_compound_color_scale",
+      "status": "KNOWN_BUG",
+      "finding_id": "PV-BUG-071",
+      "message": "PV-BUG-071: graph color key always uses gene limits/colors, even for compound-only plots",
+      "seconds": 0.014
+    }
+  ]
+}

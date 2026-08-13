@@ -1,0 +1,21 @@
+Pathview Plus v3 upstream test summary
+======================================
+
+Exact commit: d4d45decec56e1ebec15cf04ae62ff944851780e
+Package version: 3.1.0
+Collected: 327
+Passed: 321
+Skipped: 6
+Failed: 0
+Errors: 0
+
+The authoritative machine-readable result is:
+
+  results/pathview-plus-v3-upstream-junit.xml
+
+An earlier restricted-workspace preflight produced one environment-only cache
+permission failure when a subprocess tried to create the normal macOS user
+cache outside this workspace. I reran the complete unchanged suite with normal
+user-cache access. That final run passed all 321 non-skipped tests. The
+restricted preflight remains separately preserved under results/v3-audit so
+the test history is transparent.

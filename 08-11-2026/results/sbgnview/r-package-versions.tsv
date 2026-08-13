@@ -1,0 +1,8 @@
+component	version
+R	4.6.1
+Bioconductor	3.23
+SBGNview	1.26.0
+SBGNview.data	1.26.0
+rsvg	2.7.0
+xml2	1.6.0
+igraph	2.3.3

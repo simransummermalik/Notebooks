@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="12" skipped="6" tests="32" time="0.468" timestamp="2026-08-11T15:07:20.546821-04:00" hostname="Summers-MacBook-Air.local"><testcase classname="tests.test_mapping_and_colors" name="test_supported_molecule_aggregations[sum-2.0]" time="0.020" /><testcase classname="tests.test_mapping_and_colors" name="test_supported_molecule_aggregations[mean-1.0]" time="0.002" /><testcase classname="tests.test_mapping_and_colors" name="test_supported_molecule_aggregations[median-1.0]" time="0.002" /><testcase classname="tests.test_mapping_and_colors" name="test_supported_molecule_aggregations[max-3.0]" time="0.002" /><testcase classname="tests.test_mapping_and_colors" name="test_unknown_aggregation_is_rejected" time="0.001" /><testcase classname="tests.test_mapping_and_colors" name="test_all_advertised_aggregations_work[max_abs]" time="0.003"><failure message="[XPASS(strict)] PV-BUG-012: group aggregation UDF receives scalar elements under current Polars">[XPASS(strict)] PV-BUG-012: group aggregation UDF receives scalar elements under current Polars</failure></testcase><testcase classname="tests.test_mapping_and_colors" name="test_all_advertised_aggregations_work[random]" time="0.022"><failure message="[XPASS(strict)] PV-BUG-012: group aggregation UDF receives scalar elements under current Polars">[XPASS(strict)] PV-BUG-012: group aggregation UDF receives scalar elements under current Polars</failure></testcase><testcase classname="tests.test_mapping_and_colors" name="test_no_matching_ids_has_clear_error" time="0.002"><failure message="AssertionError: Regex pattern did not match.&#10;  Expected regex: 'No IDs'&#10;  Actual message: &quot;No identifier in column 'probe' matched the id_map. Input looks like ['a']; the map expects ['b']. Check gene_idtype/cpd_idtype and the species code.&quot;">@pytest.mark.mapping
+    def test_no_matching_ids_has_clear_error() -&gt; None:
+        data = pl.DataFrame({"probe": ["a"], "value": [1.0]})
+        mapping = pl.DataFrame({"probe": ["b"], "entrez": ["1"]})
+&gt;       with pytest.raises(ValueError, match="No IDs"):
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       AssertionError: Regex pattern did not match.
+E         Expected regex: 'No IDs'
+E         Actual message: "No identifier in column 'probe' matched the id_map. Input looks like ['a']; the map expects ['b']. Check gene_idtype/cpd_idtype and the species code."
+
+../08-10-2026/pathveiw bug checks/tests/test_mapping_and_colors.py:58: AssertionError</failure></testcase><testcase classname="tests.test_mapping_and_colors" name="test_mol_sum_normalizes_both_id_column_types" time="0.004"><failure message="[XPASS(strict)] PV-BUG-013: mol_sum casts data IDs to strings but not mapping IDs">[XPASS(strict)] PV-BUG-013: mol_sum casts data IDs to strings but not mapping IDs</failure></testcase><testcase classname="tests.test_mapping_and_colors" name="test_null_mapping_targets_are_removed" time="0.001"><failure message="[XPASS(strict)] PV-BUG-014: null mapping targets are aggregated into a null output ID">[XPASS(strict)] PV-BUG-014: null mapping targets are aggregated into a null output ID</failure></testcase><testcase classname="tests.test_mapping_and_colors" name="test_duplicate_mapping_pairs_do_not_double_count" time="0.001"><failure message="[XPASS(strict)] PV-BUG-015: duplicated mapping pairs duplicate the input value before aggregation">[XPASS(strict)] PV-BUG-015: duplicated mapping pairs duplicate the input value before aggregation</failure></testcase><testcase classname="tests.test_mapping_and_colors" name="test_one_source_can_map_to_two_targets" time="0.001" /><testcase classname="tests.test_mapping_and_colors" name="test_multi_id_pathway_node_aggregates_all_matching_genes" time="0.013" /><testcase classname="tests.test_mapping_and_colors" name="test_layout_only_node_map_has_identifier_and_nan" time="0.002"><failure message="AssertionError: assert False&#10; +  where False = &lt;built-in method issubset of set object at 0x10aec2880&gt;(['entry_id', 'name', 'type', 'x', 'y', 'width', ...])&#10; +    where &lt;built-in method issubset of set object at 0x10aec2880&gt; = {'entry_id', 'kegg_names', 'mol_val'}.issubset&#10; +    and   ['entry_id', 'name', 'type', 'x', 'y', 'width', ...] = shape: (2, 13)\n┌──────────┬───────────────────┬──────┬──────┬───┬───────────┬──────────┬───────────┬──────┐\n│ entry_id...      ┆           ┆ 1    │\n└──────────┴───────────────────┴──────┴──────┴───┴───────────┴──────────┴───────────┴──────┘.columns">simple_node_data = shape: (3, 13)
+┌──────────┬───────────────────┬──────────┬──────┬───┬───────────┬──────────┬───────────┬──────┐
+│ entr...  ┆           ┆ 1    │
+└──────────┴───────────────────┴──────────┴──────┴───┴───────────┴──────────┴───────────┴──────┘
+
+    @pytest.mark.mapping
+    def test_layout_only_node_map_has_identifier_and_nan(simple_node_data) -&gt; None:
+        result = node_map(None, simple_node_data, node_types="gene")
+        assert result.height == 2
+&gt;       assert {"entry_id", "kegg_names", "mol_val"}.issubset(result.columns)
+E       AssertionError: assert False
+E        +  where False = &lt;built-in method issubset of set object at 0x10aec2880&gt;(['entry_id', 'name', 'type', 'x', 'y', 'width', ...])
+E        +    where &lt;built-in method issubset of set object at 0x10aec2880&gt; = {'entry_id', 'kegg_names', 'mol_val'}.issubset
+E        +    and   ['entry_id', 'name', 'type', 'x', 'y', 'width', ...] = shape: (2, 13)\n┌──────────┬───────────────────┬──────┬──────┬───┬───────────┬──────────┬───────────┬──────┐\n│ entry_id...      ┆           ┆ 1    │\n└──────────┴───────────────────┴──────┴──────┴───┴───────────┴──────────┴───────────┴──────┘.columns
+
+../08-10-2026/pathveiw bug checks/tests/test_mapping_and_colors.py:117: AssertionError</failure></testcase><testcase classname="tests.test_mapping_and_colors" name="test_missing_requested_node_type_returns_none" time="0.001" /><testcase classname="tests.test_mapping_and_colors" name="test_mapped_node_table_retains_kegg_names" time="0.003"><skipped type="pytest.xfail" message="PV-BUG-009: mapped node table drops the exploded kegg_names identifier" /></testcase><testcase classname="tests.test_mapping_and_colors" name="test_kegg_gene_ids_can_be_mapped_without_stripping_prefix" time="0.001"><skipped type="pytest.xfail" message="PV-BUG-016: entrez_gnodes is unused and species prefixes are always stripped" /></testcase><testcase classname="tests.test_mapping_and_colors" name="test_simulated_compounds_are_seeded_and_unique" time="0.005"><failure message="polars.exceptions.ColumnNotFoundError: &quot;id&quot; not found">@pytest.mark.mapping
+    def test_simulated_compounds_are_seeded_and_unique() -&gt; None:
+        first = sim_mol_data("cpd", n_mol=25, n_exp=3, rand_seed=7)
+        second = sim_mol_data("cpd", n_mol=25, n_exp=3, rand_seed=7)
+        assert first.equals(second)
+        assert first.shape == (25, 4)
+&gt;       assert first["id"].n_unique() == 25
+               ^^^^^^^^^^^
+
+../08-10-2026/pathveiw bug checks/tests/test_mapping_and_colors.py:159: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+.venv/lib/python3.14/site-packages/polars/dataframe/frame.py:1444: in __getitem__
+    return get_df_item_by_key(self, key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv/lib/python3.14/site-packages/polars/_utils/getitem.py:163: in get_df_item_by_key
+    return df.get_column(key)
+           ^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = shape: (25, 4)
+┌──────────┬─────────┬─────────┬─────────┐
+│ compound ┆ exp1    ┆ exp2    ┆ exp3    │
+│ ---      ┆ --- ...  ┆ -0.6415 ┆ -0.0973 ┆ -1.6882 │
+│ C12889   ┆ 2.0004  ┆ 1.257   ┆ -2.0353 │
+└──────────┴─────────┴─────────┴─────────┘
+name = 'id', default = &lt;no_default&gt;
+
+    def get_column(
+        self, name: str, *, default: Any | NoDefault = NO_DEFAULT
+    ) -&gt; Series | Any:
+        """
+        Get a single column by name.
+    
+        Parameters
+        ----------
+        name
+            String name of the column to retrieve.
+        default
+            Value to return if the column does not exist; if not explicitly set and
+            the column is not present a `ColumnNotFoundError` exception is raised.
+    
+        Returns
+        -------
+        Series (or arbitrary default value, if specified).
+    
+        See Also
+        --------
+        to_series
+    
+        Examples
+        --------
+        &gt;&gt;&gt; df = pl.DataFrame({"foo": [1, 2, 3], "bar": [4, 5, 6]})
+        &gt;&gt;&gt; df.get_column("foo")
+        shape: (3,)
+        Series: 'foo' [i64]
+        [
+            1
+            2
+            3
+        ]
+    
+        Missing column handling; can optionally provide an arbitrary default value
+        to the method (otherwise a `ColumnNotFoundError` exception is raised).
+    
+        &gt;&gt;&gt; df.get_column("baz", default=pl.Series("baz", ["?", "?", "?"]))
+        shape: (3,)
+        Series: 'baz' [str]
+        [
+            "?"
+            "?"
+            "?"
+        ]
+        &gt;&gt;&gt; res = df.get_column("baz", default=None)
+        &gt;&gt;&gt; res is None
+        True
+        """
+        try:
+&gt;           return wrap_s(self._df.get_column(name))
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^
+E           polars.exceptions.ColumnNotFoundError: "id" not found
+
+.venv/lib/python3.14/site-packages/polars/dataframe/frame.py:9361: ColumnNotFoundError</failure></testcase><testcase classname="tests.test_mapping_and_colors" name="test_simulated_discrete_compounds_have_only_ids" time="0.001"><failure message="AssertionError: assert ['compound'] == ['id']&#10;  &#10;  At index 0 diff: 'compound' != 'id'&#10;  Use -v to get more diff">@pytest.mark.mapping
+    def test_simulated_discrete_compounds_have_only_ids() -&gt; None:
+        result = sim_mol_data("cpd", n_mol=5, n_exp=9, rand_seed=1, discrete=True)
+&gt;       assert result.columns == ["id"]
+E       AssertionError: assert ['compound'] == ['id']
+E         
+E         At index 0 diff: 'compound' != 'id'
+E         Use -v to get more diff
+
+../08-10-2026/pathveiw bug checks/tests/test_mapping_and_colors.py:165: AssertionError</failure></testcase><testcase classname="tests.test_mapping_and_colors" name="test_simulation_rejects_negative_experiment_count" time="0.001"><skipped type="pytest.xfail" message="PV-BUG-017: negative experiment count is silently accepted" /></testcase><testcase classname="tests.test_mapping_and_colors" name="test_low_level_custom_aggregators_handle_nan" time="0.001" /><testcase classname="tests.test_mapping_and_colors" name="test_continuous_color_mapping_clips_and_handles_missing_values" time="0.001" /><testcase classname="tests.test_mapping_and_colors" name="test_asymmetric_tuple_limits_and_one_direction" time="0.053"><failure message="AssertionError: assert '#FFFFFF' == '#0000FF'&#10;  &#10;  - #0000FF&#10;  + #FFFFFF">@pytest.mark.color
+    def test_asymmetric_tuple_limits_and_one_direction() -&gt; None:
+        frame = pl.DataFrame({"id": ["a", "b", "c"], "v": [-5.0, 1.0, 3.0]})
+        asymmetric = node_color(
+            frame, limit=(-5.0, 3.0), bins=9, low="blue", mid="white", high="red"
+        )
+        one_direction = node_color(
+            frame, limit=3.0, both_dirs=False, bins=9, low="blue", mid="white", high="red"
+        )
+        assert asymmetric["v_col"][0] == "#0000FF"
+        assert asymmetric["v_col"][2] == "#FF0000"
+&gt;       assert one_direction["v_col"][0] == "#0000FF"
+E       AssertionError: assert '#FFFFFF' == '#0000FF'
+E         
+E         - #0000FF
+E         + #FFFFFF
+
+../08-10-2026/pathveiw bug checks/tests/test_mapping_and_colors.py:217: AssertionError</failure></testcase><testcase classname="tests.test_mapping_and_colors" name="test_color_transform_is_applied_before_mapping" time="0.001" /><testcase classname="tests.test_mapping_and_colors" name="test_infinities_are_clipped_to_endpoints" time="0.001" /><testcase classname="tests.test_mapping_and_colors" name="test_each_value_column_gets_one_color_column" time="0.001" /><testcase classname="tests.test_mapping_and_colors" name="test_decimal_string_values_mean_the_same_as_decimal_numbers" time="0.001"><skipped type="pytest.xfail" message="PV-BUG-018: decimal strings are parsed as hexadecimal numbers" /></testcase><testcase classname="tests.test_mapping_and_colors" name="test_discrete_setting_changes_color_mapping_mode" time="0.001"><skipped type="pytest.xfail" message="PV-FEATURE-001: discrete is accepted by public APIs but ignored by node_color" /></testcase><testcase classname="tests.test_mapping_and_colors" name="test_nonpositive_color_bin_counts_are_rejected[0]" time="0.001"><failure message="Failed: DID NOT RAISE ValueError">bad_bins = 0
+
+    @pytest.mark.color
+    @pytest.mark.parametrize("bad_bins", [0, -1])
+    def test_nonpositive_color_bin_counts_are_rejected(bad_bins: int) -&gt; None:
+&gt;       with pytest.raises(ValueError):
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+E       Failed: DID NOT RAISE ValueError
+
+../08-10-2026/pathveiw bug checks/tests/test_mapping_and_colors.py:268: Failed</failure></testcase><testcase classname="tests.test_mapping_and_colors" name="test_nonpositive_color_bin_counts_are_rejected[-1]" time="0.001"><failure message="Failed: DID NOT RAISE ValueError">bad_bins = -1
+
+    @pytest.mark.color
+    @pytest.mark.parametrize("bad_bins", [0, -1])
+    def test_nonpositive_color_bin_counts_are_rejected(bad_bins: int) -&gt; None:
+&gt;       with pytest.raises(ValueError):
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+E       Failed: DID NOT RAISE ValueError
+
+../08-10-2026/pathveiw bug checks/tests/test_mapping_and_colors.py:268: Failed</failure></testcase><testcase classname="tests.test_mapping_and_colors" name="test_colormap_accepts_named_and_hex_colors" time="0.001" /><testcase classname="tests.test_mapping_and_colors" name="test_hard_wordwrap_rejects_zero_width_instead_of_hanging" time="0.137"><skipped type="pytest.xfail" message="PV-BUG-079: wordwrap width=0 with break_word=True makes no progress and loops forever" /></testcase></testsuite></testsuites>

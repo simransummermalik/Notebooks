@@ -1,0 +1,76 @@
+{
+  "comparison": "R pathview 1.52.0 versus Python Pathview Plus 2.0.2",
+  "pathway": "hsa04110 Cell cycle",
+  "fixture": "identical Bioconductor pathview 1.52.0 hsa04110.xml and hsa04110.png",
+  "input": {
+    "columns": [
+      "Classical",
+      "Basal"
+    ],
+    "Classical": "negative, first column, expected left green half",
+    "Basal": "positive, second column, expected right red half"
+  },
+  "mapped_table_parity": {
+    "python_gene_node_rows": 92,
+    "r_gene_node_rows": 92,
+    "python_mapped_rows": 3,
+    "r_mapped_rows": 3,
+    "common_mapped_coordinates": 3,
+    "maximum_value_difference": 0.0,
+    "r_state_colors": {
+      "Classical": [
+        "#00FF00",
+        "#26F226"
+      ],
+      "Basal": [
+        "#F22626",
+        "#FF0000"
+      ]
+    }
+  },
+  "pixel_orientation": {
+    "shared_image_shape": [
+      801,
+      1039,
+      4
+    ],
+    "node": "Entrez 1029 / CDKN2A at x=532, y=124",
+    "python_pixel_counts": {
+      "left_green": 316,
+      "right_green": 0,
+      "left_red": 0,
+      "right_red": 334
+    },
+    "r_pixel_counts": {
+      "left_green": 316,
+      "right_green": 0,
+      "left_red": 0,
+      "right_red": 334
+    },
+    "figure": "results/comparison/r_vs_python_half_half.png"
+  },
+  "file_checks": {
+    "one_condition_png": {
+      "python_bytes": 119145,
+      "r_bytes": 59623,
+      "status": "both valid non-empty files"
+    },
+    "two_condition_png": {
+      "python_bytes": 122712,
+      "r_bytes": 59746,
+      "status": "both valid non-empty files"
+    },
+    "three_condition_png": {
+      "python_bytes": 123677,
+      "r_bytes": 59863,
+      "status": "both valid non-empty files"
+    },
+    "graph_pdf": {
+      "python_bytes": 32539,
+      "r_bytes": 19039,
+      "status": "both valid non-empty files"
+    }
+  },
+  "overall_status": "pass",
+  "important_difference": "Native PNG supports the same two-state order in both tools. R Graphviz can show multiple states; Python's graph/PDF renderer uses only the first state."
+}

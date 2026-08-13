@@ -1,0 +1,5 @@
+implementation	scenario	format	output_file	bytes	sha256
+Python Pathview Plus	shared two-state mapping	SVG	08-11-2026/results/sbgnview/P00001.new.layout.python-two-state.svg	527536	32a6ab15dc49e1512cffa44982a5d923027d3a7dd6e26d443861ab1ea9d5fc0f
+Python Pathview Plus	shared two-state mapping	PNG	08-11-2026/results/sbgnview/P00001.new.layout.python-two-state.png	519961	5b10aab2f32349f6e54643f4ddc35394bf4582fca71ca0009a14ba65028205ca
+Python Pathview Plus	namespaced shared two-state mapping	SVG	08-11-2026/results/sbgnview/P00001.namespaced.python-two-state.svg	527536	8f10e310b8327f8026bbc039e5f491cf4af8962e41d5c1db1d39566c56f26c08
+Python Pathview Plus	ports/state/clone fixture	SVG	08-11-2026/results/sbgnview/ports_pd.python-structural.svg	47313	dcd49051979240afa8e920a2cfe04efe60c80eb18f72bff20e6ed61eae3ecf8d

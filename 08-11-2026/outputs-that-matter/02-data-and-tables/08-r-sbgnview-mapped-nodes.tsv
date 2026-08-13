@@ -1,0 +1,13 @@
+entry_id	glyph_label	glyph_class	input_symbols	Control	Treatment
+Protein_608bc3adf283a9858c923f468826fcb4	COMT	macromolecule	COMT	-1.5	1.5
+Protein_a71e0202399297eb56653c5a0d76d30d	VAT1	macromolecule	SLC18A2	1	-1
+Protein_867b0dee991e64eb90508c5abeaa8605_Complex_4e65cdd554d14679587b7822e6426705	VAT1	macromolecule	SLC18A2	1	-1
+Protein_93b7b794c67db60739980abed5887b3d_Complex_c0c21acd06cad8915dc6d562a17cb92b	SLC18A2	macromolecule	SLC18A2	1	-1
+Protein_51ab5a199dfaade855ed64a9f22c969d_Complex_44d4dcd34a2e5efec04d9de60ae65344	VAT1	macromolecule	SLC18A2	1	-1
+Protein_29affa8c14b24efa919422a19945a414	DDC	macromolecule	DDC	-1	1
+Protein_b8e33f6ebba469f6187e8e8b6641868e	SLC18A2	macromolecule	SLC18A2	1	-1
+Protein_df07a65aa8c4d5b103e43486b6fd967d	TH	macromolecule	TH	-0.5	0.5
+Protein_76137db58b37ef9d06406f5542675a9b	DBH	macromolecule	DBH	0	0
+Protein_b734927c10297d1db3f9bc290d7a06b5	SLC6A3	macromolecule	SLC6A3	1.5	-1.5
+Protein_78ba18c5ad71491fadbf87a2024002c5	PNMT	macromolecule	PNMT	0.5	-0.5
+Protein_822718f4659f95fbc0a536c3473d449f_Complex_11851c2240a559a2fcd9de61d553684c	SLC6A3	macromolecule	SLC6A3	1.5	-1.5

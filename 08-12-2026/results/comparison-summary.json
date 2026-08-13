@@ -1,0 +1,87 @@
+{
+  "comparison_date": "2026-08-12",
+  "old_snapshot": {
+    "commit": "07aee813375347bcc933ad21b4aed561dd7cd3bf",
+    "distribution_version": "2.0.2",
+    "runtime_version": "2.0.0",
+    "audit_date": "2026-08-10",
+    "unique_findings": 86,
+    "test_run": {
+      "total_test_cases": 239,
+      "status_counts": {
+        "FEATURE_GAP": 7,
+        "KNOWN_BUG": 89,
+        "PASS": 143
+      },
+      "unique_reproduced_findings": 86,
+      "unique_confirmed_bug_ids": 79,
+      "unique_feature_gap_ids": 7,
+      "unexpected_failures": 0,
+      "total_seconds": 11.846
+    }
+  },
+  "new_snapshot": {
+    "commit": "d4d45decec56e1ebec15cf04ae62ff944851780e",
+    "package_version": "3.1.0",
+    "source_commit_date": "2026-08-11",
+    "upstream_test_run": {
+      "collected": 327,
+      "passed": 321,
+      "skipped": 6,
+      "failed": 0
+    }
+  },
+  "classification_counts": {
+    "total": 86,
+    "fixed": 60,
+    "still_reproducible": 19,
+    "changed": 7,
+    "not_retested": 0
+  },
+  "classification_percentages": {
+    "fixed": 69.8,
+    "still_reproducible": 22.1,
+    "changed": 8.1
+  },
+  "priority_by_status": {
+    "P2/P3": {
+      "fixed": 46,
+      "still_reproducible": 14,
+      "changed": 6
+    },
+    "P1": {
+      "fixed": 14,
+      "still_reproducible": 5,
+      "changed": 1
+    }
+  },
+  "old_kind_by_status": {
+    "reproduced_bug": {
+      "fixed": 54,
+      "still_reproducible": 19,
+      "changed": 6
+    },
+    "feature_gap": {
+      "fixed": 6,
+      "still_reproducible": 0,
+      "changed": 1
+    }
+  },
+  "remaining_p1_ids": [
+    "PV-BUG-006",
+    "PV-BUG-034",
+    "PV-BUG-038",
+    "PV-BUG-074",
+    "PV-BUG-075"
+  ],
+  "changed_ids": [
+    "PV-BUG-005",
+    "PV-BUG-016",
+    "PV-BUG-018",
+    "PV-BUG-047",
+    "PV-BUG-067",
+    "PV-BUG-077",
+    "PV-FEATURE-007"
+  ],
+  "comparison_note": "The 239 August 10 outcomes and the 327 v3 outcomes come from different suites and cannot be read as before-and-after pass rates. The comparable denominator is the same 86 unique August 10 findings, each assigned one current status."
+}

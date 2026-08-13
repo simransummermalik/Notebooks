@@ -1,0 +1,15 @@
+pathview-plus smoke test (offline)
+
+  PASS  import              pathview 3.1.0, 158 exports
+  PASS  bundled data        8 data files, 8,810 KB
+  PASS  species lookup      10,718 organisms, 4/4 lookups correct
+  PASS  compound names      names and conjugate-base lookup correct
+  PASS  colour scales       R-parity binning and clamping correct
+  PASS  aggregation         all 8 aggregation methods work
+  PASS  identifier routing  routing works: entrez -> ko -> pathwaycommons -> symbol
+  PASS  SBGN collection     5,206 pathways across 5 sources
+  PASS  database dispatch   6 sources, all with working downloaders
+  PASS  splines             curves finite for all inputs
+  PASS  parse + render      parsed 3 nodes / 1 edge, rendered 52 KB
+
+11 passed, 0 failed

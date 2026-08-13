@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="1" failures="0" skipped="0" tests="1" time="0.238" timestamp="2026-08-11T15:07:04.922534-04:00" hostname="Summers-MacBook-Air.local"><testcase classname="" name="tests.test_rendering" time="0.000"><error message="collection failure">ImportError while importing test module '/Users/summermalik/Desktop/PATHVIEW-MARKDOWN/08-10-2026/pathveiw bug checks/tests/test_rendering.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/importlib/__init__.py:88: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../08-10-2026/pathveiw bug checks/tests/test_rendering.py:14: in &lt;module&gt;
+    from pathview.rendering import _hex_to_rgb255, _paint_cpd_nodes, _paint_gene_nodes
+E   ImportError: cannot import name '_hex_to_rgb255' from 'pathview.rendering' (/Users/summermalik/Desktop/PATHVIEW-MARKDOWN/08-11-2026/sources/pathview-plus/lib/rendering.py)</error></testcase></testsuite></testsuites>

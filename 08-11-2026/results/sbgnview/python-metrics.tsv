@@ -1,0 +1,4 @@
+scenario	input_file	input_sha256	xml_namespace	xml_glyph_elements	xml_arc_elements	primary_glyphs	compartments	parser_arcs	node_rows	edge_rows	gene_nodes	compound_nodes	process_nodes	operator_nodes	ports_indexed	state_variables	clone_markers	arcs_total	arcs_resolved	arcs_via_port	resolution_rate
+P00001 bare XML	08-11-2026/sources/pathview-plus/tests/fixtures/P00001.new.layout.sbgn	b96b3f8536725639f5f9901d22b3dc3a8683295aad7c5cfa6235d08b622fa142	none	78	83	76	2	83	76	83	28	24	24	0	0	0	0	83	83	0	1.0
+P00001 default namespace	08-11-2026/sources/pathview-plus/tests/fixtures/P00001.namespaced.sbgn	7346f7b01b609aa10239447f8c2fdc65c117ea1085c4dce3d1b1444070a8afd4	http://sbgn.org/libsbgn/pd/0.1	78	83	76	2	83	76	83	28	24	24	0	0	0	0	83	83	0	1.0
+ports, state, and clone fixture	08-11-2026/sources/pathview-plus/tests/fixtures/ports_pd.sbgn	d86f9a1fc8769f557b02db9a3b96c56de964b135d46be9a2e2ff17261ab953cc	http://sbgn.org/libsbgn/pd/0.1	6	3	4	1	3	4	3	1	2	1	0	2	1	1	3	3	2	1.0

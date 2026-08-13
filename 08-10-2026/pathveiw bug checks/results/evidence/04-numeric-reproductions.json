@@ -1,0 +1,11 @@
+{
+  "decimal_10_color": "#BF4040",
+  "string_10_interpreted_as_hex_color": "#E51919",
+  "colors_match": false,
+  "catmull_rom_shape": [
+    30,
+    2
+  ],
+  "catmull_rom_all_finite": false,
+  "catmull_rom_nonfinite_values": 40
+}

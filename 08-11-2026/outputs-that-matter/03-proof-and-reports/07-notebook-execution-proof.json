@@ -1,0 +1,12 @@
+{
+  "source_notebook": "notebooks/01-pathview-v3-vs-r-and-sbgnview.ipynb",
+  "executed_notebook": "notebooks/executed/01-pathview-v3-vs-r-and-sbgnview.executed.ipynb",
+  "code_cells": 11,
+  "executed_code_cells": 11,
+  "unexecuted_code_cells": 0,
+  "error_outputs": 0,
+  "status": "pass",
+  "python": "3.14.3",
+  "pathview_plus": "3.1.0",
+  "commit": "d4d45decec56e1ebec15cf04ae62ff944851780e"
+}

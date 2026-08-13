@@ -1,0 +1,60 @@
+component,feature,status,evidence,notes
+PyGAGE,Install/import repository 1.2.1,PASS,Imported from commit 265ab1a; Python 3.14.3,Repository version tested directly
+PyGAGE,Raw expression matrix,PASS,test_convenience_gage_raw_and_prepared,Genes × samples with string gene IDs
+PyGAGE,Prepared fold-change matrix,PASS,Toy and GSE16873 regressions,Single and multiple fold-change columns
+PyGAGE,Paired comparison,PASS,Toy + 13 matched new-data pairs,Equal reference/sample counts
+PyGAGE,Unpaired comparison,PASS,Automated offline test,Every sample-vs-reference contrast
+PyGAGE,as.group comparison,PASS,Automated offline test,One group-mean difference
+PyGAGE,1ongroup comparison,PASS,Automated offline test,Each sample versus reference mean
+PyGAGE,Repeated sample blocks per paired reference,EXPECTED XFAIL,test_multiple_sample_blocks_per_reference_are_supported,Documented multiple currently produces a shape mismatch
+PyGAGE,DE table and preranked input,PASS,Automated input-adapter test,Auto-detect log2FC/stat and dict rankings
+PyGAGE,Polars/pandas/dict/AnnData inputs,PASS,Automated input-adapter tests,AnnData 0.13.2 included
+PyGAGE,t-test,PASS,Six-method matrix + R regression,Greater and less directions
+PyGAGE,z-test,PASS,Six-method matrix + R regression,Greater and less directions
+PyGAGE,KS test,PASS,Six-method matrix,Finite results on controlled data
+PyGAGE,Stouffer meta-method,PASS,Six-method matrix + R regression,
+PyGAGE,Fisher meta-method,PASS,Six-method matrix + R regression,
+PyGAGE,Directional and directionless,PASS,Automated offline tests,greater/less and magnitude-only
+PyGAGE,BH and global BH,PASS,Known values + extended options,NaN-preserving BH
+PyGAGE,"Control genes, effects, leading edge",PASS,Extended-options test,
+PyGAGE,Threaded gene-set loop,PASS,n_jobs=2 deterministic test,Thread environment also checked
+PyGAGE,Permutation p-value,EXPECTED XFAIL,test_permutation_null_is_informative,Column-order permutation leaves the tested statistic invariant
+PyGAGE,GMT/MSigDB/Reactome/GO gene sets,PASS,Automated loader tests,Includes GO propagation and cache round-trip
+PyGAGE,Result filtering/comparison/grouping,PASS,Automated result-helper tests,Includes esset_grp and Venn comparison
+PyGAGE,Bubble/enrichment heatmap/running enrichment,PASS,Saved PNGs + automated plot tests,
+PyGAGE,Pathway gene-color chart,EXPECTED XFAIL,test_new_pathway_gene_color_chart,Uses matplotlib.cm.get_cmap removed in Matplotlib 3.11
+PyGAGE,CLI run/go/compare,PASS,results/pygage/cli_*,All three commands returned 0
+PyGAGE,CLI live KEGG,NOT RUN,Requires live KEGG,Current organism-list endpoint returned HTTP 400 during source audit
+PyGAGE,Packaged R GAGE numerical parity,PASS,results/pygage/r_gage_parity.csv,Max absolute differences around 10^-15
+PyGAGE,Newest large data file,PASS,"13 matched pairs, 162 tested pathways",Filename/provenance should be confirmed before publication
+PyGAGE,Top-level star import,EXPECTED XFAIL,test_star_import_contract,__all__ lists normalize_gene_sets without package-scope import
+Pathview Plus,Install/import repository 2.0.2,PASS,Imported from commit 07aee81,Runtime __version__ reports 2.0.0
+Pathview Plus,One-condition native PNG,PASS,hsa04110.classical.png,Full-width node fill
+Pathview Plus,Two-condition native PNG,PASS,hsa04110.half_half.png,"First column left, second right"
+Pathview Plus,Exact half-and-half pixels,PASS,"CDKN2A crop: 316 left-green, 334 right-red",Wrong-side counts were zero
+Pathview Plus,Three-condition native PNG,PASS,hsa04110.three_state.png,Three ordered bands
+Pathview Plus,SVG file,PARTIAL,"Valid XML, ordered split-node geometry",Current renderer does not receive pathway edges/background
+Pathview Plus,Graph/PDF file,PARTIAL,Valid %PDF file,Uses first state only and graph receives no pathway edges
+Pathview Plus,Gene plus compound mapping,PARTIAL,Offline compound painter passed,Fresh hsa00010 end-to-end needs live KEGG
+Pathview Plus,KO pathway,NOT RUN,Prepared ko00910 input included,Fresh ko00910 assets need live KEGG
+Pathview Plus,KGML parsing,PASS,Automated node/relation/reaction test,Official hsa04110 parsed too
+Pathview Plus,Namespaced SBGN parsing,EXPECTED XFAIL,test_sbgn_parser_and_unified_dataframe,Namespace-qualified glyph/arc search is missing
+Pathview Plus,sum/mean/median/max aggregation,PASS,Automated aggregation tests,
+Pathview Plus,max_abs/random aggregation,EXPECTED XFAIL,max_abs automated; random source audit,Current Polars group UDF receives scalar values
+Pathview Plus,"Continuous colors, clipping, NA, transform",PASS,Automated color tests,Odd bins put zero exactly at midpoint
+Pathview Plus,Discrete color mode,PARTIAL,Source/API audit,Argument is accepted but ignored by node_color
+Pathview Plus,Highlighting layer primitives,PARTIAL,Synthetic PathwayResult composition passed,"pathview() returns dict, so documented direct composition is not end-to-end"
+Pathview Plus,Cubic/quadratic spline helpers,PASS,Finite endpoints and SVG path tests,
+Pathview Plus,Catmull–Rom spline,EXPECTED XFAIL,test_catmull_rom_documented_default_is_finite,Duplicated endpoints cause zero denominators
+Pathview Plus,Fresh live KEGG pathways,NOT RUN,--live suite included,Network approval unavailable in final local run
+Pathview Plus,Package/runtime version agreement,EXPECTED XFAIL,test_distribution_and_runtime_versions_match,Distribution 2.0.2 vs runtime 2.0.0
+R pathview,Bioconductor 1.52.0 install,PASS,R 4.6.1 / Bioconductor 3.23,Local project library
+R pathview,One-condition native PNG,PASS,hsa04110.r_classical.png,3 controlled genes mapped
+R pathview,Two-condition multi.state PNG,PASS,hsa04110.r_half_half.multi.png,"Classical left, Basal right"
+R pathview,Three-condition multi.state PNG,PASS,hsa04110.r_three_state.multi.png,Ordered bands
+R pathview,Official gse16873 example,PASS,hsa04110.r_gse16873.png,"11,979 input genes; 91 mapped nodes"
+R pathview,Graphviz multi-state PDF,PASS,hsa04110.r_graph.multi.pdf,Valid non-empty PDF
+R pathview,Required exported helper surface,PASS,12/12 required exports present,
+R vs Python,Mapped coordinate/value parity,PASS,3/3 controlled mapped rows,Maximum value difference 0
+R vs Python,Half-and-half pixel orientation,PASS,results/comparison/comparison.json,"Both: 316 left-green, 334 right-red, zero wrong-side"
+Jupyter,All four notebooks execute,PASS,Fresh-kernel nbconvert execution,No notebook error outputs

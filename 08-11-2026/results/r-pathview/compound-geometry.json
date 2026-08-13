@@ -1,0 +1,27 @@
+{
+  "method": "Measured blue/yellow pixels around C00022 on a locally generated blank background",
+  "result": {
+    "compound": "C00022",
+    "image_height": 800,
+    "kgml_center": {
+      "x": 716,
+      "y": 241
+    },
+    "observed_colored_center": {
+      "x": 717,
+      "y": 242
+    },
+    "vertically_mirrored_candidate_y": 559,
+    "colored_bbox": {
+      "left": 710,
+      "right": 724,
+      "top": 235,
+      "bottom": 249
+    },
+    "observed_half_width_px": 8,
+    "observed_half_height_px": 8,
+    "kgml_width_px": 8,
+    "kgml_height_px": 8,
+    "kgml_radius_if_dimensions_are_diameters_px": 4
+  }
+}

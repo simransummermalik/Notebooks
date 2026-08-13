@@ -1,0 +1,7 @@
+test_method,meta_method,tested_sets,top_greater,top_less,finite_p_values
+t-test,stouffer,4,UP_SET,DOWN_SET,true
+t-test,fisher,4,UP_SET,DOWN_SET,true
+z-test,stouffer,4,UP_SET,DOWN_SET,true
+z-test,fisher,4,UP_SET,DOWN_SET,true
+ks-test,stouffer,4,UP_SET,DOWN_SET,true
+ks-test,fisher,4,UP_SET,DOWN_SET,true

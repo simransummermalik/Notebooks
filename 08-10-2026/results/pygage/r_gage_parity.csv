@@ -1,0 +1,4 @@
+test_method,meta_method,common_gene_sets,max_abs_stat_difference,max_abs_p_difference
+t-test,stouffer,160,4.884981308350689e-15,1.4432899320127035e-15
+z-test,stouffer,160,5.773159728050814e-15,2.1094237467877974e-15
+t-test,fisher,160,4.884981308350689e-15,1.9984014443252818e-15

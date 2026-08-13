@@ -1,0 +1,201 @@
+============================= test session starts ==============================
+platform darwin -- Python 3.14.3, pytest-9.1.1, pluggy-1.6.0
+rootdir: /Users/summermalik/Desktop/PATHVIEW-MARKDOWN/pathveiw bug checks
+configfile: pytest.ini
+plugins: anyio-4.14.2, zarr-3.3.0
+collected 239 items
+
+tests/test_cli_and_integrations.py ....xxxx..x.xxxx.xxxx.x......xx.xxxxx [ 15%]
+xx                                                                       [ 16%]
+tests/test_highlighting_and_splines.py .....xxxxxxxxx........xxx..xxxxxx [ 30%]
+                                                                         [ 30%]
+tests/test_mapping_and_colors.py .....xx.xxx....xx..x......xx...x        [ 43%]
+tests/test_parsers.py ....xxxx.xxxxxxx                                   [ 50%]
+tests/test_public_core.py .............................................. [ 69%]
+.........x.......xxxxxxxxxxxxxxx.....x                                   [ 85%]
+tests/test_rendering.py ......xxx...xx.x.....x...xxxxxxx.xx              [100%]
+
+=============================== warnings summary ===============================
+tests/test_cli_and_integrations.py::test_panther_downloader_returns_path
+  /private/tmp/pathview-plus-main-20260810/lib/databases.py:159: UserWarning: PANTHER SBGN downloads not yet implemented. Please download SBGN-ML files manually from PANTHER website.
+    warnings.warn(
+
+tests/test_cli_and_integrations.py::test_smpdb_downloader_returns_path
+  /private/tmp/pathview-plus-main-20260810/lib/databases.py:193: UserWarning: SMPDB SBGN downloads not yet fully implemented. Check https://smpdb.ca for pathway files.
+    warnings.warn(
+
+tests/test_cli_and_integrations.py::test_core_routes_reactome_ids_to_reactome_pipeline
+  /private/tmp/pathview-plus-main-20260810/lib/pathview.py:159: UserWarning: Failed to download files for hsaR-HSA-109582; skipping.
+    warnings.warn(f"Failed to download files for {pathway_name}; skipping.")
+
+tests/test_highlighting_and_splines.py::test_catmull_rom_documented_inputs_are_finite[points0]
+tests/test_highlighting_and_splines.py::test_catmull_rom_documented_inputs_are_finite[points1]
+tests/test_highlighting_and_splines.py::test_catmull_rom_documented_inputs_are_finite[points2]
+tests/test_highlighting_and_splines.py::test_orthogonal_route_is_finite
+  /private/tmp/pathview-plus-main-20260810/lib/splines.py:159: RuntimeWarning: invalid value encountered in scalar divide
+    a1 = (t1 - ti) / (t1 - t0) * np.array(p0) + (ti - t0) / (t1 - t0) * np.array(p1)
+
+tests/test_highlighting_and_splines.py::test_catmull_rom_documented_inputs_are_finite[points0]
+tests/test_highlighting_and_splines.py::test_catmull_rom_documented_inputs_are_finite[points1]
+tests/test_highlighting_and_splines.py::test_catmull_rom_documented_inputs_are_finite[points2]
+tests/test_highlighting_and_splines.py::test_orthogonal_route_is_finite
+  /private/tmp/pathview-plus-main-20260810/lib/splines.py:159: RuntimeWarning: divide by zero encountered in scalar divide
+    a1 = (t1 - ti) / (t1 - t0) * np.array(p0) + (ti - t0) / (t1 - t0) * np.array(p1)
+
+tests/test_highlighting_and_splines.py::test_catmull_rom_documented_inputs_are_finite[points0]
+tests/test_highlighting_and_splines.py::test_catmull_rom_documented_inputs_are_finite[points1]
+tests/test_highlighting_and_splines.py::test_catmull_rom_documented_inputs_are_finite[points2]
+tests/test_highlighting_and_splines.py::test_orthogonal_route_is_finite
+  /private/tmp/pathview-plus-main-20260810/lib/splines.py:159: RuntimeWarning: invalid value encountered in multiply
+    a1 = (t1 - ti) / (t1 - t0) * np.array(p0) + (ti - t0) / (t1 - t0) * np.array(p1)
+
+tests/test_highlighting_and_splines.py::test_catmull_rom_documented_inputs_are_finite[points0]
+tests/test_highlighting_and_splines.py::test_catmull_rom_documented_inputs_are_finite[points1]
+tests/test_highlighting_and_splines.py::test_catmull_rom_documented_inputs_are_finite[points2]
+tests/test_highlighting_and_splines.py::test_orthogonal_route_is_finite
+  /private/tmp/pathview-plus-main-20260810/lib/splines.py:161: RuntimeWarning: divide by zero encountered in scalar divide
+    a3 = (t3 - ti) / (t3 - t2) * np.array(p2) + (ti - t2) / (t3 - t2) * np.array(p3)
+
+tests/test_highlighting_and_splines.py::test_catmull_rom_documented_inputs_are_finite[points0]
+tests/test_highlighting_and_splines.py::test_catmull_rom_documented_inputs_are_finite[points1]
+tests/test_highlighting_and_splines.py::test_catmull_rom_documented_inputs_are_finite[points2]
+tests/test_highlighting_and_splines.py::test_orthogonal_route_is_finite
+  /private/tmp/pathview-plus-main-20260810/lib/splines.py:161: RuntimeWarning: invalid value encountered in add
+    a3 = (t3 - ti) / (t3 - t2) * np.array(p2) + (ti - t2) / (t3 - t2) * np.array(p3)
+
+tests/test_highlighting_and_splines.py::test_catmull_rom_documented_inputs_are_finite[points0]
+tests/test_highlighting_and_splines.py::test_catmull_rom_documented_inputs_are_finite[points1]
+tests/test_highlighting_and_splines.py::test_catmull_rom_documented_inputs_are_finite[points2]
+tests/test_highlighting_and_splines.py::test_orthogonal_route_is_finite
+  /private/tmp/pathview-plus-main-20260810/lib/splines.py:161: RuntimeWarning: invalid value encountered in scalar divide
+    a3 = (t3 - ti) / (t3 - t2) * np.array(p2) + (ti - t2) / (t3 - t2) * np.array(p3)
+
+tests/test_highlighting_and_splines.py::test_catmull_rom_documented_inputs_are_finite[points2]
+  /private/tmp/pathview-plus-main-20260810/lib/splines.py:160: RuntimeWarning: invalid value encountered in scalar divide
+    a2 = (t2 - ti) / (t2 - t1) * np.array(p1) + (ti - t1) / (t2 - t1) * np.array(p2)
+
+tests/test_highlighting_and_splines.py::test_catmull_rom_documented_inputs_are_finite[points2]
+  /private/tmp/pathview-plus-main-20260810/lib/splines.py:166: RuntimeWarning: invalid value encountered in scalar divide
+    c = (t2 - ti) / (t2 - t1) * b1 + (ti - t1) / (t2 - t1) * b2
+
+tests/test_highlighting_and_splines.py::test_catmull_rom_documented_inputs_are_finite[points2]
+  /private/tmp/pathview-plus-main-20260810/lib/splines.py:161: RuntimeWarning: invalid value encountered in multiply
+    a3 = (t3 - ti) / (t3 - t2) * np.array(p2) + (ti - t2) / (t3 - t2) * np.array(p3)
+
+tests/test_highlighting_and_splines.py::test_catmull_rom_documented_inputs_are_finite[points2]
+  /private/tmp/pathview-plus-main-20260810/lib/splines.py:159: RuntimeWarning: invalid value encountered in add
+    a1 = (t1 - ti) / (t1 - t0) * np.array(p0) + (ti - t0) / (t1 - t0) * np.array(p1)
+
+tests/test_mapping_and_colors.py: 4 warnings
+tests/test_public_core.py: 36 warnings
+  /private/tmp/pathview-plus-main-20260810/lib/node_mapping.py:56: DeprecationWarning: In Polars 2.0, the default behavior for `empty_as_null` will change to `False`. To keep the current behavior, explicitly set `empty_as_null=True`.
+    .explode("kegg_names")
+
+tests/test_public_core.py::test_conflicting_pathway_prefix_is_rejected
+  /private/tmp/pathview-plus-main-20260810/lib/pathview.py:159: UserWarning: Failed to download files for hsammu00001; skipping.
+    warnings.warn(f"Failed to download files for {pathway_name}; skipping.")
+
+tests/test_public_core.py::test_svg_core_needs_only_cached_xml
+  /private/tmp/pathview-plus-main-20260810/lib/pathview.py:159: UserWarning: Failed to download files for hsa00001; skipping.
+    warnings.warn(f"Failed to download files for {pathway_name}; skipping.")
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+- generated xml file: /Users/summermalik/Desktop/PATHVIEW-MARKDOWN/pathveiw bug checks/results/junit.xml -
+=========================== short test summary info ============================
+XFAIL tests/test_cli_and_integrations.py::test_cli_compound_only_workflow - PV-BUG-052: CLI unconditionally calls gene_data.cast even for compound-only input
+XFAIL tests/test_cli_and_integrations.py::test_cli_simulation_can_be_combined_with_compound_data - PV-BUG-077: --simulate branch silently ignores a supplied --cpd-data file
+XFAIL tests/test_cli_and_integrations.py::test_cli_reports_non_null_mapped_count - PV-BUG-053: CLI reports pathway row count as 'nodes mapped', including null rows
+XFAIL tests/test_cli_and_integrations.py::test_upstream_feature_script_runs_as_documented - PV-BUG-054: upstream feature script fails when run directly because of relative imports
+XFAIL tests/test_cli_and_integrations.py::test_species_resolution_accepts_common_name - PV-BUG-055: promised common-name lookup requires exact equality with full KEGG description
+XFAIL tests/test_cli_and_integrations.py::test_kegg_download_rejects_invalid_file_type - PV-BUG-056: invalid KEGG file types fail with internal KeyError instead of validation error
+XFAIL tests/test_cli_and_integrations.py::test_kegg_download_rejects_html_error_page_with_status_200[xml] - PV-BUG-057: KEGG downloader trusts any HTTP 200 body without format/content validation
+XFAIL tests/test_cli_and_integrations.py::test_kegg_download_rejects_html_error_page_with_status_200[png] - PV-BUG-057: KEGG downloader trusts any HTTP 200 body without format/content validation
+XFAIL tests/test_cli_and_integrations.py::test_mygene_uses_documented_batch_query_endpoint - PV-BUG-058: MyGene batch endpoint is /v3/query, not coded /v3/querymany
+XFAIL tests/test_cli_and_integrations.py::test_mygene_nested_uniprot_result_extracts_accession - PV-BUG-059: nested MyGene fields are stringified as Python dicts instead of extracting IDs
+XFAIL tests/test_cli_and_integrations.py::test_mygene_returnall_response_shape_is_supported - PV-BUG-078: MyGene returnall dictionary response is iterated as if it were a list of hits
+XFAIL tests/test_cli_and_integrations.py::test_symbol_mapping_translates_kegg_species_to_mygene_species - PV-BUG-060: core forwards KEGG code 'hsa' where MyGene documents common names/taxonomy IDs
+XFAIL tests/test_cli_and_integrations.py::test_compound_mapping_uses_documented_kegg_database_name - PV-BUG-061: KEGG chemical conversion uses alias 'cpd' where API specifies 'compound'
+XFAIL tests/test_cli_and_integrations.py::test_compound_mapping_normalizes_prefixed_input - PV-BUG-062: already-prefixed compound IDs receive a duplicate source prefix
+XFAIL tests/test_cli_and_integrations.py::test_database_detection_validates_smpdb_identifier - PV-BUG-063: SMP prefix detection accepts malformed arbitrary IDs
+XFAIL tests/test_cli_and_integrations.py::test_database_detection_is_case_insensitive - PV-BUG-064: database detection is unexpectedly case-sensitive
+XFAIL tests/test_cli_and_integrations.py::test_reactome_downloader_uses_file_exporter_route - PV-BUG-074: Reactome SBGN file exporter route is coded as /exporter/sbgn/{id}.sbgn instead of /exporter/event/{id}.sbgn
+XFAIL tests/test_cli_and_integrations.py::test_sbgn_downloaders_reject_html[download_reactome-R-HSA-109582] - PV-BUG-065: SBGN downloaders accept HTTP 200 HTML pages as successful pathway files
+XFAIL tests/test_cli_and_integrations.py::test_sbgn_downloaders_reject_html[download_metacyc-PWY-7210] - PV-BUG-065: SBGN downloaders accept HTTP 200 HTML pages as successful pathway files
+XFAIL tests/test_cli_and_integrations.py::test_reactome_listing_uses_requested_species - PV-BUG-066: list_reactome_pathways hardcodes Homo sapiens in URL
+XFAIL tests/test_cli_and_integrations.py::test_panther_downloader_returns_path - PV-FEATURE-005: PANTHER downloader is an explicit unimplemented stub
+XFAIL tests/test_cli_and_integrations.py::test_smpdb_downloader_returns_path - PV-FEATURE-006: SMPDB downloader is an explicit unimplemented stub
+XFAIL tests/test_cli_and_integrations.py::test_core_routes_reactome_ids_to_reactome_pipeline - PV-FEATURE-007: non-KEGG database detection/download/parsing is not wired through pathview()
+XFAIL tests/test_highlighting_and_splines.py::test_default_named_node_highlight_color_works - PV-BUG-032: documented/default named highlight colors are parsed as six-digit hex
+XFAIL tests/test_highlighting_and_splines.py::test_highlight_border_uses_same_coordinates_as_native_gene_node - PV-BUG-039: highlights flip y but native gene painting does not, so borders miss noncentral nodes
+XFAIL tests/test_highlighting_and_splines.py::test_border_opacity_blends_with_existing_pixels - PV-BUG-040: highlight opacity argument is ignored
+XFAIL tests/test_highlighting_and_splines.py::test_change_labels_visibly_changes_rendered_result - PV-BUG-041: change_labels records metadata but does not alter the saved image
+XFAIL tests/test_highlighting_and_splines.py::test_edge_highlighting_supports_compounds - PV-BUG-042: edge highlighting builds positions from genes only
+XFAIL tests/test_highlighting_and_splines.py::test_line_thickness_one_is_exactly_one_pixel - PV-BUG-043: requested one-pixel line is drawn two pixels thick
+XFAIL tests/test_highlighting_and_splines.py::test_save_infers_format_from_file_extension - PV-BUG-044: save() does not infer PDF from path and writes PNG bytes to a .pdf name
+XFAIL tests/test_highlighting_and_splines.py::test_highlighting_supports_rgba_pathway_images - PV-BUG-072: highlight drawing cannot assign RGB tuples into RGBA arrays
+XFAIL tests/test_highlighting_and_splines.py::test_label_changes_survive_later_highlight_layers - PV-BUG-073: dynamic label-change metadata is lost when another layer is chained
+XFAIL tests/test_highlighting_and_splines.py::test_catmull_rom_documented_inputs_are_finite[points0] - PV-BUG-045: duplicated phantom/repeated Catmull-Rom points cause zero denominators and NaNs
+XFAIL tests/test_highlighting_and_splines.py::test_catmull_rom_documented_inputs_are_finite[points1] - PV-BUG-045: duplicated phantom/repeated Catmull-Rom points cause zero denominators and NaNs
+XFAIL tests/test_highlighting_and_splines.py::test_catmull_rom_documented_inputs_are_finite[points2] - PV-BUG-045: duplicated phantom/repeated Catmull-Rom points cause zero denominators and NaNs
+XFAIL tests/test_highlighting_and_splines.py::test_curved_routing_works_without_obstacle_list - PV-BUG-046: obstacles=None forces every routing mode to a straight two-point line
+XFAIL tests/test_highlighting_and_splines.py::test_edge_route_avoids_supplied_obstacle - PV-BUG-047: obstacles argument is not consulted by routing implementation
+XFAIL tests/test_highlighting_and_splines.py::test_orthogonal_route_is_finite - PV-BUG-048: orthogonal routing delegates to broken Catmull-Rom implementation
+XFAIL tests/test_highlighting_and_splines.py::test_unknown_routing_mode_is_rejected - PV-BUG-049: unknown routing mode silently falls back to straight
+XFAIL tests/test_highlighting_and_splines.py::test_smooth_svg_tension_changes_curve - PV-BUG-050: smooth_path_svg tension parameter is unused
+XFAIL tests/test_highlighting_and_splines.py::test_nonfinite_curve_is_rejected_before_svg_serialization - PV-BUG-051: nonfinite curve values are serialized directly into SVG
+XFAIL tests/test_mapping_and_colors.py::test_all_advertised_aggregations_work[max_abs] - PV-BUG-012: group aggregation UDF receives scalar elements under current Polars
+XFAIL tests/test_mapping_and_colors.py::test_all_advertised_aggregations_work[random] - PV-BUG-012: group aggregation UDF receives scalar elements under current Polars
+XFAIL tests/test_mapping_and_colors.py::test_mol_sum_normalizes_both_id_column_types - PV-BUG-013: mol_sum casts data IDs to strings but not mapping IDs
+XFAIL tests/test_mapping_and_colors.py::test_null_mapping_targets_are_removed - PV-BUG-014: null mapping targets are aggregated into a null output ID
+XFAIL tests/test_mapping_and_colors.py::test_duplicate_mapping_pairs_do_not_double_count - PV-BUG-015: duplicated mapping pairs duplicate the input value before aggregation
+XFAIL tests/test_mapping_and_colors.py::test_mapped_node_table_retains_kegg_names - PV-BUG-009: mapped node table drops the exploded kegg_names identifier
+XFAIL tests/test_mapping_and_colors.py::test_kegg_gene_ids_can_be_mapped_without_stripping_prefix - PV-BUG-016: entrez_gnodes is unused and species prefixes are always stripped
+XFAIL tests/test_mapping_and_colors.py::test_simulation_rejects_negative_experiment_count - PV-BUG-017: negative experiment count is silently accepted
+XFAIL tests/test_mapping_and_colors.py::test_decimal_string_values_mean_the_same_as_decimal_numbers - PV-BUG-018: decimal strings are parsed as hexadecimal numbers
+XFAIL tests/test_mapping_and_colors.py::test_discrete_setting_changes_color_mapping_mode - PV-FEATURE-001: discrete is accepted by public APIs but ignored by node_color
+XFAIL tests/test_mapping_and_colors.py::test_hard_wordwrap_rejects_zero_width_instead_of_hanging - PV-BUG-079: wordwrap width=0 with break_word=True makes no progress and loops forever
+XFAIL tests/test_parsers.py::test_namespace_qualified_kgml_is_parsed - PV-BUG-019: namespace-qualified KGML child tags are not dispatched
+XFAIL tests/test_parsers.py::test_duplicate_kgml_entry_ids_are_rejected - PV-BUG-020: duplicate KGML entry IDs silently overwrite earlier entries
+XFAIL tests/test_parsers.py::test_kgml_line_graphics_coordinates_are_preserved - PV-BUG-021: line graphics coords are ignored and replaced with zero/default geometry
+XFAIL tests/test_parsers.py::test_empty_kgml_node_table_has_standard_schema - PV-BUG-022: node_info(empty pathway) has no stable columns/schema
+XFAIL tests/test_parsers.py::test_standard_namespaced_sbgn_is_parsed - PV-BUG-023: parser locates a namespaced map but searches its glyphs/arcs without namespace
+XFAIL tests/test_parsers.py::test_sbgn_namespace_version_is_discovered_from_document - PV-BUG-024: SBGN namespace is hard-coded to 0.2 and does not accept other valid versions
+XFAIL tests/test_parsers.py::test_state_variable_is_metadata_not_a_top_level_node - PV-BUG-025: nested state-variable glyph is also promoted to a top-level biological node
+XFAIL tests/test_parsers.py::test_standard_sbgn_clone_marker_is_detected - PV-BUG-026: standard <clone/> element is not detected; code checks an attribute instead
+XFAIL tests/test_parsers.py::test_sbgn_unit_of_information_is_parsed - PV-FEATURE-002: SBGNGlyph exposes unit_of_information but parser never populates it
+XFAIL tests/test_parsers.py::test_sbgn_arc_control_points_are_preserved - PV-BUG-027: Bezier control <point> children inside SBGN <next> are discarded
+XFAIL tests/test_parsers.py::test_empty_sbgn_dataframe_has_unified_schema - PV-BUG-028: empty SBGN conversion returns a schema-less DataFrame
+XFAIL tests/test_public_core.py::test_distribution_and_runtime_versions_match - PV-BUG-001: setup.py/distribution is 2.0.2 but pathview.__version__ is 2.0.0
+XFAIL tests/test_public_core.py::test_non_native_png_request_produces_png - PV-BUG-002: --no-kegg-native with output_format='png' silently writes graph PDF
+XFAIL tests/test_public_core.py::test_python_api_rejects_unknown_output_format[jpg] - PV-BUG-003: Python API does not validate output_format; unknown values become PDF
+XFAIL tests/test_public_core.py::test_python_api_rejects_unknown_output_format[PNG] - PV-BUG-003: Python API does not validate output_format; unknown values become PDF
+XFAIL tests/test_public_core.py::test_python_api_rejects_unknown_output_format[] - PV-BUG-003: Python API does not validate output_format; unknown values become PDF
+XFAIL tests/test_public_core.py::test_python_api_rejects_unknown_output_format[banana] - PV-BUG-003: Python API does not validate output_format; unknown values become PDF
+XFAIL tests/test_public_core.py::test_fully_cached_human_pathway_does_not_require_network - PV-BUG-004: cached files cannot bypass live species lookup
+XFAIL tests/test_public_core.py::test_partial_color_dictionary_keeps_unspecified_defaults - PV-BUG-005: a partial color config replaces defaults instead of merging per molecule type
+XFAIL tests/test_public_core.py::test_map_null_false_removes_unmapped_pathway_nodes - PV-BUG-006: map_null=False does not remove unmapped rows when a data table exists
+XFAIL tests/test_public_core.py::test_min_nnodes_is_based_on_input_matches - PV-BUG-007: min_nnodes counts pathway layout nodes, not nodes matched by input data
+XFAIL tests/test_public_core.py::test_core_result_supports_documented_highlighting_interface - PV-BUG-008: core returns dict while documented highlighting requires PathwayResult
+XFAIL tests/test_public_core.py::test_core_gene_table_contains_highlighting_identifier_column - PV-BUG-009: mapped core gene table omits kegg_names required by highlighting
+XFAIL tests/test_public_core.py::test_map_symbol_updates_the_label_used_by_renderers - PV-BUG-075: _add_symbol_labels joins a SYMBOL column but never replaces the rendered label
+XFAIL tests/test_public_core.py::test_invalid_node_sum_is_rejected_by_python_api - PV-BUG-076: invalid node_sum ValueError is swallowed by node_map and core still returns output
+XFAIL tests/test_public_core.py::test_conflicting_pathway_prefix_is_rejected - PV-BUG-010: pathway prefixes that conflict with species are concatenated, not rejected
+XFAIL tests/test_public_core.py::test_empty_cached_pathway_is_skipped_cleanly - PV-BUG-011: empty KGML produces a schema-less frame and core crashes before graceful skip
+XFAIL tests/test_public_core.py::test_svg_core_needs_only_cached_xml - PV-BUG-067: SVG output unnecessarily requires/downloads a KEGG PNG when kegg_native=True
+XFAIL tests/test_rendering.py::test_gene_and_compound_use_same_coordinate_system - PV-BUG-029: compound y coordinates are flipped while gene y coordinates are effectively not
+XFAIL tests/test_rendering.py::test_compound_width_is_the_full_display_diameter - PV-BUG-030: compound KGML width is treated as radius instead of diameter
+XFAIL tests/test_rendering.py::test_compound_renderer_respects_elliptical_height - PV-BUG-031: compound height is ignored and all compounds are forced to width-based circles
+XFAIL tests/test_rendering.py::test_native_color_converter_accepts_named_matplotlib_colors - PV-BUG-032: native/highlight renderers advertise named colors but parse only six-digit hex
+XFAIL tests/test_rendering.py::test_native_color_converter_accepts_short_hex - PV-BUG-033: three-digit CSS hex colors are not accepted
+XFAIL tests/test_rendering.py::test_native_output_preserves_background_dimensions - PV-BUG-034: bbox_inches='tight' crops/rescales native output instead of preserving KEGG pixels
+XFAIL tests/test_rendering.py::test_svg_renders_kgml_circle_as_circle - PV-BUG-068: KGML shape='circle' is sent to SVG but only shape='ellipse' renders an ellipse
+XFAIL tests/test_rendering.py::test_svg_preserves_transparent_unmapped_nodes - PV-BUG-069: all-transparent SVG nodes are forcibly recolored gray
+XFAIL tests/test_rendering.py::test_svg_pathway_title_with_special_characters_is_valid - PV-BUG-035: SVG document title is not XML-escaped
+XFAIL tests/test_rendering.py::test_svg_ellipse_accepts_special_node_identifiers - PV-BUG-036: SVG clip IDs interpolate unescaped node identifiers
+XFAIL tests/test_rendering.py::test_svg_node_with_no_fill_values_still_has_a_visible_shape - PV-BUG-037: empty SVG fill list renders text but no node shape
+XFAIL tests/test_rendering.py::test_main_svg_renderer_includes_pathway_edges - PV-FEATURE-003: main SVG renderer receives no relation data and emits no pathway edges
+XFAIL tests/test_rendering.py::test_graph_renderer_contains_relations - PV-FEATURE-004: graph renderer builds nodes only; KGML relations are not passed into it
+XFAIL tests/test_rendering.py::test_graph_renderer_preserves_two_state_node_colors - PV-BUG-038: graph/PDF renderer uses only the first experiment color
+XFAIL tests/test_rendering.py::test_compound_only_color_key_has_no_blank_subplot - PV-BUG-070: compound-only native color-key layout leaves a blank visible ticked subplot
+XFAIL tests/test_rendering.py::test_compound_only_graph_uses_compound_color_scale - PV-BUG-071: graph color key always uses gene limits/colors, even for compound-only plots
+================ 143 passed, 96 xfailed, 73 warnings in 13.71s =================

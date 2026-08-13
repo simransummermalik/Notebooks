@@ -1,0 +1,967 @@
+{
+  "scope": "Pathview Plus commit 07aee813375347bcc933ad21b4aed561dd7cd3bf",
+  "generated": "2026-08-10T23:07:37.799303-04:00",
+  "important_note": "These are reproducible engineering findings with different priorities; feature gaps are separated from code defects and live service observations.",
+  "counts": {
+    "reproduced_bug_ids": 79,
+    "feature_gap_ids": 7
+  },
+  "findings": [
+    {
+      "id": "PV-BUG-001",
+      "kind": "reproduced_bug",
+      "priority": "P2/P3",
+      "summary": "setup.py/distribution is 2.0.2 but pathview.__version__ is 2.0.0",
+      "reproduced": true,
+      "test_case_count": 1,
+      "tests": [
+        "tests.test_public_core::test_distribution_and_runtime_versions_match"
+      ]
+    },
+    {
+      "id": "PV-BUG-002",
+      "kind": "reproduced_bug",
+      "priority": "P2/P3",
+      "summary": "--no-kegg-native with output_format='png' silently writes graph PDF",
+      "reproduced": true,
+      "test_case_count": 1,
+      "tests": [
+        "tests.test_public_core::test_non_native_png_request_produces_png"
+      ]
+    },
+    {
+      "id": "PV-BUG-003",
+      "kind": "reproduced_bug",
+      "priority": "P2/P3",
+      "summary": "Python API does not validate output_format; unknown values become PDF",
+      "reproduced": true,
+      "test_case_count": 4,
+      "tests": [
+        "tests.test_public_core::test_python_api_rejects_unknown_output_format[jpg]",
+        "tests.test_public_core::test_python_api_rejects_unknown_output_format[PNG]",
+        "tests.test_public_core::test_python_api_rejects_unknown_output_format[]",
+        "tests.test_public_core::test_python_api_rejects_unknown_output_format[banana]"
+      ]
+    },
+    {
+      "id": "PV-BUG-004",
+      "kind": "reproduced_bug",
+      "priority": "P1",
+      "summary": "cached files cannot bypass live species lookup",
+      "reproduced": true,
+      "test_case_count": 1,
+      "tests": [
+        "tests.test_public_core::test_fully_cached_human_pathway_does_not_require_network"
+      ]
+    },
+    {
+      "id": "PV-BUG-005",
+      "kind": "reproduced_bug",
+      "priority": "P2/P3",
+      "summary": "a partial color config replaces defaults instead of merging per molecule type",
+      "reproduced": true,
+      "test_case_count": 1,
+      "tests": [
+        "tests.test_public_core::test_partial_color_dictionary_keeps_unspecified_defaults"
+      ]
+    },
+    {
+      "id": "PV-BUG-006",
+      "kind": "reproduced_bug",
+      "priority": "P1",
+      "summary": "map_null=False does not remove unmapped rows when a data table exists",
+      "reproduced": true,
+      "test_case_count": 1,
+      "tests": [
+        "tests.test_public_core::test_map_null_false_removes_unmapped_pathway_nodes"
+      ]
+    },
+    {
+      "id": "PV-BUG-007",
+      "kind": "reproduced_bug",
+      "priority": "P2/P3",
+      "summary": "min_nnodes counts pathway layout nodes, not nodes matched by input data",
+      "reproduced": true,
+      "test_case_count": 1,
+      "tests": [
+        "tests.test_public_core::test_min_nnodes_is_based_on_input_matches"
+      ]
+    },
+    {
+      "id": "PV-BUG-008",
+      "kind": "reproduced_bug",
+      "priority": "P1",
+      "summary": "core returns dict while documented highlighting requires PathwayResult",
+      "reproduced": true,
+      "test_case_count": 1,
+      "tests": [
+        "tests.test_public_core::test_core_result_supports_documented_highlighting_interface"
+      ]
+    },
+    {
+      "id": "PV-BUG-009",
+      "kind": "reproduced_bug",
+      "priority": "P1",
+      "summary": "mapped node table drops the exploded kegg_names identifier",
+      "reproduced": true,
+      "test_case_count": 2,
+      "tests": [
+        "tests.test_mapping_and_colors::test_mapped_node_table_retains_kegg_names",
+        "tests.test_public_core::test_core_gene_table_contains_highlighting_identifier_column"
+      ]
+    },
+    {
+      "id": "PV-BUG-010",
+      "kind": "reproduced_bug",
+      "priority": "P2/P3",
+      "summary": "pathway prefixes that conflict with species are concatenated, not rejected",
+      "reproduced": true,
+      "test_case_count": 1,
+      "tests": [
+        "tests.test_public_core::test_conflicting_pathway_prefix_is_rejected"
+      ]
+    },
+    {
+      "id": "PV-BUG-011",
+      "kind": "reproduced_bug",
+      "priority": "P2/P3",
+      "summary": "empty KGML produces a schema-less frame and core crashes before graceful skip",
+      "reproduced": true,
+      "test_case_count": 1,
+      "tests": [
+        "tests.test_public_core::test_empty_cached_pathway_is_skipped_cleanly"
+      ]
+    },
+    {
+      "id": "PV-BUG-012",
+      "kind": "reproduced_bug",
+      "priority": "P1",
+      "summary": "group aggregation UDF receives scalar elements under current Polars",
+      "reproduced": true,
+      "test_case_count": 2,
+      "tests": [
+        "tests.test_mapping_and_colors::test_all_advertised_aggregations_work[max_abs]",
+        "tests.test_mapping_and_colors::test_all_advertised_aggregations_work[random]"
+      ]
+    },
+    {
+      "id": "PV-BUG-013",
+      "kind": "reproduced_bug",
+      "priority": "P2/P3",
+      "summary": "mol_sum casts data IDs to strings but not mapping IDs",
+      "reproduced": true,
+      "test_case_count": 1,
+      "tests": [
+        "tests.test_mapping_and_colors::test_mol_sum_normalizes_both_id_column_types"
+      ]
+    },
+    {
+      "id": "PV-BUG-014",
+      "kind": "reproduced_bug",
+      "priority": "P2/P3",
+      "summary": "null mapping targets are aggregated into a null output ID",
+      "reproduced": true,
+      "test_case_count": 1,
+      "tests": [
+        "tests.test_mapping_and_colors::test_null_mapping_targets_are_removed"
+      ]
+    },
+    {
+      "id": "PV-BUG-015",
+      "kind": "reproduced_bug",
+      "priority": "P2/P3",
+      "summary": "duplicated mapping pairs duplicate the input value before aggregation",
+      "reproduced": true,
+      "test_case_count": 1,
+      "tests": [
+        "tests.test_mapping_and_colors::test_duplicate_mapping_pairs_do_not_double_count"
+      ]
+    },
+    {
+      "id": "PV-BUG-016",
+      "kind": "reproduced_bug",
+      "priority": "P2/P3",
+      "summary": "entrez_gnodes is unused and species prefixes are always stripped",
+      "reproduced": true,
+      "test_case_count": 1,
+      "tests": [
+        "tests.test_mapping_and_colors::test_kegg_gene_ids_can_be_mapped_without_stripping_prefix"
+      ]
+    },
+    {
+      "id": "PV-BUG-017",
+      "kind": "reproduced_bug",
+      "priority": "P2/P3",
+      "summary": "negative experiment count is silently accepted",
+      "reproduced": true,
+      "test_case_count": 1,
+      "tests": [
+        "tests.test_mapping_and_colors::test_simulation_rejects_negative_experiment_count"
+      ]
+    },
+    {
+      "id": "PV-BUG-018",
+      "kind": "reproduced_bug",
+      "priority": "P2/P3",
+      "summary": "decimal strings are parsed as hexadecimal numbers",
+      "reproduced": true,
+      "test_case_count": 1,
+      "tests": [
+        "tests.test_mapping_and_colors::test_decimal_string_values_mean_the_same_as_decimal_numbers"
+      ]
+    },
+    {
+      "id": "PV-BUG-019",
+      "kind": "reproduced_bug",
+      "priority": "P2/P3",
+      "summary": "namespace-qualified KGML child tags are not dispatched",
+      "reproduced": true,
+      "test_case_count": 1,
+      "tests": [
+        "tests.test_parsers::test_namespace_qualified_kgml_is_parsed"
+      ]
+    },
+    {
+      "id": "PV-BUG-020",
+      "kind": "reproduced_bug",
+      "priority": "P2/P3",
+      "summary": "duplicate KGML entry IDs silently overwrite earlier entries",
+      "reproduced": true,
+      "test_case_count": 1,
+      "tests": [
+        "tests.test_parsers::test_duplicate_kgml_entry_ids_are_rejected"
+      ]
+    },
+    {
+      "id": "PV-BUG-021",
+      "kind": "reproduced_bug",
+      "priority": "P2/P3",
+      "summary": "line graphics coords are ignored and replaced with zero/default geometry",
+      "reproduced": true,
+      "test_case_count": 1,
+      "tests": [
+        "tests.test_parsers::test_kgml_line_graphics_coordinates_are_preserved"
+      ]
+    },
+    {
+      "id": "PV-BUG-022",
+      "kind": "reproduced_bug",
+      "priority": "P2/P3",
+      "summary": "node_info(empty pathway) has no stable columns/schema",
+      "reproduced": true,
+      "test_case_count": 1,
+      "tests": [
+        "tests.test_parsers::test_empty_kgml_node_table_has_standard_schema"
+      ]
+    },
+    {
+      "id": "PV-BUG-023",
+      "kind": "reproduced_bug",
+      "priority": "P1",
+      "summary": "parser locates a namespaced map but searches its glyphs/arcs without namespace",
+      "reproduced": true,
+      "test_case_count": 1,
+      "tests": [
+        "tests.test_parsers::test_standard_namespaced_sbgn_is_parsed"
+      ]
+    },
+    {
+      "id": "PV-BUG-024",
+      "kind": "reproduced_bug",
+      "priority": "P2/P3",
+      "summary": "SBGN namespace is hard-coded to 0.2 and does not accept other valid versions",
+      "reproduced": true,
+      "test_case_count": 1,
+      "tests": [
+        "tests.test_parsers::test_sbgn_namespace_version_is_discovered_from_document"
+      ]
+    },
+    {
+      "id": "PV-BUG-025",
+      "kind": "reproduced_bug",
+      "priority": "P2/P3",
+      "summary": "nested state-variable glyph is also promoted to a top-level biological node",
+      "reproduced": true,
+      "test_case_count": 1,
+      "tests": [
+        "tests.test_parsers::test_state_variable_is_metadata_not_a_top_level_node"
+      ]
+    },
+    {
+      "id": "PV-BUG-026",
+      "kind": "reproduced_bug",
+      "priority": "P2/P3",
+      "summary": "standard <clone/> element is not detected; code checks an attribute instead",
+      "reproduced": true,
+      "test_case_count": 1,
+      "tests": [
+        "tests.test_parsers::test_standard_sbgn_clone_marker_is_detected"
+      ]
+    },
+    {
+      "id": "PV-BUG-027",
+      "kind": "reproduced_bug",
+      "priority": "P2/P3",
+      "summary": "Bezier control <point> children inside SBGN <next> are discarded",
+      "reproduced": true,
+      "test_case_count": 1,
+      "tests": [
+        "tests.test_parsers::test_sbgn_arc_control_points_are_preserved"
+      ]
+    },
+    {
+      "id": "PV-BUG-028",
+      "kind": "reproduced_bug",
+      "priority": "P2/P3",
+      "summary": "empty SBGN conversion returns a schema-less DataFrame",
+      "reproduced": true,
+      "test_case_count": 1,
+      "tests": [
+        "tests.test_parsers::test_empty_sbgn_dataframe_has_unified_schema"
+      ]
+    },
+    {
+      "id": "PV-BUG-029",
+      "kind": "reproduced_bug",
+      "priority": "P1",
+      "summary": "compound y coordinates are flipped while gene y coordinates are effectively not",
+      "reproduced": true,
+      "test_case_count": 1,
+      "tests": [
+        "tests.test_rendering::test_gene_and_compound_use_same_coordinate_system"
+      ]
+    },
+    {
+      "id": "PV-BUG-030",
+      "kind": "reproduced_bug",
+      "priority": "P1",
+      "summary": "compound KGML width is treated as radius instead of diameter",
+      "reproduced": true,
+      "test_case_count": 1,
+      "tests": [
+        "tests.test_rendering::test_compound_width_is_the_full_display_diameter"
+      ]
+    },
+    {
+      "id": "PV-BUG-031",
+      "kind": "reproduced_bug",
+      "priority": "P2/P3",
+      "summary": "compound height is ignored and all compounds are forced to width-based circles",
+      "reproduced": true,
+      "test_case_count": 1,
+      "tests": [
+        "tests.test_rendering::test_compound_renderer_respects_elliptical_height"
+      ]
+    },
+    {
+      "id": "PV-BUG-032",
+      "kind": "reproduced_bug",
+      "priority": "P2/P3",
+      "summary": "documented/default named highlight colors are parsed as six-digit hex",
+      "reproduced": true,
+      "test_case_count": 2,
+      "tests": [
+        "tests.test_highlighting_and_splines::test_default_named_node_highlight_color_works",
+        "tests.test_rendering::test_native_color_converter_accepts_named_matplotlib_colors"
+      ]
+    },
+    {
+      "id": "PV-BUG-033",
+      "kind": "reproduced_bug",
+      "priority": "P2/P3",
+      "summary": "three-digit CSS hex colors are not accepted",
+      "reproduced": true,
+      "test_case_count": 1,
+      "tests": [
+        "tests.test_rendering::test_native_color_converter_accepts_short_hex"
+      ]
+    },
+    {
+      "id": "PV-BUG-034",
+      "kind": "reproduced_bug",
+      "priority": "P1",
+      "summary": "bbox_inches='tight' crops/rescales native output instead of preserving KEGG pixels",
+      "reproduced": true,
+      "test_case_count": 1,
+      "tests": [
+        "tests.test_rendering::test_native_output_preserves_background_dimensions"
+      ]
+    },
+    {
+      "id": "PV-BUG-035",
+      "kind": "reproduced_bug",
+      "priority": "P2/P3",
+      "summary": "SVG document title is not XML-escaped",
+      "reproduced": true,
+      "test_case_count": 1,
+      "tests": [
+        "tests.test_rendering::test_svg_pathway_title_with_special_characters_is_valid"
+      ]
+    },
+    {
+      "id": "PV-BUG-036",
+      "kind": "reproduced_bug",
+      "priority": "P2/P3",
+      "summary": "SVG clip IDs interpolate unescaped node identifiers",
+      "reproduced": true,
+      "test_case_count": 1,
+      "tests": [
+        "tests.test_rendering::test_svg_ellipse_accepts_special_node_identifiers"
+      ]
+    },
+    {
+      "id": "PV-BUG-037",
+      "kind": "reproduced_bug",
+      "priority": "P2/P3",
+      "summary": "empty SVG fill list renders text but no node shape",
+      "reproduced": true,
+      "test_case_count": 1,
+      "tests": [
+        "tests.test_rendering::test_svg_node_with_no_fill_values_still_has_a_visible_shape"
+      ]
+    },
+    {
+      "id": "PV-BUG-038",
+      "kind": "reproduced_bug",
+      "priority": "P1",
+      "summary": "graph/PDF renderer uses only the first experiment color",
+      "reproduced": true,
+      "test_case_count": 1,
+      "tests": [
+        "tests.test_rendering::test_graph_renderer_preserves_two_state_node_colors"
+      ]
+    },
+    {
+      "id": "PV-BUG-039",
+      "kind": "reproduced_bug",
+      "priority": "P1",
+      "summary": "highlights flip y but native gene painting does not, so borders miss noncentral nodes",
+      "reproduced": true,
+      "test_case_count": 1,
+      "tests": [
+        "tests.test_highlighting_and_splines::test_highlight_border_uses_same_coordinates_as_native_gene_node"
+      ]
+    },
+    {
+      "id": "PV-BUG-040",
+      "kind": "reproduced_bug",
+      "priority": "P2/P3",
+      "summary": "highlight opacity argument is ignored",
+      "reproduced": true,
+      "test_case_count": 1,
+      "tests": [
+        "tests.test_highlighting_and_splines::test_border_opacity_blends_with_existing_pixels"
+      ]
+    },
+    {
+      "id": "PV-BUG-041",
+      "kind": "reproduced_bug",
+      "priority": "P2/P3",
+      "summary": "change_labels records metadata but does not alter the saved image",
+      "reproduced": true,
+      "test_case_count": 1,
+      "tests": [
+        "tests.test_highlighting_and_splines::test_change_labels_visibly_changes_rendered_result"
+      ]
+    },
+    {
+      "id": "PV-BUG-042",
+      "kind": "reproduced_bug",
+      "priority": "P2/P3",
+      "summary": "edge highlighting builds positions from genes only",
+      "reproduced": true,
+      "test_case_count": 1,
+      "tests": [
+        "tests.test_highlighting_and_splines::test_edge_highlighting_supports_compounds"
+      ]
+    },
+    {
+      "id": "PV-BUG-043",
+      "kind": "reproduced_bug",
+      "priority": "P2/P3",
+      "summary": "requested one-pixel line is drawn two pixels thick",
+      "reproduced": true,
+      "test_case_count": 1,
+      "tests": [
+        "tests.test_highlighting_and_splines::test_line_thickness_one_is_exactly_one_pixel"
+      ]
+    },
+    {
+      "id": "PV-BUG-044",
+      "kind": "reproduced_bug",
+      "priority": "P2/P3",
+      "summary": "save() does not infer PDF from path and writes PNG bytes to a .pdf name",
+      "reproduced": true,
+      "test_case_count": 1,
+      "tests": [
+        "tests.test_highlighting_and_splines::test_save_infers_format_from_file_extension"
+      ]
+    },
+    {
+      "id": "PV-BUG-045",
+      "kind": "reproduced_bug",
+      "priority": "P1",
+      "summary": "duplicated phantom/repeated Catmull-Rom points cause zero denominators and NaNs",
+      "reproduced": true,
+      "test_case_count": 3,
+      "tests": [
+        "tests.test_highlighting_and_splines::test_catmull_rom_documented_inputs_are_finite[points0]",
+        "tests.test_highlighting_and_splines::test_catmull_rom_documented_inputs_are_finite[points1]",
+        "tests.test_highlighting_and_splines::test_catmull_rom_documented_inputs_are_finite[points2]"
+      ]
+    },
+    {
+      "id": "PV-BUG-046",
+      "kind": "reproduced_bug",
+      "priority": "P2/P3",
+      "summary": "obstacles=None forces every routing mode to a straight two-point line",
+      "reproduced": true,
+      "test_case_count": 1,
+      "tests": [
+        "tests.test_highlighting_and_splines::test_curved_routing_works_without_obstacle_list"
+      ]
+    },
+    {
+      "id": "PV-BUG-047",
+      "kind": "reproduced_bug",
+      "priority": "P2/P3",
+      "summary": "obstacles argument is not consulted by routing implementation",
+      "reproduced": true,
+      "test_case_count": 1,
+      "tests": [
+        "tests.test_highlighting_and_splines::test_edge_route_avoids_supplied_obstacle"
+      ]
+    },
+    {
+      "id": "PV-BUG-048",
+      "kind": "reproduced_bug",
+      "priority": "P2/P3",
+      "summary": "orthogonal routing delegates to broken Catmull-Rom implementation",
+      "reproduced": true,
+      "test_case_count": 1,
+      "tests": [
+        "tests.test_highlighting_and_splines::test_orthogonal_route_is_finite"
+      ]
+    },
+    {
+      "id": "PV-BUG-049",
+      "kind": "reproduced_bug",
+      "priority": "P2/P3",
+      "summary": "unknown routing mode silently falls back to straight",
+      "reproduced": true,
+      "test_case_count": 1,
+      "tests": [
+        "tests.test_highlighting_and_splines::test_unknown_routing_mode_is_rejected"
+      ]
+    },
+    {
+      "id": "PV-BUG-050",
+      "kind": "reproduced_bug",
+      "priority": "P2/P3",
+      "summary": "smooth_path_svg tension parameter is unused",
+      "reproduced": true,
+      "test_case_count": 1,
+      "tests": [
+        "tests.test_highlighting_and_splines::test_smooth_svg_tension_changes_curve"
+      ]
+    },
+    {
+      "id": "PV-BUG-051",
+      "kind": "reproduced_bug",
+      "priority": "P2/P3",
+      "summary": "nonfinite curve values are serialized directly into SVG",
+      "reproduced": true,
+      "test_case_count": 1,
+      "tests": [
+        "tests.test_highlighting_and_splines::test_nonfinite_curve_is_rejected_before_svg_serialization"
+      ]
+    },
+    {
+      "id": "PV-BUG-052",
+      "kind": "reproduced_bug",
+      "priority": "P1",
+      "summary": "CLI unconditionally calls gene_data.cast even for compound-only input",
+      "reproduced": true,
+      "test_case_count": 1,
+      "tests": [
+        "tests.test_cli_and_integrations::test_cli_compound_only_workflow"
+      ]
+    },
+    {
+      "id": "PV-BUG-053",
+      "kind": "reproduced_bug",
+      "priority": "P2/P3",
+      "summary": "CLI reports pathway row count as 'nodes mapped', including null rows",
+      "reproduced": true,
+      "test_case_count": 1,
+      "tests": [
+        "tests.test_cli_and_integrations::test_cli_reports_non_null_mapped_count"
+      ]
+    },
+    {
+      "id": "PV-BUG-054",
+      "kind": "reproduced_bug",
+      "priority": "P2/P3",
+      "summary": "upstream feature script fails when run directly because of relative imports",
+      "reproduced": true,
+      "test_case_count": 1,
+      "tests": [
+        "tests.test_cli_and_integrations::test_upstream_feature_script_runs_as_documented"
+      ]
+    },
+    {
+      "id": "PV-BUG-055",
+      "kind": "reproduced_bug",
+      "priority": "P2/P3",
+      "summary": "promised common-name lookup requires exact equality with full KEGG description",
+      "reproduced": true,
+      "test_case_count": 1,
+      "tests": [
+        "tests.test_cli_and_integrations::test_species_resolution_accepts_common_name"
+      ]
+    },
+    {
+      "id": "PV-BUG-056",
+      "kind": "reproduced_bug",
+      "priority": "P2/P3",
+      "summary": "invalid KEGG file types fail with internal KeyError instead of validation error",
+      "reproduced": true,
+      "test_case_count": 1,
+      "tests": [
+        "tests.test_cli_and_integrations::test_kegg_download_rejects_invalid_file_type"
+      ]
+    },
+    {
+      "id": "PV-BUG-057",
+      "kind": "reproduced_bug",
+      "priority": "P2/P3",
+      "summary": "KEGG downloader trusts any HTTP 200 body without format/content validation",
+      "reproduced": true,
+      "test_case_count": 2,
+      "tests": [
+        "tests.test_cli_and_integrations::test_kegg_download_rejects_html_error_page_with_status_200[xml]",
+        "tests.test_cli_and_integrations::test_kegg_download_rejects_html_error_page_with_status_200[png]"
+      ]
+    },
+    {
+      "id": "PV-BUG-058",
+      "kind": "reproduced_bug",
+      "priority": "P1",
+      "summary": "MyGene batch endpoint is /v3/query, not coded /v3/querymany",
+      "reproduced": true,
+      "test_case_count": 1,
+      "tests": [
+        "tests.test_cli_and_integrations::test_mygene_uses_documented_batch_query_endpoint"
+      ]
+    },
+    {
+      "id": "PV-BUG-059",
+      "kind": "reproduced_bug",
+      "priority": "P2/P3",
+      "summary": "nested MyGene fields are stringified as Python dicts instead of extracting IDs",
+      "reproduced": true,
+      "test_case_count": 1,
+      "tests": [
+        "tests.test_cli_and_integrations::test_mygene_nested_uniprot_result_extracts_accession"
+      ]
+    },
+    {
+      "id": "PV-BUG-060",
+      "kind": "reproduced_bug",
+      "priority": "P2/P3",
+      "summary": "core forwards KEGG code 'hsa' where MyGene documents common names/taxonomy IDs",
+      "reproduced": true,
+      "test_case_count": 1,
+      "tests": [
+        "tests.test_cli_and_integrations::test_symbol_mapping_translates_kegg_species_to_mygene_species"
+      ]
+    },
+    {
+      "id": "PV-BUG-061",
+      "kind": "reproduced_bug",
+      "priority": "P2/P3",
+      "summary": "KEGG chemical conversion uses alias 'cpd' where API specifies 'compound'",
+      "reproduced": true,
+      "test_case_count": 1,
+      "tests": [
+        "tests.test_cli_and_integrations::test_compound_mapping_uses_documented_kegg_database_name"
+      ]
+    },
+    {
+      "id": "PV-BUG-062",
+      "kind": "reproduced_bug",
+      "priority": "P2/P3",
+      "summary": "already-prefixed compound IDs receive a duplicate source prefix",
+      "reproduced": true,
+      "test_case_count": 1,
+      "tests": [
+        "tests.test_cli_and_integrations::test_compound_mapping_normalizes_prefixed_input"
+      ]
+    },
+    {
+      "id": "PV-BUG-063",
+      "kind": "reproduced_bug",
+      "priority": "P2/P3",
+      "summary": "SMP prefix detection accepts malformed arbitrary IDs",
+      "reproduced": true,
+      "test_case_count": 1,
+      "tests": [
+        "tests.test_cli_and_integrations::test_database_detection_validates_smpdb_identifier"
+      ]
+    },
+    {
+      "id": "PV-BUG-064",
+      "kind": "reproduced_bug",
+      "priority": "P2/P3",
+      "summary": "database detection is unexpectedly case-sensitive",
+      "reproduced": true,
+      "test_case_count": 1,
+      "tests": [
+        "tests.test_cli_and_integrations::test_database_detection_is_case_insensitive"
+      ]
+    },
+    {
+      "id": "PV-BUG-065",
+      "kind": "reproduced_bug",
+      "priority": "P1",
+      "summary": "SBGN downloaders accept HTTP 200 HTML pages as successful pathway files",
+      "reproduced": true,
+      "test_case_count": 2,
+      "tests": [
+        "tests.test_cli_and_integrations::test_sbgn_downloaders_reject_html[download_reactome-R-HSA-109582]",
+        "tests.test_cli_and_integrations::test_sbgn_downloaders_reject_html[download_metacyc-PWY-7210]"
+      ]
+    },
+    {
+      "id": "PV-BUG-066",
+      "kind": "reproduced_bug",
+      "priority": "P2/P3",
+      "summary": "list_reactome_pathways hardcodes Homo sapiens in URL",
+      "reproduced": true,
+      "test_case_count": 1,
+      "tests": [
+        "tests.test_cli_and_integrations::test_reactome_listing_uses_requested_species"
+      ]
+    },
+    {
+      "id": "PV-BUG-067",
+      "kind": "reproduced_bug",
+      "priority": "P2/P3",
+      "summary": "SVG output unnecessarily requires/downloads a KEGG PNG when kegg_native=True",
+      "reproduced": true,
+      "test_case_count": 1,
+      "tests": [
+        "tests.test_public_core::test_svg_core_needs_only_cached_xml"
+      ]
+    },
+    {
+      "id": "PV-BUG-068",
+      "kind": "reproduced_bug",
+      "priority": "P2/P3",
+      "summary": "KGML shape='circle' is sent to SVG but only shape='ellipse' renders an ellipse",
+      "reproduced": true,
+      "test_case_count": 1,
+      "tests": [
+        "tests.test_rendering::test_svg_renders_kgml_circle_as_circle"
+      ]
+    },
+    {
+      "id": "PV-BUG-069",
+      "kind": "reproduced_bug",
+      "priority": "P2/P3",
+      "summary": "all-transparent SVG nodes are forcibly recolored gray",
+      "reproduced": true,
+      "test_case_count": 1,
+      "tests": [
+        "tests.test_rendering::test_svg_preserves_transparent_unmapped_nodes"
+      ]
+    },
+    {
+      "id": "PV-BUG-070",
+      "kind": "reproduced_bug",
+      "priority": "P2/P3",
+      "summary": "compound-only native color-key layout leaves a blank visible ticked subplot",
+      "reproduced": true,
+      "test_case_count": 1,
+      "tests": [
+        "tests.test_rendering::test_compound_only_color_key_has_no_blank_subplot"
+      ]
+    },
+    {
+      "id": "PV-BUG-071",
+      "kind": "reproduced_bug",
+      "priority": "P2/P3",
+      "summary": "graph color key always uses gene limits/colors, even for compound-only plots",
+      "reproduced": true,
+      "test_case_count": 1,
+      "tests": [
+        "tests.test_rendering::test_compound_only_graph_uses_compound_color_scale"
+      ]
+    },
+    {
+      "id": "PV-BUG-072",
+      "kind": "reproduced_bug",
+      "priority": "P2/P3",
+      "summary": "highlight drawing cannot assign RGB tuples into RGBA arrays",
+      "reproduced": true,
+      "test_case_count": 1,
+      "tests": [
+        "tests.test_highlighting_and_splines::test_highlighting_supports_rgba_pathway_images"
+      ]
+    },
+    {
+      "id": "PV-BUG-073",
+      "kind": "reproduced_bug",
+      "priority": "P2/P3",
+      "summary": "dynamic label-change metadata is lost when another layer is chained",
+      "reproduced": true,
+      "test_case_count": 1,
+      "tests": [
+        "tests.test_highlighting_and_splines::test_label_changes_survive_later_highlight_layers"
+      ]
+    },
+    {
+      "id": "PV-BUG-074",
+      "kind": "reproduced_bug",
+      "priority": "P1",
+      "summary": "Reactome SBGN file exporter route is coded as /exporter/sbgn/{id}.sbgn instead of /exporter/event/{id}.sbgn",
+      "reproduced": true,
+      "test_case_count": 1,
+      "tests": [
+        "tests.test_cli_and_integrations::test_reactome_downloader_uses_file_exporter_route"
+      ]
+    },
+    {
+      "id": "PV-BUG-075",
+      "kind": "reproduced_bug",
+      "priority": "P1",
+      "summary": "_add_symbol_labels joins a SYMBOL column but never replaces the rendered label",
+      "reproduced": true,
+      "test_case_count": 1,
+      "tests": [
+        "tests.test_public_core::test_map_symbol_updates_the_label_used_by_renderers"
+      ]
+    },
+    {
+      "id": "PV-BUG-076",
+      "kind": "reproduced_bug",
+      "priority": "P2/P3",
+      "summary": "invalid node_sum ValueError is swallowed by node_map and core still returns output",
+      "reproduced": true,
+      "test_case_count": 1,
+      "tests": [
+        "tests.test_public_core::test_invalid_node_sum_is_rejected_by_python_api"
+      ]
+    },
+    {
+      "id": "PV-BUG-077",
+      "kind": "reproduced_bug",
+      "priority": "P2/P3",
+      "summary": "--simulate branch silently ignores a supplied --cpd-data file",
+      "reproduced": true,
+      "test_case_count": 1,
+      "tests": [
+        "tests.test_cli_and_integrations::test_cli_simulation_can_be_combined_with_compound_data"
+      ]
+    },
+    {
+      "id": "PV-BUG-078",
+      "kind": "reproduced_bug",
+      "priority": "P2/P3",
+      "summary": "MyGene returnall dictionary response is iterated as if it were a list of hits",
+      "reproduced": true,
+      "test_case_count": 1,
+      "tests": [
+        "tests.test_cli_and_integrations::test_mygene_returnall_response_shape_is_supported"
+      ]
+    },
+    {
+      "id": "PV-BUG-079",
+      "kind": "reproduced_bug",
+      "priority": "P2/P3",
+      "summary": "wordwrap width=0 with break_word=True makes no progress and loops forever",
+      "reproduced": true,
+      "test_case_count": 1,
+      "tests": [
+        "tests.test_mapping_and_colors::test_hard_wordwrap_rejects_zero_width_instead_of_hanging"
+      ]
+    },
+    {
+      "id": "PV-FEATURE-001",
+      "kind": "feature_gap",
+      "priority": "P2/P3",
+      "summary": "discrete is accepted by public APIs but ignored by node_color",
+      "reproduced": true,
+      "test_case_count": 1,
+      "tests": [
+        "tests.test_mapping_and_colors::test_discrete_setting_changes_color_mapping_mode"
+      ]
+    },
+    {
+      "id": "PV-FEATURE-002",
+      "kind": "feature_gap",
+      "priority": "P2/P3",
+      "summary": "SBGNGlyph exposes unit_of_information but parser never populates it",
+      "reproduced": true,
+      "test_case_count": 1,
+      "tests": [
+        "tests.test_parsers::test_sbgn_unit_of_information_is_parsed"
+      ]
+    },
+    {
+      "id": "PV-FEATURE-003",
+      "kind": "feature_gap",
+      "priority": "P1",
+      "summary": "main SVG renderer receives no relation data and emits no pathway edges",
+      "reproduced": true,
+      "test_case_count": 1,
+      "tests": [
+        "tests.test_rendering::test_main_svg_renderer_includes_pathway_edges"
+      ]
+    },
+    {
+      "id": "PV-FEATURE-004",
+      "kind": "feature_gap",
+      "priority": "P1",
+      "summary": "graph renderer builds nodes only; KGML relations are not passed into it",
+      "reproduced": true,
+      "test_case_count": 1,
+      "tests": [
+        "tests.test_rendering::test_graph_renderer_contains_relations"
+      ]
+    },
+    {
+      "id": "PV-FEATURE-005",
+      "kind": "feature_gap",
+      "priority": "P2/P3",
+      "summary": "PANTHER downloader is an explicit unimplemented stub",
+      "reproduced": true,
+      "test_case_count": 1,
+      "tests": [
+        "tests.test_cli_and_integrations::test_panther_downloader_returns_path"
+      ]
+    },
+    {
+      "id": "PV-FEATURE-006",
+      "kind": "feature_gap",
+      "priority": "P2/P3",
+      "summary": "SMPDB downloader is an explicit unimplemented stub",
+      "reproduced": true,
+      "test_case_count": 1,
+      "tests": [
+        "tests.test_cli_and_integrations::test_smpdb_downloader_returns_path"
+      ]
+    },
+    {
+      "id": "PV-FEATURE-007",
+      "kind": "feature_gap",
+      "priority": "P1",
+      "summary": "non-KEGG database detection/download/parsing is not wired through pathview()",
+      "reproduced": true,
+      "test_case_count": 1,
+      "tests": [
+        "tests.test_cli_and_integrations::test_core_routes_reactome_ids_to_reactome_pipeline"
+      ]
+    }
+  ]
+}

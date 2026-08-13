@@ -1,0 +1,240 @@
+test,status,finding_id,message,seconds
+tests.test_cli_and_integrations::test_cli_help_is_available,PASS,,,8.673
+tests.test_cli_and_integrations::test_cli_rejects_invalid_output_choice,PASS,,,0.002
+tests.test_cli_and_integrations::test_cli_requires_pathway_unless_legend,PASS,,,0.001
+tests.test_cli_and_integrations::test_cli_gene_and_compound_tables_reach_core,PASS,,,0.033
+tests.test_cli_and_integrations::test_cli_compound_only_workflow,KNOWN_BUG,PV-BUG-052,PV-BUG-052: CLI unconditionally calls gene_data.cast even for compound-only input,0.001
+tests.test_cli_and_integrations::test_cli_simulation_can_be_combined_with_compound_data,KNOWN_BUG,PV-BUG-077,PV-BUG-077: --simulate branch silently ignores a supplied --cpd-data file,0.002
+tests.test_cli_and_integrations::test_cli_reports_non_null_mapped_count,KNOWN_BUG,PV-BUG-053,"PV-BUG-053: CLI reports pathway row count as 'nodes mapped', including null rows",0.001
+tests.test_cli_and_integrations::test_upstream_feature_script_runs_as_documented,KNOWN_BUG,PV-BUG-054,PV-BUG-054: upstream feature script fails when run directly because of relative imports,0.088
+tests.test_cli_and_integrations::test_ko_species_resolution_is_offline,PASS,,,0.001
+tests.test_cli_and_integrations::test_species_code_exact_match_is_case_insensitive,PASS,,,0.0
+tests.test_cli_and_integrations::test_species_resolution_accepts_common_name,KNOWN_BUG,PV-BUG-055,PV-BUG-055: promised common-name lookup requires exact equality with full KEGG description,0.0
+tests.test_cli_and_integrations::test_kegg_download_builds_official_urls_and_writes_files,PASS,,,0.001
+tests.test_cli_and_integrations::test_kegg_download_rejects_invalid_file_type,KNOWN_BUG,PV-BUG-056,PV-BUG-056: invalid KEGG file types fail with internal KeyError instead of validation error,0.0
+tests.test_cli_and_integrations::test_kegg_download_rejects_html_error_page_with_status_200[xml],KNOWN_BUG,PV-BUG-057,PV-BUG-057: KEGG downloader trusts any HTTP 200 body without format/content validation,0.001
+tests.test_cli_and_integrations::test_kegg_download_rejects_html_error_page_with_status_200[png],KNOWN_BUG,PV-BUG-057,PV-BUG-057: KEGG downloader trusts any HTTP 200 body without format/content validation,0.001
+tests.test_cli_and_integrations::test_mygene_uses_documented_batch_query_endpoint,KNOWN_BUG,PV-BUG-058,"PV-BUG-058: MyGene batch endpoint is /v3/query, not coded /v3/querymany",0.001
+tests.test_cli_and_integrations::test_mygene_notfound_result_becomes_null,PASS,,,0.001
+tests.test_cli_and_integrations::test_mygene_nested_uniprot_result_extracts_accession,KNOWN_BUG,PV-BUG-059,PV-BUG-059: nested MyGene fields are stringified as Python dicts instead of extracting IDs,0.001
+tests.test_cli_and_integrations::test_mygene_returnall_response_shape_is_supported,KNOWN_BUG,PV-BUG-078,PV-BUG-078: MyGene returnall dictionary response is iterated as if it were a list of hits,0.0
+tests.test_cli_and_integrations::test_symbol_mapping_translates_kegg_species_to_mygene_species,KNOWN_BUG,PV-BUG-060,PV-BUG-060: core forwards KEGG code 'hsa' where MyGene documents common names/taxonomy IDs,0.0
+tests.test_cli_and_integrations::test_compound_mapping_uses_documented_kegg_database_name,KNOWN_BUG,PV-BUG-061,PV-BUG-061: KEGG chemical conversion uses alias 'cpd' where API specifies 'compound',0.0
+tests.test_cli_and_integrations::test_compound_mapping_parses_controlled_kegg_response,PASS,,,0.001
+tests.test_cli_and_integrations::test_compound_mapping_normalizes_prefixed_input,KNOWN_BUG,PV-BUG-062,PV-BUG-062: already-prefixed compound IDs receive a duplicate source prefix,0.0
+tests.test_cli_and_integrations::test_database_detection[R-HSA-109582-reactome],PASS,,,0.0
+tests.test_cli_and_integrations::test_database_detection[PWY-7210-metacyc],PASS,,,0.0
+tests.test_cli_and_integrations::test_database_detection[P00001-panther],PASS,,,0.0
+tests.test_cli_and_integrations::test_database_detection[SMP0000001-smpdb],PASS,,,0.0
+tests.test_cli_and_integrations::test_database_detection[hsa04110-None],PASS,,,0.0
+tests.test_cli_and_integrations::test_database_detection[unknown-None],PASS,,,0.0
+tests.test_cli_and_integrations::test_database_detection_validates_smpdb_identifier,KNOWN_BUG,PV-BUG-063,PV-BUG-063: SMP prefix detection accepts malformed arbitrary IDs,0.0
+tests.test_cli_and_integrations::test_database_detection_is_case_insensitive,KNOWN_BUG,PV-BUG-064,PV-BUG-064: database detection is unexpectedly case-sensitive,0.0
+tests.test_cli_and_integrations::test_reactome_downloader_writes_controlled_sbgn,PASS,,,0.001
+tests.test_cli_and_integrations::test_reactome_downloader_uses_file_exporter_route,KNOWN_BUG,PV-BUG-074,PV-BUG-074: Reactome SBGN file exporter route is coded as /exporter/sbgn/{id}.sbgn instead of /exporter/event/{id}.sbgn,0.0
+tests.test_cli_and_integrations::test_sbgn_downloaders_reject_html[download_reactome-R-HSA-109582],KNOWN_BUG,PV-BUG-065,PV-BUG-065: SBGN downloaders accept HTTP 200 HTML pages as successful pathway files,0.001
+tests.test_cli_and_integrations::test_sbgn_downloaders_reject_html[download_metacyc-PWY-7210],KNOWN_BUG,PV-BUG-065,PV-BUG-065: SBGN downloaders accept HTTP 200 HTML pages as successful pathway files,0.001
+tests.test_cli_and_integrations::test_reactome_listing_uses_requested_species,KNOWN_BUG,PV-BUG-066,PV-BUG-066: list_reactome_pathways hardcodes Homo sapiens in URL,0.0
+tests.test_cli_and_integrations::test_panther_downloader_returns_path,FEATURE_GAP,PV-FEATURE-005,PV-FEATURE-005: PANTHER downloader is an explicit unimplemented stub,0.0
+tests.test_cli_and_integrations::test_smpdb_downloader_returns_path,FEATURE_GAP,PV-FEATURE-006,PV-FEATURE-006: SMPDB downloader is an explicit unimplemented stub,0.0
+tests.test_cli_and_integrations::test_core_routes_reactome_ids_to_reactome_pipeline,FEATURE_GAP,PV-FEATURE-007,PV-FEATURE-007: non-KEGG database detection/download/parsing is not wired through pathview(),0.001
+tests.test_highlighting_and_splines::test_hex_node_highlight_returns_copy_and_preserves_original,PASS,,,0.01
+tests.test_highlighting_and_splines::test_missing_highlight_identifier_is_a_no_op,PASS,,,0.001
+tests.test_highlighting_and_splines::test_hex_edge_and_path_highlights_modify_image,PASS,,,0.001
+tests.test_highlighting_and_splines::test_modified_result_saves_png_and_pdf,PASS,,,0.047
+tests.test_highlighting_and_splines::test_save_without_image_has_clear_error,PASS,,,0.0
+tests.test_highlighting_and_splines::test_default_named_node_highlight_color_works,KNOWN_BUG,PV-BUG-032,PV-BUG-032: documented/default named highlight colors are parsed as six-digit hex,0.001
+tests.test_highlighting_and_splines::test_highlight_border_uses_same_coordinates_as_native_gene_node,KNOWN_BUG,PV-BUG-039,"PV-BUG-039: highlights flip y but native gene painting does not, so borders miss noncentral nodes",0.001
+tests.test_highlighting_and_splines::test_border_opacity_blends_with_existing_pixels,KNOWN_BUG,PV-BUG-040,PV-BUG-040: highlight opacity argument is ignored,0.0
+tests.test_highlighting_and_splines::test_change_labels_visibly_changes_rendered_result,KNOWN_BUG,PV-BUG-041,PV-BUG-041: change_labels records metadata but does not alter the saved image,0.002
+tests.test_highlighting_and_splines::test_edge_highlighting_supports_compounds,KNOWN_BUG,PV-BUG-042,PV-BUG-042: edge highlighting builds positions from genes only,0.001
+tests.test_highlighting_and_splines::test_line_thickness_one_is_exactly_one_pixel,KNOWN_BUG,PV-BUG-043,PV-BUG-043: requested one-pixel line is drawn two pixels thick,0.001
+tests.test_highlighting_and_splines::test_save_infers_format_from_file_extension,KNOWN_BUG,PV-BUG-044,PV-BUG-044: save() does not infer PDF from path and writes PNG bytes to a .pdf name,0.001
+tests.test_highlighting_and_splines::test_highlighting_supports_rgba_pathway_images,KNOWN_BUG,PV-BUG-072,PV-BUG-072: highlight drawing cannot assign RGB tuples into RGBA arrays,0.001
+tests.test_highlighting_and_splines::test_label_changes_survive_later_highlight_layers,KNOWN_BUG,PV-BUG-073,PV-BUG-073: dynamic label-change metadata is lost when another layer is chained,0.001
+tests.test_highlighting_and_splines::test_cubic_bezier_shape_and_endpoints[2],PASS,,,0.001
+tests.test_highlighting_and_splines::test_cubic_bezier_shape_and_endpoints[10],PASS,,,0.0
+tests.test_highlighting_and_splines::test_cubic_bezier_shape_and_endpoints[51],PASS,,,0.0
+tests.test_highlighting_and_splines::test_quadratic_bezier_shape_and_endpoints[2],PASS,,,0.0
+tests.test_highlighting_and_splines::test_quadratic_bezier_shape_and_endpoints[10],PASS,,,0.0
+tests.test_highlighting_and_splines::test_quadratic_bezier_shape_and_endpoints[51],PASS,,,0.0
+tests.test_highlighting_and_splines::test_empty_bezier_svg_path_is_empty,PASS,,,0.0
+tests.test_highlighting_and_splines::test_bezier_svg_path_contains_all_samples_and_optional_close,PASS,,,0.0
+tests.test_highlighting_and_splines::test_catmull_rom_documented_inputs_are_finite[points0],KNOWN_BUG,PV-BUG-045,PV-BUG-045: duplicated phantom/repeated Catmull-Rom points cause zero denominators and NaNs,0.001
+tests.test_highlighting_and_splines::test_catmull_rom_documented_inputs_are_finite[points1],KNOWN_BUG,PV-BUG-045,PV-BUG-045: duplicated phantom/repeated Catmull-Rom points cause zero denominators and NaNs,0.001
+tests.test_highlighting_and_splines::test_catmull_rom_documented_inputs_are_finite[points2],KNOWN_BUG,PV-BUG-045,PV-BUG-045: duplicated phantom/repeated Catmull-Rom points cause zero denominators and NaNs,0.001
+tests.test_highlighting_and_splines::test_one_catmull_point_is_returned_unchanged,PASS,,,0.0
+tests.test_highlighting_and_splines::test_straight_and_explicit_curved_routes,PASS,,,0.001
+tests.test_highlighting_and_splines::test_curved_routing_works_without_obstacle_list,KNOWN_BUG,PV-BUG-046,PV-BUG-046: obstacles=None forces every routing mode to a straight two-point line,0.001
+tests.test_highlighting_and_splines::test_edge_route_avoids_supplied_obstacle,KNOWN_BUG,PV-BUG-047,PV-BUG-047: obstacles argument is not consulted by routing implementation,0.0
+tests.test_highlighting_and_splines::test_orthogonal_route_is_finite,KNOWN_BUG,PV-BUG-048,PV-BUG-048: orthogonal routing delegates to broken Catmull-Rom implementation,0.001
+tests.test_highlighting_and_splines::test_unknown_routing_mode_is_rejected,KNOWN_BUG,PV-BUG-049,PV-BUG-049: unknown routing mode silently falls back to straight,0.0
+tests.test_highlighting_and_splines::test_smooth_svg_tension_changes_curve,KNOWN_BUG,PV-BUG-050,PV-BUG-050: smooth_path_svg tension parameter is unused,0.001
+tests.test_highlighting_and_splines::test_nonfinite_curve_is_rejected_before_svg_serialization,KNOWN_BUG,PV-BUG-051,PV-BUG-051: nonfinite curve values are serialized directly into SVG,0.0
+tests.test_mapping_and_colors::test_supported_molecule_aggregations[sum-2.0],PASS,,,0.01
+tests.test_mapping_and_colors::test_supported_molecule_aggregations[mean-1.0],PASS,,,0.001
+tests.test_mapping_and_colors::test_supported_molecule_aggregations[median-1.0],PASS,,,0.001
+tests.test_mapping_and_colors::test_supported_molecule_aggregations[max-3.0],PASS,,,0.001
+tests.test_mapping_and_colors::test_unknown_aggregation_is_rejected,PASS,,,0.001
+tests.test_mapping_and_colors::test_all_advertised_aggregations_work[max_abs],KNOWN_BUG,PV-BUG-012,PV-BUG-012: group aggregation UDF receives scalar elements under current Polars,0.003
+tests.test_mapping_and_colors::test_all_advertised_aggregations_work[random],KNOWN_BUG,PV-BUG-012,PV-BUG-012: group aggregation UDF receives scalar elements under current Polars,0.001
+tests.test_mapping_and_colors::test_no_matching_ids_has_clear_error,PASS,,,0.001
+tests.test_mapping_and_colors::test_mol_sum_normalizes_both_id_column_types,KNOWN_BUG,PV-BUG-013,PV-BUG-013: mol_sum casts data IDs to strings but not mapping IDs,0.001
+tests.test_mapping_and_colors::test_null_mapping_targets_are_removed,KNOWN_BUG,PV-BUG-014,PV-BUG-014: null mapping targets are aggregated into a null output ID,0.001
+tests.test_mapping_and_colors::test_duplicate_mapping_pairs_do_not_double_count,KNOWN_BUG,PV-BUG-015,PV-BUG-015: duplicated mapping pairs duplicate the input value before aggregation,0.001
+tests.test_mapping_and_colors::test_one_source_can_map_to_two_targets,PASS,,,0.002
+tests.test_mapping_and_colors::test_multi_id_pathway_node_aggregates_all_matching_genes,PASS,,,0.006
+tests.test_mapping_and_colors::test_layout_only_node_map_has_identifier_and_nan,PASS,,,0.001
+tests.test_mapping_and_colors::test_missing_requested_node_type_returns_none,PASS,,,0.001
+tests.test_mapping_and_colors::test_mapped_node_table_retains_kegg_names,KNOWN_BUG,PV-BUG-009,PV-BUG-009: mapped node table drops the exploded kegg_names identifier,0.002
+tests.test_mapping_and_colors::test_kegg_gene_ids_can_be_mapped_without_stripping_prefix,KNOWN_BUG,PV-BUG-016,PV-BUG-016: entrez_gnodes is unused and species prefixes are always stripped,0.001
+tests.test_mapping_and_colors::test_simulated_compounds_are_seeded_and_unique,PASS,,,0.004
+tests.test_mapping_and_colors::test_simulated_discrete_compounds_have_only_ids,PASS,,,0.001
+tests.test_mapping_and_colors::test_simulation_rejects_negative_experiment_count,KNOWN_BUG,PV-BUG-017,PV-BUG-017: negative experiment count is silently accepted,0.001
+tests.test_mapping_and_colors::test_low_level_custom_aggregators_handle_nan,PASS,,,0.001
+tests.test_mapping_and_colors::test_continuous_color_mapping_clips_and_handles_missing_values,PASS,,,0.002
+tests.test_mapping_and_colors::test_asymmetric_tuple_limits_and_one_direction,PASS,,,0.001
+tests.test_mapping_and_colors::test_color_transform_is_applied_before_mapping,PASS,,,0.001
+tests.test_mapping_and_colors::test_infinities_are_clipped_to_endpoints,PASS,,,0.001
+tests.test_mapping_and_colors::test_each_value_column_gets_one_color_column,PASS,,,0.001
+tests.test_mapping_and_colors::test_decimal_string_values_mean_the_same_as_decimal_numbers,KNOWN_BUG,PV-BUG-018,PV-BUG-018: decimal strings are parsed as hexadecimal numbers,0.001
+tests.test_mapping_and_colors::test_discrete_setting_changes_color_mapping_mode,FEATURE_GAP,PV-FEATURE-001,PV-FEATURE-001: discrete is accepted by public APIs but ignored by node_color,0.001
+tests.test_mapping_and_colors::test_nonpositive_color_bin_counts_are_rejected[0],PASS,,,0.001
+tests.test_mapping_and_colors::test_nonpositive_color_bin_counts_are_rejected[-1],PASS,,,0.001
+tests.test_mapping_and_colors::test_colormap_accepts_named_and_hex_colors,PASS,,,0.0
+tests.test_mapping_and_colors::test_hard_wordwrap_rejects_zero_width_instead_of_hanging,KNOWN_BUG,PV-BUG-079,PV-BUG-079: wordwrap width=0 with break_word=True makes no progress and loops forever,2.007
+tests.test_parsers::test_kgml_nodes_edges_reactions_and_groups,PASS,,,0.002
+tests.test_parsers::test_kgml_entry_without_graphics_retains_null_geometry,PASS,,,0.001
+tests.test_parsers::test_malformed_xml_raises_xml_parse_error,PASS,,,0.001
+tests.test_parsers::test_missing_kgml_file_has_normal_file_error,PASS,,,0.001
+tests.test_parsers::test_namespace_qualified_kgml_is_parsed,KNOWN_BUG,PV-BUG-019,PV-BUG-019: namespace-qualified KGML child tags are not dispatched,0.001
+tests.test_parsers::test_duplicate_kgml_entry_ids_are_rejected,KNOWN_BUG,PV-BUG-020,PV-BUG-020: duplicate KGML entry IDs silently overwrite earlier entries,0.001
+tests.test_parsers::test_kgml_line_graphics_coordinates_are_preserved,KNOWN_BUG,PV-BUG-021,PV-BUG-021: line graphics coords are ignored and replaced with zero/default geometry,0.001
+tests.test_parsers::test_empty_kgml_node_table_has_standard_schema,KNOWN_BUG,PV-BUG-022,PV-BUG-022: node_info(empty pathway) has no stable columns/schema,0.001
+tests.test_parsers::test_unnamespaced_sbgn_nodes_arcs_compartment_and_dataframe,PASS,,,0.001
+tests.test_parsers::test_standard_namespaced_sbgn_is_parsed,KNOWN_BUG,PV-BUG-023,PV-BUG-023: parser locates a namespaced map but searches its glyphs/arcs without namespace,0.001
+tests.test_parsers::test_sbgn_namespace_version_is_discovered_from_document,KNOWN_BUG,PV-BUG-024,PV-BUG-024: SBGN namespace is hard-coded to 0.2 and does not accept other valid versions,0.001
+tests.test_parsers::test_state_variable_is_metadata_not_a_top_level_node,KNOWN_BUG,PV-BUG-025,PV-BUG-025: nested state-variable glyph is also promoted to a top-level biological node,0.001
+tests.test_parsers::test_standard_sbgn_clone_marker_is_detected,KNOWN_BUG,PV-BUG-026,PV-BUG-026: standard <clone/> element is not detected; code checks an attribute instead,0.001
+tests.test_parsers::test_sbgn_unit_of_information_is_parsed,FEATURE_GAP,PV-FEATURE-002,PV-FEATURE-002: SBGNGlyph exposes unit_of_information but parser never populates it,0.001
+tests.test_parsers::test_sbgn_arc_control_points_are_preserved,KNOWN_BUG,PV-BUG-027,PV-BUG-027: Bezier control <point> children inside SBGN <next> are discarded,0.001
+tests.test_parsers::test_empty_sbgn_dataframe_has_unified_schema,KNOWN_BUG,PV-BUG-028,PV-BUG-028: empty SBGN conversion returns a schema-less DataFrame,0.001
+tests.test_public_core::test_every_declared_public_export_exists[pathview],PASS,,,0.0
+tests.test_public_core::test_every_declared_public_export_exists[sim_mol_data],PASS,,,0.0
+tests.test_public_core::test_every_declared_public_export_exists[mol_sum],PASS,,,0.0
+tests.test_public_core::test_every_declared_public_export_exists[id2eg],PASS,,,0.0
+tests.test_public_core::test_every_declared_public_export_exists[eg2id],PASS,,,0.0
+tests.test_public_core::test_every_declared_public_export_exists[cpd_id_map],PASS,,,0.0
+tests.test_public_core::test_every_declared_public_export_exists[kegg_species_code],PASS,,,0.0
+tests.test_public_core::test_every_declared_public_export_exists[download_kegg],PASS,,,0.0
+tests.test_public_core::test_every_declared_public_export_exists[SpeciesInfo],PASS,,,0.0
+tests.test_public_core::test_every_declared_public_export_exists[download_reactome],PASS,,,0.001
+tests.test_public_core::test_every_declared_public_export_exists[download_metacyc],PASS,,,0.001
+tests.test_public_core::test_every_declared_public_export_exists[download_panther],PASS,,,0.0
+tests.test_public_core::test_every_declared_public_export_exists[download_smpdb],PASS,,,0.0
+tests.test_public_core::test_every_declared_public_export_exists[list_reactome_pathways],PASS,,,0.0
+tests.test_public_core::test_every_declared_public_export_exists[detect_database],PASS,,,0.0
+tests.test_public_core::test_every_declared_public_export_exists[DATABASE_INFO],PASS,,,0.0
+tests.test_public_core::test_every_declared_public_export_exists[parse_kgml],PASS,,,0.0
+tests.test_public_core::test_every_declared_public_export_exists[node_info],PASS,,,0.0
+tests.test_public_core::test_every_declared_public_export_exists[KGMLPathway],PASS,,,0.0
+tests.test_public_core::test_every_declared_public_export_exists[KGMLNode],PASS,,,0.0
+tests.test_public_core::test_every_declared_public_export_exists[KGMLEdge],PASS,,,0.0
+tests.test_public_core::test_every_declared_public_export_exists[KGMLReaction],PASS,,,0.0
+tests.test_public_core::test_every_declared_public_export_exists[parse_sbgn],PASS,,,0.0
+tests.test_public_core::test_every_declared_public_export_exists[sbgn_to_df],PASS,,,0.0
+tests.test_public_core::test_every_declared_public_export_exists[SBGNPathway],PASS,,,0.0
+tests.test_public_core::test_every_declared_public_export_exists[SBGNGlyph],PASS,,,0.0
+tests.test_public_core::test_every_declared_public_export_exists[SBGNArc],PASS,,,0.0
+tests.test_public_core::test_every_declared_public_export_exists[SBGN_GLYPH_CLASSES],PASS,,,0.0
+tests.test_public_core::test_every_declared_public_export_exists[SBGN_ARC_CLASSES],PASS,,,0.0
+tests.test_public_core::test_every_declared_public_export_exists[node_map],PASS,,,0.0
+tests.test_public_core::test_every_declared_public_export_exists[node_color],PASS,,,0.0
+tests.test_public_core::test_every_declared_public_export_exists[make_colormap],PASS,,,0.0
+tests.test_public_core::test_every_declared_public_export_exists[draw_color_key],PASS,,,0.0
+tests.test_public_core::test_every_declared_public_export_exists[keggview_native],PASS,,,0.0
+tests.test_public_core::test_every_declared_public_export_exists[keggview_graph],PASS,,,0.0
+tests.test_public_core::test_every_declared_public_export_exists[keggview_svg],PASS,,,0.0
+tests.test_public_core::test_every_declared_public_export_exists[kegg_legend],PASS,,,0.0
+tests.test_public_core::test_every_declared_public_export_exists[render_node_svg],PASS,,,0.001
+tests.test_public_core::test_every_declared_public_export_exists[render_edge_svg],PASS,,,0.001
+tests.test_public_core::test_every_declared_public_export_exists[PathwayResult],PASS,,,0.0
+tests.test_public_core::test_every_declared_public_export_exists[highlight_nodes],PASS,,,0.0
+tests.test_public_core::test_every_declared_public_export_exists[highlight_edges],PASS,,,0.0
+tests.test_public_core::test_every_declared_public_export_exists[highlight_path],PASS,,,0.0
+tests.test_public_core::test_every_declared_public_export_exists[change_labels],PASS,,,0.0
+tests.test_public_core::test_every_declared_public_export_exists[cubic_bezier],PASS,,,0.0
+tests.test_public_core::test_every_declared_public_export_exists[quadratic_bezier],PASS,,,0.0
+tests.test_public_core::test_every_declared_public_export_exists[catmull_rom_spline],PASS,,,0.0
+tests.test_public_core::test_every_declared_public_export_exists[route_edge_spline],PASS,,,0.0
+tests.test_public_core::test_every_declared_public_export_exists[bezier_to_svg_path],PASS,,,0.0
+tests.test_public_core::test_every_declared_public_export_exists[smooth_path_svg],PASS,,,0.0
+tests.test_public_core::test_every_declared_public_export_exists[wordwrap],PASS,,,0.0
+tests.test_public_core::test_every_declared_public_export_exists[max_abs],PASS,,,0.0
+tests.test_public_core::test_every_declared_public_export_exists[random_pick],PASS,,,0.0
+tests.test_public_core::test_all_source_modules_compile,PASS,,,0.018
+tests.test_public_core::test_distribution_is_importable,PASS,,,0.001
+tests.test_public_core::test_distribution_and_runtime_versions_match,KNOWN_BUG,PV-BUG-001,PV-BUG-001: setup.py/distribution is 2.0.2 but pathview.__version__ is 2.0.0,0.001
+tests.test_public_core::test_core_requires_at_least_one_data_table,PASS,,,0.001
+tests.test_public_core::test_cached_core_png_runs_without_download,PASS,,,0.021
+tests.test_public_core::test_documented_output_dispatch[True-png-native],PASS,,,0.004
+tests.test_public_core::test_documented_output_dispatch[True-pdf-graph],PASS,,,0.003
+tests.test_public_core::test_documented_output_dispatch[True-svg-svg],PASS,,,0.003
+tests.test_public_core::test_documented_output_dispatch[False-pdf-graph],PASS,,,0.004
+tests.test_public_core::test_documented_output_dispatch[False-svg-svg],PASS,,,0.003
+tests.test_public_core::test_non_native_png_request_produces_png,KNOWN_BUG,PV-BUG-002,PV-BUG-002: --no-kegg-native with output_format='png' silently writes graph PDF,0.114
+tests.test_public_core::test_python_api_rejects_unknown_output_format[jpg],KNOWN_BUG,PV-BUG-003,PV-BUG-003: Python API does not validate output_format; unknown values become PDF,0.004
+tests.test_public_core::test_python_api_rejects_unknown_output_format[PNG],KNOWN_BUG,PV-BUG-003,PV-BUG-003: Python API does not validate output_format; unknown values become PDF,0.004
+tests.test_public_core::test_python_api_rejects_unknown_output_format[],KNOWN_BUG,PV-BUG-003,PV-BUG-003: Python API does not validate output_format; unknown values become PDF,0.003
+tests.test_public_core::test_python_api_rejects_unknown_output_format[banana],KNOWN_BUG,PV-BUG-003,PV-BUG-003: Python API does not validate output_format; unknown values become PDF,0.003
+tests.test_public_core::test_fully_cached_human_pathway_does_not_require_network,KNOWN_BUG,PV-BUG-004,PV-BUG-004: cached files cannot bypass live species lookup,0.001
+tests.test_public_core::test_partial_color_dictionary_keeps_unspecified_defaults,KNOWN_BUG,PV-BUG-005,PV-BUG-005: a partial color config replaces defaults instead of merging per molecule type,0.003
+tests.test_public_core::test_map_null_false_removes_unmapped_pathway_nodes,KNOWN_BUG,PV-BUG-006,PV-BUG-006: map_null=False does not remove unmapped rows when a data table exists,0.008
+tests.test_public_core::test_min_nnodes_is_based_on_input_matches,KNOWN_BUG,PV-BUG-007,"PV-BUG-007: min_nnodes counts pathway layout nodes, not nodes matched by input data",0.007
+tests.test_public_core::test_core_result_supports_documented_highlighting_interface,KNOWN_BUG,PV-BUG-008,PV-BUG-008: core returns dict while documented highlighting requires PathwayResult,0.008
+tests.test_public_core::test_core_gene_table_contains_highlighting_identifier_column,KNOWN_BUG,PV-BUG-009,PV-BUG-009: mapped core gene table omits kegg_names required by highlighting,0.008
+tests.test_public_core::test_map_symbol_updates_the_label_used_by_renderers,KNOWN_BUG,PV-BUG-075,PV-BUG-075: _add_symbol_labels joins a SYMBOL column but never replaces the rendered label,0.001
+tests.test_public_core::test_invalid_node_sum_is_rejected_by_python_api,KNOWN_BUG,PV-BUG-076,PV-BUG-076: invalid node_sum ValueError is swallowed by node_map and core still returns output,0.003
+tests.test_public_core::test_conflicting_pathway_prefix_is_rejected,KNOWN_BUG,PV-BUG-010,"PV-BUG-010: pathway prefixes that conflict with species are concatenated, not rejected",0.001
+tests.test_public_core::test_empty_cached_pathway_is_skipped_cleanly,KNOWN_BUG,PV-BUG-011,PV-BUG-011: empty KGML produces a schema-less frame and core crashes before graceful skip,0.001
+tests.test_public_core::test_frozen_official_pathway_png_for_one_two_three_states[1],PASS,,,0.091
+tests.test_public_core::test_frozen_official_pathway_png_for_one_two_three_states[2],PASS,,,0.083
+tests.test_public_core::test_frozen_official_pathway_png_for_one_two_three_states[3],PASS,,,0.083
+tests.test_public_core::test_frozen_official_pathway_vector_outputs[svg-svg-<?xml],PASS,,,0.034
+tests.test_public_core::test_frozen_official_pathway_vector_outputs[pdf-pdf-%PDF],PASS,,,0.238
+tests.test_public_core::test_svg_core_needs_only_cached_xml,KNOWN_BUG,PV-BUG-067,PV-BUG-067: SVG output unnecessarily requires/downloads a KEGG PNG when kegg_native=True,0.001
+tests.test_rendering::test_gene_node_one_two_three_state_slices[colors0-sample_x0-expected0],PASS,,,0.001
+tests.test_rendering::test_gene_node_one_two_three_state_slices[colors1-sample_x1-expected1],PASS,,,0.001
+tests.test_rendering::test_gene_node_one_two_three_state_slices[colors2-sample_x2-expected2],PASS,,,0.001
+tests.test_rendering::test_gene_paint_preserves_existing_black_text_and_border_pixels,PASS,,,0.001
+tests.test_rendering::test_transparent_gene_slice_leaves_background_unchanged,PASS,,,0.001
+tests.test_rendering::test_compound_two_state_left_right_split_at_center,PASS,,,0.001
+tests.test_rendering::test_gene_and_compound_use_same_coordinate_system,KNOWN_BUG,PV-BUG-029,PV-BUG-029: compound y coordinates are flipped while gene y coordinates are effectively not,0.001
+tests.test_rendering::test_compound_width_is_the_full_display_diameter,KNOWN_BUG,PV-BUG-030,PV-BUG-030: compound KGML width is treated as radius instead of diameter,0.001
+tests.test_rendering::test_compound_renderer_respects_elliptical_height,KNOWN_BUG,PV-BUG-031,PV-BUG-031: compound height is ignored and all compounds are forced to width-based circles,0.001
+tests.test_rendering::test_native_hex_color_conversion[#FF0000-expected0],PASS,,,0.001
+tests.test_rendering::test_native_hex_color_conversion[transparent-None],PASS,,,0.001
+tests.test_rendering::test_native_hex_color_conversion[none-None],PASS,,,0.001
+tests.test_rendering::test_native_color_converter_accepts_named_matplotlib_colors,KNOWN_BUG,PV-BUG-032,PV-BUG-032: native/highlight renderers advertise named colors but parse only six-digit hex,0.001
+tests.test_rendering::test_native_color_converter_accepts_short_hex,KNOWN_BUG,PV-BUG-033,PV-BUG-033: three-digit CSS hex colors are not accepted,0.001
+tests.test_rendering::test_native_renderer_requires_background_png,PASS,,,0.001
+tests.test_rendering::test_native_output_preserves_background_dimensions,KNOWN_BUG,PV-BUG-034,PV-BUG-034: bbox_inches='tight' crops/rescales native output instead of preserving KEGG pixels,0.005
+tests.test_rendering::test_native_render_is_repeatable_for_identical_inputs,PASS,,,0.01
+tests.test_rendering::test_svg_rectangle_has_equal_ordered_state_slices[1],PASS,,,0.001
+tests.test_rendering::test_svg_rectangle_has_equal_ordered_state_slices[2],PASS,,,0.001
+tests.test_rendering::test_svg_rectangle_has_equal_ordered_state_slices[3],PASS,,,0.001
+tests.test_rendering::test_svg_ellipse_uses_clip_slices_and_valid_xml,PASS,,,0.001
+tests.test_rendering::test_svg_renders_kgml_circle_as_circle,KNOWN_BUG,PV-BUG-068,PV-BUG-068: KGML shape='circle' is sent to SVG but only shape='ellipse' renders an ellipse,0.001
+tests.test_rendering::test_svg_labels_escape_xml_characters,PASS,,,0.001
+tests.test_rendering::test_svg_edge_snippet_is_valid_and_has_marker,PASS,,,0.0
+tests.test_rendering::test_complete_svg_output_is_valid_xml,PASS,,,0.002
+tests.test_rendering::test_svg_preserves_transparent_unmapped_nodes,KNOWN_BUG,PV-BUG-069,PV-BUG-069: all-transparent SVG nodes are forcibly recolored gray,0.001
+tests.test_rendering::test_svg_pathway_title_with_special_characters_is_valid,KNOWN_BUG,PV-BUG-035,PV-BUG-035: SVG document title is not XML-escaped,0.001
+tests.test_rendering::test_svg_ellipse_accepts_special_node_identifiers,KNOWN_BUG,PV-BUG-036,PV-BUG-036: SVG clip IDs interpolate unescaped node identifiers,0.001
+tests.test_rendering::test_svg_node_with_no_fill_values_still_has_a_visible_shape,KNOWN_BUG,PV-BUG-037,PV-BUG-037: empty SVG fill list renders text but no node shape,0.001
+tests.test_rendering::test_main_svg_renderer_includes_pathway_edges,FEATURE_GAP,PV-FEATURE-003,PV-FEATURE-003: main SVG renderer receives no relation data and emits no pathway edges,0.002
+tests.test_rendering::test_graph_renderer_contains_relations,FEATURE_GAP,PV-FEATURE-004,PV-FEATURE-004: graph renderer builds nodes only; KGML relations are not passed into it,0.017
+tests.test_rendering::test_graph_renderer_preserves_two_state_node_colors,KNOWN_BUG,PV-BUG-038,PV-BUG-038: graph/PDF renderer uses only the first experiment color,0.016
+tests.test_rendering::test_graph_renderer_writes_valid_pdf,PASS,,,0.014
+tests.test_rendering::test_compound_only_color_key_has_no_blank_subplot,KNOWN_BUG,PV-BUG-070,PV-BUG-070: compound-only native color-key layout leaves a blank visible ticked subplot,0.014
+tests.test_rendering::test_compound_only_graph_uses_compound_color_scale,KNOWN_BUG,PV-BUG-071,"PV-BUG-071: graph color key always uses gene limits/colors, even for compound-only plots",0.014

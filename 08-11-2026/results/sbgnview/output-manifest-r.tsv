@@ -1,0 +1,6 @@
+implementation	scenario	format	output_file	bytes	sha256
+R SBGNview	bare namespace control	SVG	08-11-2026/results/sbgnview/r-namespace-bare_P00001.new.layout.sbgn.svg	123377	f55ab486f52a85a21ffd67e09b1c71bece1c4442470e800ec245ccb1868f3cc9
+R SBGNview	default namespace control	SVG	08-11-2026/results/sbgnview/r-namespace-namespaced_P00001.namespaced.sbgn.svg	123377	f55ab486f52a85a21ffd67e09b1c71bece1c4442470e800ec245ccb1868f3cc9
+R SBGNview	ports/state/clone fixture	SVG	08-11-2026/results/sbgnview/r-structural_ports_pd.sbgn.svg	4728	56fbb96686c0ef549c7cfd4e8ed4fdb12d3cc9fcf914ac75b4752678439dc35f
+R SBGNview	shared two-state mapping	SVG	08-11-2026/results/sbgnview/r-two-state_P00001.new.layout.sbgn.svg	144071	926ef584181ba999f2a1b1075f4d4f57de01709346cb5f8abb3dfc9078ebafc6
+R SBGNview	shared two-state mapping	PNG	08-11-2026/results/sbgnview/r-two-state_P00001.new.layout.sbgn.png	339399	ca9cd8298a80ad8b8e94170f6cd24a37b11c32f12ab611e858080a5d0a5c402a

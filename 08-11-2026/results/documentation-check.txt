@@ -1,0 +1,15 @@
+Pathview Plus v3 documentation consistency check
+================================================
+
+Commit: d4d45decec56e1ebec15cf04ae62ff944851780e
+Checked: 2026-08-11
+
+1. README.md links to BUG_CHECKLIST.md at lines 40 and 595 and lists that
+   file in the repository tree at line 468. BUG_CHECKLIST.md is not present
+   at the repository root.
+
+2. README.md says v3.0 fixed 21 confirmed bugs. CHANGELOG.md says v3.0 fixed
+   18 confirmed bugs. The public count should use one number or explain why
+   the two counts differ.
+
+This is a documentation follow-up, not a runtime failure.

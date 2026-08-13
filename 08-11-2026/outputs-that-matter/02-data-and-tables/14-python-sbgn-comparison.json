@@ -1,0 +1,311 @@
+{
+  "title": "Python Pathview Plus SBGN frozen comparison evidence",
+  "generated_at": "2026-08-11T15:26:36-04:00",
+  "offline": true,
+  "environment": {
+    "python": "3.14.3",
+    "pathview_plus": "3.1.0",
+    "pathview_plus_distribution": "3.1.0",
+    "pathview_plus_commit": "d4d45decec56e1ebec15cf04ae62ff944851780e",
+    "polars": "1.43.2",
+    "numpy": "2.5.2",
+    "matplotlib": "3.11.1",
+    "pillow": "12.3.0",
+    "platform": "macOS-26.5.2-arm64-arm-64bit-Mach-O"
+  },
+  "shared_input": {
+    "file": "08-11-2026/data/P00001-shared-control-treatment.csv",
+    "sha256": "e0d67e4023abf6a4c918e53ff08a112a718f32450ffb3c6f4b5181f674e8a6ee",
+    "ids": [
+      "COMT",
+      "DDC",
+      "TH",
+      "DBH",
+      "PNMT",
+      "SLC18A2",
+      "SLC6A3"
+    ],
+    "conditions": [
+      "Control",
+      "Treatment"
+    ],
+    "rows": [
+      {
+        "symbol": "COMT",
+        "Control": -1.5,
+        "Treatment": 1.5
+      },
+      {
+        "symbol": "DDC",
+        "Control": -1.0,
+        "Treatment": 1.0
+      },
+      {
+        "symbol": "TH",
+        "Control": -0.5,
+        "Treatment": 0.5
+      },
+      {
+        "symbol": "DBH",
+        "Control": 0.0,
+        "Treatment": 0.0
+      },
+      {
+        "symbol": "PNMT",
+        "Control": 0.5,
+        "Treatment": -0.5
+      },
+      {
+        "symbol": "SLC18A2",
+        "Control": 1.0,
+        "Treatment": -1.0
+      },
+      {
+        "symbol": "SLC6A3",
+        "Control": 1.5,
+        "Treatment": -1.5
+      }
+    ]
+  },
+  "fixtures": [
+    {
+      "scenario": "P00001 bare XML",
+      "input_file": "08-11-2026/sources/pathview-plus/tests/fixtures/P00001.new.layout.sbgn",
+      "input_sha256": "b96b3f8536725639f5f9901d22b3dc3a8683295aad7c5cfa6235d08b622fa142",
+      "xml_namespace": "none",
+      "xml_glyph_elements": 78,
+      "xml_arc_elements": 83,
+      "primary_glyphs": 76,
+      "compartments": 2,
+      "parser_arcs": 83,
+      "node_rows": 76,
+      "edge_rows": 83,
+      "gene_nodes": 28,
+      "compound_nodes": 24,
+      "process_nodes": 24,
+      "operator_nodes": 0,
+      "ports_indexed": 0,
+      "state_variables": 0,
+      "clone_markers": 0,
+      "arcs_total": 83,
+      "arcs_resolved": 83,
+      "arcs_via_port": 0,
+      "resolution_rate": 1.0
+    },
+    {
+      "scenario": "P00001 default namespace",
+      "input_file": "08-11-2026/sources/pathview-plus/tests/fixtures/P00001.namespaced.sbgn",
+      "input_sha256": "7346f7b01b609aa10239447f8c2fdc65c117ea1085c4dce3d1b1444070a8afd4",
+      "xml_namespace": "http://sbgn.org/libsbgn/pd/0.1",
+      "xml_glyph_elements": 78,
+      "xml_arc_elements": 83,
+      "primary_glyphs": 76,
+      "compartments": 2,
+      "parser_arcs": 83,
+      "node_rows": 76,
+      "edge_rows": 83,
+      "gene_nodes": 28,
+      "compound_nodes": 24,
+      "process_nodes": 24,
+      "operator_nodes": 0,
+      "ports_indexed": 0,
+      "state_variables": 0,
+      "clone_markers": 0,
+      "arcs_total": 83,
+      "arcs_resolved": 83,
+      "arcs_via_port": 0,
+      "resolution_rate": 1.0
+    },
+    {
+      "scenario": "ports, state, and clone fixture",
+      "input_file": "08-11-2026/sources/pathview-plus/tests/fixtures/ports_pd.sbgn",
+      "input_sha256": "d86f9a1fc8769f557b02db9a3b96c56de964b135d46be9a2e2ff17261ab953cc",
+      "xml_namespace": "http://sbgn.org/libsbgn/pd/0.1",
+      "xml_glyph_elements": 6,
+      "xml_arc_elements": 3,
+      "primary_glyphs": 4,
+      "compartments": 1,
+      "parser_arcs": 3,
+      "node_rows": 4,
+      "edge_rows": 3,
+      "gene_nodes": 1,
+      "compound_nodes": 2,
+      "process_nodes": 1,
+      "operator_nodes": 0,
+      "ports_indexed": 2,
+      "state_variables": 1,
+      "clone_markers": 1,
+      "arcs_total": 3,
+      "arcs_resolved": 3,
+      "arcs_via_port": 2,
+      "resolution_rate": 1.0
+    }
+  ],
+  "namespace_parity": {
+    "passed": true,
+    "same_primary_glyph_ids_in_order": true,
+    "same_arc_ids_classes_endpoints_and_points_in_order": true,
+    "same_mapped_node_and_edge_tables": true,
+    "same_rendered_raster_frame": true
+  },
+  "mapping": {
+    "summary": "9/28 nodes carry data; 7/7 input IDs used",
+    "nodes_with_data": 9,
+    "eligible_gene_nodes": 28,
+    "input_ids_used": 7,
+    "input_ids_total": 7,
+    "value_columns": [
+      "Control",
+      "Treatment"
+    ],
+    "mapped_node_rows": [
+      {
+        "entry_id": "Protein_608bc3adf283a9858c923f468826fcb4",
+        "label": "COMT",
+        "glyph_class": "macromolecule",
+        "type": "gene",
+        "kegg_names": [
+          "COMT"
+        ],
+        "Control": -1.5,
+        "Treatment": 1.5
+      },
+      {
+        "entry_id": "Protein_93b7b794c67db60739980abed5887b3d_Complex_c0c21acd06cad8915dc6d562a17cb92b",
+        "label": "SLC18A2",
+        "glyph_class": "macromolecule",
+        "type": "gene",
+        "kegg_names": [
+          "SLC18A2"
+        ],
+        "Control": 1.0,
+        "Treatment": -1.0
+      },
+      {
+        "entry_id": "Protein_29affa8c14b24efa919422a19945a414",
+        "label": "DDC",
+        "glyph_class": "macromolecule",
+        "type": "gene",
+        "kegg_names": [
+          "DDC"
+        ],
+        "Control": -1.0,
+        "Treatment": 1.0
+      },
+      {
+        "entry_id": "Protein_b8e33f6ebba469f6187e8e8b6641868e",
+        "label": "SLC18A2",
+        "glyph_class": "macromolecule",
+        "type": "gene",
+        "kegg_names": [
+          "SLC18A2"
+        ],
+        "Control": 1.0,
+        "Treatment": -1.0
+      },
+      {
+        "entry_id": "Protein_df07a65aa8c4d5b103e43486b6fd967d",
+        "label": "TH",
+        "glyph_class": "macromolecule",
+        "type": "gene",
+        "kegg_names": [
+          "TH"
+        ],
+        "Control": -0.5,
+        "Treatment": 0.5
+      },
+      {
+        "entry_id": "Protein_76137db58b37ef9d06406f5542675a9b",
+        "label": "DBH",
+        "glyph_class": "macromolecule",
+        "type": "gene",
+        "kegg_names": [
+          "DBH"
+        ],
+        "Control": 0.0,
+        "Treatment": 0.0
+      },
+      {
+        "entry_id": "Protein_b734927c10297d1db3f9bc290d7a06b5",
+        "label": "SLC6A3",
+        "glyph_class": "macromolecule",
+        "type": "gene",
+        "kegg_names": [
+          "SLC6A3"
+        ],
+        "Control": 1.5,
+        "Treatment": -1.5
+      },
+      {
+        "entry_id": "Protein_78ba18c5ad71491fadbf87a2024002c5",
+        "label": "PNMT",
+        "glyph_class": "macromolecule",
+        "type": "gene",
+        "kegg_names": [
+          "PNMT"
+        ],
+        "Control": 0.5,
+        "Treatment": -0.5
+      },
+      {
+        "entry_id": "Protein_822718f4659f95fbc0a536c3473d449f_Complex_11851c2240a559a2fcd9de61d553684c",
+        "label": "SLC6A3",
+        "glyph_class": "macromolecule",
+        "type": "gene",
+        "kegg_names": [
+          "SLC6A3"
+        ],
+        "Control": 1.5,
+        "Treatment": -1.5
+      }
+    ],
+    "two_vertical_color_bands_confirmed": true
+  },
+  "outputs": [
+    {
+      "implementation": "Python Pathview Plus",
+      "scenario": "shared two-state mapping",
+      "format": "SVG",
+      "output_file": "08-11-2026/results/sbgnview/P00001.new.layout.python-two-state.svg",
+      "bytes": 527536,
+      "sha256": "32a6ab15dc49e1512cffa44982a5d923027d3a7dd6e26d443861ab1ea9d5fc0f"
+    },
+    {
+      "implementation": "Python Pathview Plus",
+      "scenario": "shared two-state mapping",
+      "format": "PNG",
+      "output_file": "08-11-2026/results/sbgnview/P00001.new.layout.python-two-state.png",
+      "bytes": 519961,
+      "sha256": "5b10aab2f32349f6e54643f4ddc35394bf4582fca71ca0009a14ba65028205ca"
+    },
+    {
+      "implementation": "Python Pathview Plus",
+      "scenario": "namespaced shared two-state mapping",
+      "format": "SVG",
+      "output_file": "08-11-2026/results/sbgnview/P00001.namespaced.python-two-state.svg",
+      "bytes": 527536,
+      "sha256": "8f10e310b8327f8026bbc039e5f491cf4af8962e41d5c1db1d39566c56f26c08"
+    },
+    {
+      "implementation": "Python Pathview Plus",
+      "scenario": "ports/state/clone fixture",
+      "format": "SVG",
+      "output_file": "08-11-2026/results/sbgnview/ports_pd.python-structural.svg",
+      "bytes": 47313,
+      "sha256": "dcd49051979240afa8e920a2cfe04efe60c80eb18f72bff20e6ed61eae3ecf8d"
+    }
+  ],
+  "assertions": {
+    "P00001_bare_and_namespaced_identical": true,
+    "P00001_bare_and_namespaced_render_frames_identical": true,
+    "P00001_83_of_83_arcs_resolved": true,
+    "ports_fixture_3_of_3_arcs_resolved": true,
+    "ports_fixture_2_arcs_resolved_through_ports": true,
+    "ports_fixture_state_variable_captured": true,
+    "ports_fixture_clone_marker_captured": true,
+    "shared_mapping_9_of_28_nodes": true,
+    "shared_mapping_7_of_7_input_ids": true,
+    "two_condition_color_columns": true,
+    "all_outputs_nonempty": true
+  }
+}

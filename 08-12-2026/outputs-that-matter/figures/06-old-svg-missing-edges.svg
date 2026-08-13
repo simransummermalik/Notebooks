@@ -1,0 +1,727 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1041" height="804" 
+     xmlns="http://www.w3.org/2000/svg" 
+     xmlns:xlink="http://www.w3.org/1999/xlink"
+     viewBox="0 0 1041 804">
+  <title>hsa04110</title>
+  <defs>
+    <style type="text/css">
+      .node { stroke: #333; stroke-width: 1; }
+      .edge { stroke: #666; stroke-width: 1; fill: none; }
+      .label { font-family: Arial, sans-serif; font-size: 11px; fill: #000; text-anchor: middle; }
+    </style>
+  </defs>
+
+<!-- Gene nodes -->
+<rect x="509.0" y="115.5" width="15.333333333333334" height="17.0" rx="0" fill="#FF0000" opacity="1.0" class="node"/>
+<rect x="524.3333333333334" y="115.5" width="15.333333333333334" height="17.0" rx="0" fill="#008000" opacity="1.0" class="node"/>
+<rect x="539.6666666666666" y="115.5" width="15.333333333333334" height="17.0" rx="0" fill="#FF0000" opacity="1.0" class="node"/>
+<text x="532.0" y="34.0" class="label">CDKN2A,</text>
+<text x="532.0" y="46.0" class="label">ARF,</text>
+<text x="532.0" y="58.0" class="label">CDK4I,</text>
+<text x="532.0" y="70.0" class="label">CDKN2,</text>
+<text x="532.0" y="82.0" class="label">CMM2,</text>
+<text x="532.0" y="94.0" class="label">INK4,</text>
+<text x="532.0" y="106.0" class="label">INK4A,</text>
+<text x="532.0" y="118.0" class="label">MLM,</text>
+<text x="532.0" y="130.0" class="label">MTS-1,</text>
+<text x="532.0" y="142.0" class="label">MTS1,</text>
+<text x="532.0" y="154.0" class="label">P14,</text>
+<text x="532.0" y="166.0" class="label">P14ARF,</text>
+<text x="532.0" y="178.0" class="label">P16, P16</text>
+<text x="532.0" y="190.0" class="label">-INK4A,</text>
+<text x="532.0" y="202.0" class="label">P16INK4,</text>
+<text x="532.0" y="214.0" class="label">P16INK4A</text>
+<text x="532.0" y="226.0" class="label">, P19,</text>
+<text x="532.0" y="238.0" class="label">P19ARF,</text>
+<text x="532.0" y="250.0" class="label">TP16</text>
+<rect x="896.0" y="527.5" width="15.333333333333334" height="17.0" rx="0" fill="#FF0000" opacity="1.0" class="node"/>
+<rect x="911.3333333333334" y="527.5" width="15.333333333333334" height="17.0" rx="0" fill="transparent" opacity="1.0" class="node"/>
+<rect x="926.6666666666666" y="527.5" width="15.333333333333334" height="17.0" rx="0" fill="transparent" opacity="1.0" class="node"/>
+<text x="919.0" y="506.0" class="label">FZR1,</text>
+<text x="919.0" y="518.0" class="label">CDC20C,</text>
+<text x="919.0" y="530.0" class="label">CDH1,</text>
+<text x="919.0" y="542.0" class="label">FZR,</text>
+<text x="919.0" y="554.0" class="label">FZR2,</text>
+<text x="919.0" y="566.0" class="label">HCDH,</text>
+<text x="919.0" y="578.0" class="label">HCDH1</text>
+<rect x="530.0" y="547.5" width="15.333333333333334" height="17.0" rx="0" fill="#FF0000" opacity="1.0" class="node"/>
+<rect x="545.3333333333334" y="547.5" width="15.333333333333334" height="17.0" rx="0" fill="transparent" opacity="1.0" class="node"/>
+<rect x="560.6666666666666" y="547.5" width="15.333333333333334" height="17.0" rx="0" fill="transparent" opacity="1.0" class="node"/>
+<text x="553.0" y="526.0" class="label">MCM2,</text>
+<text x="553.0" y="538.0" class="label">BM28,</text>
+<text x="553.0" y="550.0" class="label">CCNL1,</text>
+<text x="553.0" y="562.0" class="label">CDCL1,</text>
+<text x="553.0" y="574.0" class="label">D3S3194,</text>
+<text x="553.0" y="586.0" class="label">MITOTIN,</text>
+<text x="553.0" y="598.0" class="label">cdc19...</text>
+<rect x="471.0" y="547.5" width="15.333333333333334" height="17.0" rx="0" fill="#FF0000" opacity="1.0" class="node"/>
+<rect x="486.3333333333333" y="547.5" width="15.333333333333334" height="17.0" rx="0" fill="transparent" opacity="1.0" class="node"/>
+<rect x="501.6666666666667" y="547.5" width="15.333333333333334" height="17.0" rx="0" fill="transparent" opacity="1.0" class="node"/>
+<text x="494.0" y="551.0" class="label">ORC6,</text>
+<text x="494.0" y="563.0" class="label">ORC6L...</text>
+<rect x="896.0" y="288.5" width="15.333333333333334" height="17.0" rx="0" fill="#FF0000" opacity="1.0" class="node"/>
+<rect x="911.3333333333334" y="288.5" width="15.333333333333334" height="17.0" rx="0" fill="transparent" opacity="1.0" class="node"/>
+<rect x="926.6666666666666" y="288.5" width="15.333333333333334" height="17.0" rx="0" fill="transparent" opacity="1.0" class="node"/>
+<text x="919.0" y="287.0" class="label">ANAPC10,</text>
+<text x="919.0" y="299.0" class="label">APC10,</text>
+<text x="919.0" y="311.0" class="label">DOC1...</text>
+<rect x="896.0" y="510.5" width="15.333333333333334" height="17.0" rx="0" fill="#FF0000" opacity="1.0" class="node"/>
+<rect x="911.3333333333334" y="510.5" width="15.333333333333334" height="17.0" rx="0" fill="transparent" opacity="1.0" class="node"/>
+<rect x="926.6666666666666" y="510.5" width="15.333333333333334" height="17.0" rx="0" fill="transparent" opacity="1.0" class="node"/>
+<text x="919.0" y="509.0" class="label">ANAPC10,</text>
+<text x="919.0" y="521.0" class="label">APC10,</text>
+<text x="919.0" y="533.0" class="label">DOC1...</text>
+<rect x="165.0" y="510.5" width="15.333333333333334" height="17.0" rx="0" fill="#FF0000" opacity="1.0" class="node"/>
+<rect x="180.33333333333334" y="510.5" width="15.333333333333334" height="17.0" rx="0" fill="transparent" opacity="1.0" class="node"/>
+<rect x="195.66666666666666" y="510.5" width="15.333333333333334" height="17.0" rx="0" fill="transparent" opacity="1.0" class="node"/>
+<text x="188.0" y="489.0" class="label">SKP1,</text>
+<text x="188.0" y="501.0" class="label">EMC19,</text>
+<text x="188.0" y="513.0" class="label">OCP-II,</text>
+<text x="188.0" y="525.0" class="label">OCP2,</text>
+<text x="188.0" y="537.0" class="label">SKP1A,</text>
+<text x="188.0" y="549.0" class="label">TCEB1L,</text>
+<text x="188.0" y="561.0" class="label">p19A...</text>
+<rect x="409.0" y="182.5" width="15.333333333333334" height="17.0" rx="0" fill="#FF0000" opacity="1.0" class="node"/>
+<rect x="424.3333333333333" y="182.5" width="15.333333333333334" height="17.0" rx="0" fill="transparent" opacity="1.0" class="node"/>
+<rect x="439.6666666666667" y="182.5" width="15.333333333333334" height="17.0" rx="0" fill="transparent" opacity="1.0" class="node"/>
+<text x="432.0" y="161.0" class="label">SKP1,</text>
+<text x="432.0" y="173.0" class="label">EMC19,</text>
+<text x="432.0" y="185.0" class="label">OCP-II,</text>
+<text x="432.0" y="197.0" class="label">OCP2,</text>
+<text x="432.0" y="209.0" class="label">SKP1A,</text>
+<text x="432.0" y="221.0" class="label">TCEB1L,</text>
+<text x="432.0" y="233.0" class="label">p19A...</text>
+<rect x="100.0" y="695.5" width="15.333333333333334" height="17.0" rx="0" fill="#FF0000" opacity="1.0" class="node"/>
+<rect x="115.33333333333333" y="695.5" width="15.333333333333334" height="17.0" rx="0" fill="transparent" opacity="1.0" class="node"/>
+<rect x="130.66666666666666" y="695.5" width="15.333333333333334" height="17.0" rx="0" fill="transparent" opacity="1.0" class="node"/>
+<text x="123.0" y="699.0" class="label">ORC6,</text>
+<text x="123.0" y="711.0" class="label">ORC6L</text>
+<rect x="54.0" y="678.5" width="15.333333333333334" height="17.0" rx="0" fill="#FF0000" opacity="1.0" class="node"/>
+<rect x="69.33333333333333" y="678.5" width="15.333333333333334" height="17.0" rx="0" fill="transparent" opacity="1.0" class="node"/>
+<rect x="84.66666666666667" y="678.5" width="15.333333333333334" height="17.0" rx="0" fill="transparent" opacity="1.0" class="node"/>
+<text x="77.0" y="672.0" class="label">ORC3,</text>
+<text x="77.0" y="684.0" class="label">LAT,</text>
+<text x="77.0" y="696.0" class="label">LATHEO,</text>
+<text x="77.0" y="708.0" class="label">ORC3L</text>
+<rect x="54.0" y="695.5" width="15.333333333333334" height="17.0" rx="0" fill="#FF0000" opacity="1.0" class="node"/>
+<rect x="69.33333333333333" y="695.5" width="15.333333333333334" height="17.0" rx="0" fill="transparent" opacity="1.0" class="node"/>
+<rect x="84.66666666666667" y="695.5" width="15.333333333333334" height="17.0" rx="0" fill="transparent" opacity="1.0" class="node"/>
+<text x="77.0" y="689.0" class="label">ORC5,</text>
+<text x="77.0" y="701.0" class="label">ORC5L,</text>
+<text x="77.0" y="713.0" class="label">ORC5P,</text>
+<text x="77.0" y="725.0" class="label">ORC5T</text>
+<rect x="100.0" y="678.5" width="15.333333333333334" height="17.0" rx="0" fill="#FF0000" opacity="1.0" class="node"/>
+<rect x="115.33333333333333" y="678.5" width="15.333333333333334" height="17.0" rx="0" fill="transparent" opacity="1.0" class="node"/>
+<rect x="130.66666666666666" y="678.5" width="15.333333333333334" height="17.0" rx="0" fill="transparent" opacity="1.0" class="node"/>
+<text x="123.0" y="677.0" class="label">ORC4,</text>
+<text x="123.0" y="689.0" class="label">ORC4L,</text>
+<text x="123.0" y="701.0" class="label">ORC4P</text>
+<rect x="100.0" y="661.5" width="15.333333333333334" height="17.0" rx="0" fill="#FF0000" opacity="1.0" class="node"/>
+<rect x="115.33333333333333" y="661.5" width="15.333333333333334" height="17.0" rx="0" fill="transparent" opacity="1.0" class="node"/>
+<rect x="130.66666666666666" y="661.5" width="15.333333333333334" height="17.0" rx="0" fill="transparent" opacity="1.0" class="node"/>
+<text x="123.0" y="665.0" class="label">ORC2,</text>
+<text x="123.0" y="677.0" class="label">ORC2L</text>
+<rect x="54.0" y="661.5" width="15.333333333333334" height="17.0" rx="0" fill="#FF0000" opacity="1.0" class="node"/>
+<rect x="69.33333333333333" y="661.5" width="15.333333333333334" height="17.0" rx="0" fill="transparent" opacity="1.0" class="node"/>
+<rect x="84.66666666666667" y="661.5" width="15.333333333333334" height="17.0" rx="0" fill="transparent" opacity="1.0" class="node"/>
+<text x="77.0" y="655.0" class="label">ORC1,</text>
+<text x="77.0" y="667.0" class="label">HSORC1,</text>
+<text x="77.0" y="679.0" class="label">ORC1L,</text>
+<text x="77.0" y="691.0" class="label">PARC1</text>
+<rect x="222.0" y="695.5" width="15.333333333333334" height="17.0" rx="0" fill="#FF0000" opacity="1.0" class="node"/>
+<rect x="237.33333333333334" y="695.5" width="15.333333333333334" height="17.0" rx="0" fill="transparent" opacity="1.0" class="node"/>
+<rect x="252.66666666666666" y="695.5" width="15.333333333333334" height="17.0" rx="0" fill="transparent" opacity="1.0" class="node"/>
+<text x="245.0" y="674.0" class="label">MCM7,</text>
+<text x="245.0" y="686.0" class="label">CDC47,</text>
+<text x="245.0" y="698.0" class="label">MCM2, P1</text>
+<text x="245.0" y="710.0" class="label">.1-MCM3,</text>
+<text x="245.0" y="722.0" class="label">P1CDC47,</text>
+<text x="245.0" y="734.0" class="label">P85MCM,</text>
+<text x="245.0" y="746.0" class="label">PNAS146</text>
+<rect x="177.0" y="695.5" width="15.333333333333334" height="17.0" rx="0" fill="#FF0000" opacity="1.0" class="node"/>
+<rect x="192.33333333333334" y="695.5" width="15.333333333333334" height="17.0" rx="0" fill="transparent" opacity="1.0" class="node"/>
+<rect x="207.66666666666666" y="695.5" width="15.333333333333334" height="17.0" rx="0" fill="transparent" opacity="1.0" class="node"/>
+<text x="200.0" y="689.0" class="label">MCM6, MC</text>
+<text x="200.0" y="701.0" class="label">G40308,</text>
+<text x="200.0" y="713.0" class="label">Mis5,</text>
+<text x="200.0" y="725.0" class="label">P105MCM</text>
+<rect x="222.0" y="678.5" width="15.333333333333334" height="17.0" rx="0" fill="#FF0000" opacity="1.0" class="node"/>
+<rect x="237.33333333333334" y="678.5" width="15.333333333333334" height="17.0" rx="0" fill="transparent" opacity="1.0" class="node"/>
+<rect x="252.66666666666666" y="678.5" width="15.333333333333334" height="17.0" rx="0" fill="transparent" opacity="1.0" class="node"/>
+<text x="245.0" y="677.0" class="label">MCM5,</text>
+<text x="245.0" y="689.0" class="label">CDC46,</text>
+<text x="245.0" y="701.0" class="label">P1-CDC46</text>
+<rect x="177.0" y="678.5" width="15.333333333333334" height="17.0" rx="0" fill="#FF0000" opacity="1.0" class="node"/>
+<rect x="192.33333333333334" y="678.5" width="15.333333333333334" height="17.0" rx="0" fill="transparent" opacity="1.0" class="node"/>
+<rect x="207.66666666666666" y="678.5" width="15.333333333333334" height="17.0" rx="0" fill="transparent" opacity="1.0" class="node"/>
+<text x="200.0" y="667.0" class="label">MCM4,</text>
+<text x="200.0" y="679.0" class="label">CDC21,</text>
+<text x="200.0" y="691.0" class="label">CDC54, P</text>
+<text x="200.0" y="703.0" class="label">1-CDC21,</text>
+<text x="200.0" y="715.0" class="label">hCdc21</text>
+<rect x="222.0" y="661.5" width="15.333333333333334" height="17.0" rx="0" fill="#FF0000" opacity="1.0" class="node"/>
+<rect x="237.33333333333334" y="661.5" width="15.333333333333334" height="17.0" rx="0" fill="transparent" opacity="1.0" class="node"/>
+<rect x="252.66666666666666" y="661.5" width="15.333333333333334" height="17.0" rx="0" fill="transparent" opacity="1.0" class="node"/>
+<text x="245.0" y="650.0" class="label">MCM3,</text>
+<text x="245.0" y="662.0" class="label">HCC5,</text>
+<text x="245.0" y="674.0" class="label">P1-MCM3,</text>
+<text x="245.0" y="686.0" class="label">P1.h,</text>
+<text x="245.0" y="698.0" class="label">RLFB</text>
+<rect x="177.0" y="661.5" width="15.333333333333334" height="17.0" rx="0" fill="#FF0000" opacity="1.0" class="node"/>
+<rect x="192.33333333333334" y="661.5" width="15.333333333333334" height="17.0" rx="0" fill="transparent" opacity="1.0" class="node"/>
+<rect x="207.66666666666666" y="661.5" width="15.333333333333334" height="17.0" rx="0" fill="transparent" opacity="1.0" class="node"/>
+<text x="200.0" y="640.0" class="label">MCM2,</text>
+<text x="200.0" y="652.0" class="label">BM28,</text>
+<text x="200.0" y="664.0" class="label">CCNL1,</text>
+<text x="200.0" y="676.0" class="label">CDCL1,</text>
+<text x="200.0" y="688.0" class="label">D3S3194,</text>
+<text x="200.0" y="700.0" class="label">MITOTIN,</text>
+<text x="200.0" y="712.0" class="label">cdc19</text>
+<rect x="757.0" y="459.5" width="15.333333333333334" height="17.0" rx="0" fill="#FF0000" opacity="1.0" class="node"/>
+<rect x="772.3333333333334" y="459.5" width="15.333333333333334" height="17.0" rx="0" fill="transparent" opacity="1.0" class="node"/>
+<rect x="787.6666666666666" y="459.5" width="15.333333333333334" height="17.0" rx="0" fill="transparent" opacity="1.0" class="node"/>
+<text x="780.0" y="453.0" class="label">CDK1,</text>
+<text x="780.0" y="465.0" class="label">CDC2,</text>
+<text x="780.0" y="477.0" class="label">CDC28A,</text>
+<text x="780.0" y="489.0" class="label">P34CDC2</text>
+<rect x="807.0" y="289.5" width="15.333333333333334" height="17.0" rx="0" fill="#FF0000" opacity="1.0" class="node"/>
+<rect x="822.3333333333334" y="289.5" width="15.333333333333334" height="17.0" rx="0" fill="transparent" opacity="1.0" class="node"/>
+<rect x="837.6666666666666" y="289.5" width="15.333333333333334" height="17.0" rx="0" fill="transparent" opacity="1.0" class="node"/>
+<text x="830.0" y="268.0" class="label">BUB1B, B</text>
+<text x="830.0" y="280.0" class="label">UB1beta,</text>
+<text x="830.0" y="292.0" class="label">BUBR1,</text>
+<text x="830.0" y="304.0" class="label">Bub1A,</text>
+<text x="830.0" y="316.0" class="label">MAD3L,</text>
+<text x="830.0" y="328.0" class="label">SSK1,</text>
+<text x="830.0" y="340.0" class="label">hBUBR1</text>
+<rect x="536.0" y="350.5" width="15.333333333333334" height="17.0" rx="0" fill="#FF0000" opacity="1.0" class="node"/>
+<rect x="551.3333333333334" y="350.5" width="15.333333333333334" height="17.0" rx="0" fill="transparent" opacity="1.0" class="node"/>
+<rect x="566.6666666666666" y="350.5" width="15.333333333333334" height="17.0" rx="0" fill="transparent" opacity="1.0" class="node"/>
+<text x="559.0" y="359.0" class="label">PCNA</text>
+<rect x="839.0" y="459.5" width="15.333333333333334" height="17.0" rx="0" fill="#FF0000" opacity="1.0" class="node"/>
+<rect x="854.3333333333334" y="459.5" width="15.333333333333334" height="17.0" rx="0" fill="transparent" opacity="1.0" class="node"/>
+<rect x="869.6666666666666" y="459.5" width="15.333333333333334" height="17.0" rx="0" fill="transparent" opacity="1.0" class="node"/>
+<text x="862.0" y="458.0" class="label">PLK1,</text>
+<text x="862.0" y="470.0" class="label">PLK,</text>
+<text x="862.0" y="482.0" class="label">STPK13</text>
+<rect x="673.0" y="154.5" width="15.333333333333334" height="17.0" rx="0" fill="#FF0000" opacity="1.0" class="node"/>
+<rect x="688.3333333333334" y="154.5" width="15.333333333333334" height="17.0" rx="0" fill="transparent" opacity="1.0" class="node"/>
+<rect x="703.6666666666666" y="154.5" width="15.333333333333334" height="17.0" rx="0" fill="transparent" opacity="1.0" class="node"/>
+<text x="696.0" y="123.0" class="label">ATM,</text>
+<text x="696.0" y="135.0" class="label">AT1,</text>
+<text x="696.0" y="147.0" class="label">ATA,</text>
+<text x="696.0" y="159.0" class="label">ATC,</text>
+<text x="696.0" y="171.0" class="label">ATD,</text>
+<text x="696.0" y="183.0" class="label">ATDC,</text>
+<text x="696.0" y="195.0" class="label">ATE,</text>
+<text x="696.0" y="207.0" class="label">TEL1,</text>
+<text x="696.0" y="219.0" class="label">TELO1...</text>
+<rect x="509.0" y="617.5" width="15.333333333333334" height="17.0" rx="0" fill="#FF0000" opacity="1.0" class="node"/>
+<rect x="524.3333333333334" y="617.5" width="15.333333333333334" height="17.0" rx="0" fill="transparent" opacity="1.0" class="node"/>
+<rect x="539.6666666666666" y="617.5" width="15.333333333333334" height="17.0" rx="0" fill="transparent" opacity="1.0" class="node"/>
+<text x="532.0" y="606.0" class="label">DBF4,</text>
+<text x="532.0" y="618.0" class="label">ASK,</text>
+<text x="532.0" y="630.0" class="label">CHIF,</text>
+<text x="532.0" y="642.0" class="label">DBF4A,</text>
+<text x="532.0" y="654.0" class="label">ZDBF1</text>
+<rect x="807.0" y="272.5" width="15.333333333333334" height="17.0" rx="0" fill="#FF0000" opacity="1.0" class="node"/>
+<rect x="822.3333333333334" y="272.5" width="15.333333333333334" height="17.0" rx="0" fill="transparent" opacity="1.0" class="node"/>
+<rect x="837.6666666666666" y="272.5" width="15.333333333333334" height="17.0" rx="0" fill="transparent" opacity="1.0" class="node"/>
+<text x="830.0" y="266.0" class="label">MAD2L2,</text>
+<text x="830.0" y="278.0" class="label">MAD2B,</text>
+<text x="830.0" y="290.0" class="label">POLZ2,</text>
+<text x="830.0" y="302.0" class="label">REV7...</text>
+<rect x="746.0" y="306.5" width="15.333333333333334" height="17.0" rx="0" fill="#FF0000" opacity="1.0" class="node"/>
+<rect x="761.3333333333334" y="306.5" width="15.333333333333334" height="17.0" rx="0" fill="transparent" opacity="1.0" class="node"/>
+<rect x="776.6666666666666" y="306.5" width="15.333333333333334" height="17.0" rx="0" fill="transparent" opacity="1.0" class="node"/>
+<text x="769.0" y="300.0" class="label">BUB1,</text>
+<text x="769.0" y="312.0" class="label">BUB1A,</text>
+<text x="769.0" y="324.0" class="label">BUB1L,</text>
+<text x="769.0" y="336.0" class="label">hBUB1</text>
+<rect x="807.0" y="306.5" width="15.333333333333334" height="17.0" rx="0" fill="#FF0000" opacity="1.0" class="node"/>
+<rect x="822.3333333333334" y="306.5" width="15.333333333333334" height="17.0" rx="0" fill="transparent" opacity="1.0" class="node"/>
+<rect x="837.6666666666666" y="306.5" width="15.333333333333334" height="17.0" rx="0" fill="transparent" opacity="1.0" class="node"/>
+<text x="830.0" y="305.0" class="label">BUB3,</text>
+<text x="830.0" y="317.0" class="label">BUB3L,</text>
+<text x="830.0" y="329.0" class="label">hBUB3</text>
+<rect x="896.0" y="569.5" width="15.333333333333334" height="17.0" rx="0" fill="#FF0000" opacity="1.0" class="node"/>
+<rect x="911.3333333333334" y="569.5" width="15.333333333333334" height="17.0" rx="0" fill="transparent" opacity="1.0" class="node"/>
+<rect x="926.6666666666666" y="569.5" width="15.333333333333334" height="17.0" rx="0" fill="transparent" opacity="1.0" class="node"/>
+<text x="919.0" y="553.0" class="label">CDC14B,</text>
+<text x="919.0" y="565.0" class="label">CDC14B3,</text>
+<text x="919.0" y="577.0" class="label">Cdc14B1,</text>
+<text x="919.0" y="589.0" class="label">Cdc14B2,</text>
+<text x="919.0" y="601.0" class="label">hCDC14B.</text>
+<text x="919.0" y="613.0" class="label">..</text>
+<rect x="827.0" y="343.5" width="15.333333333333334" height="17.0" rx="0" fill="#FF0000" opacity="1.0" class="node"/>
+<rect x="842.3333333333334" y="343.5" width="15.333333333333334" height="17.0" rx="0" fill="transparent" opacity="1.0" class="node"/>
+<rect x="857.6666666666666" y="343.5" width="15.333333333333334" height="17.0" rx="0" fill="transparent" opacity="1.0" class="node"/>
+<text x="850.0" y="337.0" class="label">YWHAQ,</text>
+<text x="850.0" y="349.0" class="label">14-3-3,</text>
+<text x="850.0" y="361.0" class="label">1C5,</text>
+<text x="850.0" y="373.0" class="label">HS1...</text>
+<rect x="615.0" y="304.5" width="15.333333333333334" height="17.0" rx="0" fill="#FF0000" opacity="1.0" class="node"/>
+<rect x="630.3333333333334" y="304.5" width="15.333333333333334" height="17.0" rx="0" fill="transparent" opacity="1.0" class="node"/>
+<rect x="645.6666666666666" y="304.5" width="15.333333333333334" height="17.0" rx="0" fill="transparent" opacity="1.0" class="node"/>
+<text x="638.0" y="308.0" class="label">SFN,</text>
+<text x="638.0" y="320.0" class="label">YWHAS</text>
+<rect x="673.0" y="290.5" width="15.333333333333334" height="17.0" rx="0" fill="#FF0000" opacity="1.0" class="node"/>
+<rect x="688.3333333333334" y="290.5" width="15.333333333333334" height="17.0" rx="0" fill="transparent" opacity="1.0" class="node"/>
+<rect x="703.6666666666666" y="290.5" width="15.333333333333334" height="17.0" rx="0" fill="transparent" opacity="1.0" class="node"/>
+<text x="696.0" y="294.0" class="label">CHEK1,</text>
+<text x="696.0" y="306.0" class="label">CHK1...</text>
+<rect x="436.0" y="304.5" width="15.333333333333334" height="17.0" rx="0" fill="#FF0000" opacity="1.0" class="node"/>
+<rect x="451.3333333333333" y="304.5" width="15.333333333333334" height="17.0" rx="0" fill="transparent" opacity="1.0" class="node"/>
+<rect x="466.6666666666667" y="304.5" width="15.333333333333334" height="17.0" rx="0" fill="transparent" opacity="1.0" class="node"/>
+<text x="459.0" y="273.0" class="label">CDKN1A,</text>
+<text x="459.0" y="285.0" class="label">CAP20,</text>
+<text x="459.0" y="297.0" class="label">CDKN1,</text>
+<text x="459.0" y="309.0" class="label">CIP1,</text>
+<text x="459.0" y="321.0" class="label">MDA-6,</text>
+<text x="459.0" y="333.0" class="label">P21,</text>
+<text x="459.0" y="345.0" class="label">SDI1,</text>
+<text x="459.0" y="357.0" class="label">WAF1,</text>
+<text x="459.0" y="369.0" class="label">p21CIP1</text>
+<rect x="617.0" y="154.5" width="15.333333333333334" height="17.0" rx="0" fill="#FF0000" opacity="1.0" class="node"/>
+<rect x="632.3333333333334" y="154.5" width="15.333333333333334" height="17.0" rx="0" fill="transparent" opacity="1.0" class="node"/>
+<rect x="647.6666666666666" y="154.5" width="15.333333333333334" height="17.0" rx="0" fill="transparent" opacity="1.0" class="node"/>
+<text x="640.0" y="123.0" class="label">PRKDC,</text>
+<text x="640.0" y="135.0" class="label">DNA-</text>
+<text x="640.0" y="147.0" class="label">PKcs,</text>
+<text x="640.0" y="159.0" class="label">DNAPK,</text>
+<text x="640.0" y="171.0" class="label">DNPK1,</text>
+<text x="640.0" y="183.0" class="label">HYRC,</text>
+<text x="640.0" y="195.0" class="label">HYRC1,</text>
+<text x="640.0" y="207.0" class="label">XRCC7,</text>
+<text x="640.0" y="219.0" class="label">p350</text>
+<rect x="509.0" y="170.5" width="15.333333333333334" height="17.0" rx="0" fill="#FF0000" opacity="1.0" class="node"/>
+<rect x="524.3333333333334" y="170.5" width="15.333333333333334" height="17.0" rx="0" fill="transparent" opacity="1.0" class="node"/>
+<rect x="539.6666666666666" y="170.5" width="15.333333333333334" height="17.0" rx="0" fill="transparent" opacity="1.0" class="node"/>
+<text x="532.0" y="164.0" class="label">MDM2,</text>
+<text x="532.0" y="176.0" class="label">ACTFS,</text>
+<text x="532.0" y="188.0" class="label">HDMX,</text>
+<text x="532.0" y="200.0" class="label">hdm2</text>
+<rect x="567.0" y="141.5" width="15.333333333333334" height="17.0" rx="0" fill="#FF0000" opacity="1.0" class="node"/>
+<rect x="582.3333333333334" y="141.5" width="15.333333333333334" height="17.0" rx="0" fill="transparent" opacity="1.0" class="node"/>
+<rect x="597.6666666666666" y="141.5" width="15.333333333333334" height="17.0" rx="0" fill="transparent" opacity="1.0" class="node"/>
+<text x="590.0" y="135.0" class="label">CREBBP,</text>
+<text x="590.0" y="147.0" class="label">CBP,</text>
+<text x="590.0" y="159.0" class="label">KAT3A,</text>
+<text x="590.0" y="171.0" class="label">RSTS...</text>
+<rect x="409.0" y="199.5" width="15.333333333333334" height="17.0" rx="0" fill="#FF0000" opacity="1.0" class="node"/>
+<rect x="424.3333333333333" y="199.5" width="15.333333333333334" height="17.0" rx="0" fill="transparent" opacity="1.0" class="node"/>
+<rect x="439.6666666666667" y="199.5" width="15.333333333333334" height="17.0" rx="0" fill="transparent" opacity="1.0" class="node"/>
+<text x="432.0" y="188.0" class="label">SKP2,</text>
+<text x="432.0" y="200.0" class="label">FBL1,</text>
+<text x="432.0" y="212.0" class="label">FBXL1,</text>
+<text x="432.0" y="224.0" class="label">FLB1,</text>
+<text x="432.0" y="236.0" class="label">p45</text>
+<rect x="740.0" y="519.5" width="15.333333333333334" height="17.0" rx="0" fill="#FF0000" opacity="1.0" class="node"/>
+<rect x="755.3333333333334" y="519.5" width="15.333333333333334" height="17.0" rx="0" fill="transparent" opacity="1.0" class="node"/>
+<rect x="770.6666666666666" y="519.5" width="15.333333333333334" height="17.0" rx="0" fill="transparent" opacity="1.0" class="node"/>
+<text x="763.0" y="523.0" class="label">PKMYT1,</text>
+<text x="763.0" y="535.0" class="label">MYT1</text>
+<rect x="681.0" y="519.5" width="15.333333333333334" height="17.0" rx="0" fill="#FF0000" opacity="1.0" class="node"/>
+<rect x="696.3333333333334" y="519.5" width="15.333333333333334" height="17.0" rx="0" fill="transparent" opacity="1.0" class="node"/>
+<rect x="711.6666666666666" y="519.5" width="15.333333333333334" height="17.0" rx="0" fill="transparent" opacity="1.0" class="node"/>
+<text x="704.0" y="523.0" class="label">WEE2,</text>
+<text x="704.0" y="535.0" class="label">WEE1B...</text>
+<rect x="896.0" y="236.5" width="15.333333333333334" height="17.0" rx="0" fill="#FF0000" opacity="1.0" class="node"/>
+<rect x="911.3333333333334" y="236.5" width="15.333333333333334" height="17.0" rx="0" fill="transparent" opacity="1.0" class="node"/>
+<rect x="926.6666666666666" y="236.5" width="15.333333333333334" height="17.0" rx="0" fill="transparent" opacity="1.0" class="node"/>
+<text x="919.0" y="245.0" class="label">PTTG2...</text>
+<rect x="896.0" y="189.5" width="15.333333333333334" height="17.0" rx="0" fill="#FF0000" opacity="1.0" class="node"/>
+<rect x="911.3333333333334" y="189.5" width="15.333333333333334" height="17.0" rx="0" fill="transparent" opacity="1.0" class="node"/>
+<rect x="926.6666666666666" y="189.5" width="15.333333333333334" height="17.0" rx="0" fill="transparent" opacity="1.0" class="node"/>
+<text x="919.0" y="188.0" class="label">ESPL1,</text>
+<text x="919.0" y="200.0" class="label">ESP1,</text>
+<text x="919.0" y="212.0" class="label">SEPA</text>
+<rect x="872.0" y="108.5" width="15.333333333333334" height="17.0" rx="0" fill="#FF0000" opacity="1.0" class="node"/>
+<rect x="887.3333333333334" y="108.5" width="15.333333333333334" height="17.0" rx="0" fill="transparent" opacity="1.0" class="node"/>
+<rect x="902.6666666666666" y="108.5" width="15.333333333333334" height="17.0" rx="0" fill="transparent" opacity="1.0" class="node"/>
+<text x="895.0" y="92.0" class="label">SMC1B, S</text>
+<text x="895.0" y="104.0" class="label">MC1BETA,</text>
+<text x="895.0" y="116.0" class="label">SMC1L2,</text>
+<text x="895.0" y="128.0" class="label">bK268H5,</text>
+<text x="895.0" y="140.0" class="label">bK268H5.</text>
+<text x="895.0" y="152.0" class="label">5...</text>
+<rect x="165.0" y="527.5" width="15.333333333333334" height="17.0" rx="0" fill="#FF0000" opacity="1.0" class="node"/>
+<rect x="180.33333333333334" y="527.5" width="15.333333333333334" height="17.0" rx="0" fill="transparent" opacity="1.0" class="node"/>
+<rect x="195.66666666666666" y="527.5" width="15.333333333333334" height="17.0" rx="0" fill="transparent" opacity="1.0" class="node"/>
+<text x="188.0" y="516.0" class="label">SKP2,</text>
+<text x="188.0" y="528.0" class="label">FBL1,</text>
+<text x="188.0" y="540.0" class="label">FBXL1,</text>
+<text x="188.0" y="552.0" class="label">FLB1,</text>
+<text x="188.0" y="564.0" class="label">p45</text>
+<rect x="614.0" y="519.5" width="15.333333333333334" height="17.0" rx="0" fill="#FF0000" opacity="1.0" class="node"/>
+<rect x="629.3333333333334" y="519.5" width="15.333333333333334" height="17.0" rx="0" fill="transparent" opacity="1.0" class="node"/>
+<rect x="644.6666666666666" y="519.5" width="15.333333333333334" height="17.0" rx="0" fill="transparent" opacity="1.0" class="node"/>
+<text x="637.0" y="503.0" class="label">RB1,</text>
+<text x="637.0" y="515.0" class="label">OSRC,</text>
+<text x="637.0" y="527.0" class="label">RB,</text>
+<text x="637.0" y="539.0" class="label">p105-Rb,</text>
+<text x="637.0" y="551.0" class="label">pRb,</text>
+<text x="637.0" y="563.0" class="label">pp110</text>
+<rect x="536.0" y="304.5" width="15.333333333333334" height="17.0" rx="0" fill="#FF0000" opacity="1.0" class="node"/>
+<rect x="551.3333333333334" y="304.5" width="15.333333333333334" height="17.0" rx="0" fill="transparent" opacity="1.0" class="node"/>
+<rect x="566.6666666666666" y="304.5" width="15.333333333333334" height="17.0" rx="0" fill="transparent" opacity="1.0" class="node"/>
+<text x="559.0" y="288.0" class="label">GADD45G,</text>
+<text x="559.0" y="300.0" class="label">CR6,</text>
+<text x="559.0" y="312.0" class="label">DDIT2, G</text>
+<text x="559.0" y="324.0" class="label">ADD45gam</text>
+<text x="559.0" y="336.0" class="label">ma,</text>
+<text x="559.0" y="348.0" class="label">GRP17...</text>
+<rect x="481.0" y="234.5" width="15.333333333333334" height="17.0" rx="0" fill="#FF0000" opacity="1.0" class="node"/>
+<rect x="496.3333333333333" y="234.5" width="15.333333333333334" height="17.0" rx="0" fill="transparent" opacity="1.0" class="node"/>
+<rect x="511.6666666666667" y="234.5" width="15.333333333333334" height="17.0" rx="0" fill="transparent" opacity="1.0" class="node"/>
+<text x="504.0" y="218.0" class="label">RB1,</text>
+<text x="504.0" y="230.0" class="label">OSRC,</text>
+<text x="504.0" y="242.0" class="label">RB,</text>
+<text x="504.0" y="254.0" class="label">p105-Rb,</text>
+<text x="504.0" y="266.0" class="label">pRb,</text>
+<text x="504.0" y="278.0" class="label">pp110</text>
+<rect x="567.0" y="234.5" width="15.333333333333334" height="17.0" rx="0" fill="#FF0000" opacity="1.0" class="node"/>
+<rect x="582.3333333333334" y="234.5" width="15.333333333333334" height="17.0" rx="0" fill="#8E7171" opacity="1.0" class="node"/>
+<rect x="597.6666666666666" y="234.5" width="15.333333333333334" height="17.0" rx="0" fill="#8E7171" opacity="1.0" class="node"/>
+<text x="590.0" y="223.0" class="label">TP53,</text>
+<text x="590.0" y="235.0" class="label">BCC7,</text>
+<text x="590.0" y="247.0" class="label">LFS1,</text>
+<text x="590.0" y="259.0" class="label">P53,</text>
+<text x="590.0" y="271.0" class="label">TRP53</text>
+<rect x="384.0" y="304.5" width="15.333333333333334" height="17.0" rx="0" fill="#FF0000" opacity="1.0" class="node"/>
+<rect x="399.3333333333333" y="304.5" width="15.333333333333334" height="17.0" rx="0" fill="transparent" opacity="1.0" class="node"/>
+<rect x="414.6666666666667" y="304.5" width="15.333333333333334" height="17.0" rx="0" fill="transparent" opacity="1.0" class="node"/>
+<text x="407.0" y="288.0" class="label">CDKN1B,</text>
+<text x="407.0" y="300.0" class="label">CDKN4,</text>
+<text x="407.0" y="312.0" class="label">KIP1,</text>
+<text x="407.0" y="324.0" class="label">MEN1B,</text>
+<text x="407.0" y="336.0" class="label">MEN4, P2</text>
+<text x="407.0" y="348.0" class="label">7KIP1...</text>
+<rect x="233.0" y="304.5" width="15.333333333333334" height="17.0" rx="0" fill="#FF0000" opacity="1.0" class="node"/>
+<rect x="248.33333333333334" y="304.5" width="15.333333333333334" height="17.0" rx="0" fill="transparent" opacity="1.0" class="node"/>
+<rect x="263.6666666666667" y="304.5" width="15.333333333333334" height="17.0" rx="0" fill="transparent" opacity="1.0" class="node"/>
+<text x="256.0" y="283.0" class="label">CDKN2B,</text>
+<text x="256.0" y="295.0" class="label">CDK4I,</text>
+<text x="256.0" y="307.0" class="label">INK4B,</text>
+<text x="256.0" y="319.0" class="label">MTS2,</text>
+<text x="256.0" y="331.0" class="label">P15,</text>
+<text x="256.0" y="343.0" class="label">TP15,</text>
+<text x="256.0" y="355.0" class="label">p15INK4b</text>
+<rect x="304.0" y="108.5" width="15.333333333333334" height="17.0" rx="0" fill="#FF0000" opacity="1.0" class="node"/>
+<rect x="319.3333333333333" y="108.5" width="15.333333333333334" height="17.0" rx="0" fill="transparent" opacity="1.0" class="node"/>
+<rect x="334.6666666666667" y="108.5" width="15.333333333333334" height="17.0" rx="0" fill="transparent" opacity="1.0" class="node"/>
+<text x="327.0" y="92.0" class="label">TGFB1,</text>
+<text x="327.0" y="104.0" class="label">CED,</text>
+<text x="327.0" y="116.0" class="label">DPD1,</text>
+<text x="327.0" y="128.0" class="label">LAP,</text>
+<text x="327.0" y="140.0" class="label">TGFB, TG</text>
+<text x="327.0" y="152.0" class="label">Fbeta...</text>
+<rect x="304.0" y="168.5" width="15.333333333333334" height="17.0" rx="0" fill="#FF0000" opacity="1.0" class="node"/>
+<rect x="319.3333333333333" y="168.5" width="15.333333333333334" height="17.0" rx="0" fill="transparent" opacity="1.0" class="node"/>
+<rect x="334.6666666666667" y="168.5" width="15.333333333333334" height="17.0" rx="0" fill="transparent" opacity="1.0" class="node"/>
+<text x="327.0" y="157.0" class="label">SMAD4,</text>
+<text x="327.0" y="169.0" class="label">DPC4,</text>
+<text x="327.0" y="181.0" class="label">JIP,</text>
+<text x="327.0" y="193.0" class="label">MADH4,</text>
+<text x="327.0" y="205.0" class="label">MYHRS</text>
+<rect x="304.0" y="151.5" width="15.333333333333334" height="17.0" rx="0" fill="#FF0000" opacity="1.0" class="node"/>
+<rect x="319.3333333333333" y="151.5" width="15.333333333333334" height="17.0" rx="0" fill="transparent" opacity="1.0" class="node"/>
+<rect x="334.6666666666667" y="151.5" width="15.333333333333334" height="17.0" rx="0" fill="transparent" opacity="1.0" class="node"/>
+<text x="327.0" y="125.0" class="label">SMAD2,</text>
+<text x="327.0" y="137.0" class="label">JV18,</text>
+<text x="327.0" y="149.0" class="label">JV18-1,</text>
+<text x="327.0" y="161.0" class="label">MADH2,</text>
+<text x="327.0" y="173.0" class="label">MADR2,</text>
+<text x="327.0" y="185.0" class="label">hMAD-2,</text>
+<text x="327.0" y="197.0" class="label">hSMAD2..</text>
+<text x="327.0" y="209.0" class="label">.</text>
+<rect x="509.0" y="600.5" width="15.333333333333334" height="17.0" rx="0" fill="#FF0000" opacity="1.0" class="node"/>
+<rect x="524.3333333333334" y="600.5" width="15.333333333333334" height="17.0" rx="0" fill="transparent" opacity="1.0" class="node"/>
+<rect x="539.6666666666666" y="600.5" width="15.333333333333334" height="17.0" rx="0" fill="transparent" opacity="1.0" class="node"/>
+<text x="532.0" y="589.0" class="label">CDC7,</text>
+<text x="532.0" y="601.0" class="label">CDC7L1,</text>
+<text x="532.0" y="613.0" class="label">HsCDC7,</text>
+<text x="532.0" y="625.0" class="label">Hsk1,</text>
+<text x="532.0" y="637.0" class="label">huCDC7</text>
+<rect x="896.0" y="305.5" width="15.333333333333334" height="17.0" rx="0" fill="#FF0000" opacity="1.0" class="node"/>
+<rect x="911.3333333333334" y="305.5" width="15.333333333333334" height="17.0" rx="0" fill="transparent" opacity="1.0" class="node"/>
+<rect x="926.6666666666666" y="305.5" width="15.333333333333334" height="17.0" rx="0" fill="transparent" opacity="1.0" class="node"/>
+<text x="919.0" y="294.0" class="label">CDC20,</text>
+<text x="919.0" y="306.0" class="label">CDC20A,</text>
+<text x="919.0" y="318.0" class="label">bA276H19</text>
+<text x="919.0" y="330.0" class="label">.3,</text>
+<text x="919.0" y="342.0" class="label">p55CDC</text>
+<rect x="807.0" y="393.5" width="15.333333333333334" height="17.0" rx="0" fill="#FF0000" opacity="1.0" class="node"/>
+<rect x="822.3333333333334" y="393.5" width="15.333333333333334" height="17.0" rx="0" fill="transparent" opacity="1.0" class="node"/>
+<rect x="837.6666666666666" y="393.5" width="15.333333333333334" height="17.0" rx="0" fill="transparent" opacity="1.0" class="node"/>
+<text x="830.0" y="397.0" class="label">CDC25B..</text>
+<text x="830.0" y="409.0" class="label">.</text>
+<rect x="530.0" y="519.5" width="15.333333333333334" height="17.0" rx="0" fill="#FF0000" opacity="1.0" class="node"/>
+<rect x="545.3333333333334" y="519.5" width="15.333333333333334" height="17.0" rx="0" fill="transparent" opacity="1.0" class="node"/>
+<rect x="560.6666666666666" y="519.5" width="15.333333333333334" height="17.0" rx="0" fill="transparent" opacity="1.0" class="node"/>
+<text x="553.0" y="508.0" class="label">CDC45,</text>
+<text x="553.0" y="520.0" class="label">CDC45L,</text>
+<text x="553.0" y="532.0" class="label">CDC45L2,</text>
+<text x="553.0" y="544.0" class="label">PORC-</text>
+<text x="553.0" y="556.0" class="label">PI-1</text>
+<rect x="471.0" y="519.5" width="15.333333333333334" height="17.0" rx="0" fill="#FF0000" opacity="1.0" class="node"/>
+<rect x="486.3333333333333" y="519.5" width="15.333333333333334" height="17.0" rx="0" fill="transparent" opacity="1.0" class="node"/>
+<rect x="501.6666666666667" y="519.5" width="15.333333333333334" height="17.0" rx="0" fill="transparent" opacity="1.0" class="node"/>
+<text x="494.0" y="513.0" class="label">CDC6,</text>
+<text x="494.0" y="525.0" class="label">CDC18L,</text>
+<text x="494.0" y="537.0" class="label">HsCDC18,</text>
+<text x="494.0" y="549.0" class="label">HsCDC6</text>
+<rect x="591.0" y="393.5" width="15.333333333333334" height="17.0" rx="0" fill="#FF0000" opacity="1.0" class="node"/>
+<rect x="606.3333333333334" y="393.5" width="15.333333333333334" height="17.0" rx="0" fill="transparent" opacity="1.0" class="node"/>
+<rect x="621.6666666666666" y="393.5" width="15.333333333333334" height="17.0" rx="0" fill="transparent" opacity="1.0" class="node"/>
+<text x="614.0" y="397.0" class="label">CDC25A,</text>
+<text x="614.0" y="409.0" class="label">CDC25A2</text>
+<rect x="147.0" y="158.5" width="15.333333333333334" height="17.0" rx="0" fill="#FF0000" opacity="1.0" class="node"/>
+<rect x="162.33333333333334" y="158.5" width="15.333333333333334" height="17.0" rx="0" fill="transparent" opacity="1.0" class="node"/>
+<rect x="177.66666666666666" y="158.5" width="15.333333333333334" height="17.0" rx="0" fill="transparent" opacity="1.0" class="node"/>
+<text x="170.0" y="167.0" class="label">GSK3B</text>
+<rect x="666.0" y="459.5" width="15.333333333333334" height="17.0" rx="0" fill="#FF0000" opacity="1.0" class="node"/>
+<rect x="681.3333333333334" y="459.5" width="15.333333333333334" height="17.0" rx="0" fill="transparent" opacity="1.0" class="node"/>
+<rect x="696.6666666666666" y="459.5" width="15.333333333333334" height="17.0" rx="0" fill="transparent" opacity="1.0" class="node"/>
+<text x="689.0" y="453.0" class="label">CDK1,</text>
+<text x="689.0" y="465.0" class="label">CDC2,</text>
+<text x="689.0" y="477.0" class="label">CDC28A,</text>
+<text x="689.0" y="489.0" class="label">P34CDC2</text>
+<rect x="757.0" y="442.5" width="15.333333333333334" height="17.0" rx="0" fill="#FF0000" opacity="1.0" class="node"/>
+<rect x="772.3333333333334" y="442.5" width="15.333333333333334" height="17.0" rx="0" fill="transparent" opacity="1.0" class="node"/>
+<rect x="787.6666666666666" y="442.5" width="15.333333333333334" height="17.0" rx="0" fill="transparent" opacity="1.0" class="node"/>
+<text x="780.0" y="451.0" class="label">CCNB3...</text>
+<rect x="666.0" y="442.5" width="15.333333333333334" height="17.0" rx="0" fill="#FF0000" opacity="1.0" class="node"/>
+<rect x="681.3333333333334" y="442.5" width="15.333333333333334" height="17.0" rx="0" fill="transparent" opacity="1.0" class="node"/>
+<rect x="696.6666666666666" y="442.5" width="15.333333333333334" height="17.0" rx="0" fill="transparent" opacity="1.0" class="node"/>
+<text x="689.0" y="441.0" class="label">CCNA2,</text>
+<text x="689.0" y="453.0" class="label">CCN1,</text>
+<text x="689.0" y="465.0" class="label">CCNA...</text>
+<rect x="529.0" y="459.5" width="15.333333333333334" height="17.0" rx="0" fill="#FF0000" opacity="1.0" class="node"/>
+<rect x="544.3333333333334" y="459.5" width="15.333333333333334" height="17.0" rx="0" fill="transparent" opacity="1.0" class="node"/>
+<rect x="559.6666666666666" y="459.5" width="15.333333333333334" height="17.0" rx="0" fill="transparent" opacity="1.0" class="node"/>
+<text x="552.0" y="438.0" class="label">CDK7,</text>
+<text x="552.0" y="450.0" class="label">CAK1,</text>
+<text x="552.0" y="462.0" class="label">CDKN7,</text>
+<text x="552.0" y="474.0" class="label">HCAK,</text>
+<text x="552.0" y="486.0" class="label">MO15,</text>
+<text x="552.0" y="498.0" class="label">STK1,</text>
+<text x="552.0" y="510.0" class="label">p39MO15</text>
+<rect x="434.0" y="459.5" width="15.333333333333334" height="17.0" rx="0" fill="#FF0000" opacity="1.0" class="node"/>
+<rect x="449.3333333333333" y="459.5" width="15.333333333333334" height="17.0" rx="0" fill="transparent" opacity="1.0" class="node"/>
+<rect x="464.6666666666667" y="459.5" width="15.333333333333334" height="17.0" rx="0" fill="transparent" opacity="1.0" class="node"/>
+<text x="457.0" y="463.0" class="label">CDK2, p3</text>
+<text x="457.0" y="475.0" class="label">3(CDK2)</text>
+<rect x="312.0" y="459.5" width="15.333333333333334" height="17.0" rx="0" fill="#FF0000" opacity="1.0" class="node"/>
+<rect x="327.3333333333333" y="459.5" width="15.333333333333334" height="17.0" rx="0" fill="transparent" opacity="1.0" class="node"/>
+<rect x="342.6666666666667" y="459.5" width="15.333333333333334" height="17.0" rx="0" fill="transparent" opacity="1.0" class="node"/>
+<text x="335.0" y="463.0" class="label">CDK2, p3</text>
+<text x="335.0" y="475.0" class="label">3(CDK2)</text>
+<rect x="204.0" y="459.5" width="15.333333333333334" height="17.0" rx="0" fill="#FF0000" opacity="1.0" class="node"/>
+<rect x="219.33333333333334" y="459.5" width="15.333333333333334" height="17.0" rx="0" fill="transparent" opacity="1.0" class="node"/>
+<rect x="234.66666666666666" y="459.5" width="15.333333333333334" height="17.0" rx="0" fill="transparent" opacity="1.0" class="node"/>
+<text x="227.0" y="458.0" class="label">CDK4,</text>
+<text x="227.0" y="470.0" class="label">CMM3, PS</text>
+<text x="227.0" y="482.0" class="label">K-J3...</text>
+<rect x="529.0" y="442.5" width="15.333333333333334" height="17.0" rx="0" fill="#FF0000" opacity="1.0" class="node"/>
+<rect x="544.3333333333334" y="442.5" width="15.333333333333334" height="17.0" rx="0" fill="transparent" opacity="1.0" class="node"/>
+<rect x="559.6666666666666" y="442.5" width="15.333333333333334" height="17.0" rx="0" fill="transparent" opacity="1.0" class="node"/>
+<text x="552.0" y="441.0" class="label">CCNH,</text>
+<text x="552.0" y="453.0" class="label">CAK,</text>
+<text x="552.0" y="465.0" class="label">p34, p37</text>
+<rect x="434.0" y="442.5" width="15.333333333333334" height="17.0" rx="0" fill="#FF0000" opacity="1.0" class="node"/>
+<rect x="449.3333333333333" y="442.5" width="15.333333333333334" height="17.0" rx="0" fill="transparent" opacity="1.0" class="node"/>
+<rect x="464.6666666666667" y="442.5" width="15.333333333333334" height="17.0" rx="0" fill="transparent" opacity="1.0" class="node"/>
+<text x="457.0" y="441.0" class="label">CCNA2,</text>
+<text x="457.0" y="453.0" class="label">CCN1,</text>
+<text x="457.0" y="465.0" class="label">CCNA...</text>
+<rect x="312.0" y="442.5" width="15.333333333333334" height="17.0" rx="0" fill="#FF0000" opacity="1.0" class="node"/>
+<rect x="327.3333333333333" y="442.5" width="15.333333333333334" height="17.0" rx="0" fill="transparent" opacity="1.0" class="node"/>
+<rect x="342.6666666666667" y="442.5" width="15.333333333333334" height="17.0" rx="0" fill="transparent" opacity="1.0" class="node"/>
+<text x="335.0" y="446.0" class="label">CCNE1,</text>
+<text x="335.0" y="458.0" class="label">CCNE...</text>
+<rect x="204.0" y="442.5" width="15.333333333333334" height="17.0" rx="0" fill="#FF0000" opacity="1.0" class="node"/>
+<rect x="219.33333333333334" y="442.5" width="15.333333333333334" height="17.0" rx="0" fill="transparent" opacity="1.0" class="node"/>
+<rect x="234.66666666666666" y="442.5" width="15.333333333333334" height="17.0" rx="0" fill="transparent" opacity="1.0" class="node"/>
+<text x="227.0" y="431.0" class="label">CCND1,</text>
+<text x="227.0" y="443.0" class="label">BCL1, D1</text>
+<text x="227.0" y="455.0" class="label">1S287E,</text>
+<text x="227.0" y="467.0" class="label">PRAD1, U</text>
+<text x="227.0" y="479.0" class="label">21B31...</text>
+<rect x="807.0" y="222.5" width="15.333333333333334" height="17.0" rx="0" fill="#FF0000" opacity="1.0" class="node"/>
+<rect x="822.3333333333334" y="222.5" width="15.333333333333334" height="17.0" rx="0" fill="transparent" opacity="1.0" class="node"/>
+<rect x="837.6666666666666" y="222.5" width="15.333333333333334" height="17.0" rx="0" fill="transparent" opacity="1.0" class="node"/>
+<text x="830.0" y="211.0" class="label">MAD1L1,</text>
+<text x="830.0" y="223.0" class="label">MAD1,</text>
+<text x="830.0" y="235.0" class="label">PIG9,</text>
+<text x="830.0" y="247.0" class="label">TP53I9,</text>
+<text x="830.0" y="259.0" class="label">TXBP181</text>
+<rect x="807.0" y="172.5" width="15.333333333333334" height="17.0" rx="0" fill="#FF0000" opacity="1.0" class="node"/>
+<rect x="822.3333333333334" y="172.5" width="15.333333333333334" height="17.0" rx="0" fill="transparent" opacity="1.0" class="node"/>
+<rect x="837.6666666666666" y="172.5" width="15.333333333333334" height="17.0" rx="0" fill="transparent" opacity="1.0" class="node"/>
+<text x="830.0" y="156.0" class="label">TTK,</text>
+<text x="830.0" y="168.0" class="label">CT96,</text>
+<text x="830.0" y="180.0" class="label">ESK,</text>
+<text x="830.0" y="192.0" class="label">MPS1,</text>
+<text x="830.0" y="204.0" class="label">MPS1L1,</text>
+<text x="830.0" y="216.0" class="label">PYT</text>
+<rect x="281.0" y="304.5" width="15.333333333333334" height="17.0" rx="0" fill="#FF0000" opacity="1.0" class="node"/>
+<rect x="296.3333333333333" y="304.5" width="15.333333333333334" height="17.0" rx="0" fill="transparent" opacity="1.0" class="node"/>
+<rect x="311.6666666666667" y="304.5" width="15.333333333333334" height="17.0" rx="0" fill="transparent" opacity="1.0" class="node"/>
+<text x="304.0" y="298.0" class="label">CDKN2C,</text>
+<text x="304.0" y="310.0" class="label">INK4C,</text>
+<text x="304.0" y="322.0" class="label">p18, p18</text>
+<text x="304.0" y="334.0" class="label">-INK4C</text>
+<rect x="329.0" y="304.5" width="15.333333333333334" height="17.0" rx="0" fill="#FF0000" opacity="1.0" class="node"/>
+<rect x="344.3333333333333" y="304.5" width="15.333333333333334" height="17.0" rx="0" fill="transparent" opacity="1.0" class="node"/>
+<rect x="359.6666666666667" y="304.5" width="15.333333333333334" height="17.0" rx="0" fill="transparent" opacity="1.0" class="node"/>
+<text x="352.0" y="298.0" class="label">CDKN2D,</text>
+<text x="352.0" y="310.0" class="label">INK4D,</text>
+<text x="352.0" y="322.0" class="label">p19, p19</text>
+<text x="352.0" y="334.0" class="label">-INK4D</text>
+<rect x="185.0" y="304.5" width="15.333333333333334" height="17.0" rx="0" fill="#FF0000" opacity="1.0" class="node"/>
+<rect x="200.33333333333334" y="304.5" width="15.333333333333334" height="17.0" rx="0" fill="#008000" opacity="1.0" class="node"/>
+<rect x="215.66666666666666" y="304.5" width="15.333333333333334" height="17.0" rx="0" fill="#FF0000" opacity="1.0" class="node"/>
+<text x="208.0" y="223.0" class="label">CDKN2A,</text>
+<text x="208.0" y="235.0" class="label">ARF,</text>
+<text x="208.0" y="247.0" class="label">CDK4I,</text>
+<text x="208.0" y="259.0" class="label">CDKN2,</text>
+<text x="208.0" y="271.0" class="label">CMM2,</text>
+<text x="208.0" y="283.0" class="label">INK4,</text>
+<text x="208.0" y="295.0" class="label">INK4A,</text>
+<text x="208.0" y="307.0" class="label">MLM,</text>
+<text x="208.0" y="319.0" class="label">MTS-1,</text>
+<text x="208.0" y="331.0" class="label">MTS1,</text>
+<text x="208.0" y="343.0" class="label">P14,</text>
+<text x="208.0" y="355.0" class="label">P14ARF,</text>
+<text x="208.0" y="367.0" class="label">P16, P16</text>
+<text x="208.0" y="379.0" class="label">-INK4A,</text>
+<text x="208.0" y="391.0" class="label">P16INK4,</text>
+<text x="208.0" y="403.0" class="label">P16INK4A</text>
+<text x="208.0" y="415.0" class="label">, P19,</text>
+<text x="208.0" y="427.0" class="label">P19ARF,</text>
+<text x="208.0" y="439.0" class="label">TP16</text>
+<rect x="918.0" y="108.5" width="15.333333333333334" height="17.0" rx="0" fill="#FF0000" opacity="1.0" class="node"/>
+<rect x="933.3333333333334" y="108.5" width="15.333333333333334" height="17.0" rx="0" fill="transparent" opacity="1.0" class="node"/>
+<rect x="948.6666666666666" y="108.5" width="15.333333333333334" height="17.0" rx="0" fill="transparent" opacity="1.0" class="node"/>
+<text x="941.0" y="87.0" class="label">SMC3,</text>
+<text x="941.0" y="99.0" class="label">BAM,</text>
+<text x="941.0" y="111.0" class="label">BMH,</text>
+<text x="941.0" y="123.0" class="label">CDLS3,</text>
+<text x="941.0" y="135.0" class="label">CSPG6,</text>
+<text x="941.0" y="147.0" class="label">HCAP,</text>
+<text x="941.0" y="159.0" class="label">SMC3L1</text>
+<rect x="895.0" y="125.5" width="15.333333333333334" height="17.0" rx="0" fill="#FF0000" opacity="1.0" class="node"/>
+<rect x="910.3333333333334" y="125.5" width="15.333333333333334" height="17.0" rx="0" fill="transparent" opacity="1.0" class="node"/>
+<rect x="925.6666666666666" y="125.5" width="15.333333333333334" height="17.0" rx="0" fill="transparent" opacity="1.0" class="node"/>
+<text x="918.0" y="124.0" class="label">STAG1,</text>
+<text x="918.0" y="136.0" class="label">SA1,</text>
+<text x="918.0" y="148.0" class="label">SCC3A...</text>
+<rect x="895.0" y="142.5" width="15.333333333333334" height="17.0" rx="0" fill="#FF0000" opacity="1.0" class="node"/>
+<rect x="910.3333333333334" y="142.5" width="15.333333333333334" height="17.0" rx="0" fill="transparent" opacity="1.0" class="node"/>
+<rect x="925.6666666666666" y="142.5" width="15.333333333333334" height="17.0" rx="0" fill="transparent" opacity="1.0" class="node"/>
+<text x="918.0" y="116.0" class="label">RAD21,</text>
+<text x="918.0" y="128.0" class="label">CDLS4,</text>
+<text x="918.0" y="140.0" class="label">HR21,</text>
+<text x="918.0" y="152.0" class="label">HRAD21,</text>
+<text x="918.0" y="164.0" class="label">MCD1,</text>
+<text x="918.0" y="176.0" class="label">NXP1,</text>
+<text x="918.0" y="188.0" class="label">SCC1,</text>
+<text x="918.0" y="200.0" class="label">hHR21</text>
+<rect x="220.0" y="134.5" width="15.333333333333334" height="17.0" rx="0" fill="#FF0000" opacity="1.0" class="node"/>
+<rect x="235.33333333333334" y="134.5" width="15.333333333333334" height="17.0" rx="0" fill="transparent" opacity="1.0" class="node"/>
+<rect x="250.66666666666666" y="134.5" width="15.333333333333334" height="17.0" rx="0" fill="transparent" opacity="1.0" class="node"/>
+<text x="243.0" y="128.0" class="label">RBL1,</text>
+<text x="243.0" y="140.0" class="label">CP107,</text>
+<text x="243.0" y="152.0" class="label">PRB1,</text>
+<text x="243.0" y="164.0" class="label">p107</text>
+<rect x="220.0" y="151.5" width="15.333333333333334" height="17.0" rx="0" fill="#FF0000" opacity="1.0" class="node"/>
+<rect x="235.33333333333334" y="151.5" width="15.333333333333334" height="17.0" rx="0" fill="transparent" opacity="1.0" class="node"/>
+<rect x="250.66666666666666" y="151.5" width="15.333333333333334" height="17.0" rx="0" fill="transparent" opacity="1.0" class="node"/>
+<text x="243.0" y="155.0" class="label">E2F4,</text>
+<text x="243.0" y="167.0" class="label">E2F-4...</text>
+<rect x="220.0" y="210.5" width="15.333333333333334" height="17.0" rx="0" fill="#FF0000" opacity="1.0" class="node"/>
+<rect x="235.33333333333334" y="210.5" width="15.333333333333334" height="17.0" rx="0" fill="transparent" opacity="1.0" class="node"/>
+<rect x="250.66666666666666" y="210.5" width="15.333333333333334" height="17.0" rx="0" fill="transparent" opacity="1.0" class="node"/>
+<text x="243.0" y="204.0" class="label">MYC,</text>
+<text x="243.0" y="216.0" class="label">MRTL,</text>
+<text x="243.0" y="228.0" class="label">bHLHe39,</text>
+<text x="243.0" y="240.0" class="label">c-Myc</text>
+<rect x="220.0" y="242.5" width="15.333333333333334" height="17.0" rx="0" fill="#FF0000" opacity="1.0" class="node"/>
+<rect x="235.33333333333334" y="242.5" width="15.333333333333334" height="17.0" rx="0" fill="transparent" opacity="1.0" class="node"/>
+<rect x="250.66666666666666" y="242.5" width="15.333333333333334" height="17.0" rx="0" fill="transparent" opacity="1.0" class="node"/>
+<text x="243.0" y="231.0" class="label">ZBTB17,</text>
+<text x="243.0" y="243.0" class="label">MIZ-1,</text>
+<text x="243.0" y="255.0" class="label">ZNF151,</text>
+<text x="243.0" y="267.0" class="label">ZNF60,</text>
+<text x="243.0" y="279.0" class="label">pHZ-67</text>
+<rect x="390.0" y="517.5" width="15.333333333333334" height="17.0" rx="0" fill="#FF0000" opacity="1.0" class="node"/>
+<rect x="405.3333333333333" y="517.5" width="15.333333333333334" height="17.0" rx="0" fill="transparent" opacity="1.0" class="node"/>
+<rect x="420.6666666666667" y="517.5" width="15.333333333333334" height="17.0" rx="0" fill="transparent" opacity="1.0" class="node"/>
+<text x="413.0" y="496.0" class="label">ABL1,</text>
+<text x="413.0" y="508.0" class="label">ABL,</text>
+<text x="413.0" y="520.0" class="label">JTK7,</text>
+<text x="413.0" y="532.0" class="label">bcr/abl,</text>
+<text x="413.0" y="544.0" class="label">c-ABL,</text>
+<text x="413.0" y="556.0" class="label">p150,</text>
+<text x="413.0" y="568.0" class="label">v-abl</text>
+<rect x="330.0" y="585.5" width="15.333333333333334" height="17.0" rx="0" fill="#FF0000" opacity="1.0" class="node"/>
+<rect x="345.3333333333333" y="585.5" width="15.333333333333334" height="17.0" rx="0" fill="transparent" opacity="1.0" class="node"/>
+<rect x="360.6666666666667" y="585.5" width="15.333333333333334" height="17.0" rx="0" fill="transparent" opacity="1.0" class="node"/>
+<text x="353.0" y="579.0" class="label">TFDP1,</text>
+<text x="353.0" y="591.0" class="label">DP1,</text>
+<text x="353.0" y="603.0" class="label">DRTF1,</text>
+<text x="353.0" y="615.0" class="label">Dp-1...</text>
+<rect x="330.0" y="568.5" width="15.333333333333334" height="17.0" rx="0" fill="#FF0000" opacity="1.0" class="node"/>
+<rect x="345.3333333333333" y="568.5" width="15.333333333333334" height="17.0" rx="0" fill="transparent" opacity="1.0" class="node"/>
+<rect x="360.6666666666667" y="568.5" width="15.333333333333334" height="17.0" rx="0" fill="transparent" opacity="1.0" class="node"/>
+<text x="353.0" y="557.0" class="label">E2F1,</text>
+<text x="353.0" y="569.0" class="label">E2F-1,</text>
+<text x="353.0" y="581.0" class="label">RBAP1,</text>
+<text x="353.0" y="593.0" class="label">RBBP3,</text>
+<text x="353.0" y="605.0" class="label">RBP3...</text>
+<rect x="390.0" y="541.5" width="15.333333333333334" height="17.0" rx="0" fill="#FF0000" opacity="1.0" class="node"/>
+<rect x="405.3333333333333" y="541.5" width="15.333333333333334" height="17.0" rx="0" fill="transparent" opacity="1.0" class="node"/>
+<rect x="420.6666666666667" y="541.5" width="15.333333333333334" height="17.0" rx="0" fill="transparent" opacity="1.0" class="node"/>
+<text x="413.0" y="530.0" class="label">HDAC1,</text>
+<text x="413.0" y="542.0" class="label">GON-10,</text>
+<text x="413.0" y="554.0" class="label">HD1,</text>
+<text x="413.0" y="566.0" class="label">RPD3, RP</text>
+<text x="413.0" y="578.0" class="label">D3L1...</text>
+<rect x="330.0" y="527.5" width="15.333333333333334" height="17.0" rx="0" fill="#FF0000" opacity="1.0" class="node"/>
+<rect x="345.3333333333333" y="527.5" width="15.333333333333334" height="17.0" rx="0" fill="transparent" opacity="1.0" class="node"/>
+<rect x="360.6666666666667" y="527.5" width="15.333333333333334" height="17.0" rx="0" fill="transparent" opacity="1.0" class="node"/>
+<text x="353.0" y="511.0" class="label">RB1,</text>
+<text x="353.0" y="523.0" class="label">OSRC,</text>
+<text x="353.0" y="535.0" class="label">RB,</text>
+<text x="353.0" y="547.0" class="label">p105-Rb,</text>
+<text x="353.0" y="559.0" class="label">pRb,</text>
+<text x="353.0" y="571.0" class="label">pp110</text>
+<rect x="275.0" y="527.5" width="15.333333333333334" height="17.0" rx="0" fill="#FF0000" opacity="1.0" class="node"/>
+<rect x="290.3333333333333" y="527.5" width="15.333333333333334" height="17.0" rx="0" fill="transparent" opacity="1.0" class="node"/>
+<rect x="305.6666666666667" y="527.5" width="15.333333333333334" height="17.0" rx="0" fill="transparent" opacity="1.0" class="node"/>
+<text x="298.0" y="521.0" class="label">RBL1,</text>
+<text x="298.0" y="533.0" class="label">CP107,</text>
+<text x="298.0" y="545.0" class="label">PRB1,</text>
+<text x="298.0" y="557.0" class="label">p107...</text>
+<rect x="275.0" y="585.5" width="15.333333333333334" height="17.0" rx="0" fill="#FF0000" opacity="1.0" class="node"/>
+<rect x="290.3333333333333" y="585.5" width="15.333333333333334" height="17.0" rx="0" fill="transparent" opacity="1.0" class="node"/>
+<rect x="305.6666666666667" y="585.5" width="15.333333333333334" height="17.0" rx="0" fill="transparent" opacity="1.0" class="node"/>
+<text x="298.0" y="579.0" class="label">TFDP1,</text>
+<text x="298.0" y="591.0" class="label">DP1,</text>
+<text x="298.0" y="603.0" class="label">DRTF1,</text>
+<text x="298.0" y="615.0" class="label">Dp-1...</text>
+<rect x="275.0" y="568.5" width="15.333333333333334" height="17.0" rx="0" fill="#FF0000" opacity="1.0" class="node"/>
+<rect x="290.3333333333333" y="568.5" width="15.333333333333334" height="17.0" rx="0" fill="transparent" opacity="1.0" class="node"/>
+<rect x="305.6666666666667" y="568.5" width="15.333333333333334" height="17.0" rx="0" fill="transparent" opacity="1.0" class="node"/>
+<text x="298.0" y="572.0" class="label">E2F4,</text>
+<text x="298.0" y="584.0" class="label">E2F-4...</text>
+<rect x="220.0" y="168.5" width="15.333333333333334" height="17.0" rx="0" fill="#FF0000" opacity="1.0" class="node"/>
+<rect x="235.33333333333334" y="168.5" width="15.333333333333334" height="17.0" rx="0" fill="transparent" opacity="1.0" class="node"/>
+<rect x="250.66666666666666" y="168.5" width="15.333333333333334" height="17.0" rx="0" fill="transparent" opacity="1.0" class="node"/>
+<text x="243.0" y="162.0" class="label">TFDP1,</text>
+<text x="243.0" y="174.0" class="label">DP1,</text>
+<text x="243.0" y="186.0" class="label">DRTF1,</text>
+<text x="243.0" y="198.0" class="label">Dp-1...</text>
+</svg>

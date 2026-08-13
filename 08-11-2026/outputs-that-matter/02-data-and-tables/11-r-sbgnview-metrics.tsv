@@ -1,0 +1,4 @@
+scenario	input_file	input_sha256	xml_namespace	xml_glyph_elements	xml_arc_elements	r_glyph_objects	r_render_arc_segments	compartments	macromolecules	simple_chemicals	processes	complexes	unspecified_entities	ports_as_objects	state_variables_as_objects	clone_markers
+P00001 bare XML	08-11-2026/sources/pathview-plus/tests/fixtures/P00001.new.layout.sbgn	b96b3f8536725639f5f9901d22b3dc3a8683295aad7c5cfa6235d08b622fa142	none	78	83	78	83	2	19	24	24	6	3	0	0	0
+P00001 default namespace	08-11-2026/sources/pathview-plus/tests/fixtures/P00001.namespaced.sbgn	7346f7b01b609aa10239447f8c2fdc65c117ea1085c4dce3d1b1444070a8afd4	http://sbgn.org/libsbgn/pd/0.1	78	83	78	83	2	19	24	24	6	3	0	0	0
+ports, state, and clone fixture	08-11-2026/sources/pathview-plus/tests/fixtures/ports_pd.sbgn	d86f9a1fc8769f557b02db9a3b96c56de964b135d46be9a2e2ff17261ab953cc	http://sbgn.org/libsbgn/pd/0.1	6	3	8	4	1	1	2	1	0	0	2	1	1

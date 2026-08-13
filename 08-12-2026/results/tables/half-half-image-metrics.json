@@ -1,0 +1,22 @@
+{
+  "old_image": {
+    "path": "data/old-v2-half-half.png",
+    "size": [
+      1039,
+      801
+    ],
+    "sha256": "d2b201d22542536bec95bc8b38aeb922a93bd7285fbcb76761a99f6916739611"
+  },
+  "new_image": {
+    "path": "data/new-v3-half-half.png",
+    "size": [
+      1039,
+      801
+    ],
+    "sha256": "d8aee09295dfc5e192fb58fead79cfd582a2eaf8ec09f8553eb3f7ed78f5cfb1"
+  },
+  "same_dimensions": true,
+  "changed_pixels": 58150,
+  "changed_pixel_fraction": 0.069872,
+  "interpretation": "The two saved raw rasters both show the two-condition left/right node split and both are 1039 x 801. This does not test the dimensions of the public Matplotlib-composed native output, so it does not resolve PV-BUG-034."
+}

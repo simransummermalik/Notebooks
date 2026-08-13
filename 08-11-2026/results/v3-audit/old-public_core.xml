@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="6" failures="2" skipped="21" tests="189" time="9.397" timestamp="2026-08-11T15:07:10.873572-04:00" hostname="Summers-MacBook-Air.local"><testcase classname="tests.test_public_core" name="test_every_declared_public_export_exists[__version__]" time="0.004" /><testcase classname="tests.test_public_core" name="test_every_declared_public_export_exists[pathview]" time="0.001" /><testcase classname="tests.test_public_core" name="test_every_declared_public_export_exists[PathwayResult]" time="0.000" /><testcase classname="tests.test_public_core" name="test_every_declared_public_export_exists[PathwayResultSet]" time="0.000" /><testcase classname="tests.test_public_core" name="test_every_declared_public_export_exists[sbgnview]" time="0.001" /><testcase classname="tests.test_public_core" name="test_every_declared_public_export_exists[sbgnview_batch]" time="0.001" /><testcase classname="tests.test_public_core" name="test_every_declared_public_export_exists[sbgn_node_map]" time="0.000" /><testcase classname="tests.test_public_core" name="test_every_declared_public_export_exists[get_species_code]" time="0.001" /><testcase classname="tests.test_public_core" name="test_every_declared_public_export_exists[kegg_species_code]" time="0.000" /><testcase classname="tests.test_public_core" name="test_every_declared_public_export_exists[SpeciesInfo]" time="0.000" /><testcase classname="tests.test_public_core" name="test_every_declared_public_export_exists[list_organisms]" time="0.000" /><testcase classname="tests.test_public_core" name="test_every_declared_public_export_exists[search_organisms]" time="0.000" /><testcase classname="tests.test_public_core" name="test_every_declared_public_export_exists[organism_count]" time="0.000" /><testcase classname="tests.test_public_core" name="test_every_declared_public_export_exists[refresh_organism_table]" time="0.000" /><testcase classname="tests.test_public_core" name="test_every_declared_public_export_exists[bioconductor_orgdb_table]" time="0.000" /><testcase classname="tests.test_public_core" name="test_every_declared_public_export_exists[default_gene_idtype]" time="0.000" /><testcase classname="tests.test_public_core" name="test_every_declared_public_export_exists[parse_kgml]" time="0.000" /><testcase classname="tests.test_public_core" name="test_every_declared_public_export_exists[node_info]" time="0.000" /><testcase classname="tests.test_public_core" name="test_every_declared_public_export_exists[pathway_edges]" time="0.000" /><testcase classname="tests.test_public_core" name="test_every_declared_public_export_exists[canvas_size]" time="0.000" /><testcase classname="tests.test_public_core" name="test_every_declared_public_export_exists[KGMLPathway]" time="0.000" /><testcase classname="tests.test_public_core" name="test_every_declared_public_export_exists[KGMLNode]" time="0.000" /><testcase classname="tests.test_public_core" name="test_every_declared_public_export_exists[KGMLEdge]" time="0.000" /><testcase classname="tests.test_public_core" name="test_every_declared_public_export_exists[KGMLReaction]" time="0.000" /><testcase classname="tests.test_public_core" name="test_every_declared_public_export_exists[parse_sbgn]" time="0.000" /><testcase classname="tests.test_public_core" name="test_every_declared_public_export_exists[sbgn_to_df]" time="0.000" /><testcase classname="tests.test_public_core" name="test_every_declared_public_export_exists[sbgn_edges]" time="0.000" /><testcase classname="tests.test_public_core" name="test_every_declared_public_export_exists[sbgn_canvas]" time="0.000" /><testcase classname="tests.test_public_core" name="test_every_declared_public_export_exists[arc_resolution_report]" time="0.000" /><testcase classname="tests.test_public_core" name="test_every_declared_public_export_exists[sbgn_compartments]" time="0.000" /><testcase classname="tests.test_public_core" name="test_every_declared_public_export_exists[SBGNPathway]" time="0.000" /><testcase classname="tests.test_public_core" name="test_every_declared_public_export_exists[SBGNGlyph]" time="0.000" /><testcase classname="tests.test_public_core" name="test_every_declared_public_export_exists[SBGNArc]" time="0.000" /><testcase classname="tests.test_public_core" name="test_every_declared_public_export_exists[SBGN_GLYPH_CLASSES]" time="0.000" /><testcase classname="tests.test_public_core" name="test_every_declared_public_export_exists[SBGN_ARC_CLASSES]" time="0.000" /><testcase classname="tests.test_public_core" name="test_every_declared_public_export_exists[mol_sum]" time="0.000" /><testcase classname="tests.test_public_core" name="test_every_declared_public_export_exists[sim_mol_data]" time="0.000" /><testcase classname="tests.test_public_core" name="test_every_declared_public_export_exists[demo_gene_data]" time="0.001" /><testcase classname="tests.test_public_core" name="test_every_declared_public_export_exists[demo_cpd_data]" time="0.000" /><testcase classname="tests.test_public_core" name="test_every_declared_public_export_exists[compound_name]" time="0.000" /><testcase classname="tests.test_public_core" name="test_every_declared_public_export_exists[compound_names]" time="0.000" /><testcase classname="tests.test_public_core" name="test_every_declared_public_export_exists[MolSumResult]" time="0.000" /><testcase classname="tests.test_public_core" name="test_every_declared_public_export_exists[node_map]" time="0.000" /><testcase classname="tests.test_public_core" name="test_every_declared_public_export_exists[NodeMapResult]" time="0.000" /><testcase classname="tests.test_public_core" name="test_every_declared_public_export_exists[id2eg]" time="0.000" /><testcase classname="tests.test_public_core" name="test_every_declared_public_export_exists[eg2id]" time="0.000" /><testcase classname="tests.test_public_core" name="test_every_declared_public_export_exists[cpd_id_map]" time="0.000" /><testcase classname="tests.test_public_core" name="test_every_declared_public_export_exists[cpd_name_to_kegg]" time="0.000" /><testcase classname="tests.test_public_core" name="test_every_declared_public_export_exists[compound_xref]" time="0.000" /><testcase classname="tests.test_public_core" name="test_every_declared_public_export_exists[supported_gene_idtypes]" time="0.001" /><testcase classname="tests.test_public_core" name="test_every_declared_public_export_exists[supported_cpd_idtypes]" time="0.000" /><testcase classname="tests.test_public_core" name="test_every_declared_public_export_exists[IdMapResult]" time="0.000" /><testcase classname="tests.test_public_core" name="test_every_declared_public_export_exists[ColorScale]" time="0.000" /><testcase classname="tests.test_public_core" name="test_every_declared_public_export_exists[gene_scale]" time="0.000" /><testcase classname="tests.test_public_core" name="test_every_declared_public_export_exists[compound_scale]" time="0.000" /><testcase classname="tests.test_public_core" name="test_every_declared_public_export_exists[node_color]" time="0.000" /><testcase classname="tests.test_public_core" name="test_every_declared_public_export_exists[colorpanel2]" time="0.000" /><testcase classname="tests.test_public_core" name="test_every_declared_public_export_exists[make_colormap]" time="0.000" /><testcase classname="tests.test_public_core" name="test_every_declared_public_export_exists[draw_color_key]" time="0.000" /><testcase classname="tests.test_public_core" name="test_every_declared_public_export_exists[draw_dual_key]" time="0.000" /><testcase classname="tests.test_public_core" name="test_every_declared_public_export_exists[list_palettes]" time="0.000" /><testcase classname="tests.test_public_core" name="test_every_declared_public_export_exists[resolve_palette]" time="0.000" /><testcase classname="tests.test_public_core" name="test_every_declared_public_export_exists[value_columns]" time="0.000" /><testcase classname="tests.test_public_core" name="test_every_declared_public_export_exists[NodeBox]" time="0.000" /><testcase classname="tests.test_public_core" name="test_every_declared_public_export_exists[Extent]" time="0.000" /><testcase classname="tests.test_public_core" name="test_every_declared_public_export_exists[RasterFrame]" time="0.000" /><testcase classname="tests.test_public_core" name="test_every_declared_public_export_exists[node_boxes]" time="0.000" /><testcase classname="tests.test_public_core" name="test_every_declared_public_export_exists[slice_bounds]" time="0.001" /><testcase classname="tests.test_public_core" name="test_every_declared_public_export_exists[keggview_native]" time="0.000" /><testcase classname="tests.test_public_core" name="test_every_declared_public_export_exists[keggview_vector]" time="0.000" /><testcase classname="tests.test_public_core" name="test_every_declared_public_export_exists[keggview_graph]" time="0.000" /><testcase classname="tests.test_public_core" name="test_every_declared_public_export_exists[keggview_svg]" time="0.000" /><testcase classname="tests.test_public_core" name="test_every_declared_public_export_exists[render_native_array]" time="0.000" /><testcase classname="tests.test_public_core" name="test_every_declared_public_export_exists[render_vector_array]" time="0.000" /><testcase classname="tests.test_public_core" name="test_every_declared_public_export_exists[paint_nodes]" time="0.000" /><testcase classname="tests.test_public_core" name="test_every_declared_public_export_exists[draw_pathway]" time="0.000" /><testcase classname="tests.test_public_core" name="test_every_declared_public_export_exists[draw_compartments]" time="0.000" /><testcase classname="tests.test_public_core" name="test_every_declared_public_export_exists[build_graph]" time="0.000" /><testcase classname="tests.test_public_core" name="test_every_declared_public_export_exists[pathway_metrics]" time="0.000" /><testcase classname="tests.test_public_core" name="test_every_declared_public_export_exists[available_layouts]" time="0.000" /><testcase classname="tests.test_public_core" name="test_every_declared_public_export_exists[render_node_svg]" time="0.000" /><testcase classname="tests.test_public_core" name="test_every_declared_public_export_exists[render_edge_svg]" time="0.000" /><testcase classname="tests.test_public_core" name="test_every_declared_public_export_exists[THEMES]" time="0.000" /><testcase classname="tests.test_public_core" name="test_every_declared_public_export_exists[EDGE_STYLE]" time="0.000" /><testcase classname="tests.test_public_core" name="test_every_declared_public_export_exists[kegg_legend]" time="0.000" /><testcase classname="tests.test_public_core" name="test_every_declared_public_export_exists[sbgn_legend]" time="0.000" /><testcase classname="tests.test_public_core" name="test_every_declared_public_export_exists[edge_subtypes]" time="0.000" /><testcase classname="tests.test_public_core" name="test_every_declared_public_export_exists[cubic_bezier]" time="0.000" /><testcase classname="tests.test_public_core" name="test_every_declared_public_export_exists[quadratic_bezier]" time="0.000" /><testcase classname="tests.test_public_core" name="test_every_declared_public_export_exists[catmull_rom_spline]" time="0.001" /><testcase classname="tests.test_public_core" name="test_every_declared_public_export_exists[route_edge_spline]" time="0.001" /><testcase classname="tests.test_public_core" name="test_every_declared_public_export_exists[bezier_to_svg_path]" time="0.001" /><testcase classname="tests.test_public_core" name="test_every_declared_public_export_exists[points_to_bezier_path]" time="0.000" /><testcase classname="tests.test_public_core" name="test_every_declared_public_export_exists[smooth_path_svg]" time="0.001" /><testcase classname="tests.test_public_core" name="test_every_declared_public_export_exists[offset_endpoints]" time="0.000" /><testcase classname="tests.test_public_core" name="test_every_declared_public_export_exists[download_kegg]" time="0.001" /><testcase classname="tests.test_public_core" name="test_every_declared_public_export_exists[download_reactome]" time="0.000" /><testcase classname="tests.test_public_core" name="test_every_declared_public_export_exists[download_pathway]" time="0.001" /><testcase classname="tests.test_public_core" name="test_every_declared_public_export_exists[download_panther]" time="0.001" /><testcase classname="tests.test_public_core" name="test_every_declared_public_export_exists[download_metacyc]" time="0.001" /><testcase classname="tests.test_public_core" name="test_every_declared_public_export_exists[download_smpdb]" time="0.001" /><testcase classname="tests.test_public_core" name="test_every_declared_public_export_exists[download_metacrop]" time="0.001" /><testcase classname="tests.test_public_core" name="test_every_declared_public_export_exists[sbgn_index]" time="0.001" /><testcase classname="tests.test_public_core" name="test_every_declared_public_export_exists[list_sbgn_pathways]" time="0.001" /><testcase classname="tests.test_public_core" name="test_every_declared_public_export_exists[find_sbgn_pathway]" time="0.000" /><testcase classname="tests.test_public_core" name="test_every_declared_public_export_exists[download_sbgn]" time="0.000" /><testcase classname="tests.test_public_core" name="test_every_declared_public_export_exists[download_sbgn_batch]" time="0.000" /><testcase classname="tests.test_public_core" name="test_every_declared_public_export_exists[sbgn_collection_info]" time="0.000" /><testcase classname="tests.test_public_core" name="test_every_declared_public_export_exists[sbgn_url]" time="0.001" /><testcase classname="tests.test_public_core" name="test_every_declared_public_export_exists[sbgn_xref]" time="0.000" /><testcase classname="tests.test_public_core" name="test_every_declared_public_export_exists[crosswalk_routes]" time="0.000" /><testcase classname="tests.test_public_core" name="test_every_declared_public_export_exists[map_ids_to_sbgn]" time="0.000" /><testcase classname="tests.test_public_core" name="test_every_declared_public_export_exists[id_route]" time="0.000" /><testcase classname="tests.test_public_core" name="test_every_declared_public_export_exists[supported_sbgn_idtypes]" time="0.000" /><testcase classname="tests.test_public_core" name="test_every_declared_public_export_exists[SBGN_SOURCES]" time="0.000" /><testcase classname="tests.test_public_core" name="test_every_declared_public_export_exists[split_groups]" time="0.000" /><testcase classname="tests.test_public_core" name="test_every_declared_public_export_exists[expand_nodes]" time="0.000" /><testcase classname="tests.test_public_core" name="test_every_declared_public_export_exists[expansion_report]" time="0.002" /><testcase classname="tests.test_public_core" name="test_every_declared_public_export_exists[ExpansionResult]" time="0.004" /><testcase classname="tests.test_public_core" name="test_every_declared_public_export_exists[read_bundled_tsv]" time="0.001" /><testcase classname="tests.test_public_core" name="test_every_declared_public_export_exists[bundled_files]" time="0.001" /><testcase classname="tests.test_public_core" name="test_every_declared_public_export_exists[read_rdata]" time="0.000" /><testcase classname="tests.test_public_core" name="test_every_declared_public_export_exists[rdata_objects]" time="0.002" /><testcase classname="tests.test_public_core" name="test_every_declared_public_export_exists[run_offline_examples]" time="0.002" /><testcase classname="tests.test_public_core" name="test_every_declared_public_export_exists[list_reactome_pathways]" time="0.001" /><testcase classname="tests.test_public_core" name="test_every_declared_public_export_exists[find_reactome_pathways]" time="0.000" /><testcase classname="tests.test_public_core" name="test_every_declared_public_export_exists[reactome_top_url]" time="0.000" /><testcase classname="tests.test_public_core" name="test_every_declared_public_export_exists[detect_database]" time="0.001" /><testcase classname="tests.test_public_core" name="test_every_declared_public_export_exists[available_databases]" time="0.001" /><testcase classname="tests.test_public_core" name="test_every_declared_public_export_exists[DATABASE_INFO]" time="0.001" /><testcase classname="tests.test_public_core" name="test_every_declared_public_export_exists[highlight_nodes]" time="0.001" /><testcase classname="tests.test_public_core" name="test_every_declared_public_export_exists[highlight_edges]" time="0.000" /><testcase classname="tests.test_public_core" name="test_every_declared_public_export_exists[highlight_path]" time="0.001" /><testcase classname="tests.test_public_core" name="test_every_declared_public_export_exists[change_labels]" time="0.000" /><testcase classname="tests.test_public_core" name="test_every_declared_public_export_exists[annotate]" time="0.001" /><testcase classname="tests.test_public_core" name="test_every_declared_public_export_exists[wordwrap]" time="0.000" /><testcase classname="tests.test_public_core" name="test_every_declared_public_export_exists[strfit]" time="0.001" /><testcase classname="tests.test_public_core" name="test_every_declared_public_export_exists[short_label]" time="0.000" /><testcase classname="tests.test_public_core" name="test_every_declared_public_export_exists[max_abs]" time="0.000" /><testcase classname="tests.test_public_core" name="test_every_declared_public_export_exists[random_pick]" time="0.000" /><testcase classname="tests.test_public_core" name="test_every_declared_public_export_exists[to_rgb]" time="0.000" /><testcase classname="tests.test_public_core" name="test_every_declared_public_export_exists[to_hex]" time="0.000" /><testcase classname="tests.test_public_core" name="test_every_declared_public_export_exists[contrast_text_color]" time="0.000" /><testcase classname="tests.test_public_core" name="test_every_declared_public_export_exists[set_offline]" time="0.000" /><testcase classname="tests.test_public_core" name="test_every_declared_public_export_exists[is_offline]" time="0.000" /><testcase classname="tests.test_public_core" name="test_every_declared_public_export_exists[cache_dir]" time="0.000" /><testcase classname="tests.test_public_core" name="test_every_declared_public_export_exists[clear_cache]" time="0.000" /><testcase classname="tests.test_public_core" name="test_every_declared_public_export_exists[FEATURE_MATRIX]" time="0.001" /><testcase classname="tests.test_public_core" name="test_every_declared_public_export_exists[feature_table]" time="0.000" /><testcase classname="tests.test_public_core" name="test_every_declared_public_export_exists[parity_summary]" time="0.001" /><testcase classname="tests.test_public_core" name="test_every_declared_public_export_exists[print_parity]" time="0.000" /><testcase classname="tests.test_public_core" name="test_every_declared_public_export_exists[PathviewError]" time="0.001" /><testcase classname="tests.test_public_core" name="test_every_declared_public_export_exists[SpeciesNotFoundError]" time="0.000" /><testcase classname="tests.test_public_core" name="test_every_declared_public_export_exists[PathwayNotFoundError]" time="0.000" /><testcase classname="tests.test_public_core" name="test_every_declared_public_export_exists[NetworkError]" time="0.000" /><testcase classname="tests.test_public_core" name="test_every_declared_public_export_exists[ParseError]" time="0.000" /><testcase classname="tests.test_public_core" name="test_every_declared_public_export_exists[MappingError]" time="0.000" /><testcase classname="tests.test_public_core" name="test_every_declared_public_export_exists[RenderError]" time="0.000" /><testcase classname="tests.test_public_core" name="test_all_source_modules_compile" time="0.046" /><testcase classname="tests.test_public_core" name="test_distribution_is_importable" time="0.009" /><testcase classname="tests.test_public_core" name="test_distribution_and_runtime_versions_match" time="0.001"><failure message="[XPASS(strict)] PV-BUG-001: setup.py/distribution is 2.0.2 but pathview.__version__ is 2.0.0">[XPASS(strict)] PV-BUG-001: setup.py/distribution is 2.0.2 but pathview.__version__ is 2.0.0</failure></testcase><testcase classname="tests.test_public_core" name="test_core_requires_at_least_one_data_table" time="9.101"><failure message="pathview.errors.PathwayNotFoundError: No KGML for hsa04110 at hsa04110.xml. Place the file there manually if you are offline: pathview-plus renders it without any further network access in render_mode='vector'.">@pytest.mark.core
+    def test_core_requires_at_least_one_data_table() -&gt; None:
+        with pytest.raises(ValueError, match="At least one"):
+&gt;           pathview.pathview("04110", gene_data=None, cpd_data=None)
+
+../08-10-2026/pathveiw bug checks/tests/test_public_core.py:87: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+pathway_id = '04110', gene_data = None, cpd_data = None, species = 'hsa'
+gene_idtype = 'ENTREZ', cpd_idtype = 'KEGG', kegg_dir = PosixPath('.')
+out_dir = PosixPath('.'), out_suffix = 'pathview', render_mode = 'auto'
+output_format = 'png', theme = 'publication', title = None, subtitle = None
+figure_width = 14.0, dpi = 220, draw_edges = True, show_link_edges = False
+plot_col_key = True, new_signature = True, gene_color = None, cpd_color = None
+limit = None, bins = 10, both_dirs = True, discrete = False, na_col = '#F2F2F2'
+trans_fun = None, node_sum = 'sum', map_symbol = True, map_cpd_name = True
+map_null = True, min_nnodes = 3, split_group = False, expand_node = False
+rand_seed = None, quiet = False, continue_on_error = True, kwargs = {}
+
+    def pathview(
+        pathway_id: str | Sequence[str],
+        gene_data: pl.DataFrame | None = None,
+        cpd_data: pl.DataFrame | None = None,
+        species: str = "hsa",
+        *,
+        # --- input identifiers -------------------------------------------------
+        gene_idtype: str = "ENTREZ",
+        cpd_idtype: str = "KEGG",
+        # --- paths -------------------------------------------------------------
+        kegg_dir: str | Path = ".",
+        out_dir: str | Path | None = None,
+        out_suffix: str = "pathview",
+        # --- rendering ---------------------------------------------------------
+        render_mode: str = "auto",          # auto | native | vector | graph | svg
+        output_format: str = "png",         # png | pdf | svg
+        theme: str = "publication",
+        title: str | None = None,
+        subtitle: str | None = None,
+        figure_width: float = 14.0,
+        dpi: int = 220,
+        draw_edges: bool = True,
+        show_link_edges: bool = False,
+        plot_col_key: bool = True,
+        new_signature: bool = True,
+        # --- colour scales -----------------------------------------------------
+        gene_color: ColorScale | str | dict | None = None,
+        cpd_color: ColorScale | str | dict | None = None,
+        limit: float | dict | None = None,
+        bins: int | dict = 10,
+        both_dirs: bool | dict = True,
+        discrete: bool | dict = False,
+        na_col: str = NA_COLOR,
+        trans_fun: Callable | None = None,
+        # --- mapping -----------------------------------------------------------
+        node_sum: SumMethod = "sum",
+        map_symbol: bool = True,
+        map_cpd_name: bool = True,
+        map_null: bool = True,
+        min_nnodes: int = 3,
+        split_group: bool = False,
+        expand_node: bool = False,
+        rand_seed: int | None = None,
+        # --- misc --------------------------------------------------------------
+        quiet: bool = False,
+        continue_on_error: bool = True,
+        **kwargs,
+    ) -&gt; PathwayResult | PathwayResultSet:
+        """
+        Overlay transcript and/or metabolite data on a pathway diagram.
+    
+        Parameters
+        ----------
+        pathway_id:
+            KEGG number (``"04110"``) or full id (``"hsa04110"``).
+        gene_data, cpd_data:
+            DataFrames whose first column holds identifiers and whose remaining
+            numeric columns hold one value per condition.  Multiple value columns
+            split each node into vertical slices.
+        species:
+            Anything :func:`~pathview.organisms.get_species_code` accepts —
+            ``"hsa"``, ``"human"``, ``"Homo sapiens"``, ``"9606"``.
+        render_mode:
+            ``native`` overlays KEGG's PNG; ``vector`` draws the map from the KGML
+            (works offline, scales losslessly); ``graph`` draws a NetworkX
+            diagram; ``svg`` writes a standalone SVG.  ``auto`` picks ``native``
+            when a background image is present and ``vector`` otherwise.
+        gene_color, cpd_color:
+            Independent colour scales.  Pass a palette name
+            (``gene_color="rdbu"``), a dict of ColorScale kwargs, or a
+            :class:`ColorScale`.  These are separate so a transcript log2FC and a
+            metabolite log2FC are never read off the same key.
+    
+        Returns
+        -------
+        PathwayResult
+            Composable with ``+ highlight_nodes(...)``, indexable like the v2.x
+            dict, and falsy when nothing could be mapped.
+    
+        Examples
+        --------
+        &gt;&gt;&gt; from pathview import pathview, demo_gene_data
+        &gt;&gt;&gt; res = pathview("00020", gene_data=demo_gene_data(2), species="human",
+        ...                render_mode="vector", output_format="pdf")
+        &gt;&gt;&gt; res.output_path.name
+        'hsa00020.pathview.pdf'
+        """
+        # Batch: R pathview accepts a vector of pathway ids, and looping in user
+        # code loses the shared setup (species resolution, colour scales, one
+        # download session).  A sequence renders them all and returns a
+        # PathwayResultSet; a single id still returns a single PathwayResult, so
+        # existing calls are unaffected.
+        if not isinstance(pathway_id, str) and isinstance(pathway_id, (list, tuple, set)):
+            ids = [str(p) for p in pathway_id]
+            if not ids:
+                raise ValueError("pathway_id is an empty sequence.")
+            results: dict[str, PathwayResult] = {}
+            failures: dict[str, str] = {}
+            for pid in ids:
+                try:
+                    res = pathview(
+                        pid, gene_data=gene_data, cpd_data=cpd_data, species=species,
+                        gene_idtype=gene_idtype, cpd_idtype=cpd_idtype,
+                        kegg_dir=kegg_dir, out_dir=out_dir, out_suffix=out_suffix,
+                        render_mode=render_mode, output_format=output_format,
+                        theme=theme, title=title, subtitle=subtitle,
+                        figure_width=figure_width, dpi=dpi, draw_edges=draw_edges,
+                        show_link_edges=show_link_edges, plot_col_key=plot_col_key,
+                        new_signature=new_signature, gene_color=gene_color,
+                        cpd_color=cpd_color, limit=limit, bins=bins,
+                        both_dirs=both_dirs, discrete=discrete, na_col=na_col,
+                        trans_fun=trans_fun, node_sum=node_sum,
+                        map_symbol=map_symbol, map_cpd_name=map_cpd_name,
+                        map_null=map_null, min_nnodes=min_nnodes,
+                        rand_seed=rand_seed, quiet=quiet,
+                        split_group=split_group, expand_node=expand_node,
+                        **kwargs,
+                    )
+                    if res:
+                        results[pid] = res
+                    else:
+                        failures[pid] = "no mappable nodes"
+                except PathviewError as exc:
+                    if not continue_on_error:
+                        raise
+                    failures[pid] = f"{type(exc).__name__}: {exc}"
+                    if not quiet:
+                        print(f"[pathview] {pid}: {exc}")
+            return PathwayResultSet(results, failures)
+    
+        if gene_data is None and cpd_data is None and not map_null:
+            raise ValueError("Provide gene_data, cpd_data, or set map_null=True.")
+    
+        kegg_dir = Path(kegg_dir)
+        out_dir = Path(out_dir) if out_dir is not None else kegg_dir
+        log = (lambda *a: None) if quiet else (lambda *a: print("[pathview]", *a))
+    
+        # ---- species -----------------------------------------------------------
+        info = get_species_code(species)
+        code = info.kegg_code
+        if code in ("ko", "ec", "rn"):
+            gene_idtype = "KEGG"
+    
+        # ---- pathway id --------------------------------------------------------
+        pid = str(pathway_id).strip()
+        pathway_name = pid if pid.startswith(code) else f"{code}{pid}"
+        numeric_id = pathway_name.removeprefix(code)      # not str.replace
+    
+        # ---- colour scales -----------------------------------------------------
+        def _pick(v, key):
+            return v.get(key) if isinstance(v, dict) else v
+    
+        gsc = _as_scale(gene_color, DEFAULT_GENE_PALETTE, "RNA-seq log2FC",
+                        limit=_pick(limit, "gene") if limit is not None else 1.0,
+                        bins=_pick(bins, "gene") or 10,
+                        both_dirs=bool(_pick(both_dirs, "gene")),
+                        discrete=bool(_pick(discrete, "gene")),
+                        na_col=na_col, trans_fun=trans_fun)
+        csc = _as_scale(cpd_color, DEFAULT_CPD_PALETTE, "Metabolite log2FC",
+                        limit=_pick(limit, "cpd") if limit is not None else 1.0,
+                        bins=_pick(bins, "cpd") or 10,
+                        both_dirs=bool(_pick(both_dirs, "cpd")),
+                        discrete=bool(_pick(discrete, "cpd")),
+                        na_col=na_col, trans_fun=trans_fun)
+    
+        # ---- identifier conversion --------------------------------------------
+        if gene_data is not None and gene_idtype.upper() not in ("ENTREZ", "ENTREZID", "KEGG"):
+            gene_data = _convert(gene_data, id2eg, gene_idtype, code, node_sum, log)
+        if cpd_data is not None and cpd_idtype.upper() != "KEGG":
+            cpd_data = _convert_cpd(cpd_data, cpd_idtype, node_sum, log)
+    
+        # ---- obtain the pathway ------------------------------------------------
+        xml_path = kegg_dir / f"{pathway_name}.xml"
+        png_path = kegg_dir / f"{pathway_name}.png"
+        want_png = render_mode in ("native", "auto")
+    
+        needed = [t for t, p in (("xml", xml_path), ("png", png_path))
+                  if not p.exists() and (t == "xml" or want_png)]
+        if needed:
+            status = download_kegg(numeric_id, species=code, kegg_dir=kegg_dir,
+                                   file_type=needed)
+            log(f"{pathway_name}: download {status.get(pathway_name)}")
+    
+        if not xml_path.exists():
+&gt;           raise PathwayNotFoundError(
+                f"No KGML for {pathway_name} at {xml_path}. Place the file there "
+                "manually if you are offline: pathview-plus renders it without "
+                "any further network access in render_mode='vector'."
+            )
+E           pathview.errors.PathwayNotFoundError: No KGML for hsa04110 at hsa04110.xml. Place the file there manually if you are offline: pathview-plus renders it without any further network access in render_mode='vector'.
+
+sources/pathview-plus/lib/pathview.py:245: PathwayNotFoundError</failure></testcase><testcase classname="tests.test_public_core" name="test_cached_core_png_runs_without_download" time="0.008"><error message="failed on setup with &quot;AttributeError: &lt;module 'pathview.pathview' from '/Users/summermalik/Desktop/PATHVIEW-MARKDOWN/08-11-2026/sources/pathview-plus/lib/pathview.py'&gt; has no attribute 'kegg_species_code'&quot;">monkeypatch = &lt;_pytest.monkeypatch.MonkeyPatch object at 0x113e76900&gt;
+
+    @pytest.fixture
+    def patch_hsa_species(monkeypatch: pytest.MonkeyPatch):
+        """Patch only species discovery; cached files and all later code remain real."""
+        from pathview import SpeciesInfo
+    
+        module = importlib.import_module("pathview.pathview")
+        info = SpeciesInfo("hsa", True, None, None, None, None)
+&gt;       monkeypatch.setattr(module, "kegg_species_code", lambda species="hsa": info)
+E       AttributeError: &lt;module 'pathview.pathview' from '/Users/summermalik/Desktop/PATHVIEW-MARKDOWN/08-11-2026/sources/pathview-plus/lib/pathview.py'&gt; has no attribute 'kegg_species_code'
+
+../08-10-2026/pathveiw bug checks/conftest.py:124: AttributeError</error></testcase><testcase classname="tests.test_public_core" name="test_documented_output_dispatch[True-png-native]" time="0.001"><error message="failed on setup with &quot;AttributeError: &lt;module 'pathview.pathview' from '/Users/summermalik/Desktop/PATHVIEW-MARKDOWN/08-11-2026/sources/pathview-plus/lib/pathview.py'&gt; has no attribute 'kegg_species_code'&quot;">monkeypatch = &lt;_pytest.monkeypatch.MonkeyPatch object at 0x113f174d0&gt;
+
+    @pytest.fixture
+    def patch_hsa_species(monkeypatch: pytest.MonkeyPatch):
+        """Patch only species discovery; cached files and all later code remain real."""
+        from pathview import SpeciesInfo
+    
+        module = importlib.import_module("pathview.pathview")
+        info = SpeciesInfo("hsa", True, None, None, None, None)
+&gt;       monkeypatch.setattr(module, "kegg_species_code", lambda species="hsa": info)
+E       AttributeError: &lt;module 'pathview.pathview' from '/Users/summermalik/Desktop/PATHVIEW-MARKDOWN/08-11-2026/sources/pathview-plus/lib/pathview.py'&gt; has no attribute 'kegg_species_code'
+
+../08-10-2026/pathveiw bug checks/conftest.py:124: AttributeError</error></testcase><testcase classname="tests.test_public_core" name="test_documented_output_dispatch[True-pdf-graph]" time="0.001"><error message="failed on setup with &quot;AttributeError: &lt;module 'pathview.pathview' from '/Users/summermalik/Desktop/PATHVIEW-MARKDOWN/08-11-2026/sources/pathview-plus/lib/pathview.py'&gt; has no attribute 'kegg_species_code'&quot;">monkeypatch = &lt;_pytest.monkeypatch.MonkeyPatch object at 0x113f17620&gt;
+
+    @pytest.fixture
+    def patch_hsa_species(monkeypatch: pytest.MonkeyPatch):
+        """Patch only species discovery; cached files and all later code remain real."""
+        from pathview import SpeciesInfo
+    
+        module = importlib.import_module("pathview.pathview")
+        info = SpeciesInfo("hsa", True, None, None, None, None)
+&gt;       monkeypatch.setattr(module, "kegg_species_code", lambda species="hsa": info)
+E       AttributeError: &lt;module 'pathview.pathview' from '/Users/summermalik/Desktop/PATHVIEW-MARKDOWN/08-11-2026/sources/pathview-plus/lib/pathview.py'&gt; has no attribute 'kegg_species_code'
+
+../08-10-2026/pathveiw bug checks/conftest.py:124: AttributeError</error></testcase><testcase classname="tests.test_public_core" name="test_documented_output_dispatch[True-svg-svg]" time="0.001"><error message="failed on setup with &quot;AttributeError: &lt;module 'pathview.pathview' from '/Users/summermalik/Desktop/PATHVIEW-MARKDOWN/08-11-2026/sources/pathview-plus/lib/pathview.py'&gt; has no attribute 'kegg_species_code'&quot;">monkeypatch = &lt;_pytest.monkeypatch.MonkeyPatch object at 0x113f17850&gt;
+
+    @pytest.fixture
+    def patch_hsa_species(monkeypatch: pytest.MonkeyPatch):
+        """Patch only species discovery; cached files and all later code remain real."""
+        from pathview import SpeciesInfo
+    
+        module = importlib.import_module("pathview.pathview")
+        info = SpeciesInfo("hsa", True, None, None, None, None)
+&gt;       monkeypatch.setattr(module, "kegg_species_code", lambda species="hsa": info)
+E       AttributeError: &lt;module 'pathview.pathview' from '/Users/summermalik/Desktop/PATHVIEW-MARKDOWN/08-11-2026/sources/pathview-plus/lib/pathview.py'&gt; has no attribute 'kegg_species_code'
+
+../08-10-2026/pathveiw bug checks/conftest.py:124: AttributeError</error></testcase><testcase classname="tests.test_public_core" name="test_documented_output_dispatch[False-pdf-graph]" time="0.001"><error message="failed on setup with &quot;AttributeError: &lt;module 'pathview.pathview' from '/Users/summermalik/Desktop/PATHVIEW-MARKDOWN/08-11-2026/sources/pathview-plus/lib/pathview.py'&gt; has no attribute 'kegg_species_code'&quot;">monkeypatch = &lt;_pytest.monkeypatch.MonkeyPatch object at 0x113f17a80&gt;
+
+    @pytest.fixture
+    def patch_hsa_species(monkeypatch: pytest.MonkeyPatch):
+        """Patch only species discovery; cached files and all later code remain real."""
+        from pathview import SpeciesInfo
+    
+        module = importlib.import_module("pathview.pathview")
+        info = SpeciesInfo("hsa", True, None, None, None, None)
+&gt;       monkeypatch.setattr(module, "kegg_species_code", lambda species="hsa": info)
+E       AttributeError: &lt;module 'pathview.pathview' from '/Users/summermalik/Desktop/PATHVIEW-MARKDOWN/08-11-2026/sources/pathview-plus/lib/pathview.py'&gt; has no attribute 'kegg_species_code'
+
+../08-10-2026/pathveiw bug checks/conftest.py:124: AttributeError</error></testcase><testcase classname="tests.test_public_core" name="test_documented_output_dispatch[False-svg-svg]" time="0.001"><error message="failed on setup with &quot;AttributeError: &lt;module 'pathview.pathview' from '/Users/summermalik/Desktop/PATHVIEW-MARKDOWN/08-11-2026/sources/pathview-plus/lib/pathview.py'&gt; has no attribute 'kegg_species_code'&quot;">monkeypatch = &lt;_pytest.monkeypatch.MonkeyPatch object at 0x113f17cb0&gt;
+
+    @pytest.fixture
+    def patch_hsa_species(monkeypatch: pytest.MonkeyPatch):
+        """Patch only species discovery; cached files and all later code remain real."""
+        from pathview import SpeciesInfo
+    
+        module = importlib.import_module("pathview.pathview")
+        info = SpeciesInfo("hsa", True, None, None, None, None)
+&gt;       monkeypatch.setattr(module, "kegg_species_code", lambda species="hsa": info)
+E       AttributeError: &lt;module 'pathview.pathview' from '/Users/summermalik/Desktop/PATHVIEW-MARKDOWN/08-11-2026/sources/pathview-plus/lib/pathview.py'&gt; has no attribute 'kegg_species_code'
+
+../08-10-2026/pathveiw bug checks/conftest.py:124: AttributeError</error></testcase><testcase classname="tests.test_public_core" name="test_non_native_png_request_produces_png" time="0.001"><skipped type="pytest.xfail" message="PV-BUG-002: --no-kegg-native with output_format='png' silently writes graph PDF" /></testcase><testcase classname="tests.test_public_core" name="test_python_api_rejects_unknown_output_format[jpg]" time="0.001"><skipped type="pytest.xfail" message="PV-BUG-003: Python API does not validate output_format; unknown values become PDF" /></testcase><testcase classname="tests.test_public_core" name="test_python_api_rejects_unknown_output_format[PNG]" time="0.001"><skipped type="pytest.xfail" message="PV-BUG-003: Python API does not validate output_format; unknown values become PDF" /></testcase><testcase classname="tests.test_public_core" name="test_python_api_rejects_unknown_output_format[]" time="0.001"><skipped type="pytest.xfail" message="PV-BUG-003: Python API does not validate output_format; unknown values become PDF" /></testcase><testcase classname="tests.test_public_core" name="test_python_api_rejects_unknown_output_format[banana]" time="0.001"><skipped type="pytest.xfail" message="PV-BUG-003: Python API does not validate output_format; unknown values become PDF" /></testcase><testcase classname="tests.test_public_core" name="test_fully_cached_human_pathway_does_not_require_network" time="0.001"><skipped type="pytest.xfail" message="PV-BUG-004: cached files cannot bypass live species lookup" /></testcase><testcase classname="tests.test_public_core" name="test_partial_color_dictionary_keeps_unspecified_defaults" time="0.001"><skipped type="pytest.xfail" message="PV-BUG-005: a partial color config replaces defaults instead of merging per molecule type" /></testcase><testcase classname="tests.test_public_core" name="test_map_null_false_removes_unmapped_pathway_nodes" time="0.001"><skipped type="pytest.xfail" message="PV-BUG-006: map_null=False does not remove unmapped rows when a data table exists" /></testcase><testcase classname="tests.test_public_core" name="test_min_nnodes_is_based_on_input_matches" time="0.001"><skipped type="pytest.xfail" message="PV-BUG-007: min_nnodes counts pathway layout nodes, not nodes matched by input data" /></testcase><testcase classname="tests.test_public_core" name="test_core_result_supports_documented_highlighting_interface" time="0.001"><skipped type="pytest.xfail" message="PV-BUG-008: core returns dict while documented highlighting requires PathwayResult" /></testcase><testcase classname="tests.test_public_core" name="test_core_gene_table_contains_highlighting_identifier_column" time="0.001"><skipped type="pytest.xfail" message="PV-BUG-009: mapped core gene table omits kegg_names required by highlighting" /></testcase><testcase classname="tests.test_public_core" name="test_map_symbol_updates_the_label_used_by_renderers" time="0.001"><skipped type="pytest.xfail" message="PV-BUG-075: _add_symbol_labels joins a SYMBOL column but never replaces the rendered label" /></testcase><testcase classname="tests.test_public_core" name="test_invalid_node_sum_is_rejected_by_python_api" time="0.001"><skipped type="pytest.xfail" message="PV-BUG-076: invalid node_sum ValueError is swallowed by node_map and core still returns output" /></testcase><testcase classname="tests.test_public_core" name="test_conflicting_pathway_prefix_is_rejected" time="0.001"><skipped type="pytest.xfail" message="PV-BUG-010: pathway prefixes that conflict with species are concatenated, not rejected" /></testcase><testcase classname="tests.test_public_core" name="test_empty_cached_pathway_is_skipped_cleanly" time="0.001"><skipped type="pytest.xfail" message="PV-BUG-011: empty KGML produces a schema-less frame and core crashes before graceful skip" /></testcase><testcase classname="tests.test_public_core" name="test_frozen_official_pathway_png_for_one_two_three_states[1]" time="0.001"><skipped type="pytest.skip" message="Frozen official hsa04110 KGML/PNG fixture is not available">/Users/summermalik/Desktop/PATHVIEW-MARKDOWN/08-10-2026/pathveiw bug checks/tests/test_public_core.py:328: Frozen official hsa04110 KGML/PNG fixture is not available</skipped></testcase><testcase classname="tests.test_public_core" name="test_frozen_official_pathway_png_for_one_two_three_states[2]" time="0.001"><skipped type="pytest.skip" message="Frozen official hsa04110 KGML/PNG fixture is not available">/Users/summermalik/Desktop/PATHVIEW-MARKDOWN/08-10-2026/pathveiw bug checks/tests/test_public_core.py:328: Frozen official hsa04110 KGML/PNG fixture is not available</skipped></testcase><testcase classname="tests.test_public_core" name="test_frozen_official_pathway_png_for_one_two_three_states[3]" time="0.000"><skipped type="pytest.skip" message="Frozen official hsa04110 KGML/PNG fixture is not available">/Users/summermalik/Desktop/PATHVIEW-MARKDOWN/08-10-2026/pathveiw bug checks/tests/test_public_core.py:328: Frozen official hsa04110 KGML/PNG fixture is not available</skipped></testcase><testcase classname="tests.test_public_core" name="test_frozen_official_pathway_vector_outputs[svg-svg-&lt;?xml]" time="0.000"><skipped type="pytest.skip" message="Frozen official hsa04110 KGML/PNG fixture is not available">/Users/summermalik/Desktop/PATHVIEW-MARKDOWN/08-10-2026/pathveiw bug checks/tests/test_public_core.py:356: Frozen official hsa04110 KGML/PNG fixture is not available</skipped></testcase><testcase classname="tests.test_public_core" name="test_frozen_official_pathway_vector_outputs[pdf-pdf-%PDF]" time="0.000"><skipped type="pytest.skip" message="Frozen official hsa04110 KGML/PNG fixture is not available">/Users/summermalik/Desktop/PATHVIEW-MARKDOWN/08-10-2026/pathveiw bug checks/tests/test_public_core.py:356: Frozen official hsa04110 KGML/PNG fixture is not available</skipped></testcase><testcase classname="tests.test_public_core" name="test_svg_core_needs_only_cached_xml" time="0.001"><skipped type="pytest.xfail" message="PV-BUG-067: SVG output unnecessarily requires/downloads a KEGG PNG when kegg_native=True" /></testcase></testsuite></testsuites>

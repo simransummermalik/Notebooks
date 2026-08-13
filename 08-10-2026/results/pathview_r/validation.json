@@ -1,0 +1,77 @@
+{
+  "component": "R pathview",
+  "version": "1.52.0",
+  "bioconductor": "3.23",
+  "r_version": "R version 4.6.1 (2026-06-24)",
+  "checks": [
+    {
+      "name": "official frozen fixture",
+      "status": "pass",
+      "seconds": 0.001,
+      "details": {
+        "xml_bytes": 45001,
+        "png_bytes": 32058,
+        "source": "Bioconductor pathview 1.52.0 extdata"
+      }
+    },
+    {
+      "name": "controlled one-condition native PNG",
+      "status": "pass",
+      "seconds": 0.541,
+      "details": {
+        "output": "results/pathview_r/hsa04110.r_classical.png",
+        "gene_node_rows": 92,
+        "mapped": 3
+      }
+    },
+    {
+      "name": "controlled two-condition left/right native PNG",
+      "status": "pass",
+      "seconds": 0.252,
+      "details": {
+        "output": "results/pathview_r/hsa04110.r_half_half.multi.png",
+        "gene_node_rows": 92,
+        "mapped_classical": 3,
+        "mapped_basal": 3,
+        "state_order": ["Classical (left)", "Basal (right)"]
+      }
+    },
+    {
+      "name": "controlled three-condition native PNG",
+      "status": "pass",
+      "seconds": 0.138,
+      "details": {
+        "output": "results/pathview_r/hsa04110.r_three_state.multi.png",
+        "state_order": ["Control", "Treatment_A", "Treatment_B"]
+      }
+    },
+    {
+      "name": "official gse16873 classical example",
+      "status": "pass",
+      "seconds": 0.261,
+      "details": {
+        "output": "results/pathview_r/hsa04110.r_gse16873.png",
+        "input_genes": 11979,
+        "mapped_nodes": 91
+      }
+    },
+    {
+      "name": "Graphviz PDF with two states",
+      "status": "pass",
+      "seconds": 0.224,
+      "details": {
+        "output": "results/pathview_r/hsa04110.r_graph.multi.pdf",
+        "bytes": 19039
+      }
+    },
+    {
+      "name": "exported helper surface",
+      "status": "pass",
+      "seconds": 0,
+      "details": {
+        "required_exports": 12,
+        "missing": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+x,y,python_kegg_names,python_classical,python_basal,r_all_mapped,r_classical,r_basal,r_classical_color,r_basal_color,classical_abs_difference,basal_abs_difference
+532,124,hsa:1029,-2.0,2.0,1029,-2.0,2.0,#00FF00,#FF0000,0.0,0.0
+590,243,hsa:7157,-1.6,1.6,7157,-1.6,1.6,#26F226,#F22626,0.0,0.0
+208,313,hsa:1029,-2.0,2.0,1029,-2.0,2.0,#00FF00,#FF0000,0.0,0.0

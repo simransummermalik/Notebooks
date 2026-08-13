@@ -1,0 +1,116 @@
+entry_id,name,kegg_names,type,x,y,width,height,bgcolor,fgcolor,label,shape,reaction,component,size,link
+1,hsa:1029,1029,gene,532.0,124.0,46.0,17.0,#BFFFBF,#000000,CDKN2A,rectangle,"","",1,http://www.kegg.jp/dbget-bin/www_bget?hsa:1029
+2,hsa:51343,51343,gene,919.0,536.0,46.0,17.0,#BFFFBF,#000000,FZR1,rectangle,"","",1,http://www.kegg.jp/dbget-bin/www_bget?hsa:51343
+3,hsa:4171 hsa:4172 hsa:4173 hsa:4174 hsa:4175 hsa:4176,4171;4172;4173;4174;4175;4176,gene,553.0,556.0,46.0,17.0,#BFFFBF,#000000,MCM2,rectangle,"","",1,http://www.kegg.jp/dbget-bin/www_bget?hsa:4171+hsa:4172+hsa:4173+hsa:4174+hsa:4175+hsa:4176
+4,hsa:23594 hsa:23595 hsa:4998 hsa:4999 hsa:5000 hsa:5001,23594;23595;4998;4999;5000;5001,gene,494.0,556.0,46.0,17.0,#BFFFBF,#000000,ORC6,rectangle,"","",1,http://www.kegg.jp/dbget-bin/www_bget?hsa:23594+hsa:23595+hsa:4998+hsa:4999+hsa:5000+hsa:5001
+5,hsa:10393 hsa:246184 hsa:25847 hsa:29882 hsa:29945 hsa:51433 hsa:51434 hsa:51529 hsa:64682 hsa:8697 hsa:8881 hsa:996,10393;246184;25847;29882;29945;51433;51434;51529;64682;8697;8881;996,gene,919.0,297.0,46.0,17.0,#BFFFBF,#000000,ANAPC10,rectangle,"","",1,http://www.kegg.jp/dbget-bin/www_bget?hsa:10393+hsa:246184+hsa:25847+hsa:29882+hsa:29945+hsa:51433+hsa:51434+hsa:51529+hsa:64682+hsa:8697+hsa:8881+hsa:996
+6,hsa:10393 hsa:246184 hsa:25847 hsa:29882 hsa:29945 hsa:51433 hsa:51434 hsa:51529 hsa:64682 hsa:8697 hsa:8881 hsa:996,10393;246184;25847;29882;29945;51433;51434;51529;64682;8697;8881;996,gene,919.0,519.0,46.0,17.0,#BFFFBF,#000000,ANAPC10,rectangle,"","",1,http://www.kegg.jp/dbget-bin/www_bget?hsa:10393+hsa:246184+hsa:25847+hsa:29882+hsa:29945+hsa:51433+hsa:51434+hsa:51529+hsa:64682+hsa:8697+hsa:8881+hsa:996
+7,hsa:6500 hsa:8454 hsa:9978,6500;8454;9978,gene,188.0,519.0,46.0,17.0,#BFFFBF,#000000,SKP1,rectangle,"","",1,http://www.kegg.jp/dbget-bin/www_bget?hsa:6500+hsa:8454+hsa:9978
+8,hsa:6500 hsa:8454 hsa:9978,6500;8454;9978,gene,432.0,191.0,46.0,17.0,#BFFFBF,#000000,SKP1,rectangle,"","",1,http://www.kegg.jp/dbget-bin/www_bget?hsa:6500+hsa:8454+hsa:9978
+9,hsa:23594,23594,gene,123.0,704.0,46.0,17.0,#BFFFBF,#000000,ORC6,rectangle,"","",1,http://www.kegg.jp/dbget-bin/www_bget?hsa:23594
+10,hsa:23595,23595,gene,77.0,687.0,46.0,17.0,#BFFFBF,#000000,ORC3,rectangle,"","",1,http://www.kegg.jp/dbget-bin/www_bget?hsa:23595
+11,hsa:5001,5001,gene,77.0,704.0,46.0,17.0,#BFFFBF,#000000,ORC5,rectangle,"","",1,http://www.kegg.jp/dbget-bin/www_bget?hsa:5001
+12,hsa:5000,5000,gene,123.0,687.0,46.0,17.0,#BFFFBF,#000000,ORC4,rectangle,"","",1,http://www.kegg.jp/dbget-bin/www_bget?hsa:5000
+13,hsa:4999,4999,gene,123.0,670.0,46.0,17.0,#BFFFBF,#000000,ORC2,rectangle,"","",1,http://www.kegg.jp/dbget-bin/www_bget?hsa:4999
+14,hsa:4998,4998,gene,77.0,670.0,46.0,17.0,#BFFFBF,#000000,ORC1,rectangle,"","",1,http://www.kegg.jp/dbget-bin/www_bget?hsa:4998
+15,hsa:4176,4176,gene,245.0,704.0,46.0,17.0,#BFFFBF,#000000,MCM7,rectangle,"","",1,http://www.kegg.jp/dbget-bin/www_bget?hsa:4176
+16,hsa:4175,4175,gene,200.0,704.0,46.0,17.0,#BFFFBF,#000000,MCM6,rectangle,"","",1,http://www.kegg.jp/dbget-bin/www_bget?hsa:4175
+17,hsa:4174,4174,gene,245.0,687.0,46.0,17.0,#BFFFBF,#000000,MCM5,rectangle,"","",1,http://www.kegg.jp/dbget-bin/www_bget?hsa:4174
+18,hsa:4173,4173,gene,200.0,687.0,46.0,17.0,#BFFFBF,#000000,MCM4,rectangle,"","",1,http://www.kegg.jp/dbget-bin/www_bget?hsa:4173
+19,hsa:4172,4172,gene,245.0,670.0,46.0,17.0,#BFFFBF,#000000,MCM3,rectangle,"","",1,http://www.kegg.jp/dbget-bin/www_bget?hsa:4172
+20,hsa:4171,4171,gene,200.0,670.0,46.0,17.0,#BFFFBF,#000000,MCM2,rectangle,"","",1,http://www.kegg.jp/dbget-bin/www_bget?hsa:4171
+21,hsa:983,983,gene,780.0,468.0,46.0,17.0,#BFFFBF,#000000,CDK1,rectangle,"","",1,http://www.kegg.jp/dbget-bin/www_bget?hsa:983
+22,hsa:701,701,gene,830.0,298.0,46.0,17.0,#BFFFBF,#000000,BUB1B,rectangle,"","",1,http://www.kegg.jp/dbget-bin/www_bget?hsa:701
+23,hsa:5111,5111,gene,559.0,359.0,46.0,17.0,#BFFFBF,#000000,PCNA,rectangle,"","",1,http://www.kegg.jp/dbget-bin/www_bget?hsa:5111
+24,hsa:5347,5347,gene,862.0,468.0,46.0,17.0,#BFFFBF,#000000,PLK1,rectangle,"","",1,http://www.kegg.jp/dbget-bin/www_bget?hsa:5347
+25,hsa:472 hsa:545,472;545,gene,696.0,163.0,46.0,17.0,#BFFFBF,#000000,ATM,rectangle,"","",1,http://www.kegg.jp/dbget-bin/www_bget?hsa:472+hsa:545
+26,hsa:10926,10926,gene,532.0,626.0,46.0,17.0,#BFFFBF,#000000,DBF4,rectangle,"","",1,http://www.kegg.jp/dbget-bin/www_bget?hsa:10926
+27,hsa:10459 hsa:4085,10459;4085,gene,830.0,281.0,46.0,17.0,#BFFFBF,#000000,MAD2L2,rectangle,"","",1,http://www.kegg.jp/dbget-bin/www_bget?hsa:10459+hsa:4085
+28,hsa:699,699,gene,769.0,315.0,46.0,17.0,#BFFFBF,#000000,BUB1,rectangle,"","",1,http://www.kegg.jp/dbget-bin/www_bget?hsa:699
+29,hsa:9184,9184,gene,830.0,315.0,46.0,17.0,#BFFFBF,#000000,BUB3,rectangle,"","",1,http://www.kegg.jp/dbget-bin/www_bget?hsa:9184
+30,hsa:8555 hsa:8556,8555;8556,gene,919.0,578.0,46.0,17.0,#BFFFBF,#000000,CDC14B,rectangle,"","",1,http://www.kegg.jp/dbget-bin/www_bget?hsa:8555+hsa:8556
+31,hsa:10971 hsa:7529 hsa:7531 hsa:7532 hsa:7533 hsa:7534,10971;7529;7531;7532;7533;7534,gene,850.0,352.0,46.0,17.0,#BFFFBF,#000000,YWHAQ,rectangle,"","",1,http://www.kegg.jp/dbget-bin/www_bget?hsa:10971+hsa:7529+hsa:7531+hsa:7532+hsa:7533+hsa:7534
+32,hsa:2810,2810,gene,638.0,313.0,46.0,17.0,#BFFFBF,#000000,SFN,rectangle,"","",1,http://www.kegg.jp/dbget-bin/www_bget?hsa:2810
+33,hsa:1111 hsa:11200,1111;11200,gene,696.0,299.0,46.0,17.0,#BFFFBF,#000000,CHEK1,rectangle,"","",1,http://www.kegg.jp/dbget-bin/www_bget?hsa:1111+hsa:11200
+34,hsa:1026,1026,gene,459.0,313.0,46.0,17.0,#BFFFBF,#000000,CDKN1A,rectangle,"","",1,http://www.kegg.jp/dbget-bin/www_bget?hsa:1026
+35,hsa:5591,5591,gene,640.0,163.0,46.0,17.0,#BFFFBF,#000000,PRKDC,rectangle,"","",1,http://www.kegg.jp/dbget-bin/www_bget?hsa:5591
+36,hsa:4193,4193,gene,532.0,179.0,46.0,17.0,#BFFFBF,#000000,MDM2,rectangle,"","",1,http://www.kegg.jp/dbget-bin/www_bget?hsa:4193
+37,hsa:1387 hsa:2033,1387;2033,gene,590.0,150.0,46.0,17.0,#BFFFBF,#000000,CREBBP,rectangle,"","",1,http://www.kegg.jp/dbget-bin/www_bget?hsa:1387+hsa:2033
+38,hsa:6502,6502,gene,432.0,208.0,46.0,17.0,#BFFFBF,#000000,SKP2,rectangle,"","",1,http://www.kegg.jp/dbget-bin/www_bget?hsa:6502
+39,hsa:9088,9088,gene,763.0,528.0,46.0,17.0,#BFFFBF,#000000,PKMYT1,rectangle,"","",1,http://www.kegg.jp/dbget-bin/www_bget?hsa:9088
+40,hsa:494551 hsa:7465,494551;7465,gene,704.0,528.0,46.0,17.0,#BFFFBF,#000000,WEE2,rectangle,"","",1,http://www.kegg.jp/dbget-bin/www_bget?hsa:494551+hsa:7465
+41,hsa:10744 hsa:9232,10744;9232,gene,919.0,245.0,46.0,17.0,#BFFFBF,#000000,PTTG2,rectangle,"","",1,http://www.kegg.jp/dbget-bin/www_bget?hsa:10744+hsa:9232
+42,hsa:9700,9700,gene,919.0,198.0,46.0,17.0,#BFFFBF,#000000,ESPL1,rectangle,"","",1,http://www.kegg.jp/dbget-bin/www_bget?hsa:9700
+43,hsa:27127 hsa:8243,27127;8243,gene,895.0,117.0,46.0,17.0,#BFFFBF,#000000,SMC1B,rectangle,"","",1,http://www.kegg.jp/dbget-bin/www_bget?hsa:27127+hsa:8243
+44,path:hsa04210,hsa04210,map,753.0,243.0,69.0,26.0,#FFFFFF,#000000,Apoptosis,roundrectangle,"","",1,http://www.kegg.jp/dbget-bin/www_bget?hsa04210
+45,hsa:6502,6502,gene,188.0,536.0,46.0,17.0,#BFFFBF,#000000,SKP2,rectangle,"","",1,http://www.kegg.jp/dbget-bin/www_bget?hsa:6502
+46,hsa:5925,5925,gene,637.0,528.0,46.0,17.0,#BFFFBF,#000000,RB1,rectangle,"","",1,http://www.kegg.jp/dbget-bin/www_bget?hsa:5925
+47,hsa:10912 hsa:1647 hsa:4616,10912;1647;4616,gene,559.0,313.0,46.0,17.0,#BFFFBF,#000000,GADD45G,rectangle,"","",1,http://www.kegg.jp/dbget-bin/www_bget?hsa:10912+hsa:1647+hsa:4616
+48,hsa:5925,5925,gene,504.0,243.0,46.0,17.0,#BFFFBF,#000000,RB1,rectangle,"","",1,http://www.kegg.jp/dbget-bin/www_bget?hsa:5925
+49,hsa:7157,7157,gene,590.0,243.0,46.0,17.0,#BFFFBF,#000000,TP53,rectangle,"","",1,http://www.kegg.jp/dbget-bin/www_bget?hsa:7157
+50,hsa:1027 hsa:1028,1027;1028,gene,407.0,313.0,46.0,17.0,#BFFFBF,#000000,CDKN1B,rectangle,"","",1,http://www.kegg.jp/dbget-bin/www_bget?hsa:1027+hsa:1028
+51,hsa:1030,1030,gene,256.0,313.0,46.0,17.0,#BFFFBF,#000000,CDKN2B,rectangle,"","",1,http://www.kegg.jp/dbget-bin/www_bget?hsa:1030
+52,hsa:7040 hsa:7042 hsa:7043,7040;7042;7043,gene,327.0,117.0,46.0,17.0,#BFFFBF,#000000,TGFB1,rectangle,"","",1,http://www.kegg.jp/dbget-bin/www_bget?hsa:7040+hsa:7042+hsa:7043
+53,hsa:4089,4089,gene,327.0,177.0,46.0,17.0,#BFFFBF,#000000,SMAD4,rectangle,"","",1,http://www.kegg.jp/dbget-bin/www_bget?hsa:4089
+54,hsa:4087 hsa:4088,4087;4088,gene,327.0,160.0,46.0,17.0,#BFFFBF,#000000,SMAD2,rectangle,"","",1,http://www.kegg.jp/dbget-bin/www_bget?hsa:4087+hsa:4088
+55,hsa:8317,8317,gene,532.0,609.0,46.0,17.0,#BFFFBF,#000000,CDC7,rectangle,"","",1,http://www.kegg.jp/dbget-bin/www_bget?hsa:8317
+56,path:hsa04120,hsa04120,map,977.0,399.0,76.0,71.0,#FFFFFF,#000000,Ubiquitin mediated proteolysis,roundrectangle,"","",1,http://www.kegg.jp/dbget-bin/www_bget?hsa04120
+57,hsa:991,991,gene,919.0,314.0,46.0,17.0,#BFFFBF,#000000,CDC20,rectangle,"","",1,http://www.kegg.jp/dbget-bin/www_bget?hsa:991
+58,hsa:994 hsa:995,994;995,gene,830.0,402.0,46.0,17.0,#BFFFBF,#000000,CDC25B,rectangle,"","",1,http://www.kegg.jp/dbget-bin/www_bget?hsa:994+hsa:995
+59,hsa:8318,8318,gene,553.0,528.0,46.0,17.0,#BFFFBF,#000000,CDC45,rectangle,"","",1,http://www.kegg.jp/dbget-bin/www_bget?hsa:8318
+60,hsa:990,990,gene,494.0,528.0,46.0,17.0,#BFFFBF,#000000,CDC6,rectangle,"","",1,http://www.kegg.jp/dbget-bin/www_bget?hsa:990
+61,hsa:993,993,gene,614.0,402.0,46.0,17.0,#BFFFBF,#000000,CDC25A,rectangle,"","",1,http://www.kegg.jp/dbget-bin/www_bget?hsa:993
+62,hsa:2932,2932,gene,170.0,167.0,46.0,17.0,#BFFFBF,#000000,GSK3B,rectangle,"","",1,http://www.kegg.jp/dbget-bin/www_bget?hsa:2932
+63,hsa:983,983,gene,689.0,468.0,46.0,17.0,#BFFFBF,#000000,CDK1,rectangle,"","",1,http://www.kegg.jp/dbget-bin/www_bget?hsa:983
+64,hsa:85417 hsa:891 hsa:9133,85417;891;9133,gene,780.0,451.0,46.0,17.0,#BFFFBF,#000000,CCNB3,rectangle,"","",1,http://www.kegg.jp/dbget-bin/www_bget?hsa:85417+hsa:891+hsa:9133
+65,hsa:890 hsa:8900,890;8900,gene,689.0,451.0,46.0,17.0,#BFFFBF,#000000,CCNA2,rectangle,"","",1,http://www.kegg.jp/dbget-bin/www_bget?hsa:890+hsa:8900
+66,hsa:1022,1022,gene,552.0,468.0,46.0,17.0,#BFFFBF,#000000,CDK7,rectangle,"","",1,http://www.kegg.jp/dbget-bin/www_bget?hsa:1022
+67,hsa:1017,1017,gene,457.0,468.0,46.0,17.0,#BFFFBF,#000000,CDK2,rectangle,"","",1,http://www.kegg.jp/dbget-bin/www_bget?hsa:1017
+68,hsa:1017,1017,gene,335.0,468.0,46.0,17.0,#BFFFBF,#000000,CDK2,rectangle,"","",1,http://www.kegg.jp/dbget-bin/www_bget?hsa:1017
+69,hsa:1019 hsa:1021,1019;1021,gene,227.0,468.0,46.0,17.0,#BFFFBF,#000000,CDK4,rectangle,"","",1,http://www.kegg.jp/dbget-bin/www_bget?hsa:1019+hsa:1021
+70,hsa:902,902,gene,552.0,451.0,46.0,17.0,#BFFFBF,#000000,CCNH,rectangle,"","",1,http://www.kegg.jp/dbget-bin/www_bget?hsa:902
+71,hsa:890 hsa:8900,890;8900,gene,457.0,451.0,46.0,17.0,#BFFFBF,#000000,CCNA2,rectangle,"","",1,http://www.kegg.jp/dbget-bin/www_bget?hsa:890+hsa:8900
+72,hsa:898 hsa:9134,898;9134,gene,335.0,451.0,46.0,17.0,#BFFFBF,#000000,CCNE1,rectangle,"","",1,http://www.kegg.jp/dbget-bin/www_bget?hsa:898+hsa:9134
+73,hsa:595 hsa:894 hsa:896,595;894;896,gene,227.0,451.0,46.0,17.0,#BFFFBF,#000000,CCND1,rectangle,"","",1,http://www.kegg.jp/dbget-bin/www_bget?hsa:595+hsa:894+hsa:896
+74,path:hsa04010,hsa04010,map,95.0,264.0,56.0,125.0,#FFFFFF,#000000,MAPK signaling pathway,roundrectangle,"","",1,http://www.kegg.jp/dbget-bin/www_bget?hsa04010
+75,path:hsa04110,hsa04110,map,98.0,58.0,115.0,25.0,#FFFFFF,#000000,TITLE:Cell cycle,roundrectangle,"","",1,http://www.kegg.jp/dbget-bin/www_bget?hsa04110
+76,hsa:8379,8379,gene,830.0,231.0,46.0,17.0,#BFFFBF,#000000,MAD1L1,rectangle,"","",1,http://www.kegg.jp/dbget-bin/www_bget?hsa:8379
+79,hsa:7272,7272,gene,830.0,181.0,46.0,17.0,#BFFFBF,#000000,TTK,rectangle,"","",1,http://www.kegg.jp/dbget-bin/www_bget?hsa:7272
+80,hsa:1031,1031,gene,304.0,313.0,46.0,17.0,#BFFFBF,#000000,CDKN2C,rectangle,"","",1,http://www.kegg.jp/dbget-bin/www_bget?hsa:1031
+81,hsa:1032,1032,gene,352.0,313.0,46.0,17.0,#BFFFBF,#000000,CDKN2D,rectangle,"","",1,http://www.kegg.jp/dbget-bin/www_bget?hsa:1032
+82,hsa:1029,1029,gene,208.0,313.0,46.0,17.0,#BFFFBF,#000000,CDKN2A,rectangle,"","",1,http://www.kegg.jp/dbget-bin/www_bget?hsa:1029
+83,hsa:9126,9126,gene,941.0,117.0,46.0,17.0,#BFFFBF,#000000,SMC3,rectangle,"","",1,http://www.kegg.jp/dbget-bin/www_bget?hsa:9126
+84,hsa:10274 hsa:10735,10274;10735,gene,918.0,134.0,46.0,17.0,#BFFFBF,#000000,STAG1,rectangle,"","",1,http://www.kegg.jp/dbget-bin/www_bget?hsa:10274+hsa:10735
+85,hsa:5885,5885,gene,918.0,151.0,46.0,17.0,#BFFFBF,#000000,RAD21,rectangle,"","",1,http://www.kegg.jp/dbget-bin/www_bget?hsa:5885
+86,hsa:5933,5933,gene,243.0,143.0,46.0,17.0,#BFFFBF,#000000,RBL1,rectangle,"","",1,http://www.kegg.jp/dbget-bin/www_bget?hsa:5933
+87,hsa:1874 hsa:1875,1874;1875,gene,243.0,160.0,46.0,17.0,#BFFFBF,#000000,E2F4,rectangle,"","",1,http://www.kegg.jp/dbget-bin/www_bget?hsa:1874+hsa:1875
+88,hsa:4609,4609,gene,243.0,219.0,46.0,17.0,#BFFFBF,#000000,MYC,rectangle,"","",1,http://www.kegg.jp/dbget-bin/www_bget?hsa:4609
+89,hsa:7709,7709,gene,243.0,251.0,46.0,17.0,#BFFFBF,#000000,ZBTB17,rectangle,"","",1,http://www.kegg.jp/dbget-bin/www_bget?hsa:7709
+90,hsa:25,25,gene,413.0,526.0,46.0,17.0,#BFFFBF,#000000,ABL1,rectangle,"","",1,http://www.kegg.jp/dbget-bin/www_bget?hsa:25
+91,hsa:7027 hsa:7029,7027;7029,gene,353.0,594.0,46.0,17.0,#BFFFBF,#000000,TFDP1,rectangle,"","",1,http://www.kegg.jp/dbget-bin/www_bget?hsa:7027+hsa:7029
+92,hsa:1869 hsa:1870 hsa:1871,1869;1870;1871,gene,353.0,577.0,46.0,17.0,#BFFFBF,#000000,E2F1,rectangle,"","",1,http://www.kegg.jp/dbget-bin/www_bget?hsa:1869+hsa:1870+hsa:1871
+93,hsa:3065 hsa:3066,3065;3066,gene,413.0,550.0,46.0,17.0,#BFFFBF,#000000,HDAC1,rectangle,"","",1,http://www.kegg.jp/dbget-bin/www_bget?hsa:3065+hsa:3066
+94,hsa:5925,5925,gene,353.0,536.0,46.0,17.0,#BFFFBF,#000000,RB1,rectangle,"","",1,http://www.kegg.jp/dbget-bin/www_bget?hsa:5925
+95,hsa:5933 hsa:5934,5933;5934,gene,298.0,536.0,46.0,17.0,#BFFFBF,#000000,RBL1,rectangle,"","",1,http://www.kegg.jp/dbget-bin/www_bget?hsa:5933+hsa:5934
+96,hsa:7027 hsa:7029,7027;7029,gene,298.0,594.0,46.0,17.0,#BFFFBF,#000000,TFDP1,rectangle,"","",1,http://www.kegg.jp/dbget-bin/www_bget?hsa:7027+hsa:7029
+97,hsa:1874 hsa:1875,1874;1875,gene,298.0,577.0,46.0,17.0,#BFFFBF,#000000,E2F4,rectangle,"","",1,http://www.kegg.jp/dbget-bin/www_bget?hsa:1874+hsa:1875
+98,hsa:7027 hsa:7029,7027;7029,gene,243.0,177.0,46.0,17.0,#BFFFBF,#000000,TFDP1,rectangle,"","",1,http://www.kegg.jp/dbget-bin/www_bget?hsa:7027+hsa:7029
+99,undefined,4089;4087;4088,group,327.0,168.0,46.0,34.0,#FFFFFF,#000000,SMAD4/SMAD2,rectangle,"",53;54,2,""
+100,undefined,1017;898;9134,group,335.0,459.0,46.0,34.0,#FFFFFF,#000000,CDK2/CCNE1,rectangle,"",68;72,2,""
+101,undefined,1022;902,group,552.0,459.0,46.0,34.0,#FFFFFF,#000000,CDK7/CCNH,rectangle,"",66;70,2,""
+102,undefined,1017;890;8900,group,457.0,459.0,46.0,34.0,#FFFFFF,#000000,CDK2/CCNA2,rectangle,"",67;71,2,""
+103,undefined,983;890;8900,group,689.0,459.0,46.0,34.0,#FFFFFF,#000000,CDK1/CCNA2,rectangle,"",63;65,2,""
+104,undefined,23595;5001;5000;4999;4998;23594,group,100.0,687.0,92.0,51.0,#FFFFFF,#000000,ORC3/ORC5/ORC4,rectangle,"",10;11;12;13;14;9,6,""
+105,undefined,4176;4175;4174;4173;4172;4171,group,222.0,687.0,91.0,51.0,#FFFFFF,#000000,MCM7/MCM6/MCM5,rectangle,"",15;16;17;18;19;20,6,""
+106,undefined,10926;8317,group,532.0,617.0,46.0,34.0,#FFFFFF,#000000,DBF4/CDC7,rectangle,"",26;55,2,""
+107,undefined,983;85417;891;9133,group,780.0,459.0,46.0,34.0,#FFFFFF,#000000,CDK1/CCNB3,rectangle,"",21;64,2,""
+108,undefined,1019;1021;595;894;896,group,227.0,459.0,46.0,34.0,#FFFFFF,#000000,CDK4/CCND1,rectangle,"",69;73,2,""
+109,undefined,6502;6500;8454;9978,group,188.0,527.0,46.0,34.0,#FFFFFF,#000000,SKP2/SKP1,rectangle,"",45;7,2,""
+110,undefined,6502;6500;8454;9978,group,432.0,199.0,46.0,34.0,#FFFFFF,#000000,SKP2/SKP1,rectangle,"",38;8,2,""
+111,undefined,10393;246184;25847;29882;29945;51433;51434;51529;64682;8697;8881;996;991,group,919.0,305.0,46.0,34.0,#FFFFFF,#000000,ANAPC10/CDC20,rectangle,"",5;57,2,""
+112,undefined,51343;10393;246184;25847;29882;29945;51433;51434;51529;64682;8697;8881;996,group,919.0,527.0,46.0,34.0,#FFFFFF,#000000,FZR1/ANAPC10,rectangle,"",2;6,2,""
+113,undefined,701;10459;4085;9184,group,830.0,298.0,46.0,51.0,#FFFFFF,#000000,BUB1B/MAD2L2/BUB3,rectangle,"",22;27;29,3,""
+114,undefined,27127;8243;9126;10274;10735;5885,group,918.0,134.0,92.0,51.0,#FFFFFF,#000000,SMC1B/SMC3/STAG1,rectangle,"",43;83;84;85,4,""
+115,undefined,7027;7029;1874;1875,group,298.0,585.0,46.0,34.0,#FFFFFF,#000000,TFDP1/E2F4,rectangle,"",96;97,2,""
+116,undefined,7027;7029;1869;1870;1871,group,353.0,585.0,46.0,34.0,#FFFFFF,#000000,TFDP1/E2F1,rectangle,"",91;92,2,""
+117,undefined,5933;1874;1875;7027;7029,group,243.0,160.0,46.0,51.0,#FFFFFF,#000000,RBL1/E2F4/TFDP1,rectangle,"",86;87;98,3,""

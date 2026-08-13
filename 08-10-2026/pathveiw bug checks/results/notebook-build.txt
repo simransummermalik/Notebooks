@@ -1,0 +1,3 @@
+Written: /Users/summermalik/Desktop/PATHVIEW-MARKDOWN/pathveiw bug checks/pathview_deep_bug_checks.ipynb
+Written: /Users/summermalik/Desktop/PATHVIEW-MARKDOWN/pathveiw bug checks/pathview_deep_bug_checks.executed.ipynb
+[IPKernelApp] WARNING | Kernel is running over TCP without encryption. All communication (including code and outputs) is sent in plain text and is susceptible to eavesdropping. Use IPC transport or launch with kernel manager-provisioned CurveZMQ keys to enable transport encryption.

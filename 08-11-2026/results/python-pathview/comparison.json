@@ -1,0 +1,961 @@
+{
+  "title": "My controlled Pathview Plus v3 comparison",
+  "run_date": "2026-08-11",
+  "offline": true,
+  "checks": [
+    {
+      "id": "PY01",
+      "name": "environment, exact version, and pinned source commit",
+      "status": "pass",
+      "seconds": 0.0279,
+      "details": {
+        "python": "3.14.3",
+        "platform": "macOS-26.5.2-arm64-arm-64bit-Mach-O",
+        "pathview_plus": "3.1.0",
+        "commit": "d4d45decec56e1ebec15cf04ae62ff944851780e",
+        "source_clean": true
+      }
+    },
+    {
+      "id": "PY02",
+      "name": "authoritative upstream test result",
+      "status": "pass",
+      "seconds": 0.0007,
+      "details": {
+        "tests": 327,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 6,
+        "passed": 321,
+        "junit": "08-11-2026/results/pathview-plus-v3-upstream-junit.xml"
+      }
+    },
+    {
+      "id": "PY03",
+      "name": "frozen R and Python pathway inputs are byte-for-byte identical",
+      "status": "pass",
+      "seconds": 0.0006,
+      "details": {
+        "pairs": [
+          {
+            "name": "hsa04110.xml",
+            "same_sha256": true,
+            "sha256": "c910e7727818e18219d39305ed10387d858e2319d246bf5b3778b0c51e906978"
+          },
+          {
+            "name": "hsa04110.png",
+            "same_sha256": true,
+            "sha256": "7f927c29e1496d0fa9f150f48570f96a34e7487957e7a38ce27493a775a4e2d9"
+          }
+        ]
+      }
+    },
+    {
+      "id": "PY04",
+      "name": "KEGG KGML parsing and pathway edges",
+      "status": "pass",
+      "seconds": 0.0061,
+      "details": {
+        "hsa04110_nodes": 115,
+        "hsa04110_edges": 79,
+        "hsa00020_edges": 143,
+        "edge_sources_across_fixtures": [
+          "reaction",
+          "relation"
+        ]
+      }
+    },
+    {
+      "id": "PY05",
+      "name": "one-, two-, and three-state native rendering",
+      "status": "pass",
+      "seconds": 0.9951,
+      "details": {
+        "one-state": {
+          "states_in_order": [
+            "Low"
+          ],
+          "mapped_gene_diagnostic": "3/111 nodes carry data; 2/3 input IDs used",
+          "CDKN2A_geometry": {
+            "x": 532.0,
+            "y": 124.0,
+            "width": 46.0,
+            "height": 17.0
+          },
+          "band_color_counts": [
+            {
+              "expected": "#00FF00",
+              "target_pixels": 650,
+              "largest_other_color_pixels": 0
+            }
+          ],
+          "raw_output": {
+            "path": "08-11-2026/results/python-pathview/figures/hsa04110.python-one-state.raw.png",
+            "exists": true,
+            "bytes": 29736,
+            "sha256": "76b9eb64489497c03d223ccb0acd8baaa0579656df9a210f544c76b78b543633",
+            "width_px": 1039,
+            "height_px": 801,
+            "mode": "RGB",
+            "purpose": "Pathview Plus one-state raw KEGG-sized map"
+          }
+        },
+        "half-half": {
+          "states_in_order": [
+            "Low",
+            "High"
+          ],
+          "mapped_gene_diagnostic": "3/111 nodes carry data; 2/3 input IDs used",
+          "CDKN2A_geometry": {
+            "x": 532.0,
+            "y": 124.0,
+            "width": 46.0,
+            "height": 17.0
+          },
+          "band_color_counts": [
+            {
+              "expected": "#00FF00",
+              "target_pixels": 316,
+              "largest_other_color_pixels": 0
+            },
+            {
+              "expected": "#FF0000",
+              "target_pixels": 334,
+              "largest_other_color_pixels": 0
+            }
+          ],
+          "raw_output": {
+            "path": "08-11-2026/results/python-pathview/figures/hsa04110.python-half-half.raw.png",
+            "exists": true,
+            "bytes": 29815,
+            "sha256": "d8aee09295dfc5e192fb58fead79cfd582a2eaf8ec09f8553eb3f7ed78f5cfb1",
+            "width_px": 1039,
+            "height_px": 801,
+            "mode": "RGB",
+            "purpose": "Pathview Plus half-half raw KEGG-sized map"
+          }
+        },
+        "three-state": {
+          "states_in_order": [
+            "Low",
+            "Middle",
+            "High"
+          ],
+          "mapped_gene_diagnostic": "3/111 nodes carry data; 2/3 input IDs used",
+          "CDKN2A_geometry": {
+            "x": 532.0,
+            "y": 124.0,
+            "width": 46.0,
+            "height": 17.0
+          },
+          "band_color_counts": [
+            {
+              "expected": "#00FF00",
+              "target_pixels": 212,
+              "largest_other_color_pixels": 0
+            },
+            {
+              "expected": "#BEBEBE",
+              "target_pixels": 206,
+              "largest_other_color_pixels": 0
+            },
+            {
+              "expected": "#FF0000",
+              "target_pixels": 232,
+              "largest_other_color_pixels": 0
+            }
+          ],
+          "raw_output": {
+            "path": "08-11-2026/results/python-pathview/figures/hsa04110.python-three-state.raw.png",
+            "exists": true,
+            "bytes": 29978,
+            "sha256": "b6b67d15694607dce071ade825df2422374718233bc29dbe7d501159dfc02a11",
+            "width_px": 1039,
+            "height_px": 801,
+            "mode": "RGB",
+            "purpose": "Pathview Plus three-state raw KEGG-sized map"
+          }
+        }
+      }
+    },
+    {
+      "id": "PY06",
+      "name": "same Control/Treatment dataset in Python and R Pathview",
+      "status": "pass",
+      "seconds": 0.3234,
+      "details": {
+        "same_input_csv": "08-11-2026/data/hsa04110-shared-control-treatment.csv",
+        "requested_ids": [
+          "1017",
+          "1019",
+          "1021",
+          "595",
+          "7157"
+        ],
+        "used_ids": [
+          "1017",
+          "1019",
+          "1021",
+          "595",
+          "7157"
+        ],
+        "python_nodes_with_data": 8,
+        "python_mapping": "8/111 nodes carry data; 5/5 input IDs used",
+        "r_output": {
+          "path": "08-11-2026/results/r-pathview/hsa04110.r-shared-control-treatment.multi.png",
+          "exists": true,
+          "bytes": 59922,
+          "sha256": "a46d19b706448396018b1446e9845e334cb2c18e1538be171cb49e4f9852f6dc",
+          "width_px": 1039,
+          "height_px": 801,
+          "mode": "RGBA"
+        },
+        "python_output": {
+          "path": "08-11-2026/results/python-pathview/figures/hsa04110.python-shared-control-treatment.raw.png",
+          "exists": true,
+          "bytes": 30070,
+          "sha256": "dd901a0db550beb97cf0963fd9cf28cdd6670b8a5c19deb19a351eee97b4f1ef",
+          "width_px": 1039,
+          "height_px": 801,
+          "mode": "RGB"
+        },
+        "pixel_comparison": {
+          "same_dimensions": true,
+          "changed_pixel_fraction": 0.098433,
+          "mean_absolute_channel_difference": 1.3878,
+          "maximum_channel_difference": 217
+        },
+        "interpretation": "The dimensions and pathway coordinates are directly comparable; styling and node aggregation can still differ."
+      }
+    },
+    {
+      "id": "PY07",
+      "name": "native, vector, SVG, PDF, graph, and automatic render modes",
+      "status": "pass",
+      "seconds": 1.9412,
+      "details": {
+        "outputs": [
+          {
+            "path": "08-11-2026/results/python-pathview/figures/hsa04110.python-mode-vector-png.png",
+            "exists": true,
+            "bytes": 586759,
+            "sha256": "b14d55e63178dc17f20e8ab083aae509a9952aba6c7b1adb742448de04c0526e",
+            "width_px": 3067,
+            "height_px": 2147,
+            "mode": "RGBA",
+            "purpose": "vector / png rendering check",
+            "render_mode": "vector",
+            "format": "png"
+          },
+          {
+            "path": "08-11-2026/results/python-pathview/figures/hsa04110.python-mode-vector-pdf.pdf",
+            "exists": true,
+            "bytes": 72864,
+            "sha256": "2479070829c0968183895f2c6058eb6076370e20b1dbdcc5d6617189a91127a2",
+            "purpose": "vector / pdf rendering check",
+            "render_mode": "vector",
+            "format": "pdf"
+          },
+          {
+            "path": "08-11-2026/results/python-pathview/figures/hsa04110.python-mode-svg-svg.svg",
+            "exists": true,
+            "bytes": 100217,
+            "sha256": "072e0120670bb16748ef3e24b2bfef1766e38eb7cadd7185e44b5ebaaf456e32",
+            "purpose": "svg / svg rendering check",
+            "render_mode": "svg",
+            "format": "svg"
+          },
+          {
+            "path": "08-11-2026/results/python-pathview/figures/hsa04110.python-mode-graph-png.png",
+            "exists": true,
+            "bytes": 614242,
+            "sha256": "2436e2167468c6bca9bc26a58ea275dcf018e23d1ba492d276703171c50e4577",
+            "width_px": 2623,
+            "height_px": 1996,
+            "mode": "RGBA",
+            "purpose": "graph / png rendering check",
+            "render_mode": "graph",
+            "format": "png"
+          },
+          {
+            "path": "08-11-2026/results/python-pathview/figures/hsa04110.python-mode-auto-png.png",
+            "exists": true,
+            "bytes": 365306,
+            "sha256": "d868ef2a76b90601f573784e3b4cc18277b8bc706f60ee940641e50136f12be9",
+            "width_px": 2038,
+            "height_px": 1676,
+            "mode": "RGBA",
+            "purpose": "auto / png rendering check",
+            "render_mode": "auto",
+            "format": "png"
+          }
+        ]
+      }
+    },
+    {
+      "id": "PY08",
+      "name": "genes and compounds together with separate scales",
+      "status": "pass",
+      "seconds": 0.7337,
+      "details": {
+        "gene_nodes_with_data": 4,
+        "compound_nodes_with_data": 2,
+        "gene_diagnostic": "4/27 nodes carry data; 3/3 input IDs used",
+        "compound_diagnostic": "2/23 nodes carry data; 2/2 input IDs used",
+        "C00022_geometry": {
+          "x": 716.0,
+          "y": 241.0,
+          "width": 8.0,
+          "height": 8.0
+        },
+        "C00022_crop_shape": [
+          14,
+          14,
+          3
+        ],
+        "note": "The KGML width/height are treated as the full compound diameter in v3."
+      }
+    },
+    {
+      "id": "PY09",
+      "name": "namespaced SBGN parsing, ports, arcs, and compartments",
+      "status": "pass",
+      "seconds": 0.0076,
+      "details": {
+        "glyphs": 76,
+        "arcs": 83,
+        "node_rows": 76,
+        "edge_rows": 83,
+        "compartments": 2,
+        "port_fixture": {
+          "arcs_total": 3,
+          "arcs_resolved": 3,
+          "arcs_via_port": 2,
+          "ports_indexed": 2,
+          "resolution_rate": 1.0
+        }
+      }
+    },
+    {
+      "id": "PY10",
+      "name": "mapped two-state SBGN rendering to PNG, PDF, and SVG",
+      "status": "pass",
+      "seconds": 1.6206,
+      "details": {
+        "mapped_glyph_rows": 9,
+        "diagnostics": {
+          "glyphs": 76,
+          "arcs": 83,
+          "compartments": 2,
+          "language": "process description",
+          "source_file": "/Users/summermalik/Desktop/PATHVIEW-MARKDOWN/08-11-2026/sources/pathview-plus/tests/fixtures/P00001.new.layout.sbgn",
+          "gene": "9/28 nodes carry data; 7/7 input IDs used"
+        },
+        "outputs": [
+          {
+            "path": "08-11-2026/results/python-pathview/figures/P00001.new.layout.python-two-state-png.png",
+            "exists": true,
+            "bytes": 509684,
+            "sha256": "7af9e4138cc5b62fc51ab9f677d4347ec440288819d9cd82e63d55730302f008",
+            "width_px": 3295,
+            "height_px": 1900,
+            "mode": "RGBA",
+            "purpose": "Mapped SBGN PNG output"
+          },
+          {
+            "path": "08-11-2026/results/python-pathview/figures/P00001.new.layout.python-two-state-pdf.pdf",
+            "exists": true,
+            "bytes": 137724,
+            "sha256": "3d39c84dddd88dbcae24cc9445b19e2d3cf5fb6dc2ccc847d3e7c30d30868335",
+            "purpose": "Mapped SBGN PDF output"
+          },
+          {
+            "path": "08-11-2026/results/python-pathview/figures/P00001.new.layout.python-two-state-svg.svg",
+            "exists": true,
+            "bytes": 521022,
+            "sha256": "7a0a8d81934f5b5e81fa4854cc64b1677aa42286ff76d70488e9c062dd21892e",
+            "purpose": "Mapped SBGN SVG output"
+          }
+        ]
+      }
+    },
+    {
+      "id": "PY11",
+      "name": "offline SBGN collection index and identifier crosswalks",
+      "status": "pass",
+      "seconds": 0.0874,
+      "details": {
+        "collection": {
+          "total": 5206,
+          "by_source": {
+            "metacrop": 62,
+            "metacyc": 2518,
+            "panther": 152,
+            "reactome": 1749,
+            "smpdb": 725
+          },
+          "sources": {
+            "reactome": "Reactome",
+            "smpdb": "SMPDB (Small Molecule Pathway Database)",
+            "panther": "PANTHER",
+            "metacyc": "MetaCyc",
+            "metacrop": "MetaCrop"
+          }
+        },
+        "entrez_to_symbol_route": [
+          "entrez",
+          "ko",
+          "pathwaycommons",
+          "symbol"
+        ],
+        "known_mapping": [
+          {
+            "ENTREZ": "1017",
+            "SYMBOL": "CDK2"
+          },
+          {
+            "ENTREZ": "7157",
+            "SYMBOL": "TP53"
+          }
+        ],
+        "panther_rows": 152
+      }
+    },
+    {
+      "id": "PY12",
+      "name": "batch rendering and partial-failure reporting",
+      "status": "pass",
+      "seconds": 0.9927,
+      "details": {
+        "rendered": 2,
+        "failed": {
+          "99999": "PathwayNotFoundError: No KGML for hsa99999 at /Users/summermalik/Desktop/PATHVIEW-MARKDOWN/08-11-2026/sources/pathview-plus/tests/fixtures/hsa99999.xml. Place the file there manually if you are offline: pathview-plus renders it without any further network access in render_mode='vector'."
+        },
+        "summary": "2 pathway(s) rendered, 1 failed\nhsa00020 | genes: no mappable nodes | -> hsa00020.python-batch.png\nhsa04110 | genes: 8/111 nodes carry data; 5/5 input IDs used | -> hsa04110.python-batch.png\n99999: FAILED \u2014 PathwayNotFoundError: No KGML for hsa99999 at /Users/summermalik/Desktop/PATHVIEW-MARKDOWN/08-11-2026/sources/pathview-plus/tests/fixtures/hsa99999.xml. Place the file there manually if you are offline: pathview-plus renders it without any further network access in render_mode='vector'."
+      }
+    },
+    {
+      "id": "PY13",
+      "name": "highlighting is visible, composable, and leaves the original unchanged",
+      "status": "pass",
+      "seconds": 0.0167,
+      "details": {
+        "modifiers": 3,
+        "changed_pixels": 3692,
+        "original_unchanged": true
+      }
+    },
+    {
+      "id": "PY14",
+      "name": "group splitting and multi-gene node expansion",
+      "status": "pass",
+      "seconds": 1.6363,
+      "details": {
+        "plain_nodes": 115,
+        "expanded_nodes": 170,
+        "expanded_edges": 638,
+        "diagnostic": "115 -> 96 nodes; 19 complexes split; 96 -> 170 nodes; 35 multi-gene nodes expanded"
+      }
+    },
+    {
+      "id": "PY15",
+      "name": "command-line interface and bundled smoke test",
+      "status": "pass",
+      "seconds": 3.0567,
+      "details": {
+        "version": "pathview-plus 3.1.0",
+        "species": "KEGG code        hsa",
+        "parity_rows": 78,
+        "smoke_test": "11 passed, 0 failed"
+      }
+    },
+    {
+      "id": "PY16",
+      "name": "project feature matrix is internally complete and testable",
+      "status": "pass",
+      "seconds": 0.0009,
+      "details": {
+        "summary": {
+          "total_features": 74,
+          "full": 73,
+          "partial": 0,
+          "none": 0,
+          "n/a": 1,
+          "vs_pathview_R": "32/33",
+          "vs_pathview_R_pct": 97.0,
+          "vs_SBGNview_R": "53/54",
+          "vs_SBGNview_R_pct": 98.1,
+          "beyond_both": 11,
+          "gaps": []
+        },
+        "important_label": "These percentages are the repository's own declared matrix, not an independent scientific equivalence score."
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "path": "08-11-2026/results/python-pathview/tables/hsa04110-python-nodes.csv",
+      "exists": true,
+      "bytes": 16798,
+      "sha256": "66d4dd609fb747a527bea34b8cf5143f500e80fdf9f464f08b637faa4bf5303c",
+      "purpose": "Parsed Python KEGG node table"
+    },
+    {
+      "path": "08-11-2026/results/python-pathview/tables/hsa04110-python-edges.csv",
+      "exists": true,
+      "bytes": 3555,
+      "sha256": "e6982bfe07e36ff31332ce92244133762b5ad03bfe314dd4f5a3f514ca6709a8",
+      "purpose": "Parsed Python KEGG edge table"
+    },
+    {
+      "path": "08-11-2026/results/python-pathview/figures/hsa04110.python-one-state-figure.png",
+      "exists": true,
+      "bytes": 361918,
+      "sha256": "c3712562fcab6d591508380a7c3bab4bd93f4e6a39103cc177fe32e42de97d3d",
+      "width_px": 2038,
+      "height_px": 1676,
+      "mode": "RGBA",
+      "purpose": "Pathview Plus one-state composed native figure"
+    },
+    {
+      "path": "08-11-2026/results/python-pathview/figures/hsa04110.python-one-state.raw.png",
+      "exists": true,
+      "bytes": 29736,
+      "sha256": "76b9eb64489497c03d223ccb0acd8baaa0579656df9a210f544c76b78b543633",
+      "width_px": 1039,
+      "height_px": 801,
+      "mode": "RGB",
+      "purpose": "Pathview Plus one-state raw KEGG-sized map"
+    },
+    {
+      "path": "08-11-2026/results/python-pathview/figures/hsa04110.python-one-state.CDKN2A-crop.png",
+      "exists": true,
+      "bytes": 201,
+      "sha256": "3fcb2d4eccfe1737db85e0b61cd26280f12548a4a49046ed5b52e29c2e0cba79",
+      "width_px": 48,
+      "height_px": 20,
+      "mode": "RGB",
+      "purpose": "Close crop used to prove the state-band order"
+    },
+    {
+      "path": "08-11-2026/results/python-pathview/figures/hsa04110.python-half-half-figure.png",
+      "exists": true,
+      "bytes": 362241,
+      "sha256": "52864fbf140e6a300ebfb7362bc3ce10f59daf536bf46ae2ea375c7e1541d55c",
+      "width_px": 2038,
+      "height_px": 1676,
+      "mode": "RGBA",
+      "purpose": "Pathview Plus half-half composed native figure"
+    },
+    {
+      "path": "08-11-2026/results/python-pathview/figures/hsa04110.python-half-half.raw.png",
+      "exists": true,
+      "bytes": 29815,
+      "sha256": "d8aee09295dfc5e192fb58fead79cfd582a2eaf8ec09f8553eb3f7ed78f5cfb1",
+      "width_px": 1039,
+      "height_px": 801,
+      "mode": "RGB",
+      "purpose": "Pathview Plus half-half raw KEGG-sized map"
+    },
+    {
+      "path": "08-11-2026/results/python-pathview/figures/hsa04110.python-half-half.CDKN2A-crop.png",
+      "exists": true,
+      "bytes": 219,
+      "sha256": "1b2b214682daaa2b2819a97aaeb8611791f87f24f54d5405519ee3637233e0f5",
+      "width_px": 48,
+      "height_px": 20,
+      "mode": "RGB",
+      "purpose": "Close crop used to prove the state-band order"
+    },
+    {
+      "path": "08-11-2026/results/python-pathview/figures/hsa04110.python-three-state-figure.png",
+      "exists": true,
+      "bytes": 362046,
+      "sha256": "3f05194e9821437c6eb4d06b80aac2542811d39e16eba6fd999c42390147da52",
+      "width_px": 2038,
+      "height_px": 1676,
+      "mode": "RGBA",
+      "purpose": "Pathview Plus three-state composed native figure"
+    },
+    {
+      "path": "08-11-2026/results/python-pathview/figures/hsa04110.python-three-state.raw.png",
+      "exists": true,
+      "bytes": 29978,
+      "sha256": "b6b67d15694607dce071ade825df2422374718233bc29dbe7d501159dfc02a11",
+      "width_px": 1039,
+      "height_px": 801,
+      "mode": "RGB",
+      "purpose": "Pathview Plus three-state raw KEGG-sized map"
+    },
+    {
+      "path": "08-11-2026/results/python-pathview/figures/hsa04110.python-three-state.CDKN2A-crop.png",
+      "exists": true,
+      "bytes": 237,
+      "sha256": "a018d4bebcbb0a8105add15ee2b24f8f92084d7240df5c0c19069ebcb3b4f6a1",
+      "width_px": 48,
+      "height_px": 20,
+      "mode": "RGB",
+      "purpose": "Close crop used to prove the state-band order"
+    },
+    {
+      "path": "08-11-2026/results/python-pathview/figures/hsa04110.python-shared-control-treatment-figure.png",
+      "exists": true,
+      "bytes": 365306,
+      "sha256": "d868ef2a76b90601f573784e3b4cc18277b8bc706f60ee940641e50136f12be9",
+      "width_px": 2038,
+      "height_px": 1676,
+      "mode": "RGBA",
+      "purpose": "Pathview Plus shared-dataset composed native figure"
+    },
+    {
+      "path": "08-11-2026/results/python-pathview/figures/hsa04110.python-shared-control-treatment.raw.png",
+      "exists": true,
+      "bytes": 30070,
+      "sha256": "dd901a0db550beb97cf0963fd9cf28cdd6670b8a5c19deb19a351eee97b4f1ef",
+      "width_px": 1039,
+      "height_px": 801,
+      "mode": "RGB",
+      "purpose": "Pathview Plus shared-dataset raw KEGG-sized map"
+    },
+    {
+      "path": "08-11-2026/results/python-pathview/tables/hsa04110.python-shared-selected-nodes.csv",
+      "exists": true,
+      "bytes": 1334,
+      "sha256": "ce5a68bb8884e28b616c661e62638f7cf5d423c35bb481c4ed8660dab7d46f99",
+      "purpose": "Python nodes selected by the exact shared dataset"
+    },
+    {
+      "path": "08-11-2026/results/python-pathview/figures/hsa04110.R-vs-Python.shared-side-by-side.png",
+      "exists": true,
+      "bytes": 52820,
+      "sha256": "575fa09b9f6840dfc1eee864cb53cc54f0caf5c1e162947fbbf37bd94b97b377",
+      "width_px": 2078,
+      "height_px": 835,
+      "mode": "RGB",
+      "purpose": "Side-by-side R and Python comparison"
+    },
+    {
+      "path": "08-11-2026/results/python-pathview/figures/hsa04110.R-vs-Python.shared-pixel-difference.png",
+      "exists": true,
+      "bytes": 13784,
+      "sha256": "73b5b1776641d357cf692946112ccc00d2a545482ccc435575701f17f71d34f8",
+      "width_px": 1039,
+      "height_px": 801,
+      "mode": "RGB",
+      "purpose": "Amplified absolute pixel difference (black means identical)"
+    },
+    {
+      "path": "08-11-2026/results/python-pathview/figures/hsa04110.python-mode-vector-png.png",
+      "exists": true,
+      "bytes": 586759,
+      "sha256": "b14d55e63178dc17f20e8ab083aae509a9952aba6c7b1adb742448de04c0526e",
+      "width_px": 3067,
+      "height_px": 2147,
+      "mode": "RGBA",
+      "purpose": "vector / png rendering check"
+    },
+    {
+      "path": "08-11-2026/results/python-pathview/figures/hsa04110.python-mode-vector-pdf.pdf",
+      "exists": true,
+      "bytes": 72864,
+      "sha256": "2479070829c0968183895f2c6058eb6076370e20b1dbdcc5d6617189a91127a2",
+      "purpose": "vector / pdf rendering check"
+    },
+    {
+      "path": "08-11-2026/results/python-pathview/figures/hsa04110.python-mode-svg-svg.svg",
+      "exists": true,
+      "bytes": 100217,
+      "sha256": "072e0120670bb16748ef3e24b2bfef1766e38eb7cadd7185e44b5ebaaf456e32",
+      "purpose": "svg / svg rendering check"
+    },
+    {
+      "path": "08-11-2026/results/python-pathview/figures/hsa04110.python-mode-graph-png.png",
+      "exists": true,
+      "bytes": 614242,
+      "sha256": "2436e2167468c6bca9bc26a58ea275dcf018e23d1ba492d276703171c50e4577",
+      "width_px": 2623,
+      "height_px": 1996,
+      "mode": "RGBA",
+      "purpose": "graph / png rendering check"
+    },
+    {
+      "path": "08-11-2026/results/python-pathview/figures/hsa04110.python-mode-auto-png.png",
+      "exists": true,
+      "bytes": 365306,
+      "sha256": "d868ef2a76b90601f573784e3b4cc18277b8bc706f60ee940641e50136f12be9",
+      "width_px": 2038,
+      "height_px": 1676,
+      "mode": "RGBA",
+      "purpose": "auto / png rendering check"
+    },
+    {
+      "path": "08-11-2026/results/python-pathview/figures/hsa00020.python-gene-compound-figure.png",
+      "exists": true,
+      "bytes": 34261,
+      "sha256": "7c3552e6743a4cfc79bf1c4adbe8d8cf931ea9b427bb14e12dd5ffd835f407a5",
+      "width_px": 1963,
+      "height_px": 1674,
+      "mode": "RGBA",
+      "purpose": "Pathview Plus gene-and-compound composed figure"
+    },
+    {
+      "path": "08-11-2026/results/python-pathview/figures/hsa00020.python-gene-compound.raw.png",
+      "exists": true,
+      "bytes": 5993,
+      "sha256": "083d7c69e7b7029ae6a07749a494256126801795d5a779ac343ac1cd681bc14d",
+      "width_px": 1000,
+      "height_px": 800,
+      "mode": "RGB",
+      "purpose": "Pathview Plus gene-and-compound raw map"
+    },
+    {
+      "path": "08-11-2026/results/python-pathview/tables/hsa00020.python-gene-nodes.csv",
+      "exists": true,
+      "bytes": 4821,
+      "sha256": "0cf392a723c1b9ffb10b9968b6a2896252c1fb7b03f91a9003fdf31f1c64cd14",
+      "purpose": "Python dual-omics gene-node table"
+    },
+    {
+      "path": "08-11-2026/results/python-pathview/tables/hsa00020.python-compound-nodes.csv",
+      "exists": true,
+      "bytes": 3278,
+      "sha256": "daca245d887f053894b1cf74654b9497660c482ed40f90c18e90ffb0a0d3756f",
+      "purpose": "Python dual-omics compound-node table"
+    },
+    {
+      "path": "08-11-2026/results/python-pathview/figures/hsa00020.python-C00022-crop.png",
+      "exists": true,
+      "bytes": 161,
+      "sha256": "53d2524feb28625b8d5f2f36370a57dac4401f321167283bfbbf285625872d72",
+      "width_px": 14,
+      "height_px": 14,
+      "mode": "RGB",
+      "purpose": "Close crop used to prove the state-band order"
+    },
+    {
+      "path": "08-11-2026/results/python-pathview/figures/hsa00020.R-vs-Python.dual-omics-side-by-side.png",
+      "exists": true,
+      "bytes": 12549,
+      "sha256": "94a5b817100e773b7f9beee573d2e61a23b79e80e5af1177cb73d89240b36c87",
+      "width_px": 2000,
+      "height_px": 834,
+      "mode": "RGB",
+      "purpose": "Side-by-side R and Python comparison"
+    },
+    {
+      "path": "08-11-2026/results/python-pathview/figures/hsa00020.python-gene-compound-vector.png",
+      "exists": true,
+      "bytes": 486042,
+      "sha256": "f1fb6c0e827fde8be6afc056e8d2107ea3b99d0954944f03833c9b32a08b07ae",
+      "width_px": 3080,
+      "height_px": 2305,
+      "mode": "RGBA",
+      "purpose": "Pathview Plus dual-omics vector map with separate keys"
+    },
+    {
+      "path": "08-11-2026/results/python-pathview/tables/P00001.python-sbgn-nodes.csv",
+      "exists": true,
+      "bytes": 19722,
+      "sha256": "6dac2d187c235779e3fb8c3105206edf9837743c31598b140eaf28c32bcd56b3",
+      "purpose": "Parsed Python SBGN glyph table"
+    },
+    {
+      "path": "08-11-2026/results/python-pathview/tables/P00001.python-sbgn-edges.csv",
+      "exists": true,
+      "bytes": 22352,
+      "sha256": "52bbe86972d5ed311b785491c7e3c977606740888796d85c68c1531ed4995f89",
+      "purpose": "Parsed Python SBGN arc table"
+    },
+    {
+      "path": "08-11-2026/results/python-pathview/figures/P00001.new.layout.python-two-state-png.png",
+      "exists": true,
+      "bytes": 509684,
+      "sha256": "7af9e4138cc5b62fc51ab9f677d4347ec440288819d9cd82e63d55730302f008",
+      "width_px": 3295,
+      "height_px": 1900,
+      "mode": "RGBA",
+      "purpose": "Mapped SBGN PNG output"
+    },
+    {
+      "path": "08-11-2026/results/python-pathview/figures/P00001.new.layout.python-two-state-pdf.pdf",
+      "exists": true,
+      "bytes": 137724,
+      "sha256": "3d39c84dddd88dbcae24cc9445b19e2d3cf5fb6dc2ccc847d3e7c30d30868335",
+      "purpose": "Mapped SBGN PDF output"
+    },
+    {
+      "path": "08-11-2026/results/python-pathview/figures/P00001.new.layout.python-two-state-svg.svg",
+      "exists": true,
+      "bytes": 521022,
+      "sha256": "7a0a8d81934f5b5e81fa4854cc64b1677aa42286ff76d70488e9c062dd21892e",
+      "purpose": "Mapped SBGN SVG output"
+    },
+    {
+      "path": "08-11-2026/results/python-pathview/tables/P00001.python-mapped-gene-glyphs.csv",
+      "exists": true,
+      "bytes": 6326,
+      "sha256": "d56cbc276bc14bbedae8090f7687e365e0c0232e3883b9d5b38f75c6d3bc8a10",
+      "purpose": "Python SBGN mapped-gene table"
+    },
+    {
+      "path": "08-11-2026/results/python-pathview/figures/P00001.python-two-state.raw.png",
+      "exists": true,
+      "bytes": 429814,
+      "sha256": "4bf39a8863d1eebe7edb3921c796e31b8f5bff64099d6ce0deae4189919f6344",
+      "width_px": 4070,
+      "height_px": 2005,
+      "mode": "RGB",
+      "purpose": "Mapped SBGN raw pathway raster"
+    },
+    {
+      "path": "08-11-2026/results/python-pathview/tables/python-batch-results.csv",
+      "exists": true,
+      "bytes": 591,
+      "sha256": "45a43042273e55f38b973bccc05c6be3ed301dcd6392c3095eae2565e73f2bd0",
+      "purpose": "Batch status table"
+    },
+    {
+      "path": "08-11-2026/results/python-pathview/figures/hsa00020.python-batch.png",
+      "exists": true,
+      "bytes": 478119,
+      "sha256": "a6fc0e95f688e237d481a5cb8727e55f5688bcf9bd6bd8afdf9b3640a2e5d064",
+      "width_px": 3067,
+      "height_px": 2167,
+      "mode": "RGBA",
+      "purpose": "Successful member of the Python batch render"
+    },
+    {
+      "path": "08-11-2026/results/python-pathview/figures/hsa04110.python-batch.png",
+      "exists": true,
+      "bytes": 586801,
+      "sha256": "6882b64bdd921d799c3f7e726c5497bd4ffa0d8f4699387432b214debd3ec531",
+      "width_px": 3067,
+      "height_px": 2147,
+      "mode": "RGBA",
+      "purpose": "Successful member of the Python batch render"
+    },
+    {
+      "path": "08-11-2026/results/python-pathview/figures/hsa04110.python-highlighted.png",
+      "exists": true,
+      "bytes": 32446,
+      "sha256": "cdf99a49aeacbcde633f0c840d0418cb2c3cf6d9704ba437ce3d6931ba49de2d",
+      "width_px": 1039,
+      "height_px": 801,
+      "mode": "RGB",
+      "purpose": "Composable highlighted Pathview Plus map"
+    },
+    {
+      "path": "08-11-2026/results/python-pathview/figures/hsa04110.python-unexpanded.png",
+      "exists": true,
+      "bytes": 586803,
+      "sha256": "5fe453142f1acb47ecdf4ae234d38ade036e956b3e8c6024e1774ea93ec8d86f",
+      "width_px": 3067,
+      "height_px": 2147,
+      "mode": "RGBA",
+      "purpose": "Unexpanded Pathview Plus vector comparison"
+    },
+    {
+      "path": "08-11-2026/results/python-pathview/figures/hsa04110.python-expanded.png",
+      "exists": true,
+      "bytes": 1369082,
+      "sha256": "9e94450073612a506cd84bc1f9f8c753b4e01f324cce1cb9bd5390dc82bf0122",
+      "width_px": 3067,
+      "height_px": 2147,
+      "mode": "RGBA",
+      "purpose": "Split-group and expanded-node Pathview Plus vector comparison"
+    },
+    {
+      "path": "08-11-2026/results/python-pathview/cli/P00001.new.layout.sbgnview.png",
+      "exists": true,
+      "bytes": 510835,
+      "sha256": "de6cfb6142e760a08024826100e83e76e7aa469d7352fb7231447d4efdbf4418",
+      "width_px": 3295,
+      "height_px": 1900,
+      "mode": "RGBA",
+      "purpose": "CLI or bundled smoke-test evidence"
+    },
+    {
+      "path": "08-11-2026/results/python-pathview/cli/hsa04110.cli-native.png",
+      "exists": true,
+      "bytes": 370386,
+      "sha256": "1d2c0190d94cc727ecf982af570eec981f4b26d5b007e8edcc90b90c0242441e",
+      "width_px": 2074,
+      "height_px": 1699,
+      "mode": "RGBA",
+      "purpose": "CLI or bundled smoke-test evidence"
+    },
+    {
+      "path": "08-11-2026/results/python-pathview/cli/parity.md",
+      "exists": true,
+      "bytes": 6675,
+      "sha256": "79812f5ac0189d401005cf990453c37705a1ba162a4dfe793b09f38a8582a3d5",
+      "purpose": "CLI or bundled smoke-test evidence"
+    },
+    {
+      "path": "08-11-2026/results/python-pathview/cli/render-stdout.txt",
+      "exists": true,
+      "bytes": 108,
+      "sha256": "02a7cb2194a46bb72d0d3b546e037549b309d97d1952c0d0e50d28e3da96a5d0",
+      "purpose": "CLI or bundled smoke-test evidence"
+    },
+    {
+      "path": "08-11-2026/results/python-pathview/cli/sbgn-stdout.txt",
+      "exists": true,
+      "bytes": 105,
+      "sha256": "6138d5eff3fc3cc35e4ee2a09b021ba5fa387c278e1692dc321b2722be3d18f1",
+      "purpose": "CLI or bundled smoke-test evidence"
+    },
+    {
+      "path": "08-11-2026/results/python-pathview/cli/smoke-test.txt",
+      "exists": true,
+      "bytes": 760,
+      "sha256": "48f593cd2a753483e60e2339d43f92b36455a0841b941731178813d3d4676e2d",
+      "purpose": "CLI or bundled smoke-test evidence"
+    },
+    {
+      "path": "08-11-2026/results/python-pathview/cli/species-human.txt",
+      "exists": true,
+      "bytes": 144,
+      "sha256": "1183035cb34e2b8a8a747f9d281b2bc027050268c7b76e3e5df0f6f0d79ef834",
+      "purpose": "CLI or bundled smoke-test evidence"
+    },
+    {
+      "path": "08-11-2026/results/python-pathview/cli/version.txt",
+      "exists": true,
+      "bytes": 20,
+      "sha256": "3833e52fdc045b2b44107fc9c83733c65284eb1aac469716a63622f0b6f42da1",
+      "purpose": "CLI or bundled smoke-test evidence"
+    },
+    {
+      "path": "08-11-2026/results/python-pathview/tables/project-declared-feature-matrix.csv",
+      "exists": true,
+      "bytes": 6787,
+      "sha256": "453469515b98a0cfc6026d2b0ab0f42e5cf16ea24a2eb4b02d7918667563c7ff",
+      "purpose": "Pathview Plus project-declared feature matrix"
+    }
+  ],
+  "observations": [
+    {
+      "id": "PY-OBS-001",
+      "status": "needs review",
+      "title": "A completely blank input row is not dropped automatically",
+      "reproduction": "A three-row Polars DataFrame with one mapped ID, one unmatched ID, and one all-null row",
+      "observed": "TypeError: '<' not supported between instances of 'str' and 'NoneType'",
+      "beginner_workaround": "Drop completely blank rows before calling pathview(), for example df.drop_nulls().",
+      "scope": "Numeric Entrez IDs without a null row work; the null row is the trigger."
+    }
+  ],
+  "environment": {
+    "python": "3.14.3",
+    "platform": "macOS-26.5.2-arm64-arm-64bit-Mach-O",
+    "pathview_plus": "3.1.0",
+    "commit": "d4d45decec56e1ebec15cf04ae62ff944851780e",
+    "source_clean": true
+  },
+  "summary": {
+    "passed": 16,
+    "failed": 0,
+    "total": 16
+  },
+  "generated_at": "2026-08-11T15:24:14-0400"
+}

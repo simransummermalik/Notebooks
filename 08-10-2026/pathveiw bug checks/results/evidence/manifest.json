@@ -1,0 +1,65 @@
+{
+  "generated_files": [
+    "01-state-splits.png",
+    "02-compound-coordinate-reproduction.png",
+    "03-highlight-hex-working.png",
+    "04-numeric-reproductions.json",
+    "manifest.json",
+    "official-hsa04110/hsa04110.graph-half-and-half.pdf",
+    "official-hsa04110/hsa04110.half-and-half.png",
+    "official-hsa04110/hsa04110.half-and-half.svg",
+    "official-hsa04110/hsa04110.one-state.png",
+    "official-hsa04110/hsa04110.png",
+    "official-hsa04110/hsa04110.three-state.png",
+    "official-hsa04110/hsa04110.xml",
+    "official-hsa04110/summary.json"
+  ],
+  "official_workflow": {
+    "status": "completed",
+    "fixture_source": "/Users/summermalik/Desktop/PATHVIEW-MARKDOWN/pygage-pathview-validation/cache/kegg",
+    "input_dimensions": [
+      1039,
+      801
+    ],
+    "parsed_nodes": 115,
+    "parsed_relations": 79,
+    "parsed_reactions": 0,
+    "png_outputs": [
+      {
+        "states": 1,
+        "file": "hsa04110.one-state.png",
+        "dimensions": [
+          835,
+          646
+        ],
+        "sha256": "6c3d7ee8ecffc44e42eb1c6d9f54a7887da7ffb38fe5c26cf00987ac3ffd5628",
+        "gene_rows": 92,
+        "non_null_gene_values": 3
+      },
+      {
+        "states": 2,
+        "file": "hsa04110.half-and-half.png",
+        "dimensions": [
+          835,
+          646
+        ],
+        "sha256": "2fa5784f237e4d8624ef3adfa4463a85241e24aa9041d28a410b8ed2f35a20b7",
+        "gene_rows": 92,
+        "non_null_gene_values": 3
+      },
+      {
+        "states": 3,
+        "file": "hsa04110.three-state.png",
+        "dimensions": [
+          835,
+          646
+        ],
+        "sha256": "2d8149f4a305cfc833d76fff037fbc31ee547a07f4d175fdff0028fae88ba0fd",
+        "gene_rows": 92,
+        "non_null_gene_values": 3
+      }
+    ],
+    "svg": "hsa04110.half-and-half.svg",
+    "pdf": "hsa04110.graph-half-and-half.pdf"
+  }
+}

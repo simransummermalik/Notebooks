@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="11" skipped="22" tests="39" time="5.134" timestamp="2026-08-11T15:07:22.066464-04:00" hostname="Summers-MacBook-Air.local"><testcase classname="tests.test_cli_and_integrations" name="test_cli_help_is_available" time="0.134"><failure message="assert '--pathway-id' in &quot;usage: pathview-plus [-h] [--version]\n                     {render,species,search,parity,legend,download,sbgn,info} ...de vector --output-format pdf\n  pathview-plus species 'Mus musculus'\n  pathview-plus parity --markdown &gt; PARITY.md\n&quot;&#10; +  where &quot;usage: pathview-plus [-h] [--version]\n                     {render,species,search,parity,legend,download,sbgn,info} ...de vector --output-format pdf\n  pathview-plus species 'Mus musculus'\n  pathview-plus parity --markdown &gt; PARITY.md\n&quot; = CompletedProcess(args=['/Users/summermalik/Desktop/PATHVIEW-MARKDOWN/08-11-2026/.venv/bin/python', '/Users/summermalik...output-format pdf\n  pathview-plus species 'Mus musculus'\n  pathview-plus parity --markdown &gt; PARITY.md\n&quot;, stderr='').stdout">@pytest.mark.cli
+    def test_cli_help_is_available() -&gt; None:
+        result = subprocess.run(
+            [sys.executable, str(CLI_SOURCE), "--help"],
+            text=True,
+            capture_output=True,
+            check=False,
+        )
+        assert result.returncode == 0
+&gt;       assert "--pathway-id" in result.stdout
+E       assert '--pathway-id' in "usage: pathview-plus [-h] [--version]\n                     {render,species,search,parity,legend,download,sbgn,info} ...de vector --output-format pdf\n  pathview-plus species 'Mus musculus'\n  pathview-plus parity --markdown &gt; PARITY.md\n"
+E        +  where "usage: pathview-plus [-h] [--version]\n                     {render,species,search,parity,legend,download,sbgn,info} ...de vector --output-format pdf\n  pathview-plus species 'Mus musculus'\n  pathview-plus parity --markdown &gt; PARITY.md\n" = CompletedProcess(args=['/Users/summermalik/Desktop/PATHVIEW-MARKDOWN/08-11-2026/.venv/bin/python', '/Users/summermalik...output-format pdf\n  pathview-plus species 'Mus musculus'\n  pathview-plus parity --markdown &gt; PARITY.md\n", stderr='').stdout
+
+../08-10-2026/pathveiw bug checks/tests/test_cli_and_integrations.py:50: AssertionError</failure></testcase><testcase classname="tests.test_cli_and_integrations" name="test_cli_rejects_invalid_output_choice" time="0.003" /><testcase classname="tests.test_cli_and_integrations" name="test_cli_requires_pathway_unless_legend" time="0.002"><failure message="AttributeError: &lt;module 'pathview_cli_audit' from '/Users/summermalik/Desktop/PATHVIEW-MARKDOWN/08-11-2026/sources/pathview-plus/bin/pathview-cli.py'&gt; has no attribute 'kegg_legend'">monkeypatch = &lt;_pytest.monkeypatch.MonkeyPatch object at 0x10a4b2570&gt;
+
+    @pytest.mark.cli
+    def test_cli_requires_pathway_unless_legend(monkeypatch: pytest.MonkeyPatch) -&gt; None:
+        cli = _load_cli_module()
+        with pytest.raises(SystemExit) as caught:
+            cli.main([])
+        assert caught.value.code == 2
+        called: list[bool] = []
+&gt;       monkeypatch.setattr(cli, "kegg_legend", lambda: called.append(True))
+E       AttributeError: &lt;module 'pathview_cli_audit' from '/Users/summermalik/Desktop/PATHVIEW-MARKDOWN/08-11-2026/sources/pathview-plus/bin/pathview-cli.py'&gt; has no attribute 'kegg_legend'
+
+../08-10-2026/pathveiw bug checks/tests/test_cli_and_integrations.py:71: AttributeError</failure></testcase><testcase classname="tests.test_cli_and_integrations" name="test_cli_gene_and_compound_tables_reach_core" time="0.001"><failure message="AttributeError: &lt;module 'pathview_cli_audit' from '/Users/summermalik/Desktop/PATHVIEW-MARKDOWN/08-11-2026/sources/pathview-plus/bin/pathview-cli.py'&gt; has no attribute 'pathview'">tmp_path = PosixPath('/private/var/folders/tv/_11343vn6153sfykk5r11dq40000gn/T/pytest-of-summermalik/pytest-53/test_cli_gene_and_compound_tab0')
+monkeypatch = &lt;_pytest.monkeypatch.MonkeyPatch object at 0x10a385e10&gt;
+
+    @pytest.mark.cli
+    def test_cli_gene_and_compound_tables_reach_core(
+        tmp_path: Path, monkeypatch: pytest.MonkeyPatch
+    ) -&gt; None:
+        cli = _load_cli_module()
+        gene_path = tmp_path / "genes.tsv"
+        compound_path = tmp_path / "compounds.tsv"
+        gene_path.write_text("id\tvalue\n1029\t1.0\n", encoding="utf-8")
+        compound_path.write_text("id\tvalue\nC00031\t-1.0\n", encoding="utf-8")
+        captured: dict = {}
+    
+        def fake_pathview(**kwargs):
+            captured.update(kwargs)
+            return {
+                "plot_data_gene": pl.DataFrame({"entry_id": ["1"], "value": [1.0]}),
+                "plot_data_cpd": pl.DataFrame({"entry_id": ["3"], "value": [-1.0]}),
+            }
+    
+&gt;       monkeypatch.setattr(cli, "pathview", fake_pathview)
+E       AttributeError: &lt;module 'pathview_cli_audit' from '/Users/summermalik/Desktop/PATHVIEW-MARKDOWN/08-11-2026/sources/pathview-plus/bin/pathview-cli.py'&gt; has no attribute 'pathview'
+
+../08-10-2026/pathveiw bug checks/tests/test_cli_and_integrations.py:94: AttributeError</failure></testcase><testcase classname="tests.test_cli_and_integrations" name="test_cli_compound_only_workflow" time="0.001"><skipped type="pytest.xfail" message="PV-BUG-052: CLI unconditionally calls gene_data.cast even for compound-only input" /></testcase><testcase classname="tests.test_cli_and_integrations" name="test_cli_simulation_can_be_combined_with_compound_data" time="0.001"><skipped type="pytest.xfail" message="PV-BUG-077: --simulate branch silently ignores a supplied --cpd-data file" /></testcase><testcase classname="tests.test_cli_and_integrations" name="test_cli_reports_non_null_mapped_count" time="0.001"><skipped type="pytest.xfail" message="PV-BUG-053: CLI reports pathway row count as 'nodes mapped', including null rows" /></testcase><testcase classname="tests.test_cli_and_integrations" name="test_upstream_feature_script_runs_as_documented" time="0.130"><skipped type="pytest.xfail" message="PV-BUG-054: upstream feature script fails when run directly because of relative imports" /></testcase><testcase classname="tests.test_cli_and_integrations" name="test_ko_species_resolution_is_offline" time="0.001"><failure message="ModuleNotFoundError: No module named 'pathview.kegg_api'">monkeypatch = &lt;_pytest.monkeypatch.MonkeyPatch object at 0x10a578aa0&gt;
+
+    @pytest.mark.integration
+    def test_ko_species_resolution_is_offline(monkeypatch: pytest.MonkeyPatch) -&gt; None:
+&gt;       kegg_module = importlib.import_module("pathview.kegg_api")
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+../08-10-2026/pathveiw bug checks/tests/test_cli_and_integrations.py:210: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/importlib/__init__.py:88: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+&lt;frozen importlib._bootstrap&gt;:1398: in _gcd_import
+    ???
+&lt;frozen importlib._bootstrap&gt;:1371: in _find_and_load
+    ???
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+name = 'pathview.kegg_api', import_ = &lt;function _gcd_import at 0x102313e20&gt;
+
+&gt;   ???
+E   ModuleNotFoundError: No module named 'pathview.kegg_api'
+
+&lt;frozen importlib._bootstrap&gt;:1335: ModuleNotFoundError</failure></testcase><testcase classname="tests.test_cli_and_integrations" name="test_species_code_exact_match_is_case_insensitive" time="0.001"><failure message="ModuleNotFoundError: No module named 'pathview.kegg_api'">monkeypatch = &lt;_pytest.monkeypatch.MonkeyPatch object at 0x10a608590&gt;
+
+    @pytest.mark.integration
+    def test_species_code_exact_match_is_case_insensitive(monkeypatch: pytest.MonkeyPatch) -&gt; None:
+&gt;       kegg_module = importlib.import_module("pathview.kegg_api")
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+../08-10-2026/pathveiw bug checks/tests/test_cli_and_integrations.py:223: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/importlib/__init__.py:88: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+&lt;frozen importlib._bootstrap&gt;:1398: in _gcd_import
+    ???
+&lt;frozen importlib._bootstrap&gt;:1371: in _find_and_load
+    ???
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+name = 'pathview.kegg_api', import_ = &lt;function _gcd_import at 0x102313e20&gt;
+
+&gt;   ???
+E   ModuleNotFoundError: No module named 'pathview.kegg_api'
+
+&lt;frozen importlib._bootstrap&gt;:1335: ModuleNotFoundError</failure></testcase><testcase classname="tests.test_cli_and_integrations" name="test_species_resolution_accepts_common_name" time="0.001"><skipped type="pytest.xfail" message="PV-BUG-055: promised common-name lookup requires exact equality with full KEGG description" /></testcase><testcase classname="tests.test_cli_and_integrations" name="test_kegg_download_builds_official_urls_and_writes_files" time="0.001"><failure message="ModuleNotFoundError: No module named 'pathview.kegg_api'">tmp_path = PosixPath('/private/var/folders/tv/_11343vn6153sfykk5r11dq40000gn/T/pytest-of-summermalik/pytest-53/test_kegg_download_builds_offi0')
+monkeypatch = &lt;_pytest.monkeypatch.MonkeyPatch object at 0x10a650460&gt;
+
+    @pytest.mark.integration
+    def test_kegg_download_builds_official_urls_and_writes_files(
+        tmp_path: Path, monkeypatch: pytest.MonkeyPatch
+    ) -&gt; None:
+&gt;       kegg_module = importlib.import_module("pathview.kegg_api")
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+../08-10-2026/pathveiw bug checks/tests/test_cli_and_integrations.py:246: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/importlib/__init__.py:88: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+&lt;frozen importlib._bootstrap&gt;:1398: in _gcd_import
+    ???
+&lt;frozen importlib._bootstrap&gt;:1371: in _find_and_load
+    ???
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+name = 'pathview.kegg_api', import_ = &lt;function _gcd_import at 0x102313e20&gt;
+
+&gt;   ???
+E   ModuleNotFoundError: No module named 'pathview.kegg_api'
+
+&lt;frozen importlib._bootstrap&gt;:1335: ModuleNotFoundError</failure></testcase><testcase classname="tests.test_cli_and_integrations" name="test_kegg_download_rejects_invalid_file_type" time="0.001"><skipped type="pytest.xfail" message="PV-BUG-056: invalid KEGG file types fail with internal KeyError instead of validation error" /></testcase><testcase classname="tests.test_cli_and_integrations" name="test_kegg_download_rejects_html_error_page_with_status_200[xml]" time="0.001"><skipped type="pytest.xfail" message="PV-BUG-057: KEGG downloader trusts any HTTP 200 body without format/content validation" /></testcase><testcase classname="tests.test_cli_and_integrations" name="test_kegg_download_rejects_html_error_page_with_status_200[png]" time="0.001"><skipped type="pytest.xfail" message="PV-BUG-057: KEGG downloader trusts any HTTP 200 body without format/content validation" /></testcase><testcase classname="tests.test_cli_and_integrations" name="test_mygene_uses_documented_batch_query_endpoint" time="0.001"><skipped type="pytest.xfail" message="PV-BUG-058: MyGene batch endpoint is /v3/query, not coded /v3/querymany" /></testcase><testcase classname="tests.test_cli_and_integrations" name="test_mygene_notfound_result_becomes_null" time="0.001"><failure message="AttributeError: module 'pathview.id_mapping' has no attribute 'requests'">monkeypatch = &lt;_pytest.monkeypatch.MonkeyPatch object at 0x10a44b2f0&gt;
+
+    @pytest.mark.integration
+    def test_mygene_notfound_result_becomes_null(monkeypatch: pytest.MonkeyPatch) -&gt; None:
+        mapping_module = importlib.import_module("pathview.id_mapping")
+        monkeypatch.setattr(
+&gt;           mapping_module.requests,
+            ^^^^^^^^^^^^^^^^^^^^^^^
+            "post",
+            lambda *args, **kwargs: FakeResponse(
+                json_data=[{"query": "missing", "notfound": True}]
+            ),
+        )
+E       AttributeError: module 'pathview.id_mapping' has no attribute 'requests'
+
+../08-10-2026/pathveiw bug checks/tests/test_cli_and_integrations.py:324: AttributeError</failure></testcase><testcase classname="tests.test_cli_and_integrations" name="test_mygene_nested_uniprot_result_extracts_accession" time="0.001"><skipped type="pytest.xfail" message="PV-BUG-059: nested MyGene fields are stringified as Python dicts instead of extracting IDs" /></testcase><testcase classname="tests.test_cli_and_integrations" name="test_mygene_returnall_response_shape_is_supported" time="0.001"><skipped type="pytest.xfail" message="PV-BUG-078: MyGene returnall dictionary response is iterated as if it were a list of hits" /></testcase><testcase classname="tests.test_cli_and_integrations" name="test_symbol_mapping_translates_kegg_species_to_mygene_species" time="0.001"><skipped type="pytest.xfail" message="PV-BUG-060: core forwards KEGG code 'hsa' where MyGene documents common names/taxonomy IDs" /></testcase><testcase classname="tests.test_cli_and_integrations" name="test_compound_mapping_uses_documented_kegg_database_name" time="0.001"><skipped type="pytest.xfail" message="PV-BUG-061: KEGG chemical conversion uses alias 'cpd' where API specifies 'compound'" /></testcase><testcase classname="tests.test_cli_and_integrations" name="test_compound_mapping_parses_controlled_kegg_response" time="0.001"><failure message="AttributeError: module 'pathview.id_mapping' has no attribute 'requests'">monkeypatch = &lt;_pytest.monkeypatch.MonkeyPatch object at 0x10a555c50&gt;
+
+    @pytest.mark.integration
+    def test_compound_mapping_parses_controlled_kegg_response(
+        monkeypatch: pytest.MonkeyPatch,
+    ) -&gt; None:
+        mapping_module = importlib.import_module("pathview.id_mapping")
+        monkeypatch.setattr(
+&gt;           mapping_module.requests,
+            ^^^^^^^^^^^^^^^^^^^^^^^
+            "get",
+            lambda *args, **kwargs: FakeResponse(text="pubchem:123\tcpd:C00031\n"),
+        )
+E       AttributeError: module 'pathview.id_mapping' has no attribute 'requests'
+
+../08-10-2026/pathveiw bug checks/tests/test_cli_and_integrations.py:421: AttributeError</failure></testcase><testcase classname="tests.test_cli_and_integrations" name="test_compound_mapping_normalizes_prefixed_input" time="0.001"><skipped type="pytest.xfail" message="PV-BUG-062: already-prefixed compound IDs receive a duplicate source prefix" /></testcase><testcase classname="tests.test_cli_and_integrations" name="test_database_detection[R-HSA-109582-reactome]" time="0.001" /><testcase classname="tests.test_cli_and_integrations" name="test_database_detection[PWY-7210-metacyc]" time="0.003" /><testcase classname="tests.test_cli_and_integrations" name="test_database_detection[P00001-panther]" time="0.001" /><testcase classname="tests.test_cli_and_integrations" name="test_database_detection[SMP0000001-smpdb]" time="0.001" /><testcase classname="tests.test_cli_and_integrations" name="test_database_detection[hsa04110-None]" time="0.001"><failure message="AssertionError: assert 'kegg' == None&#10; +  where 'kegg' = detect_database('hsa04110')">pathway_id = 'hsa04110', expected = None
+
+    @pytest.mark.integration
+    @pytest.mark.parametrize(
+        ("pathway_id", "expected"),
+        [
+            ("R-HSA-109582", "reactome"),
+            ("PWY-7210", "metacyc"),
+            ("P00001", "panther"),
+            ("SMP0000001", "smpdb"),
+            ("hsa04110", None),
+            ("unknown", None),
+        ],
+    )
+    def test_database_detection(pathway_id: str, expected: str | None) -&gt; None:
+&gt;       assert detect_database(pathway_id) == expected
+E       AssertionError: assert 'kegg' == None
+E        +  where 'kegg' = detect_database('hsa04110')
+
+../08-10-2026/pathveiw bug checks/tests/test_cli_and_integrations.py:460: AssertionError</failure></testcase><testcase classname="tests.test_cli_and_integrations" name="test_database_detection[unknown-None]" time="0.001" /><testcase classname="tests.test_cli_and_integrations" name="test_database_detection_validates_smpdb_identifier" time="0.001"><failure message="[XPASS(strict)] PV-BUG-063: SMP prefix detection accepts malformed arbitrary IDs">[XPASS(strict)] PV-BUG-063: SMP prefix detection accepts malformed arbitrary IDs</failure></testcase><testcase classname="tests.test_cli_and_integrations" name="test_database_detection_is_case_insensitive" time="0.001"><skipped type="pytest.xfail" message="PV-BUG-064: database detection is unexpectedly case-sensitive" /></testcase><testcase classname="tests.test_cli_and_integrations" name="test_reactome_downloader_writes_controlled_sbgn" time="0.001"><failure message="AttributeError: module 'pathview.databases' has no attribute 'requests'">tmp_path = PosixPath('/private/var/folders/tv/_11343vn6153sfykk5r11dq40000gn/T/pytest-of-summermalik/pytest-53/test_reactome_downloader_write0')
+monkeypatch = &lt;_pytest.monkeypatch.MonkeyPatch object at 0x10a62c9f0&gt;
+
+    @pytest.mark.integration
+    def test_reactome_downloader_writes_controlled_sbgn(
+        tmp_path: Path, monkeypatch: pytest.MonkeyPatch
+    ) -&gt; None:
+        database_module = importlib.import_module("pathview.databases")
+        sbgn = '&lt;sbgn xmlns="http://sbgn.org/libsbgn/0.2"&gt;&lt;map id="m"/&gt;&lt;/sbgn&gt;'
+        monkeypatch.setattr(
+&gt;           database_module.requests,
+            ^^^^^^^^^^^^^^^^^^^^^^^^
+            "get",
+            lambda *args, **kwargs: FakeResponse(
+                text=sbgn, headers={"content-type": "application/xml"}
+            ),
+        )
+E       AttributeError: module 'pathview.databases' has no attribute 'requests'
+
+../08-10-2026/pathveiw bug checks/tests/test_cli_and_integrations.py:482: AttributeError</failure></testcase><testcase classname="tests.test_cli_and_integrations" name="test_reactome_downloader_uses_file_exporter_route" time="0.001"><skipped type="pytest.xfail" message="PV-BUG-074: Reactome SBGN file exporter route is coded as /exporter/sbgn/{id}.sbgn instead of /exporter/event/{id}.sbgn" /></testcase><testcase classname="tests.test_cli_and_integrations" name="test_sbgn_downloaders_reject_html[download_reactome-R-HSA-109582]" time="0.001"><skipped type="pytest.xfail" message="PV-BUG-065: SBGN downloaders accept HTTP 200 HTML pages as successful pathway files" /></testcase><testcase classname="tests.test_cli_and_integrations" name="test_sbgn_downloaders_reject_html[download_metacyc-PWY-7210]" time="0.001"><skipped type="pytest.xfail" message="PV-BUG-065: SBGN downloaders accept HTTP 200 HTML pages as successful pathway files" /></testcase><testcase classname="tests.test_cli_and_integrations" name="test_reactome_listing_uses_requested_species" time="0.001"><skipped type="pytest.xfail" message="PV-BUG-066: list_reactome_pathways hardcodes Homo sapiens in URL" /></testcase><testcase classname="tests.test_cli_and_integrations" name="test_panther_downloader_returns_path" time="4.564"><skipped type="pytest.xfail" message="PV-FEATURE-005: PANTHER downloader is an explicit unimplemented stub" /></testcase><testcase classname="tests.test_cli_and_integrations" name="test_smpdb_downloader_returns_path" time="0.008"><skipped type="pytest.xfail" message="PV-FEATURE-006: SMPDB downloader is an explicit unimplemented stub" /></testcase><testcase classname="tests.test_cli_and_integrations" name="test_core_routes_reactome_ids_to_reactome_pipeline" time="0.001"><skipped type="pytest.xfail" message="PV-FEATURE-007: non-KEGG database detection/download/parsing is not wired through pathview()" /></testcase></testsuite></testsuites>

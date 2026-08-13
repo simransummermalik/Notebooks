@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="694.000000" height="455.633400"
+xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg"
+xmlns:xlink="http://www.w3.org/1999/xlink"
+>
+<metadata id="metadata7">image/svg+xml</metadata>
+
+
+
+<rect
+width="600.000000"
+height="300.000000"
+rx="20.000000"
+ry="20.000000"
+x="10.000000"
+y="80.000000"
+id="cytosol"
+style="fill:white;fill-opacity:1.000000;stroke:black;stroke-width:4.066667;stroke-opacity:1.000000" />
+
+
+<text
+x="310.000000"
+y="72.000000"
+id="cytosol"
+style="font-size:28.800000px;text-anchor:middle;font-family:Arial,Helvetica;alignment-baseline:baseline;stroke.opacity:1;dominant-baseline:baseline"
+fill="black"
+>
+cytosol</text>
+
+
+
+
+
+<ellipse
+rx="30.000000"
+ry="30.000000"
+cx="70.000000"
+cy="220.000000"
+id="glc"
+style="fill:white;fill-opacity:0.000000;stroke:black;stroke-width:0.677778;stroke-opacity:1.000000" />
+
+
+<text
+x="70.000000"
+y="230.285714"
+id="glc"
+style="font-size:30.857143px;text-anchor:middle;font-family:Arial,Helvetica;alignment-baseline:baseline;stroke.opacity:1;dominant-baseline:baseline"
+fill="black"
+>
+D-Glucose</text>
+
+
+
+<rect
+width="90.000000"
+height="45.000000"
+rx="4.500000"
+ry="4.500000"
+x="200.000000"
+y="110.000000"
+id="hk1"
+style="fill:white;fill-opacity:1.000000;stroke:black;stroke-width:0.677778;stroke-opacity:1.000000" />
+
+
+<text
+x="245.000000"
+y="140.214286"
+id="hk1"
+style="font-size:23.142857px;text-anchor:middle;font-family:Arial,Helvetica;alignment-baseline:baseline;stroke.opacity:1;dominant-baseline:baseline"
+fill="black"
+>
+HK1</text>
+
+
+<ellipse
+rx="9.000000"
+ry="9.000000"
+cx="209.000000"
+cy="119.000000"
+id="hk1_p"
+style="fill:white;fill-opacity:1.000000;stroke:black;stroke-width:0.677778;stroke-opacity:1.000000" />
+
+
+<text
+x="209.000000"
+y="122.000000"
+id="hk1_p"
+style="font-size:9.000000px;text-anchor:middle;font-family:Arial,Helvetica;alignment-baseline:baseline;stroke.opacity:1;dominant-baseline:baseline"
+fill="black"
+>
+P@residue</text>
+
+
+<rect
+width="30.000000"
+height="30.000000"
+rx="0.000000"
+ry="0.000000"
+x="220.000000"
+y="200.000000"
+id="rxn1"
+style="fill:white;fill-opacity:0.600000;stroke:black;stroke-width:0.677778;stroke-opacity:1.000000" />
+
+
+
+<text
+x="235.000000"
+y="216.000000"
+id="rxn1"
+style="font-size:3.000000px;text-anchor:middle;font-family:Arial,Helvetica;alignment-baseline:baseline;stroke.opacity:1;dominant-baseline:baseline"
+fill="black"
+>
+</text>
+
+
+
+<ellipse
+rx="30.000000"
+ry="30.000000"
+cx="430.000000"
+cy="220.000000"
+id="g6p"
+style="fill:white;fill-opacity:0.000000;stroke:black;stroke-width:0.677778;stroke-opacity:1.000000" />
+
+
+<text
+x="430.000000"
+y="230.285714"
+id="g6p"
+style="font-size:30.857143px;text-anchor:middle;font-family:Arial,Helvetica;alignment-baseline:baseline;stroke.opacity:1;dominant-baseline:baseline"
+fill="black"
+>
+G6P</text>
+
+
+<path
+d="M 403 233.076696830622 A 30 30 1 0 0 457 233.076696830622"
+id="clone"
+style="fill:black;fill-opacity:0.600000;stroke-width:1.000000;stroke:black;stroke-opacity:1.000000"
+transform = "rotate(0.000000 0.000000 0.000000)"
+/>
+
+
+
+<line
+x1="100" y1="220" x2="220" y2="215"
+id="a1_100"
+style="stroke:black;stroke-width:4.000000;stroke-opacity:1.000000" />
+
+
+<line
+x1="250" y1="215" x2="330" y2="210"
+id="a2_250"
+style="stroke:black;stroke-width:4.000000;stroke-opacity:1.000000" />
+
+
+<line
+x1="330" y1="210" x2="400" y2="220"
+id="a2_330"
+style="stroke:black;stroke-width:4.000000;stroke-opacity:1.000000" />
+
+
+<polygon
+points = "400,220 388,214 388,226"
+id="line"
+style="fill:black; stroke:black; stroke-opacity:1; stroke-width:1.000000"
+transform = "rotate(8.130102 400.000000 220.000000)"
+/>
+
+
+<line
+x1="245" y1="155" x2="235" y2="200"
+id="a3_245"
+style="stroke:black;stroke-width:4.000000;stroke-opacity:1.000000" />
+
+
+<ellipse
+rx="6.000000"
+ry="6.000000"
+cx="236.301583"
+cy="194.142878"
+id="a3_245"
+style="fill:white;fill-opacity:1.000000;stroke:black;stroke-width:1.000000;stroke-opacity:1.000000" />
+
+
+
+
+
+<line
+x1="220" y1="215" x2="220" y2="215"
+id="rxn1.in"
+style="stroke:black;stroke-width:2.000000;stroke-opacity:1.000000" />
+
+
+<line
+x1="250" y1="215" x2="250" y2="215"
+id="rxn1.out"
+style="stroke:black;stroke-width:2.000000;stroke-opacity:1.000000" />
+
+
+
+
+<text x="20.000000" y="50.000000" id="pathway.name"
+style="font-size:24.000000px;text-anchor:left;font-family:Arial,Helvetica;alignment-baseline:baseline;stroke.opacity:1;dominant-baseline:baseline"
+fill="black">
+<tspan x="20.000000"></tspan>
+<tspan x="20.000000" dy="22.000000"></tspan>
+</text>
+
+
+<text
+x="20.000000"
+y="393.555556"
+id="stamp"
+style="font-size:22.000000px;text-anchor:left;font-family:Arial,Helvetica;alignment-baseline:baseline;stroke.opacity:1;dominant-baseline:baseline"
+fill="black"
+>
+Rendered by SBGNview</text>
+
+
+</svg>

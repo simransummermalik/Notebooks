@@ -1,0 +1,1 @@
+{"gene_sets": {"GO:0000001": ["G01", "G02", "G03"], "GO:0000002": ["G02", "G03"]}, "metadata": {"source": "GO", "release": "unknown", "retrieved": "2026-08-10", "n_sets": 2, "checksum": "fd06b1fbaa783b18", "extra": {"aspect": "BP", "propagated": "True", "names_available": "True"}}}

@@ -1,0 +1,169 @@
+{
+  "component": "Pathview Plus",
+  "repository_commit": "07aee813375347bcc933ad21b4aed561dd7cd3bf",
+  "distribution_version": "2.0.2",
+  "runtime_version": "2.0.0",
+  "python": "3.14.3",
+  "checks": [
+    {
+      "name": "frozen official hsa04110 fixture",
+      "status": "pass",
+      "seconds": 0.0035,
+      "details": {
+        "source": "Bioconductor pathview 1.52.0 extdata",
+        "nodes": 115,
+        "gene_nodes": 92,
+        "png_size": [
+          1039,
+          801
+        ]
+      }
+    },
+    {
+      "name": "classical one-condition Cell Cycle PNG",
+      "status": "pass",
+      "seconds": 0.0998,
+      "details": {
+        "output": "results/pathview_python/hsa04110.classical.png",
+        "file": {
+          "format": "PNG",
+          "size": [
+            835,
+            646
+          ]
+        },
+        "gene_mapped_by_state": {
+          "Classical": 3
+        },
+        "compound_mapped_by_state": {},
+        "gene_node_rows": 92,
+        "compound_node_rows": 0
+      }
+    },
+    {
+      "name": "two-condition left/right half PNG",
+      "status": "pass",
+      "seconds": 0.081,
+      "details": {
+        "output": "results/pathview_python/hsa04110.half_half.png",
+        "file": {
+          "format": "PNG",
+          "size": [
+            835,
+            646
+          ]
+        },
+        "gene_mapped_by_state": {
+          "Classical": 3,
+          "Basal": 3
+        },
+        "compound_mapped_by_state": {},
+        "gene_node_rows": 92,
+        "compound_node_rows": 0
+      }
+    },
+    {
+      "name": "exact half-and-half pixels on CDKN2A",
+      "status": "pass",
+      "seconds": 0.0157,
+      "details": {
+        "gene": "1029 (CDKN2A)",
+        "first_column": "Classical = -2.0 = left green half",
+        "second_column": "Basal = +2.0 = right red half",
+        "pixel_counts": {
+          "left_green": 316,
+          "right_green": 0,
+          "left_red": 0,
+          "right_red": 334
+        },
+        "output": "results/pathview_python/hsa04110.half_half.raw_overlay.png"
+      }
+    },
+    {
+      "name": "three-condition Cell Cycle PNG",
+      "status": "pass",
+      "seconds": 0.081,
+      "details": {
+        "output": "results/pathview_python/hsa04110.three_state.png",
+        "file": {
+          "format": "PNG",
+          "size": [
+            835,
+            646
+          ]
+        },
+        "gene_mapped_by_state": {
+          "Control": 3,
+          "Treatment_A": 3,
+          "Treatment_B": 3
+        },
+        "compound_mapped_by_state": {},
+        "gene_node_rows": 92,
+        "compound_node_rows": 0
+      }
+    },
+    {
+      "name": "two-condition SVG vector output",
+      "status": "pass",
+      "seconds": 0.0324,
+      "details": {
+        "output": "results/pathview_python/hsa04110.half_half.svg",
+        "file": {
+          "root": "{http://www.w3.org/2000/svg}svg",
+          "bytes": 59434
+        },
+        "gene_mapped_by_state": {
+          "Classical": 3,
+          "Basal": 3
+        },
+        "compound_mapped_by_state": {},
+        "gene_node_rows": 92,
+        "compound_node_rows": 0
+      }
+    },
+    {
+      "name": "live KEGG species resolution",
+      "status": "not_run",
+      "reason": "requires live KEGG access; rerun scripts/run_pathview_validation.py --live"
+    },
+    {
+      "name": "fresh PI3K-Akt pathway",
+      "status": "not_run",
+      "reason": "requires live KEGG access; rerun scripts/run_pathview_validation.py --live"
+    },
+    {
+      "name": "fresh MAPK pathway",
+      "status": "not_run",
+      "reason": "requires live KEGG access; rerun scripts/run_pathview_validation.py --live"
+    },
+    {
+      "name": "fresh glycolysis gene+compound pathway",
+      "status": "not_run",
+      "reason": "requires live KEGG access; rerun scripts/run_pathview_validation.py --live"
+    },
+    {
+      "name": "fresh KO nitrogen-metabolism pathway",
+      "status": "not_run",
+      "reason": "requires live KEGG access; rerun scripts/run_pathview_validation.py --live"
+    },
+    {
+      "name": "graph-layout PDF output",
+      "status": "pass",
+      "seconds": 0.3978,
+      "details": {
+        "output": "results/pathview_python/hsa04110.graph.pdf",
+        "file": {
+          "header": "%PDF-",
+          "bytes": 32539
+        },
+        "gene_mapped_by_state": {
+          "Classical": 3,
+          "Basal": 3
+        },
+        "compound_mapped_by_state": {},
+        "gene_node_rows": 92,
+        "compound_node_rows": 0
+      }
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "audit_date": "2026-08-10T23:07:37.799303-04:00",
+  "platform": "macOS-26.5.2-arm64-arm-64bit-Mach-O",
+  "python": "3.14.3 (main, Feb  3 2026, 15:32:20) [Clang 17.0.0 (clang-1700.6.3.2)]",
+  "executable": "/Users/summermalik/Desktop/PATHVIEW-MARKDOWN/pygage-pathview-validation/.venv/bin/python",
+  "pathview_distribution_version": "2.0.2",
+  "pathview_runtime_version": "2.0.0",
+  "pathview_package_file": "/private/tmp/pathview-plus-main-20260810/lib/__init__.py",
+  "pathview_source_root": "/private/tmp/pathview-plus-main-20260810",
+  "pathview_commit": "07aee813375347bcc933ad21b4aed561dd7cd3bf",
+  "pathview_commit_summary": "07aee81 2026-05-25 Update README.md",
+  "pytest": "9.1.1",
+  "polars": "1.43.2",
+  "numpy": "2.5.2",
+  "matplotlib": "3.11.1",
+  "pillow": "12.3.0",
+  "network_mode": "offline; integrations use controlled mock responses"
+}

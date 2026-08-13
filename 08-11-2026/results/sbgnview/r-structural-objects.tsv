@@ -1,0 +1,9 @@
+object_class	entry_id	glyph_label	glyph_class	clone_children
+compartment.sbgn	cytosol	cytosol	compartment	0
+simple_chemical.sbgn	glc	D-Glucose	simple chemical	0
+macromolecule.sbgn	hk1	HK1	macromolecule	0
+state_variable.sbgn	hk1_p	P@residue	state variable	0
+process.sbgn	rxn1		process	0
+simple_chemical.sbgn	g6p	G6P	simple chemical	1
+port	rxn1.in			0
+port	rxn1.out			0

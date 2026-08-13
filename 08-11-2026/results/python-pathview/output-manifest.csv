@@ -1,0 +1,51 @@
+path,purpose,exists,bytes,sha256,width_px,height_px,mode
+08-11-2026/results/python-pathview/tables/hsa04110-python-nodes.csv,Parsed Python KEGG node table,True,16798,66d4dd609fb747a527bea34b8cf5143f500e80fdf9f464f08b637faa4bf5303c,,,
+08-11-2026/results/python-pathview/tables/hsa04110-python-edges.csv,Parsed Python KEGG edge table,True,3555,e6982bfe07e36ff31332ce92244133762b5ad03bfe314dd4f5a3f514ca6709a8,,,
+08-11-2026/results/python-pathview/figures/hsa04110.python-one-state-figure.png,Pathview Plus one-state composed native figure,True,361918,c3712562fcab6d591508380a7c3bab4bd93f4e6a39103cc177fe32e42de97d3d,2038,1676,RGBA
+08-11-2026/results/python-pathview/figures/hsa04110.python-one-state.raw.png,Pathview Plus one-state raw KEGG-sized map,True,29736,76b9eb64489497c03d223ccb0acd8baaa0579656df9a210f544c76b78b543633,1039,801,RGB
+08-11-2026/results/python-pathview/figures/hsa04110.python-one-state.CDKN2A-crop.png,Close crop used to prove the state-band order,True,201,3fcb2d4eccfe1737db85e0b61cd26280f12548a4a49046ed5b52e29c2e0cba79,48,20,RGB
+08-11-2026/results/python-pathview/figures/hsa04110.python-half-half-figure.png,Pathview Plus half-half composed native figure,True,362241,52864fbf140e6a300ebfb7362bc3ce10f59daf536bf46ae2ea375c7e1541d55c,2038,1676,RGBA
+08-11-2026/results/python-pathview/figures/hsa04110.python-half-half.raw.png,Pathview Plus half-half raw KEGG-sized map,True,29815,d8aee09295dfc5e192fb58fead79cfd582a2eaf8ec09f8553eb3f7ed78f5cfb1,1039,801,RGB
+08-11-2026/results/python-pathview/figures/hsa04110.python-half-half.CDKN2A-crop.png,Close crop used to prove the state-band order,True,219,1b2b214682daaa2b2819a97aaeb8611791f87f24f54d5405519ee3637233e0f5,48,20,RGB
+08-11-2026/results/python-pathview/figures/hsa04110.python-three-state-figure.png,Pathview Plus three-state composed native figure,True,362046,3f05194e9821437c6eb4d06b80aac2542811d39e16eba6fd999c42390147da52,2038,1676,RGBA
+08-11-2026/results/python-pathview/figures/hsa04110.python-three-state.raw.png,Pathview Plus three-state raw KEGG-sized map,True,29978,b6b67d15694607dce071ade825df2422374718233bc29dbe7d501159dfc02a11,1039,801,RGB
+08-11-2026/results/python-pathview/figures/hsa04110.python-three-state.CDKN2A-crop.png,Close crop used to prove the state-band order,True,237,a018d4bebcbb0a8105add15ee2b24f8f92084d7240df5c0c19069ebcb3b4f6a1,48,20,RGB
+08-11-2026/results/python-pathview/figures/hsa04110.python-shared-control-treatment-figure.png,Pathview Plus shared-dataset composed native figure,True,365306,d868ef2a76b90601f573784e3b4cc18277b8bc706f60ee940641e50136f12be9,2038,1676,RGBA
+08-11-2026/results/python-pathview/figures/hsa04110.python-shared-control-treatment.raw.png,Pathview Plus shared-dataset raw KEGG-sized map,True,30070,dd901a0db550beb97cf0963fd9cf28cdd6670b8a5c19deb19a351eee97b4f1ef,1039,801,RGB
+08-11-2026/results/python-pathview/tables/hsa04110.python-shared-selected-nodes.csv,Python nodes selected by the exact shared dataset,True,1334,ce5a68bb8884e28b616c661e62638f7cf5d423c35bb481c4ed8660dab7d46f99,,,
+08-11-2026/results/python-pathview/figures/hsa04110.R-vs-Python.shared-side-by-side.png,Side-by-side R and Python comparison,True,52820,575fa09b9f6840dfc1eee864cb53cc54f0caf5c1e162947fbbf37bd94b97b377,2078,835,RGB
+08-11-2026/results/python-pathview/figures/hsa04110.R-vs-Python.shared-pixel-difference.png,Amplified absolute pixel difference (black means identical),True,13784,73b5b1776641d357cf692946112ccc00d2a545482ccc435575701f17f71d34f8,1039,801,RGB
+08-11-2026/results/python-pathview/figures/hsa04110.python-mode-vector-png.png,vector / png rendering check,True,586759,b14d55e63178dc17f20e8ab083aae509a9952aba6c7b1adb742448de04c0526e,3067,2147,RGBA
+08-11-2026/results/python-pathview/figures/hsa04110.python-mode-vector-pdf.pdf,vector / pdf rendering check,True,72864,2479070829c0968183895f2c6058eb6076370e20b1dbdcc5d6617189a91127a2,,,
+08-11-2026/results/python-pathview/figures/hsa04110.python-mode-svg-svg.svg,svg / svg rendering check,True,100217,072e0120670bb16748ef3e24b2bfef1766e38eb7cadd7185e44b5ebaaf456e32,,,
+08-11-2026/results/python-pathview/figures/hsa04110.python-mode-graph-png.png,graph / png rendering check,True,614242,2436e2167468c6bca9bc26a58ea275dcf018e23d1ba492d276703171c50e4577,2623,1996,RGBA
+08-11-2026/results/python-pathview/figures/hsa04110.python-mode-auto-png.png,auto / png rendering check,True,365306,d868ef2a76b90601f573784e3b4cc18277b8bc706f60ee940641e50136f12be9,2038,1676,RGBA
+08-11-2026/results/python-pathview/figures/hsa00020.python-gene-compound-figure.png,Pathview Plus gene-and-compound composed figure,True,34261,7c3552e6743a4cfc79bf1c4adbe8d8cf931ea9b427bb14e12dd5ffd835f407a5,1963,1674,RGBA
+08-11-2026/results/python-pathview/figures/hsa00020.python-gene-compound.raw.png,Pathview Plus gene-and-compound raw map,True,5993,083d7c69e7b7029ae6a07749a494256126801795d5a779ac343ac1cd681bc14d,1000,800,RGB
+08-11-2026/results/python-pathview/tables/hsa00020.python-gene-nodes.csv,Python dual-omics gene-node table,True,4821,0cf392a723c1b9ffb10b9968b6a2896252c1fb7b03f91a9003fdf31f1c64cd14,,,
+08-11-2026/results/python-pathview/tables/hsa00020.python-compound-nodes.csv,Python dual-omics compound-node table,True,3278,daca245d887f053894b1cf74654b9497660c482ed40f90c18e90ffb0a0d3756f,,,
+08-11-2026/results/python-pathview/figures/hsa00020.python-C00022-crop.png,Close crop used to prove the state-band order,True,161,53d2524feb28625b8d5f2f36370a57dac4401f321167283bfbbf285625872d72,14,14,RGB
+08-11-2026/results/python-pathview/figures/hsa00020.R-vs-Python.dual-omics-side-by-side.png,Side-by-side R and Python comparison,True,12549,94a5b817100e773b7f9beee573d2e61a23b79e80e5af1177cb73d89240b36c87,2000,834,RGB
+08-11-2026/results/python-pathview/figures/hsa00020.python-gene-compound-vector.png,Pathview Plus dual-omics vector map with separate keys,True,486042,f1fb6c0e827fde8be6afc056e8d2107ea3b99d0954944f03833c9b32a08b07ae,3080,2305,RGBA
+08-11-2026/results/python-pathview/tables/P00001.python-sbgn-nodes.csv,Parsed Python SBGN glyph table,True,19722,6dac2d187c235779e3fb8c3105206edf9837743c31598b140eaf28c32bcd56b3,,,
+08-11-2026/results/python-pathview/tables/P00001.python-sbgn-edges.csv,Parsed Python SBGN arc table,True,22352,52bbe86972d5ed311b785491c7e3c977606740888796d85c68c1531ed4995f89,,,
+08-11-2026/results/python-pathview/figures/P00001.new.layout.python-two-state-png.png,Mapped SBGN PNG output,True,509684,7af9e4138cc5b62fc51ab9f677d4347ec440288819d9cd82e63d55730302f008,3295,1900,RGBA
+08-11-2026/results/python-pathview/figures/P00001.new.layout.python-two-state-pdf.pdf,Mapped SBGN PDF output,True,137724,3d39c84dddd88dbcae24cc9445b19e2d3cf5fb6dc2ccc847d3e7c30d30868335,,,
+08-11-2026/results/python-pathview/figures/P00001.new.layout.python-two-state-svg.svg,Mapped SBGN SVG output,True,521022,7a0a8d81934f5b5e81fa4854cc64b1677aa42286ff76d70488e9c062dd21892e,,,
+08-11-2026/results/python-pathview/tables/P00001.python-mapped-gene-glyphs.csv,Python SBGN mapped-gene table,True,6326,d56cbc276bc14bbedae8090f7687e365e0c0232e3883b9d5b38f75c6d3bc8a10,,,
+08-11-2026/results/python-pathview/figures/P00001.python-two-state.raw.png,Mapped SBGN raw pathway raster,True,429814,4bf39a8863d1eebe7edb3921c796e31b8f5bff64099d6ce0deae4189919f6344,4070,2005,RGB
+08-11-2026/results/python-pathview/tables/python-batch-results.csv,Batch status table,True,591,45a43042273e55f38b973bccc05c6be3ed301dcd6392c3095eae2565e73f2bd0,,,
+08-11-2026/results/python-pathview/figures/hsa00020.python-batch.png,Successful member of the Python batch render,True,478119,a6fc0e95f688e237d481a5cb8727e55f5688bcf9bd6bd8afdf9b3640a2e5d064,3067,2167,RGBA
+08-11-2026/results/python-pathview/figures/hsa04110.python-batch.png,Successful member of the Python batch render,True,586801,6882b64bdd921d799c3f7e726c5497bd4ffa0d8f4699387432b214debd3ec531,3067,2147,RGBA
+08-11-2026/results/python-pathview/figures/hsa04110.python-highlighted.png,Composable highlighted Pathview Plus map,True,32446,cdf99a49aeacbcde633f0c840d0418cb2c3cf6d9704ba437ce3d6931ba49de2d,1039,801,RGB
+08-11-2026/results/python-pathview/figures/hsa04110.python-unexpanded.png,Unexpanded Pathview Plus vector comparison,True,586803,5fe453142f1acb47ecdf4ae234d38ade036e956b3e8c6024e1774ea93ec8d86f,3067,2147,RGBA
+08-11-2026/results/python-pathview/figures/hsa04110.python-expanded.png,Split-group and expanded-node Pathview Plus vector comparison,True,1369082,9e94450073612a506cd84bc1f9f8c753b4e01f324cce1cb9bd5390dc82bf0122,3067,2147,RGBA
+08-11-2026/results/python-pathview/cli/P00001.new.layout.sbgnview.png,CLI or bundled smoke-test evidence,True,510835,de6cfb6142e760a08024826100e83e76e7aa469d7352fb7231447d4efdbf4418,3295,1900,RGBA
+08-11-2026/results/python-pathview/cli/hsa04110.cli-native.png,CLI or bundled smoke-test evidence,True,370386,1d2c0190d94cc727ecf982af570eec981f4b26d5b007e8edcc90b90c0242441e,2074,1699,RGBA
+08-11-2026/results/python-pathview/cli/parity.md,CLI or bundled smoke-test evidence,True,6675,79812f5ac0189d401005cf990453c37705a1ba162a4dfe793b09f38a8582a3d5,,,
+08-11-2026/results/python-pathview/cli/render-stdout.txt,CLI or bundled smoke-test evidence,True,108,02a7cb2194a46bb72d0d3b546e037549b309d97d1952c0d0e50d28e3da96a5d0,,,
+08-11-2026/results/python-pathview/cli/sbgn-stdout.txt,CLI or bundled smoke-test evidence,True,105,6138d5eff3fc3cc35e4ee2a09b021ba5fa387c278e1692dc321b2722be3d18f1,,,
+08-11-2026/results/python-pathview/cli/smoke-test.txt,CLI or bundled smoke-test evidence,True,760,48f593cd2a753483e60e2339d43f92b36455a0841b941731178813d3d4676e2d,,,
+08-11-2026/results/python-pathview/cli/species-human.txt,CLI or bundled smoke-test evidence,True,144,1183035cb34e2b8a8a747f9d281b2bc027050268c7b76e3e5df0f6f0d79ef834,,,
+08-11-2026/results/python-pathview/cli/version.txt,CLI or bundled smoke-test evidence,True,20,3833e52fdc045b2b44107fc9c83733c65284eb1aac469716a63622f0b6f42da1,,,
+08-11-2026/results/python-pathview/tables/project-declared-feature-matrix.csv,Pathview Plus project-declared feature matrix,True,6787,453469515b98a0cfc6026d2b0ab0f42e5cf16ea24a2eb4b02d7918667563c7ff,,,

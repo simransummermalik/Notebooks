@@ -1,0 +1,50 @@
+{
+  "versions": {
+    "pathview_plus": "3.1.0",
+    "pathview": "1.47.1",
+    "SBGNview": "1.5.1"
+  },
+  "feature_matrix": {
+    "total_features": 74,
+    "full": 73,
+    "partial": 0,
+    "none": 0,
+    "n/a": 1,
+    "vs_pathview_R": "32/33",
+    "vs_pathview_R_pct": 97.0,
+    "vs_SBGNview_R": "53/54",
+    "vs_SBGNview_R_pct": 98.1,
+    "beyond_both": 11,
+    "gaps": []
+  },
+  "api_coverage": {
+    "pathview": {
+      "covered": 22,
+      "applicable": 22,
+      "pct": 100.0
+    },
+    "SBGNview": {
+      "covered": 13,
+      "applicable": 13,
+      "pct": 100.0
+    }
+  },
+  "argument_coverage": {
+    "pathview": {
+      "covered": 24,
+      "applicable": 24,
+      "pct": 100.0
+    },
+    "SBGNview": {
+      "covered": 19,
+      "applicable": 19,
+      "pct": 100.0
+    }
+  },
+  "r_exports": {
+    "pathview": 22,
+    "SBGNview": 14
+  },
+  "pathview_plus_exports": 158,
+  "method": "I read the R package source files and compared their exports and arguments with the installed Python API. R was not run, so this is not a runtime or image benchmark."
+}

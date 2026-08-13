@@ -1,0 +1,155 @@
+comparison,r_package,r_version,r_export,pathview_plus,status,note,r_function,r_argument,pathview_plus_argument,category,feature,pathview_R,SBGNview_R,api
+api,pathview,1.47.1,col.key,draw_color_key,covered,pathview.draw_color_key,,,,,,,,
+api,pathview,1.47.1,combineKEGGnodes,split_groups,covered,pathview.split_groups,,,,,,,,
+api,pathview,1.47.1,cpd2kegg,cpd_id_map,covered,pathview.cpd_id_map,,,,,,,,
+api,pathview,1.47.1,cpdidmap,cpd_id_map,covered,pathview.cpd_id_map,,,,,,,,
+api,pathview,1.47.1,cpdkegg2name,compound_name,covered,pathview.compound_name,,,,,,,,
+api,pathview,1.47.1,cpdname2kegg,cpd_name_to_kegg,covered,pathview.cpd_name_to_kegg,,,,,,,,
+api,pathview,1.47.1,download.kegg,download_kegg,covered,pathview.download_kegg,,,,,,,,
+api,pathview,1.47.1,eg2id,eg2id,covered,pathview.eg2id,,,,,,,,
+api,pathview,1.47.1,geneannot.map,eg2id,covered,pathview.eg2id,,,,,,,,
+api,pathview,1.47.1,id2eg,id2eg,covered,pathview.id2eg,,,,,,,,
+api,pathview,1.47.1,kegg.species.code,kegg_species_code,covered,pathview.kegg_species_code,,,,,,,,
+api,pathview,1.47.1,keggview.graph,keggview_graph,covered,pathview.keggview_graph,,,,,,,,
+api,pathview,1.47.1,keggview.native,keggview_native,covered,pathview.keggview_native,,,,,,,,
+api,pathview,1.47.1,mol.sum,mol_sum,covered,pathview.mol_sum,,,,,,,,
+api,pathview,1.47.1,node.color,node_color,covered,pathview.node_color,,,,,,,,
+api,pathview,1.47.1,node.info,node_info,covered,pathview.node_info,,,,,,,,
+api,pathview,1.47.1,node.map,node_map,covered,pathview.node_map,,,,,,,,
+api,pathview,1.47.1,pathview,pathview,covered,pathview.pathview,,,,,,,,
+api,pathview,1.47.1,reaction2edge,pathway_edges,covered,pathview.pathway_edges,,,,,,,,
+api,pathview,1.47.1,sim.mol.data,sim_mol_data,covered,pathview.sim_mol_data,,,,,,,,
+api,pathview,1.47.1,strfit,strfit,covered,pathview.strfit,,,,,,,,
+api,pathview,1.47.1,wordwrap,wordwrap,covered,pathview.wordwrap,,,,,,,,
+api,SBGNview,1.5.1,SBGNview,sbgnview,covered,pathview.sbgnview,,,,,,,,
+api,SBGNview,1.5.1,changeDataId,map_ids_to_sbgn,covered,pathview.map_ids_to_sbgn,,,,,,,,
+api,SBGNview,1.5.1,changeIds,map_ids_to_sbgn,covered,pathview.map_ids_to_sbgn,,,,,,,,
+api,SBGNview,1.5.1,downloadSbgnFile,download_sbgn,covered,pathview.download_sbgn,,,,,,,,
+api,SBGNview,1.5.1,findPathways,list_sbgn_pathways,covered,pathview.list_sbgn_pathways,,,,,,,,
+api,SBGNview,1.5.1,highlightArcs,highlight_edges,covered,pathview.highlight_edges,,,,,,,,
+api,SBGNview,1.5.1,highlightNodes,highlight_nodes,covered,pathview.highlight_nodes,,,,,,,,
+api,SBGNview,1.5.1,highlightPath,highlight_path,covered,pathview.highlight_path,,,,,,,,
+api,SBGNview,1.5.1,loadMappingTable,sbgn_xref,covered,pathview.sbgn_xref,,,,,,,,
+api,SBGNview,1.5.1,outputFile,sbgnview,covered,pathview.sbgnview,,,,,,,,
+api,SBGNview,1.5.1,outputFile<-,,n/a,R replacement function; Python uses plain attribute assignment,,,,,,,,
+api,SBGNview,1.5.1,renderSbgn,keggview_vector,covered,pathview.keggview_vector,,,,,,,,
+api,SBGNview,1.5.1,sbgn.gsets,list_sbgn_pathways,covered,pathview.list_sbgn_pathways,,,,,,,,
+api,SBGNview,1.5.1,sbgnNodes,sbgn_to_df,covered,pathview.sbgn_to_df,,,,,,,,
+argument,pathview,1.47.1,,,covered,,pathview,gene.data,gene_data,,,,,
+argument,pathview,1.47.1,,,covered,,pathview,cpd.data,cpd_data,,,,,
+argument,pathview,1.47.1,,,covered,,pathview,pathway.id,pathway_id,,,,,
+argument,pathview,1.47.1,,,covered,,pathview,species,species,,,,,
+argument,pathview,1.47.1,,,covered,,pathview,kegg.dir,kegg_dir,,,,,
+argument,pathview,1.47.1,,,covered,,pathview,cpd.idtype,cpd_idtype,,,,,
+argument,pathview,1.47.1,,,covered,,pathview,gene.idtype,gene_idtype,,,,,
+argument,pathview,1.47.1,,,n/a,,pathview,gene.annotpkg,names a Bioconductor OrgDb package; the conversions it provides are covered by id2eg/eg2id,,,,,
+argument,pathview,1.47.1,,,covered,,pathview,min.nnodes,min_nnodes,,,,,
+argument,pathview,1.47.1,,,covered,,pathview,kegg.native,render_mode,,,,,
+argument,pathview,1.47.1,,,covered,,pathview,map.null,map_null,,,,,
+argument,pathview,1.47.1,,,covered,,pathview,expand.node,expand_node,,,,,
+argument,pathview,1.47.1,,,covered,,pathview,split.group,split_group,,,,,
+argument,pathview,1.47.1,,,covered,,pathview,map.symbol,map_symbol,,,,,
+argument,pathview,1.47.1,,,covered,,pathview,map.cpdname,map_cpd_name,,,,,
+argument,pathview,1.47.1,,,covered,,pathview,node.sum,node_sum,,,,,
+argument,pathview,1.47.1,,,covered,,pathview,discrete,discrete,,,,,
+argument,pathview,1.47.1,,,covered,,pathview,limit,limit,,,,,
+argument,pathview,1.47.1,,,covered,,pathview,bins,bins,,,,,
+argument,pathview,1.47.1,,,covered,,pathview,both.dirs,both_dirs,,,,,
+argument,pathview,1.47.1,,,covered,,pathview,trans.fun,trans_fun,,,,,
+argument,pathview,1.47.1,,,covered,,pathview,low,gene_color,,,,,
+argument,pathview,1.47.1,,,covered,,pathview,mid,gene_color,,,,,
+argument,pathview,1.47.1,,,covered,,pathview,high,gene_color,,,,,
+argument,pathview,1.47.1,,,covered,,pathview,na.col,na_col,,,,,
+argument,SBGNview,1.5.1,,,covered,,SBGNview,gene.data,gene_data,,,,,
+argument,SBGNview,1.5.1,,,covered,,SBGNview,cpd.data,cpd_data,,,,,
+argument,SBGNview,1.5.1,,,covered,,SBGNview,simulate.data,gene_data,,,,,
+argument,SBGNview,1.5.1,,,covered,,SBGNview,input.sbgn,pathway_id,,,,,
+argument,SBGNview,1.5.1,,,covered,,SBGNview,sbgn.dir,sbgn_dir,,,,,
+argument,SBGNview,1.5.1,,,covered,,SBGNview,output.file,out_dir,,,,,
+argument,SBGNview,1.5.1,,,covered,,SBGNview,node.sum,node_sum,,,,,
+argument,SBGNview,1.5.1,,,covered,,SBGNview,gene.id.type,gene_idtype,,,,,
+argument,SBGNview,1.5.1,,,covered,,SBGNview,cpd.id.type,cpd_idtype,,,,,
+argument,SBGNview,1.5.1,,,covered,,SBGNview,sbgn.id.attr,pathway_id,,,,,
+argument,SBGNview,1.5.1,,,covered,,SBGNview,sbgn.gene.id.type,gene_idtype,,,,,
+argument,SBGNview,1.5.1,,,covered,,SBGNview,sbgn.cpd.id.type,cpd_idtype,,,,,
+argument,SBGNview,1.5.1,,,covered,,SBGNview,id.mapping.gene,id_mapping_gene,,,,,
+argument,SBGNview,1.5.1,,,covered,,SBGNview,id.mapping.cpd,id_mapping_cpd,,,,,
+argument,SBGNview,1.5.1,,,covered,,SBGNview,org,species,,,,,
+argument,SBGNview,1.5.1,,,covered,,SBGNview,output.formats,output_format,,,,,
+argument,SBGNview,1.5.1,,,covered,,SBGNview,pathway.name,title,,,,,
+argument,SBGNview,1.5.1,,,covered,,SBGNview,show.pathway.name,title,,,,,
+argument,SBGNview,1.5.1,,,covered,,SBGNview,SBGNview.data.folder,sbgn_dir,,,,,
+feature,,,,full,,"10,718 organisms bundled",,,,Species,KEGG organism code lookup,full,full,get_species_code
+feature,,,,full,,R pathview bundles korg but falls back to a network fetch for misses,,,,Species,Lookup works offline,partial,none,get_species_code
+feature,,,,full,,,,,,Species,Common/scientific name and taxid input,full,partial,get_species_code
+feature,,,,full,,,,,,Species,Fuzzy match with suggestions,none,none,search_organisms
+feature,,,,full,,,,,,Species,Refresh organism table from KEGG,full,n/a,refresh_organism_table
+feature,,,,full,,,,,,Input,KEGG KGML parsing,full,partial,parse_kgml
+feature,,,,full,,,,,,Input,SBGN-ML parsing,none,full,parse_sbgn
+feature,,,,full,,Reactome exports declare a default namespace,,,,Input,SBGN namespaced documents,n/a,full,parse_sbgn
+feature,,,,full,,,,,,Input,SBGN arc port resolution,n/a,full,arc_resolution_report
+feature,,,,full,,,,,,Input,SBGN state variables / clone markers,n/a,full,SBGNGlyph
+feature,,,,full,,,,,,Input,KGML reaction -> edge synthesis,full,n/a,pathway_edges
+feature,,,,full,,R's split.group; expansion is recorded so a figure's provenance can be audited,,,,Input,Group/complex node splitting,full,n/a,split_groups
+feature,,,,full,,R's expand.node; sub-nodes tile the original box exactly and edges are remapped onto them,,,,Input,Multi-identifier node expansion,full,n/a,expand_nodes
+feature,,,,full,,,,,,ID mapping,Entrez / KEGG gene ids,full,full,node_map
+feature,,,,full,,via MyGene.info instead of Bioconductor OrgDb,,,,ID mapping,"Symbol, Ensembl, UniProt, RefSeq",full,full,id2eg
+feature,,,,full,,"MyGene.info covers what OrgDb provides, with no R dependency",,,,ID mapping,Symbol/Ensembl/UniProt conversion without R,n/a,n/a,id2eg
+feature,,,,n/a,,An R library cannot be imported from Python; the conversions it provides are covered by id2eg/eg2id and the bundled crosswalks,,,,ID mapping,Bioconductor OrgDb packages themselves,full,full,
+feature,,,,full,,"770k pairs bundled: ChEBI, KEGG, Entrez, KO, symbol, compound name, Pathway Commons",,,,ID mapping,SBGN glyph-id crosswalks,n/a,full,map_ids_to_sbgn
+feature,,,,full,,Breadth-first search over the crosswalk graph,,,,ID mapping,Multi-hop identifier routing,none,none,id_route
+feature,,,,full,,"14k pairs bundled, offline",,,,ID mapping,"Compound cross-references (CAS, ChEBI, HMDB, ...)",full,full,cpd_id_map
+feature,,,,full,,includes conjugate-base derivation,,,,ID mapping,Compound name -> KEGG accession,full,full,cpd_name_to_kegg
+feature,,,,full,,,,,,ID mapping,Batched / cached lookups,partial,partial,cpd_id_map
+feature,,,,full,,8 methods incl. max_abs and seeded random,,,,ID mapping,Multi-probe aggregation,full,full,mol_sum
+feature,,,,full,,,,,,Colour,Diverging scale with midpoint,full,full,ColorScale
+feature,,,,full,,,,,,Colour,R colorpanel2-identical binning,full,n/a,colorpanel2
+feature,,,,full,,,,,,Colour,Discrete levels,full,partial,ColorScale
+feature,,,,full,,,,,,Colour,Independent gene and compound scales,full,full,gene_scale
+feature,,,,full,,R pathview draws a single key; SBGNview draws separate legends per file,,,,Colour,Two colour keys on one figure,partial,partial,draw_dual_key
+feature,,,,full,,,,,,Colour,Named colour-blind-safe palettes,none,none,list_palettes
+feature,,,,full,,,,,,Colour,Value transform before binning,full,full,ColorScale
+feature,,,,full,,one column per condition,,,,Colour,Multi-condition node slicing,full,full,node_color
+feature,,,,full,,,,,,Render,Overlay on KEGG PNG,full,n/a,keggview_native
+feature,,,,full,,R pathview's graph mode uses Rgraphviz; this draws KEGG's own layout,,,,Render,Vector map drawn from coordinates,partial,full,keggview_vector
+feature,,,,full,,,,,,Render,Standalone SVG output,none,full,keggview_svg
+feature,,,,full,,,,,,Render,PDF output,full,full,pathview
+feature,,,,full,,,,,,Render,PNG output,full,full,pathview
+feature,,,,full,,,,,,Render,Graph/network view with edges,full,n/a,keggview_graph
+feature,,,,full,,17 subtypes from KEGG's own table,,,,Render,KEGG edge subtype styling,full,n/a,EDGE_STYLE
+feature,,,,full,,,,,,Render,Spline / Bezier edge routing,none,full,route_edge_spline
+feature,,,,full,,Nested compartments shaded largest-first with decreasing opacity and labelled,,,,Render,Compartment shading,none,full,draw_compartments
+feature,,,,full,,,,,,Render,Renders with no network access,none,none,keggview_vector
+feature,,,,full,,,,,,Render,Themes,none,partial,THEMES
+feature,,,,full,,,,,,Render,Element legend,full,partial,kegg_legend
+feature,,,,full,,,,,,Post,Composable modification (result + layer),none,full,PathwayResult
+feature,,,,full,,,,,,Post,Highlight nodes,none,full,highlight_nodes
+feature,,,,full,,,,,,Post,Highlight edges/arcs,none,full,highlight_edges
+feature,,,,full,,,,,,Post,Highlight a path,none,full,highlight_path
+feature,,,,full,,,,,,Post,Change node labels,none,full,change_labels
+feature,,,,full,,,,,,Post,Free-text annotation,none,partial,annotate
+feature,,,,full,,,,,,Sources,KEGG download,full,full,download_kegg
+feature,,,,full,,,,,,Sources,Reactome SBGN download,none,full,download_reactome
+feature,,,,full,,"5,206 pathways indexed in the wheel; files fetched on demand and cached, so nothing unused is downloaded",,,,Sources,Pre-generated SBGN collection,n/a,full,list_sbgn_pathways
+feature,,,,full,,The index ships in the wheel; SBGNview.data must be installed in full (69 MB) to list its contents,,,,Sources,Collection browsable offline,n/a,partial,sbgn_collection_info
+feature,,,,full,,152 pathways via the pre-generated collection,,,,Sources,PANTHER download,n/a,full,download_panther
+feature,,,,full,,"2,518 pathways; BioCyc's own API needs a subscription",,,,Sources,MetaCyc download,n/a,full,download_metacyc
+feature,,,,full,,725 pathways; SMPDB publishes only bulk archives,,,,Sources,SMPDB download,n/a,full,download_smpdb
+feature,,,,full,,62 crop-plant metabolic pathways,,,,Sources,MetaCrop download,n/a,full,download_metacrop
+feature,,,,full,,A hand-exported file parses identically to a downloaded one; there is no second code path,,,,Sources,Local SBGN files from any source,n/a,full,parse_sbgn
+feature,,,,full,,,,,,Sources,Pathway search by name,none,full,find_reactome_pathways
+feature,,,,full,,sbgnview() is to SBGN what pathview() is to KEGG,,,,SBGN,Top-level SBGN render entry point,n/a,full,sbgnview
+feature,,,,full,,Tries every identifier system the glyphs might use and keeps whichever lands on the map,,,,SBGN,Omics overlay on SBGN glyphs,none,full,sbgn_node_map
+feature,,,,full,,,,,,SBGN,SBGN batch rendering,n/a,full,sbgnview_batch
+feature,,,,full,,,,,,SBGN,Arc-class styling,n/a,full,EDGE_STYLE
+feature,,,,full,,,,,,SBGN,Process / operator glyph rendering,n/a,full,sbgn_to_df
+feature,,,,full,,The canvas is widened so shading is never clipped,,,,SBGN,Compartment-aware layout extent,n/a,full,sbgn_compartments
+feature,,,,full,,,,,,Engineering,Typed errors,none,none,PathviewError
+feature,,,,full,,,,,,Engineering,Mapping diagnostics returned,partial,partial,PathwayResult
+feature,,,,full,,R caches KGML files only,,,,Engineering,Disk cache with TTL,partial,partial,cache_dir
+feature,,,,full,,,,,,Engineering,Retry with backoff,none,none,clear_cache
+feature,,,,full,,,,,,Engineering,Enforced offline mode,none,none,set_offline
+feature,,,,full,,,,,,Engineering,Command-line interface,none,none,cli
+feature,,,,full,,,,,,Engineering,Graph metrics,none,none,pathway_metrics
+feature,,,,full,,"A failed pathway is recorded rather than aborting the batch, and modifiers broadcast across the set",,,,Engineering,Multi-pathway batch in one call,full,full,PathwayResultSet
+feature,,,,full,,"XDR reader covering the vectors and lists reference data is published as; factors, closures and S4 raise rather than guess",,,,Engineering,Reads R .RData without R,n/a,n/a,read_rdata

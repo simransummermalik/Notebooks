@@ -1,0 +1,12 @@
+format-version: 1.2
+
+[Term]
+id: GO:0000001
+name: parent process
+namespace: biological_process
+
+[Term]
+id: GO:0000002
+name: child process
+namespace: biological_process
+is_a: GO:0000001 ! parent process

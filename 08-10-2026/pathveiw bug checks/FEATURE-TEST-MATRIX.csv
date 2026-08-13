@@ -1,0 +1,147 @@
+Area,Behavior,Result,Evidence,Finding
+Packaging,Package imports,PASS,All declared exports imported,
+Packaging,All 53 public exports,PASS,Parametrized public API test,
+Packaging,All Python modules compile,PASS,compileall assertion,
+Packaging,Distribution and runtime version agree,KNOWN_BUG,2.0.2 versus 2.0.0,PV-BUG-001
+Core,Reject missing gene and compound data,PASS,ValueError assertion,
+Core,Cached synthetic KEGG PNG,PASS,Valid PNG generated,
+Core,Cached official hsa04110 one state,PASS,results/evidence/official-hsa04110/hsa04110.one-state.png,
+Core,Cached official hsa04110 two states,PASS,results/evidence/official-hsa04110/hsa04110.half-and-half.png,
+Core,Cached official hsa04110 three states,PASS,results/evidence/official-hsa04110/hsa04110.three-state.png,
+Core,Cached path works without species network,KNOWN_BUG,Network-disabled cached test,PV-BUG-004
+Core,Partial nested color dictionaries,KNOWN_BUG,Partial gene-only config test,PV-BUG-005
+Core,map_null false filters unmatched nodes,KNOWN_BUG,One-match controlled table,PV-BUG-006
+Core,min_nnodes counts input matches,KNOWN_BUG,No-match controlled table,PV-BUG-007
+Core,Returns highlightable PathwayResult,KNOWN_BUG,Type assertion,PV-BUG-008
+Core,Normal result retains kegg_names,KNOWN_BUG,Column assertion,PV-BUG-009
+Core,Conflicting pathway/species prefix rejected,KNOWN_BUG,mmu ID with hsa species,PV-BUG-010
+Core,Empty KGML skips cleanly,KNOWN_BUG,Valid empty pathway fixture,PV-BUG-011
+Core,Invalid node_sum rejected,KNOWN_BUG,Unknown method through core,PV-BUG-076
+Core,SVG requires only XML,KNOWN_BUG,XML-only cached SVG test,PV-BUG-067
+Mapping,sum aggregation,PASS,Controlled -1 plus 3,
+Mapping,mean aggregation,PASS,Controlled -1 and 3,
+Mapping,median aggregation,PASS,Controlled -1 and 3,
+Mapping,max aggregation,PASS,Controlled -1 and 3,
+Mapping,max_abs aggregation,KNOWN_BUG,Current Polars scalar UDF,PV-BUG-012
+Mapping,random aggregation,KNOWN_BUG,Current Polars scalar UDF,PV-BUG-012
+Mapping,No ID matches produces clear error,PASS,Controlled disjoint IDs,
+Mapping,Mixed numeric mapping IDs,KNOWN_BUG,Join schema assertion,PV-BUG-013
+Mapping,Null mapping targets removed,KNOWN_BUG,Null target fixture,PV-BUG-014
+Mapping,Duplicate mapping does not double count,KNOWN_BUG,Duplicate pair fixture,PV-BUG-015
+Mapping,One source to two targets,PASS,One-to-many fixture,
+Mapping,Multi-gene node aggregation,PASS,Two genes on one node,
+Mapping,Layout-only mapping,PASS,kegg_names plus NaN placeholder,
+Mapping,Prefixed KEGG IDs map,KNOWN_BUG,hsa prefix controlled test,PV-BUG-016
+Simulation,Seeded compound data repeatable,PASS,Two equal seeded frames,
+Simulation,Discrete simulation returns IDs,PASS,Five controlled IDs,
+Simulation,Negative experiment count rejected,KNOWN_BUG,n_exp negative,PV-BUG-017
+Colors,Continuous clipping and null color,PASS,Low midpoint high and null assertions,
+Colors,Asymmetric limits,PASS,Tuple bounds assertion,
+Colors,One-direction limits,PASS,both_dirs false assertion,
+Colors,Transformation before mapping,PASS,Absolute value assertion,
+Colors,Infinity clipping,PASS,Positive and negative infinity,
+Colors,Multiple state color columns,PASS,A B and C output columns,
+Colors,Decimal strings treated as decimals,KNOWN_BUG,String 10 differs from numeric 10,PV-BUG-018
+Colors,Discrete mode changes behavior,FEATURE_GAP,True and false are identical,PV-FEATURE-001
+Colors,Nonpositive bins rejected,PASS,Zero and negative bins,
+KGML,Nodes relations reactions groups,PASS,Controlled KGML fixture,
+KGML,Missing graphics represented as null,PASS,Missing graphics fixture,
+KGML,Malformed XML rejected,PASS,ElementTree ParseError,
+KGML,Namespaced KGML parsed,KNOWN_BUG,Namespace-qualified fixture,PV-BUG-019
+KGML,Duplicate entry IDs rejected,KNOWN_BUG,Duplicate fixture,PV-BUG-020
+KGML,Line coordinates preserved,KNOWN_BUG,coords fixture,PV-BUG-021
+KGML,Empty table has stable schema,KNOWN_BUG,Empty KGML pathway,PV-BUG-022
+SBGN,Unnamespaced nodes arcs and compartments,PASS,Controlled SBGN fixture,
+SBGN,Standard namespaced file parsed,KNOWN_BUG,SBGN 0.2 namespace fixture,PV-BUG-023
+SBGN,Namespace version discovered,KNOWN_BUG,SBGN 0.3 namespace fixture,PV-BUG-024
+SBGN,State glyph stays metadata,KNOWN_BUG,Nested state fixture,PV-BUG-025
+SBGN,Clone marker parsed,KNOWN_BUG,Standard clone child,PV-BUG-026
+SBGN,Unit of information parsed,FEATURE_GAP,Public field remains empty,PV-FEATURE-002
+SBGN,Arc control points retained,KNOWN_BUG,Nested point fixture,PV-BUG-027
+SBGN,Empty conversion has stable schema,KNOWN_BUG,Empty SBGN fixture,PV-BUG-028
+PNG,Gene one-state fill,PASS,Exact pixel assertions,
+PNG,Gene two-state left and right,PASS,Exact pixel assertions,
+PNG,Gene three-state ordered slices,PASS,Exact pixel assertions,
+PNG,Black gene text and borders preserved,PASS,Exact black pixel assertion,
+PNG,Transparent gene slice preserved,PASS,Original pixel assertion,
+PNG,Compound two-state split at center,PASS,Controlled center y=50,
+PNG,Gene and compound coordinate parity,KNOWN_BUG,Noncentral same-y fixture,PV-BUG-029
+PNG,Compound width is diameter,KNOWN_BUG,Controlled width 10,PV-BUG-030
+PNG,Compound height respected,KNOWN_BUG,Elliptical fixture,PV-BUG-031
+PNG,Named renderer colors accepted,KNOWN_BUG,red input,PV-BUG-032
+PNG,Short CSS hex accepted,KNOWN_BUG,#F00 input,PV-BUG-033
+PNG,Missing background has clear error,PASS,FileNotFoundError assertion,
+PNG,Native dimensions preserved,KNOWN_BUG,120x100 and official 1039x801 fixtures,PV-BUG-034
+PNG,Repeat rendering deterministic,PASS,Equal SHA-256 hashes,
+SVG,Equal one two three state rectangles,PASS,Parsed rect geometry,
+SVG,Ellipse clipping valid,PASS,Two clip paths,
+SVG,KGML circle stays circular,KNOWN_BUG,circle shape fixture,PV-BUG-068
+SVG,Labels XML escaped,PASS,Ampersand and brackets,
+SVG,Complete normal output valid XML,PASS,ElementTree parse,
+SVG,Transparent unmapped nodes preserved,KNOWN_BUG,Gray fallback detected,PV-BUG-069
+SVG,Special pathway title valid,KNOWN_BUG,Unescaped ampersand,PV-BUG-035
+SVG,Special node ID valid,KNOWN_BUG,Unescaped clip ID,PV-BUG-036
+SVG,Empty fill still visible,KNOWN_BUG,Text-only result,PV-BUG-037
+SVG,Pathway relations included,FEATURE_GAP,Zero edge elements,PV-FEATURE-003
+PDF,Valid PDF produced,PASS,PDF magic bytes,
+PDF,Pathway relations included,FEATURE_GAP,Graph has zero edges,PV-FEATURE-004
+PDF,Two-state colors preserved,KNOWN_BUG,Only first color captured,PV-BUG-038
+Legends,Compound-only native key has no blank axis,KNOWN_BUG,Visible empty subplot,PV-BUG-070
+Legends,Compound-only graph uses compound scale,KNOWN_BUG,Gene scale captured,PV-BUG-071
+Highlighting,Explicit hex node highlight,PASS,Image copy changed,
+Highlighting,Missing ID is no-op,PASS,Arrays equal,
+Highlighting,Explicit hex edge and path,PASS,Arrays changed,
+Highlighting,Explicit PNG and PDF save,PASS,File magic bytes,
+Highlighting,Default named colors work,KNOWN_BUG,red parsing exception,PV-BUG-032
+Highlighting,Coordinates align with native,KNOWN_BUG,Mirrored border,PV-BUG-039
+Highlighting,Opacity blends,KNOWN_BUG,Fully saturated output,PV-BUG-040
+Highlighting,Labels visibly change,KNOWN_BUG,Image unchanged,PV-BUG-041
+Highlighting,Edges can include compounds,KNOWN_BUG,Gene-only lookup,PV-BUG-042
+Highlighting,One-pixel line exact,KNOWN_BUG,Two rows colored,PV-BUG-043
+Highlighting,Save infers extension,KNOWN_BUG,PNG bytes under PDF name,PV-BUG-044
+Highlighting,RGBA supported,KNOWN_BUG,Broadcast exception,PV-BUG-072
+Highlighting,Label metadata survives layers,KNOWN_BUG,Dynamic field lost,PV-BUG-073
+Splines,Cubic Bezier endpoints,PASS,2 10 and 51 samples,
+Splines,Quadratic Bezier endpoints,PASS,2 10 and 51 samples,
+Splines,Bezier SVG serialization,PASS,Exact path text,
+Splines,Catmull-Rom finite,KNOWN_BUG,Nonfinite documented examples,PV-BUG-045
+Splines,Curved route without obstacles,KNOWN_BUG,Straight fallback,PV-BUG-046
+Splines,Obstacle avoidance,KNOWN_BUG,Path crosses obstacle,PV-BUG-047
+Splines,Orthogonal route finite,KNOWN_BUG,Catmull-Rom NaNs,PV-BUG-048
+Splines,Unknown mode rejected,KNOWN_BUG,Silent straight fallback,PV-BUG-049
+Splines,Tension changes smooth path,KNOWN_BUG,Argument unused,PV-BUG-050
+Splines,Nonfinite points rejected,KNOWN_BUG,nan serialized,PV-BUG-051
+CLI,Help,PASS,Exit zero and options present,
+CLI,Invalid format choice,PASS,Exit two,
+CLI,Pathway required,PASS,Parser exit two,
+CLI,Legend without pathway,PASS,Controlled legend call,
+CLI,Gene plus compound tables,PASS,Both reach mocked core,
+CLI,Compound-only table,KNOWN_BUG,None cast crash,PV-BUG-052
+CLI,Simulation plus compound table,KNOWN_BUG,Compound file ignored,PV-BUG-077
+CLI,Accurate mapped count,KNOWN_BUG,Null rows counted,PV-BUG-053
+CLI,Upstream feature script direct run,KNOWN_BUG,Relative import failure,PV-BUG-054
+KEGG,KO species resolution offline,PASS,No request assertion,
+KEGG,Exact code and T number lookup,PASS,Controlled organism list,
+KEGG,Common name lookup,KNOWN_BUG,Exact full-field comparison,PV-BUG-055
+KEGG,KGML and image URL construction,PASS,Official URLs captured,
+KEGG,Invalid file type validation,KNOWN_BUG,Internal KeyError,PV-BUG-056
+KEGG,Reject HTML 200 bodies,KNOWN_BUG,XML and PNG cases,PV-BUG-057
+MyGene,Official batch endpoint,KNOWN_BUG,URL capture,PV-BUG-058
+MyGene,Not-found becomes null,PASS,Controlled notfound response,
+MyGene,Nested UniProt extraction,KNOWN_BUG,Dictionary string,PV-BUG-059
+MyGene,Species translation,KNOWN_BUG,hsa forwarded,PV-BUG-060
+MyGene,returnall response shape,KNOWN_BUG,Dictionary iterated as list,PV-BUG-078
+Compounds,Controlled KEGG response parse,PASS,C00031 extraction,
+Compounds,Official KEGG database name,ROBUSTNESS_GAP,Undocumented cpd alias,PV-BUG-061
+Compounds,Prefixed input normalization,KNOWN_BUG,Duplicate prefix,PV-BUG-062
+Databases,Known ID detection,PASS,Reactome MetaCyc PANTHER SMPDB,
+Databases,Malformed SMPDB ID rejected,KNOWN_BUG,Broad prefix match,PV-BUG-063
+Databases,Case-insensitive detection,KNOWN_BUG,Lowercase not detected,PV-BUG-064
+Reactome,Controlled SBGN body written,PASS,Mock valid XML,
+Reactome,Official file exporter route,KNOWN_BUG,Wrong URL captured,PV-BUG-074
+Reactome,Requested listing species used,KNOWN_BUG,Human URL hardcoded,PV-BUG-066
+Downloads,Reject HTML as SBGN,KNOWN_BUG,Reactome and MetaCyc mock,PV-BUG-065
+PANTHER,Downloader implemented,FEATURE_GAP,Warns and returns None,PV-FEATURE-005
+SMPDB,Downloader implemented,FEATURE_GAP,Warns and returns None,PV-FEATURE-006
+Providers,Non-KEGG core dispatch,FEATURE_GAP,Reactome sent to KEGG,PV-FEATURE-007
+Utilities,wordwrap zero width terminates,KNOWN_BUG,Subprocess timeout,PV-BUG-079

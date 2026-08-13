@@ -1,0 +1,9 @@
+entry_id,name,kegg_names,type,x,y,width,height,bgcolor,fgcolor,label,shape,reaction,component,size,link,Control,Treatment,all_mapped
+49,hsa:7157,7157,gene,590.0,243.0,46.0,17.0,#BFFFBF,#000000,TP53,rectangle,"","",1,http://www.kegg.jp/dbget-bin/www_bget?hsa:7157,1.4,-1.4,7157
+67,hsa:1017,1017,gene,457.0,468.0,46.0,17.0,#BFFFBF,#000000,CDK2,rectangle,"","",1,http://www.kegg.jp/dbget-bin/www_bget?hsa:1017,-1.5,1.5,1017
+68,hsa:1017,1017,gene,335.0,468.0,46.0,17.0,#BFFFBF,#000000,CDK2,rectangle,"","",1,http://www.kegg.jp/dbget-bin/www_bget?hsa:1017,-1.5,1.5,1017
+69,hsa:1019 hsa:1021,1019;1021,gene,227.0,468.0,46.0,17.0,#BFFFBF,#000000,CDK4,rectangle,"","",1,http://www.kegg.jp/dbget-bin/www_bget?hsa:1019+hsa:1021,-0.7,0.7,"1019,1021"
+73,hsa:595 hsa:894 hsa:896,595;894;896,gene,227.0,451.0,46.0,17.0,#BFFFBF,#000000,CCND1,rectangle,"","",1,http://www.kegg.jp/dbget-bin/www_bget?hsa:595+hsa:894+hsa:896,0.8,-0.8,595
+100,undefined,1017;898;9134,group,335.0,459.0,46.0,34.0,#FFFFFF,#000000,CDK2/CCNE1,rectangle,"",68;72,2,"",-1.5,1.5,1017
+102,undefined,1017;890;8900,group,457.0,459.0,46.0,34.0,#FFFFFF,#000000,CDK2/CCNA2,rectangle,"",67;71,2,"",-1.5,1.5,1017
+108,undefined,1019;1021;595;894;896,group,227.0,459.0,46.0,34.0,#FFFFFF,#000000,CDK4/CCND1,rectangle,"",69;73,2,"",0.10000000000000009,-0.10000000000000009,"1019,1021,595"
