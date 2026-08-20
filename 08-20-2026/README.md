@@ -5,6 +5,9 @@ downloads the public MassSpecGym v1.5 spectrum table, keeps a small working
 subset, and compares ordinary spectral matching with a small PennyLane
 feature-interaction circuit.
 
+For the plain-English interpretation of the saved results, read
+[`RESULTS-README.md`](RESULTS-README.md).
+
 ## What the notebook tests
 
 The notebook is a first real-data smoke test. It:

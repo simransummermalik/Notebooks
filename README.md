@@ -23,7 +23,7 @@ matches the work you need to read or rerun.
 - For the Pathview-only bug follow-up, open [`08-12-2026/README.md`](08-12-2026/README.md).
 - For the paper changes, open [`08-13-2026/README.md`](08-13-2026/README.md) and [`08-13-2026/readmes/PAPER-UPDATE-NOTES.md`](08-13-2026/readmes/PAPER-UPDATE-NOTES.md).
 - For the August 16 quantum MS/MS notes, open [`08-16-2026/README.md`](08-16-2026/README.md) and [`08-16-2026/08-16-2026-WORK-LOG.md`](08-16-2026/08-16-2026-WORK-LOG.md).
-- For the August 20 Colab experiment, open [`08-20-2026/README.md`](08-20-2026/README.md) and [`08-20-2026/08-20-2026-msms-pennylane-colab.ipynb`](08-20-2026/08-20-2026-msms-pennylane-colab.ipynb).
+- For the August 20 Colab experiment, open [`08-20-2026/README.md`](08-20-2026/README.md), [`08-20-2026/RESULTS-README.md`](08-20-2026/RESULTS-README.md), and [`08-20-2026/08-20-2026-msms-pennylane-colab.ipynb`](08-20-2026/08-20-2026-msms-pennylane-colab.ipynb).
 - For the documentation websites, open [`read-the-docs/README.md`](read-the-docs/README.md).
 
 The dated folders contain saved evidence and are kept separate so that the
