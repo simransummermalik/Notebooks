@@ -1,0 +1,121 @@
+query_index,method,rank,candidate_count
+0,binned cosine,1,100
+1,binned cosine,1,100
+2,binned cosine,1,100
+3,binned cosine,1,100
+4,binned cosine,1,100
+5,binned cosine,1,100
+6,binned cosine,1,100
+7,binned cosine,1,100
+8,binned cosine,1,100
+9,binned cosine,1,100
+10,binned cosine,1,100
+11,binned cosine,1,100
+12,binned cosine,1,100
+13,binned cosine,1,100
+14,binned cosine,1,100
+15,binned cosine,1,100
+16,binned cosine,1,100
+17,binned cosine,1,100
+18,binned cosine,1,100
+19,binned cosine,1,100
+0,tolerance peak,1,100
+1,tolerance peak,1,100
+2,tolerance peak,1,100
+3,tolerance peak,1,100
+4,tolerance peak,1,100
+5,tolerance peak,1,100
+6,tolerance peak,1,100
+7,tolerance peak,1,100
+8,tolerance peak,1,100
+9,tolerance peak,1,100
+10,tolerance peak,1,100
+11,tolerance peak,1,100
+12,tolerance peak,1,100
+13,tolerance peak,1,100
+14,tolerance peak,1,100
+15,tolerance peak,3,100
+16,tolerance peak,1,100
+17,tolerance peak,1,100
+18,tolerance peak,1,100
+19,tolerance peak,1,100
+0,soft peak,1,100
+1,soft peak,1,100
+2,soft peak,1,100
+3,soft peak,1,100
+4,soft peak,1,100
+5,soft peak,1,100
+6,soft peak,1,100
+7,soft peak,1,100
+8,soft peak,1,100
+9,soft peak,1,100
+10,soft peak,1,100
+11,soft peak,1,100
+12,soft peak,1,100
+13,soft peak,1,100
+14,soft peak,1,100
+15,soft peak,1,100
+16,soft peak,1,100
+17,soft peak,1,100
+18,soft peak,1,100
+19,soft peak,1,100
+0,wavelet cosine,1,100
+1,wavelet cosine,4,100
+2,wavelet cosine,1,100
+3,wavelet cosine,38,100
+4,wavelet cosine,1,100
+5,wavelet cosine,1,100
+6,wavelet cosine,2,100
+7,wavelet cosine,26,100
+8,wavelet cosine,1,100
+9,wavelet cosine,1,100
+10,wavelet cosine,1,100
+11,wavelet cosine,1,100
+12,wavelet cosine,1,100
+13,wavelet cosine,30,100
+14,wavelet cosine,1,100
+15,wavelet cosine,1,100
+16,wavelet cosine,1,100
+17,wavelet cosine,1,100
+18,wavelet cosine,1,100
+19,wavelet cosine,1,100
+0,PennyLane independent,22,100
+1,PennyLane independent,8,100
+2,PennyLane independent,4,100
+3,PennyLane independent,14,100
+4,PennyLane independent,5,100
+5,PennyLane independent,1,100
+6,PennyLane independent,39,100
+7,PennyLane independent,1,100
+8,PennyLane independent,1,100
+9,PennyLane independent,1,100
+10,PennyLane independent,1,100
+11,PennyLane independent,1,100
+12,PennyLane independent,42,100
+13,PennyLane independent,37,100
+14,PennyLane independent,1,100
+15,PennyLane independent,1,100
+16,PennyLane independent,3,100
+17,PennyLane independent,2,100
+18,PennyLane independent,1,100
+19,PennyLane independent,1,100
+0,PennyLane ZZ interaction,22,100
+1,PennyLane ZZ interaction,8,100
+2,PennyLane ZZ interaction,4,100
+3,PennyLane ZZ interaction,14,100
+4,PennyLane ZZ interaction,5,100
+5,PennyLane ZZ interaction,1,100
+6,PennyLane ZZ interaction,39,100
+7,PennyLane ZZ interaction,1,100
+8,PennyLane ZZ interaction,1,100
+9,PennyLane ZZ interaction,1,100
+10,PennyLane ZZ interaction,1,100
+11,PennyLane ZZ interaction,1,100
+12,PennyLane ZZ interaction,42,100
+13,PennyLane ZZ interaction,37,100
+14,PennyLane ZZ interaction,1,100
+15,PennyLane ZZ interaction,1,100
+16,PennyLane ZZ interaction,3,100
+17,PennyLane ZZ interaction,2,100
+18,PennyLane ZZ interaction,1,100
+19,PennyLane ZZ interaction,1,100
